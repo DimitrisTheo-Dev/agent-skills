@@ -35,10 +35,10 @@ Choose viewports appropriate for the project; examples are ~320, 375/390, 430, 7
 
 ## Phase D: iteration and evidence
 
-1. Rank the most consequential observed issues as blocker, high impact, or polish. Explain how each affects the experience; do not invent findings to reach a fixed count.
-2. Fix blockers and high-impact issues first; keep improvements surgical.
-3. Re-render after meaningful visual changes when tools permit.
-4. Stop when the remaining issues are minor, outside scope, or evidence does not justify further changes. Do not endlessly churn UI for aesthetics alone.
+1. Before changing existing UI, connect each observed problem to its user or brand impact and the smallest supported fix. Without evidence, leave cosmetic styling unchanged. Prioritize up to three meaningful defects; do not invent findings to reach a count.
+2. Batch first-round desktop/mobile screenshot inspection where practical, then apply supported blockers and high-impact corrections together.
+3. Confirm the corrections in one rendering pass when practical. Continue only for unresolved blockers.
+4. Stop when the remaining issues are minor, outside scope, or unsupported by evidence. Do not endlessly churn UI for aesthetics alone.
 5. Report actual commands/tests/screenshots reviewed. Separate verified behavior from assumptions or untested device claims.
 
 ## Useful acceptance criteria
