@@ -19,6 +19,18 @@ Choose a visual direction from the user's task, real content, and brand. Referen
 
 A small tweak needs a focused correction, not a design workshop. For broader work, establish one coherent direction before implementing it.
 
+### Creative direction for substantial new designs
+
+Before designing, establish a specific creative thesis that defines the intended personality and its visual tension, such as expressive branding paired with restrained functional UI. Avoid vague directions like "modern and clean."
+
+For greenfield branding and major landing pages, explore two meaningfully different art directions when the choice is not obvious. Evaluate audience fit, originality, clarity, and feasibility. Select one and commit.
+
+Identify one signature experience that makes the product memorable. Prefer a distinctive, functional demonstration of real product value over abstract decoration, generic illustrations, or fake dashboards.
+
+Concentrate creative effort where it has the greatest impact. Keep supporting interfaces familiar, cohesive, and easy to use.
+
+Do not force multiple concepts, animations, mascots, or interactive demos into small UI improvements or products where they add no value.
+
 ## Design and execute
 
 1. **Establish context.** Trace the requested view through current design guidance, theme/tokens, shared components, and their actual consumers. Prefer the governing source over isolated styling; inspect content, assets/fonts, framework conventions, and preview/test tools. Identify the actual audience, main task, success moment, trust requirements, and fixed constraints. Classify the view by its job: persuade, operate, read, or showcase. Different views of one product may need different visual registers. Use stated assumptions where details are missing; ask only when a missing detail would invalidate the result. Do not infer taste from age or industry alone.
