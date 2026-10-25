@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agent readiness"
+  short_description: "Audit and improve products for AI agent usability"
+  default_prompt: "Use $agent-readiness to audit this product and prioritize the gaps preventing agents from using it."
