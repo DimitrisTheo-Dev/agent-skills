@@ -17,7 +17,7 @@ Executed **2026-10-25**. These results describe one evaluation session and its c
 | Isolated implementation exercise | Final **9 Python behavior tests passed**, compilation passed, CLI/loopback smoke checks passed. No dependencies/services added. See the correction below. |
 | Independent implementation assessment | Seven additional GETs and one deliberately rejected POST verified visible public answers, real missing-route 404, private 401 for spoofed/invalid clients, rejected writes, public-only discovery, and isolation from an untrusted Host header. |
 
-The two Codex CLI smoke runs emitted an unrelated connector-authentication warning during startup; both skill tests still exited 0. No connector tools were used for those tests. Local YAML parsing also passed. The GitHub workflow declares Python 3.11 and 3.14 on Linux; local execution alone does not establish that remote CI has run.
+The two Codex CLI smoke runs emitted an unrelated connector-authentication warning during startup; both skill tests still exited 0. No connector tools were used for those tests. Local YAML parsing also passed. The first GitHub run failed during pip-cache setup because the action's default dependency filenames did not include requirements-dev.txt. The workflow now declares that cache path explicitly and keeps matrix jobs independent. Python 3.11/3.14 remote results are available in [GitHub Actions](https://github.com/DimitrisTheo-Dev/agent-skills/actions); local success alone is not treated as remote evidence.
 
 ## Six independent audit/planning scenarios
 
