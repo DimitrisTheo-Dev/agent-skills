@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vibe UI"
+  short_description: "Art direction, interface design, and visual polish"
+  default_prompt: "Use $vibe-ui to improve this interface with a coherent visual direction, focused changes, and honest visual verification."

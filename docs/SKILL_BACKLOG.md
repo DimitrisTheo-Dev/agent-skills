@@ -138,7 +138,7 @@ Each dimension scores 1 to 5: **R** reuse across projects, **E** observed engine
 
 **Validation.** Build each locale, visit equivalent deep links, check legacy redirects/canonicals and sitemap hosts, disable JavaScript for navigation, and verify keyboard/focus behavior and content approval failures.
 
-**Overlap.** `agent-readiness`, accessibility, layout, and design-review skills already cover parts. Keep this focused on content-release consistency and provenance, or extend an existing release workflow if the distinct value is too small.
+**Overlap.** `agent-readiness`, `vibe-ui`, accessibility, layout, and design-review skills already cover parts. Keep this focused on content-release consistency and provenance, or extend an existing release workflow if the distinct value is too small.
 
 ## Strongest next skill
 
