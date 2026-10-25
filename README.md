@@ -8,6 +8,8 @@ Reusable engineering workflows for OpenAI Codex and other tools that support the
 | --- | --- |
 | [agent-readiness](skills/agent-readiness/SKILL.md) | Audit, plan, or implement improvements to how agents discover, read, and use a website, SaaS, or API. Based on AgentReady v2.0 with conditional applicability and explicit evidence. |
 
+Credit to [AgentReady](https://www.agentready.org/) and its contributors for the specification and supporting research behind `agent-readiness`. This skill is an independent implementation of their guidance.
+
 ## Install one skill in Codex
 
 Prerequisites: Codex with local skills support, Git, and a POSIX shell for these examples. The skill itself has no package dependencies. HTTP checks require network access and a fetch tool such as curl; code-only audits work without network access. Python 3.11+ is needed only for library validation and synthetic evaluations.
