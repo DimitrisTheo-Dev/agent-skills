@@ -1,0 +1,4 @@
+interface:
+  display_name: "Landing Page Design"
+  short_description: "Plan clear, credible product landing pages"
+  default_prompt: "Use $landing-page-design to plan this landing page around the audience, product evidence, and primary action."
