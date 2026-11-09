@@ -14,11 +14,11 @@ Use the built-in `$skill-creator` when available. Its quick validator is useful 
 
 ## Verification
 
-Run the commands in the root README. `scripts/validate.py` is the CI entrypoint and uses the pinned official `skills-ref` demonstration package plus repository checks. A source dependency revision is intentional; update it in a separate reviewed change and rerun its validation. Local links are checked offline; external links are not fetched in CI. Verify changed authoritative external sources manually and record the date.
+Run `python scripts/check.py` with the development dependencies installed. CI uses the same entrypoint, which runs `scripts/validate.py` and the unit tests. The validator uses the pinned official `skills-ref` demonstration package plus repository checks. Update the source dependency revision in a separate reviewed change and rerun validation. Check changed external sources manually and record the date.
 
 For a substantial workflow, add realistic scenarios under `evals/<skill>/` with raw artifacts, requests, and a separate scoring rubric. Include cases that should not activate the skill, inapplicable branches, incomplete evidence, and unsafe proposed fixes. Test trigger selection and behavior separately. An independent agent should see only the skill, request, and raw artifacts, without the expected answer. Use isolated temporary workspaces and authorized local services. Do not use live accounts or billable services without the user's authorization.
 
-Record evaluator/host, scenario IDs, commands, observed outcomes, failures, corrections, and remaining limits. Do not turn a checklist, fixture test, or self-review into a claimed model evaluation pass. Preserve enough evidence to reproduce a result; omit full transcripts if they expose unrelated context.
+Compare revisions for behavioral changes and record evidence and limits using the [evaluation workflow](evals/README.md). Treat fixture and validator results as infrastructure evidence. Share only sanitized evidence that can be traced to the evaluated revision.
 
 ## Submit a change
 
