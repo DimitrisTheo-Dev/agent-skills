@@ -1,0 +1,4 @@
+interface:
+  display_name: "Product UX Writing"
+  short_description: "Write interface copy grounded in product behavior"
+  default_prompt: "Use $product-ux-writing to improve this product flow and draft copy for the relevant states."
