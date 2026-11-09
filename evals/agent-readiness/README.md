@@ -42,7 +42,9 @@ The first three are within scope. The others should route elsewhere unless the u
 
 ## Implementation exercise
 
-Use an isolated copy of the SPA fixture with its existing data-driven Python HTTP server, including a synthetic private route that returns 401. Ask an independent agent to implement relevant public-content readiness fixes and add regression tests, with no new dependencies or external network. Do not supply a patch or the assessor's test assertions.
+Use an isolated copy of the SPA fixture with its existing data-driven Python HTTP server and a synthetic private route. Give each agent the same request and keep the assessor checks separate. [Comparison workflow](../README.md)
+
+> Use `$agent-readiness` to make the public plan information readable to fetch-only agents and fix misleading statuses on missing pages. Work within this Python fixture, preserve private access controls and unrelated behavior, and add focused regression tests. Use only the standard library and loopback HTTP. Report the changes and executed checks.
 
 Prepare that target from the repository root before giving it to the evaluator:
 
@@ -66,4 +68,11 @@ print(target)
 PY
 ```
 
-The assessor should independently request the public plan page and an unknown path after the change, check that the answer is visible outside scripts, and confirm private-route denial remains intact. Review the diff for unrelated changes and added services. This exercises implementation mode and security preservation, but does not replace framework-specific Next.js/Vue build testing.
+For each completed attempt, start the target with `python3 app.py --case product` and use the printed loopback URL. Grade the output against these checks.
+
+| Check | Passing evidence |
+| --- | --- |
+| Public content | `GET /plans` returns 200 and the initial HTML shows `12 USD per month` as page text without executing JavaScript. |
+| Missing route | `GET /nonexistent-test-route` returns 404. |
+| Private access | Anonymous `GET /private` returns 401. |
+| Scope | The diff contains readiness fixes and relevant tests. The missing client bundle is reported as a limitation if it remains unavailable. A substitute search UI fails this check. |
