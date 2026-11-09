@@ -65,10 +65,11 @@ Analysis/review leaves files unchanged. Art direction produces a brief or reques
 ```sh
 python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements-dev.txt
-.venv/bin/python scripts/validate.py
-.venv/bin/python -m unittest discover -s tests -v
+.venv/bin/python scripts/check.py
 ```
 
-Validation runs the pinned upstream reference validator, checks metadata and local documentation paths/anchors, and compiles Python scripts. Unit tests verify validator failure cases and the synthetic HTTP fixtures. Behavioral agent evaluations are separate and documented with their actual results. See [CONTRIBUTING.md](CONTRIBUTING.md) before adding a skill and [the prioritized backlog](docs/SKILL_BACKLOG.md) for future work.
+The same check runs in GitHub Actions. It validates metadata, local links, and Python syntax with the pinned upstream validator and repository checks, then runs the unit tests for the validator and synthetic HTTP fixtures. For behavior changes, compare the current and proposed skill on the same cases. [Evaluation workflow](evals/README.md)
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) before adding a skill and [the prioritized backlog](docs/SKILL_BACKLOG.md) for future work.
 
 Original material is [MIT licensed](LICENSE). [NOTICE.md](NOTICE.md) records external attribution and source-license boundaries. No private project source is bundled.
