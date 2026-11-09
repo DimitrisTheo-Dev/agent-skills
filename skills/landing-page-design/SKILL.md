@@ -1,0 +1,25 @@
+---
+name: landing-page-design
+description: Plan, write, review, or build marketing landing pages for products and services. Use when deciding page structure, hero messaging, product demonstrations, trust signals, or calls to action.
+license: MIT
+---
+
+# Landing Page Design
+
+Give a specific visitor enough information to understand the offer, see how it works, and choose a next step. Start with what the product can show and what the visitor needs to decide.
+
+## Choose the deliverable
+
+- **For a review**, keep the work read-only. For each material finding, name the observed issue, the visitor decision it affects, and a concrete fix. Prioritize unsupported claims, confusing offers, and blocked actions.
+- **For a plan or copy draft**, deliver the requested scope, such as a hero rewrite or a page outline with draft copy, visual direction, CTA destinations, and evidence still needed.
+- **For a build or revision**, inspect the page, its design system, and the destination of each action. Use the existing stack and assets. Verify the paths affected by the requested changes.
+
+## Design the page
+
+1. **Define the decision.** Identify the primary visitor, the task or problem that brought them here, the outcome the product supports, and one primary action available at this stage. Use the brief, product, docs, and assets as evidence. Mark consequential gaps before writing claims or promising an action.
+2. **Write the hero.** Make the offer and outcome legible in the headline and supporting line together. Use the supporting line for the audience, mechanism, or a material condition. Label the primary CTA with what happens next, such as “View quickstart” or “Request a demo.” Give any secondary link a distinct purpose and lighter emphasis.
+3. **Show the product.** Choose one artifact that lets the visitor see the mechanism or result. Read [page patterns](references/page-patterns.md) when choosing a demo format or comparing supporting sections. Label sample data, recorded demos, and concepts where they appear. Use a verified example or a clear explanation when the product has yet to ship.
+4. **Build the shortest useful story.** After the hero, connect a recognizable problem to a real workflow and result. Keep each section that answers a distinct visitor question. Put approved proof beside the claim it supports. When endorsements or adoption figures are unavailable, demonstrate the product and leave out the proof block. Close with the primary action on pages long enough to warrant a repeat.
+5. **Check the decision path.** Confirm that the copy, visual, and destination tell the same story and that the CTA leads to the stated action. For builds, inspect the rendered page at representative mobile and desktop widths. Exercise submissions with synthetic data in an authorized preview or local environment. Check the relevant controls with keyboard input and reduced motion. Report which checks the available evidence supports.
+
+Treat layout and conversion ideas as hypotheses. Claims about conversion lift require measurement on the target page.
