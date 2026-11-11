@@ -2,6 +2,8 @@
 
 Reusable engineering workflows for OpenAI Codex and other tools that support the [Agent Skills format](https://agentskills.io/specification). Each skill contains focused instructions, supporting references, and evaluations. Skills guide an agent's decisions; they do not certify a product or grant access to it.
 
+**Experimental design workflow:** the Studio and Vibe UI revisions on this branch have not earned adoption. The browser-enabled comparison preferred the baseline. Read the [results and adoption decision](evals/product-design/RESULTS.md) before using these candidate instructions as a default.
+
 ## Catalog
 
 | Skill | Use it for |

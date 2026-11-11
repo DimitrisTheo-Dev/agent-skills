@@ -71,7 +71,7 @@ The baseline's largest identified weakness is provenance and section navigation:
 
 ### Adoption decision
 
-**Do not promote this candidate as the default or claim a quality improvement.** The approved plan requires better output before adoption. The first reviewer preferred candidate presentation but baseline task fit; the second preferred baseline on both. Owner preference, memorable value and an unlike-product comparison are still missing. The candidate remains in a draft pull request; the installed Studio default was restored and the trial Vibe UI was disabled.
+**Do not promote this candidate as the default or claim a quality improvement.** The approved plan requires better output before adoption. The first reviewer preferred candidate presentation but baseline task fit; the second preferred baseline on both. Owner preference, memorable value and an unlike-product comparison are still missing. The candidate remains in a draft pull request; installed Studio and Vibe UI instructions were restored to their original versions. The service rejected disabling the newly installed Vibe UI, so restoring its original instructions was the fallback.
 
 The next revision should investigate why extra exploration and documentation did not improve the selected output. The observed gaps are excessive mobile introduction/row density and weak differentiation between directions. Compare the real task at the same viewport before spending effort on the contract. Preserve useful provenance and recovery work. Do not turn one catalog's result into a universal ban on headings, prose, cards or colors, and do not keep adding criteria until a model agrees.
 
