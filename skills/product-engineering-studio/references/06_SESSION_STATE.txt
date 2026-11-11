@@ -1,0 +1,36 @@
+SESSION STATE TEMPLATE
+One per task. Keep roughly 150-250 words; expand only for essential contracts.
+
+Task / mode / remaining budget:
+Repository and current revision: unknown until inspected
+Authoritative brief: path or supplied message
+Goal:
+Scope and deferred work:
+Acceptance:
+- AC1: expected behavior; planned evidence; status
+- AC2:
+- AC3:
+Accepted decisions:
+- <decision and short reason>
+Assumptions:
+- <reversible assumption awaiting evidence>
+Completed:
+- <actual behavior delivered>
+Verification:
+- <command or browser observation>; <actual result>; <revision/scope>
+Mocks or blocked capabilities:
+Open issue:
+Next slice:
+Execution mode / reason:
+Active owners / path boundaries / shared contract:
+Integration checkpoint / unresolved worker dependencies:
+Relevant paths and commands:
+Active skill / required helpers:
+Next action owner: ChatGPT / Codex / user
+
+UPDATE RULES
+Keep the latest facts and decisions; do not append the full story.
+Separate implemented, tested and reviewed status.
+A changed code/spec revision can make earlier evidence stale.
+Persist when file tools are available. Otherwise return this state for copying.
+Project context, Codex sessions and repository files are separate until explicitly connected.

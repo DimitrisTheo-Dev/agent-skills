@@ -1,0 +1,69 @@
+SOURCES AND CAPABILITIES
+Reference review date: 2026-11-07. Live sources can change.
+This bundle is an original concise synthesis; it does not redistribute complete upstream skill packages, PDFs or executables.
+
+OPENAI OFFICIAL DOCUMENTATION
+https://learn.chatgpt.com/docs/projects
+Project instructions and uploaded/connected sources organize related work. A web project does not automatically grant access to a local codebase.
+https://learn.chatgpt.com/docs/customization/memories
+Use explicit documents for required guidance; memory is a recall layer.
+https://learn.chatgpt.com/docs/build-skills
+Codex invocation, local discovery and packaged skill concepts.
+https://learn.chatgpt.com/docs/agent-configuration/agents-md
+Repository instructions and discovery.
+
+MATT POCOCK
+https://www.aihero.dev/skills
+https://github.com/mattpocock/skills
+https://www.aihero.dev/skills-grill-with-docs
+https://www.aihero.dev/skills-tdd
+https://www.aihero.dev/skills-code-review
+https://www.aihero.dev/skills-codebase-design
+https://www.aihero.dev/skills-prototype
+Use the task-specific procedure; verify dependencies and diff visibility in the installed version.
+
+T3
+https://github.com/t3dotgg/tstack
+https://github.com/t3dotgg/tstack/blob/main/skills/sol-loop/SKILL.md
+https://github.com/t3dotgg/tstack/blob/main/skills/full-stop/SKILL.md
+Optional review and shipping workflows. Provider access and broader side effects depend on the selected procedure.
+
+GSTACK
+https://github.com/garrytan/gstack
+https://github.com/garrytan/gstack/blob/main/docs/skills.md
+Product framing and scope choices are useful selectively. Documentation checked on the review date says plan-eng-review was removed November 6 and references autoplan for that role. Check installed versions before using commands.
+
+DESIGN
+https://github.com/jakubkrehel/skills
+Changed-interface review and domain helpers.
+The local vibe-ui skill was listed in the user's supplied inventory; this bundle contains discussion-derived design principles, not that skill's full source. Read its actual local file before using it.
+Mobbin connection instructions and tools are runtime-specific. Use current in-app guidance; this bundle does not establish a live connection.
+
+FALLOW
+https://github.com/fallow-rs/fallow
+https://github.com/fallow-rs/fallow-skills
+Structural JS/TS analysis. Check executable and skill availability separately.
+
+SECURITY AND ACCESSIBILITY
+https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html
+Authorization guidance for protected features.
+https://www.w3.org/WAI/WCAG22/quickref/
+Reference for specific accessibility criteria; a short review is not full conformance certification.
+
+AI EVALUATION
+https://claude.dev/blog/automating-eval-design-and-hillclimbing/
+https://github.com/anthropics/skills/tree/main/skills/claude-api
+Evaluation/optimization principles and provider-specific workflows. Namespaces vary by client; do not assume a Claude command is installed in Codex.
+
+CAPABILITY LEDGER
+- Project files: these reference texts can be uploaded manually.
+- Live repository: discover in the execution environment.
+- Installed local skills: the shared 2026-11-07 inventory is a snapshot.
+- vibe-ui exact contents: not included or audited here.
+- T3/gstack/Fallow dependencies: not installed by this bundle.
+- Mobbin/Figma/browser: discover current tools before claiming access.
+- Checks, costs, token usage and cache rates: unknown unless observed/measured.
+- ChatGPT/Codex synchronization: explicit file/handoff transfer unless a real integration establishes it.
+
+PROVENANCE
+The operating rules also incorporate the user's prior checklist, short feedback-loop preference and available design/workflow discussions. Prior long orchestration prompts inform selective context and evidence practices; they are not imported as universal runtime instructions. No claim is made that every historical chat or private source was retrieved.

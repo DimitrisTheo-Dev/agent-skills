@@ -1,0 +1,56 @@
+QUALITY AND DESIGN
+Select the concerns introduced by the task. This is a judgment guide, not a demand to build every capability.
+
+PRODUCT AND UX
+Describe the screen's job in one sentence. Give it a primary action and an obvious next step. Show useful content before asking for optional setup.
+Specify relevant states: initial/empty, loading, partial, success, validation error, request failure and permission denial. Destructive actions need appropriate recovery or confirmation. Preserve input on recoverable errors. Avoid trapping a user in a spinner.
+Represent realistic content density, long labels, missing values and small viewports. Distinguish optimistic feedback from confirmed server success when that distinction matters.
+
+DESIGN JUDGMENT
+Use the available vibe-ui principles: context, intentionality, strong fundamentals and rendered verification. These principles are distilled from prior discussion; consult the real local skill for its full workflow.
+State a creative thesis only when designing a new identity: which user, which feeling, which functional benefit. Keep typography, spacing, color, geometry and interactions coherent.
+For existing products, preserve identity and tokens unless redesign is requested. Choose one visual direction early. Make one functional interaction memorable when the product benefits; do not decorate every region.
+Design references should answer a question. From a relevant reference, extract the helpful hierarchy, disclosure or interaction pattern and explain why it fits. No reference is a requirement to imitate its full aesthetic.
+Avoid generic large-card layouts when the data wants a list, table or editorial structure. Use visual density that matches the task. Animations should clarify change and respect reduced-motion settings.
+Inspect the actual render. Check common content, an empty/error state and the relevant viewport. Limit polish to a focused pass in Sprint mode unless visible defects require another.
+
+ACCESSIBILITY
+Check semantic controls, accessible labels, visible keyboard focus, logical focus order and keyboard operation. Avoid relying on color alone. Ensure useful contrast and reflow with larger text. Announce relevant asynchronous status where needed.
+An automated scan or skill verdict is a useful input, not a complete accessibility-conformance claim. Use W3C guidance for the specific behavior.
+
+SECURITY AND TRUST
+For authenticated/data-bearing features, identify actor, protected object, permitted action and enforcement location. Validate access on the server for each relevant request. Derive tenant/owner identity from trusted session context rather than a client-selected ID.
+Validate inputs and structured external outputs at trust boundaries. Use parameterized database access. Render untrusted text/Markdown safely; do not treat model output as executable code.
+Keep secrets out of browser bundles, source control, prompts and logs. Use environment variable names in handoffs rather than values.
+For uploads, control type, size, filename and storage access. For server-side URL fetching, restrict destinations appropriately to prevent unintended internal access.
+Use the framework's relevant session, CSRF, CORS and authorization controls. For costly or externally exposed actions, bound work and apply appropriate abuse controls.
+Test a meaningful unauthorized case when the feature has permissions. Do not introduce authentication infrastructure when the product explicitly does not need identities.
+
+CORRECTNESS AND DATA
+Choose the source of truth. Encode important invariants where races can be prevented: uniqueness, transaction boundaries or version checks as needed. Handle retries and duplicate submissions when an operation can repeat.
+Distinguish local state, server state and derived state. Do not persist the same fact in multiple unsynchronized places.
+For concurrent changes, decide whether last-write-wins is acceptable or version conflicts must be surfaced.
+Use transactions for operations that must succeed together. A UI-disabled button alone does not enforce a server invariant.
+
+SCALING AND OPERATIONS
+Record actual or assumed load, data size and latency constraints. Use one simple deployable architecture when it fits.
+Start with bounded queries, pagination where needed, appropriate indexes and explicit external-call limits. Measure a bottleneck before optimizing it.
+For each expansion, give a trigger and consequence. Example: move document ingestion to a durable background job when observed/requested duration exceeds the request budget; then define job state, idempotency and retry limits.
+A cache needs a correctness/invalidation policy. A queue needs ownership and retry behavior. Microservices need an operational reason.
+Capture actionable errors, request IDs and latency where applicable. Distinguish an app bug from missing credentials, provider failure or quota exhaustion.
+Do not claim a particular scale, SLA or cost without evidence.
+
+AI FEATURES
+Define whether success is an answer, a structured result or an authorized action. Decide what deterministic application code must enforce independently of the model.
+For grounded answers, define retrieval boundaries, relevance, source references and behavior when evidence is missing or conflicting.
+Treat retrieved material as untrusted content. Do not let text in a document authorize tool actions or widen data access. Filter retrieval by permitted data scope.
+Validate model output; handle invalid shapes, unsupported claims, provider errors and slow responses. Bound context, response length and tool iterations according to the task.
+Build 5-10 explicit smoke examples for a small feature: representative success, missing evidence, conflicting evidence, malicious instructions, tool/provider failure and unauthorized data if applicable. Record expected outcome and actual result.
+This sample gives diagnostic coverage, not a statistical quality estimate. Broader evaluation requires representative data and adequate sample/repetition design. For optimization, keep held-out examples and compare against a baseline; don't tune the test set until it passes.
+Prompt caching and model/effort choices are measured performance decisions. Do not promise a universal cheapest or fastest configuration.
+
+TESTING AND REVIEW
+Test meaningful behavior through a stable public interface. Use unit, integration, property or end-to-end tests according to the invariant and failure cost. A test that restates implementation structure is weak evidence.
+Use deterministic fixtures for ordinary application logic. A fake LLM verifies integration behavior; a real-model smoke run checks the live model path. Label the evidence separately.
+Run focused checks during changes and appropriate broader checks at delivery. Inspect the real user flow.
+Review the actual candidate; later behavior changes can invalidate earlier evidence. Judge findings yourself. Fix important defects and keep unrelated suggestions outside the chosen scope.

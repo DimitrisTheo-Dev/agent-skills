@@ -1,0 +1,41 @@
+TOOL SELECTION
+Source review: 2026-11-07. Selection follows the user's short product-development workflow.
+
+INSTALLATION SCOPE
+The accessible terminal is a Linux execution workspace. It does not inspect or modify the user's Mac. The ChatGPT personal skills directory is a separate install target. The prior Mac inventory remains a snapshot.
+
+CORE
+Matt Pocock's grill-with-docs, tdd and code-review are the primary imported workflows. Include grilling, domain-modeling and codebase-design as dependencies. Include setup-matt-pocock-skills and writing-for-agents for deliberate repository setup. The upstream explicit-invocation policy remains in agents/openai.yaml; unsupported duplicate frontmatter is removed for compatibility.
+These procedures require a real repository and appropriate checks to verify code. Installing them does not execute an audit.
+
+T3
+sol-loop is an optional imported reviewer workflow, not the default route for every change. A working Sol execution route is required; apply an explicit short budget for Sprint work. full-stop performs PR preparation and broader shipping operations; choose it only for a requested PR workflow. No automatic release orchestrator is installed by this selection.
+
+UI SOURCES
+ui-skills.com/skills is a discovery directory, not a single package to install wholesale.
+heydamir/unslop is a UI redesign/polish workflow with supporting references and a strong visual policy. The earlier Mac inventory listed a different unslop from backnotprop/pstack, used for prose. Keep these names/sources distinct; avoid overwriting or merging them automatically. The project uses the existing Vibe UI principles and accessible UI review tools.
+multica-ai/andrej-karpathy-skills/CLAUDE.md is reference guidance about assumptions, simplicity, focused edits and verifiable goals. Incorporate the useful principles rather than replacing global instructions.
+React review guidance is available through the connected Vercel plugin in this session. That is not proof that the full standalone vercel-react-best-practices package is installed. Keep the full performance guide as an optional source; local Mac installation is unverified.
+
+TOOLS THAT NEED AN APPLICATION
+React Doctor is a CLI with an agent integration. Its documented entry points include npx react-doctor@latest and npx react-doctor@latest install. Run it in the actual React project when that check is useful. This setup does not install CI hooks or scan a nonexistent application.
+Cloudflare web-perf can inspect source without trace tools. Live measurements need the relevant browser/performance capability and a running target page. The earlier Mac inventory listed it, but its current local health and trace capabilities are unverified here.
+web-ai-sdk is an application SDK for supported browser AI surfaces, not a generic coding-agent skill or a substitute for Vercel AI SDK. Install only when the product requires its particular browser capabilities.
+deepsec is a security investigation harness. The vendor documents potentially multi-day scans for large repositories. Keep it outside the short default loop; select it for an explicitly scoped security investigation with the required runtime.
+gstack is a broader workflow with host/runtime dependencies, setup side effects and release operations. Keep it optional. Product framing and scope-reduction ideas are reflected in the project guide; no global gstack installer, hooks or browser replacement runs here.
+
+PRIMARY SOURCES
+https://github.com/mattpocock/skills
+https://github.com/t3dotgg/tstack
+https://github.com/heydamir/unslop
+https://github.com/multica-ai/andrej-karpathy-skills
+https://github.com/millionco/react-doctor
+https://github.com/garrytan/gstack
+https://www.ui-skills.com/skills
+https://web-ai-sdk.dev/
+https://github.com/cloudflare/skills/tree/main/skills/web-perf
+https://vercel.com/blog/introducing-react-best-practices
+https://vercel.com/blog/introducing-deepsec-find-and-fix-vulnerabilities-in-your-code-base
+
+STATUS RULES
+Imported files and executable dependencies are different facts. Report verified saves only after persistence succeeds. Do not label an uninspected Mac installation as missing or installed. The browser's ChatGPT host restriction remains binding; using another surface to bypass it is not an allowed setup method.

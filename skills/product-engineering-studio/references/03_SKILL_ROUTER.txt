@@ -1,0 +1,48 @@
+SKILL ROUTER
+Reference index, not an installed skill pack.
+Use the installed version's actual instructions and dependencies. Upstream descriptions guide selection; they do not establish local capabilities.
+
+DEFAULT
+Choose one main procedure for the current problem. Add a specialist only for a distinct concern. Required helper skills remain required. Avoid running a full product, design, architecture and review pipeline on every small change.
+
+OBSERVED IN THE USER-SHARED CODEX INVENTORY ON 2026-11-07
+Names include grill-with-docs, grilling, domain-modeling, codebase-design, tdd, diagnosing-bugs, prototype, code-review, interface-review, better-interface, the better-* helpers, vibe-ui, vibe-security, supabase-postgres-best-practices, modern-web-guidance and handoff.
+This is a shared snapshot, not a live health check. Full local skill content was not copied into this bundle. Local modifications may be intentional.
+
+CORE CHOICES
+- Unclear feature inside a repository: grill-with-docs. Resolve scope; cap the initial question round. It uses grilling and domain-modeling.
+- Idea clarification outside a repository: use the intake procedure here; grill-me is optional if actually installed.
+- Ambiguous terms or roles: domain-modeling. Define the terms affecting this change.
+- Interface or module design: codebase-design. Prefer a simple caller contract.
+- Defined behavior: tdd. Agree the meaningful testing boundary and build in small behavior steps.
+- Difficult reproducible failure: diagnosing-bugs. Find evidence before fixing.
+- One unsettled UI/state decision: prototype. Its result answers a question; check what must be hardened before final delivery.
+- Finished code: code-review. Its documented default uses a committed range and a supplied base. A scope override must be explicit and honored; otherwise snapshot the intended work before review. Include new files.
+- Changed UI: interface-review. It uses better-interface and relevant better-* domain rules. Preserve those supporting directories.
+- UI intent: local vibe-ui, if its content is available. Read it, then use the judgment principles in the quality guide. Do not claim this bundle contains the exact original.
+- Sensitive data/auth flow: local vibe-security where available, plus applicable checks from the quality guide.
+- SQL/Postgres work: supabase-postgres-best-practices when installed. It is a database guide, not evidence that Supabase is the chosen platform.
+- Browser/frontend detail: modern-web-guidance only for the specific concern and actual runtime.
+- Context transfer: handoff when the session needs a durable summary.
+
+LARGER WORK
+to-spec, to-tickets and wayfinder are conditional tools for work that outgrows a single small session. Do not create a ticket ceremony for a one-hour change. setup-matt-pocock-skills is a deliberate repository setup step, not a task to repeat on every request.
+
+T3 TSTACK, OPTIONAL
+sol-loop provides a Sol review route; rehearse its actual prerequisites. For Sprint use, explicitly request one round or a five-minute budget rather than its broader upstream default. Missing provider access means use a normal review.
+council adds cross-provider review overhead. full-stop and full-send perform release/PR workflows. Keep them out of ordinary local iterations; select shipping only when the user requests it.
+
+GSTACK, OPTIONAL
+office-hours can challenge product framing. plan-ceo-review can hold or reduce scope. Use the business lens when product uncertainty is the bottleneck.
+Upstream documentation checked on 2026-11-07 says standalone plan-eng-review was removed on November 6; architectural review remains within autoplan. Do not prescribe obsolete commands. Verify the installed version. Do not preload autoplan or nest gstack shipping inside another execution loop.
+
+FALLOW, OPTIONAL
+Use for structural questions in existing JS/TS code: changed-code risk, duplication, cycles, complexity or unused code. Analyze the relevant diff and inspect findings before removing code. It complements runtime checks.
+A skill install does not establish that the Fallow executable exists. Check prerequisites. Avoid unsolicited hooks, CI reconfiguration or broad cleanup.
+
+MOBBIN
+Use the connected tool for one specific screen, flow or section. Follow its current search instructions. If unavailable, state that and proceed with the supplied references and own design rationale. Never invent returned references.
+
+INVOCATION
+In Codex CLI/IDE, explicit invocation uses $skill-name or the /skills picker where supported. Other clients and plugins have their own namespaces. Check the exact installed name before issuing a command.
+Do not interpret a suggested command in a reference as permission to install, publish or change account settings.

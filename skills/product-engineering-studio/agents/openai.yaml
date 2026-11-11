@@ -1,0 +1,14 @@
+interface:
+  display_name: Product Engineering Studio
+  short_description: Scope, design and deliver small verified product changes
+  default_prompt: Use $product-engineering-studio to clarify this problem, design
+    the smallest useful solution and prepare the first verified delivery slice.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

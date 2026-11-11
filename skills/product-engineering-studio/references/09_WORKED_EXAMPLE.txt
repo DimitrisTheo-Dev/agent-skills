@@ -1,0 +1,58 @@
+WORKED EXAMPLE
+Synthetic planning example, not a real customer brief or an executed implementation.
+
+INPUT
+"Make a course document assistant so employees can ask questions."
+Mode: Sprint, 120 minutes. No repository inspected yet.
+
+INITIAL FRAME
+Outcome: an employee gets a useful answer grounded in an allowed course document.
+Consequential questions:
+1. Are documents supplied in the exercise, or must upload/ingestion be built?
+2. Is access restricted by user/team, or is the prototype using one explicitly public fixture?
+3. Is a live model call required, and are credentials/environment already available?
+
+Reversible assumption for a demonstration: one provided text document, one question flow, no new identity platform. This assumption does not justify exposing private documents or skipping an existing permission model.
+
+AC1: A learner can submit a question and see pending/result states.
+AC2: A supported answer identifies its evidence.
+AC3: A question absent from the document produces an explicit unsupported outcome.
+AC4: A provider/request failure produces recoverable feedback and preserves the question.
+AC5: If private user/team access is required, unauthorized retrieval is blocked before model context is assembled.
+
+DESIGN
+Reuse the repository stack. The server validates the request, selects allowed material, calls a small answer interface and validates the result. The UI renders answer/source/unsupported/error states. A one-document text fixture can settle the flow without introducing a vector database; larger corpora may require retrieval after actual requirements are known.
+
+One answer contract:
+result = answered {text, sourceReferences}
+      or unsupported {reason}
+      or failed {safeMessage}
+The server/provider adapter implements the contract. The model is not the authorization boundary.
+
+Mermaid representation:
+flowchart TD
+  U["Question form"] --> A["Server validation"]
+  A --> P["Allowed document material"]
+  P --> M["Answer provider"]
+  M --> V["Validated result"]
+  V --> U
+
+FIRST CODEX PACKET
+Outcome: make the question/answer flow runnable for one supplied document.
+Context: repository paths and commands are unknown. Inspect applicable instructions, package scripts and the relevant UI/server path before editing. Reuse the stack.
+Scope: one form and server handler with a typed answer interface. Use a deterministic provider fixture for the first checkpoint only if the brief permits it; label it clearly. Keep retrieval/model/auth details behind the required contract rather than inventing an entire platform.
+Acceptance: AC1 and the rendered branches of AC3/AC4. If existing auth applies, preserve it.
+Procedure: use installed tdd for meaningful answer-state/request behavior. Consult local vibe-ui only for the screen's hierarchy and states.
+Checks: discover the repository's focused test/type commands, start the app and inspect the question flow with success and failure fixtures.
+Checkpoint: stop when this slice runs and checks have actual results. Return changed paths, baseline/candidate revision, evidence, mocks and next slice. Do not claim a live-model integration.
+
+NEXT DELTA AFTER ACTUAL RESULTS
+Connect the required live provider or ingestion path, keeping the accepted interface. Verify grounded/unsupported/failure examples and permission boundaries. Replace fixture-only completion claims with observed live results.
+
+TABLETOP CHECKS OF THE WORKFLOW
+A. Simple bug report: go directly to reproduction and focused fix; no broad product workshop.
+B. Static UI/GIF reference: describe observed states, mark unobservable timing/behavior as unknown; do not invent a database.
+C. Private multi-tenant assistant: make AC5 essential; do not defer authorization merely to fit the demonstration budget.
+D. Missing Sol or Mobbin: proceed with the normal verification/reference path and label capability unavailable.
+E. Repeated failed fix: collect new evidence rather than replaying the same prompt.
+These are reasoning exercises, not measured model evaluations.
