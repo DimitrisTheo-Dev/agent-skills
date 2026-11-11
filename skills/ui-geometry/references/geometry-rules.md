@@ -6,7 +6,7 @@ Use the existing scale if coherent. If absent, a starting vocabulary in CSS pixe
 
 Assign roles, not random increments: icon-label gap, label-helper gap, field gap, group gap, surface inset, section gap and page gutter. For example, a compact field might use 4 between label and control, 8 for a related hint, 16 between fields and 32 between sections. These are hypotheses; content and interaction determine actual relationships.
 
-Make within-group distance perceptibly smaller than between-group distance. Use dividers only where space or hierarchy cannot adequately communicate the relationship. Maintain an intentional rhythm across a full viewport, including top and bottom edges.
+Make within-group distance perceptibly smaller than between-group distance. Use dividers only where space or hierarchy cannot adequately communicate the relationship. Maintain an intentional rhythm across a full viewport, including top and bottom edges. Check the whole group silhouette: a short value with a distant action or a footer pushed away by auto margins can feel disconnected despite using valid spacing tokens. Let content and grouping determine the footprint before stretching controls to fill their container.
 
 Choose compact, comfortable or spacious for the task, then specify actual values. An expert table can be compact while its touch toolbar remains comfortable. Do not make mobile a scaled-down desktop. Adjust gutters, group arrangements and optional metadata before reducing essential text.
 
@@ -17,6 +17,8 @@ A practical initial control height might be 32–36px for compact pointer use, 4
 WCAG 2.2 AA target sizing generally calls for 24 by 24 CSS pixels or a defined exception, including spacing. The enhanced criterion uses 44 by 44. Do not claim every 44px-looking button passes: measure the actual hit region and neighboring targets. A visually small icon can have a larger hit area when that area does not overlap other actions.
 
 Keep a consistent optical relationship between icon size, stroke, text and control height. Use one compatible icon set where available. Check icons at the rendered size; equal viewboxes do not guarantee equal visual mass.
+
+Separate functional glyphs, authentic identity assets and decorative illustration. Use the existing icon family for familiar actions; preserve a real product or file-type asset when recognition depends on it. Do not approximate a known logo or manufacture a colorful app tile for every ordinary item. For a short text navigation list, omission may communicate more clearly. A new brand mark is a separate, intentional design decision. Record asset source/license when introducing external artwork, and inspect actual rendering rather than substituting an unreliable Unicode symbol.
 
 ## Corners and nesting
 

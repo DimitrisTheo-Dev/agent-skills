@@ -35,7 +35,7 @@ For web AA text contrast use 4.5:1 for normal text and 3:1 for qualifying large 
 Close when color communicates its roles and applicable measured contrast passes. No universal accent count, hue ban or obligatory cream/green palette.
 
 ## Components
-Inspect every family present, including shared hit regions, icon stroke/optical weight, label alignment, corners, outlines and depth. Icons need known meaning or visible text; meaningful icon-only controls need accessible names. Verify real assets resolve, crops preserve the subject and dimensions reserve space. Distinguish actual product evidence from illustration. Show product screenshots large enough to read when comprehension depends on them.
+Inspect every family present, including shared hit regions, icon stroke/optical weight, label alignment, corners, outlines and depth. Icons need known meaning or visible text; meaningful icon-only controls need accessible names. Check provenance and role: distinguish an authentic identity asset from a functional glyph or invented decoration. Remove redundant glyphs rather than giving every item a colored tile. Compare perceived affordance with behavior: static copyable text should not accidentally resemble a placeholder input, and capability descriptions should not look like completed tasks. Verify real assets resolve, crops preserve the subject and dimensions reserve space. Distinguish actual product evidence from illustration. Show product screenshots large enough to read when comprehension depends on them.
 
 | Family | Required inspection when present |
 | --- | --- |

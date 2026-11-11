@@ -1,7 +1,7 @@
 # Choose the stronger interface
 
 ## Carry the user's taste forward
-Use stated preferences as evidence: native-feeling control, deliberate density, expressive but coherent visuals, readable hierarchy and purposeful motion can coexist. Preserve concrete accepted/rejected examples and the reasons in the project's design contract. Do not infer a favorite palette from an inspiration screenshot. Do not require a new taste questionnaire for each task.
+Use stated preferences as evidence: native-feeling control, deliberate density, expressive but coherent visuals, readable hierarchy and purposeful motion can coexist. Preserve concrete accepted/rejected examples and the reasons in the project's design contract. Do not infer a favorite palette from an inspiration screenshot. Do not require a new taste questionnaire for each task. Record the exact region, the accepted/rejected relationship, the reason and the scope of the preference. An agent review does not establish owner approval. If later feedback rejects a reviewed design, reopen that finding and carry the correction into the next render; do not defend it with the earlier score or reviewer agreement.
 
 ## Make alternatives comparable
 For a new direction, create two or three small working compositions of the same important screen and real content. Change information order, spatial organization, visual voice or interaction, not just colors. Include a narrow and a wide render and one important transition. Existing products and focused fixes retain their approved direction unless a structural choice is genuinely open.

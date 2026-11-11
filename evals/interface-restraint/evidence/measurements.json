@@ -1,0 +1,26 @@
+{
+  "method": "Read-only browser layout/computed style inspection and operated CSS-width harness",
+  "workspace": {
+    "width": 768,
+    "height": 382
+  },
+  "previous_workspace": {
+    "width": 920,
+    "height": 491
+  },
+  "copy": {
+    "width": 83,
+    "height": 32
+  },
+  "copy_transition_ms": {
+    "surface": 130,
+    "transform": 80
+  },
+  "mobile_copy_min_height_css": 44,
+  "horizontal_overflow": {
+    "320": false,
+    "640": false,
+    "641": false
+  },
+  "runtime_reduced_motion": "unverified"
+}

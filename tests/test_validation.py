@@ -21,6 +21,14 @@ class ValidationTests(unittest.TestCase):
     def test_valid_minimal_portable_skill(self):
         self.assertEqual(validator.validate_repo(self.root), [])
 
+    def test_installed_ui_dependencies_are_not_repository_documentation(self):
+        package = self.root / "evals/ui/node_modules/package"
+        package.mkdir(parents=True)
+        (package / "README.md").write_text("[upstream guide](missing.md)\n")
+        self.assertEqual(validator.validate_repo(self.root), [])
+        (self.root / "evals/ui/README.md").write_text("[our guide](missing.md)\n")
+        self.assertTrue(any("evals/ui/README.md" in e for e in validator.validate_repo(self.root)))
+
     def test_metadata_name_must_match_installable_folder(self):
         file = self.skill / "SKILL.md"
         file.write_text(file.read_text().replace("name: example", "name: different"))

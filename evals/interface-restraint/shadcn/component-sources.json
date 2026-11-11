@@ -1,0 +1,34 @@
+{
+  "button": {
+    "url": "https://github.com/shadcn-ui/ui/blob/main/apps/v4/registry/new-york-v4/ui/button.tsx",
+    "blob_sha": "e3345d985d14c33e3cb9d8c45cf973807326c944"
+  },
+  "input": {
+    "url": "https://github.com/shadcn-ui/ui/blob/main/apps/v4/registry/new-york-v4/ui/input.tsx",
+    "blob_sha": "ddb9b315e34245addded54b1848bb32c80c418cc"
+  },
+  "tabs": {
+    "url": "https://github.com/shadcn-ui/ui/blob/main/apps/v4/registry/new-york-v4/ui/tabs.tsx",
+    "blob_sha": "6e174747a509f8a906ce9cfb27bc2c7603f2b6b5"
+  },
+  "tooltip": {
+    "url": "https://github.com/shadcn-ui/ui/blob/main/apps/v4/registry/new-york-v4/ui/tooltip.tsx",
+    "blob_sha": "c8c47cb146e6167c68f74f8a2f2f0c7c2d06ec72"
+  },
+  "dialog": {
+    "url": "https://github.com/shadcn-ui/ui/blob/main/apps/v4/registry/new-york-v4/ui/dialog.tsx",
+    "blob_sha": "ccadf4a85bf6398d52314b112600f796fc97db97"
+  },
+  "collapsible": {
+    "url": "https://github.com/shadcn-ui/ui/blob/main/apps/v4/registry/new-york-v4/ui/collapsible.tsx",
+    "blob_sha": "2f7a4e7fc64a8874373c1584646a63f28cd63c47"
+  },
+  "toggle-group": {
+    "url": "https://github.com/shadcn-ui/ui/blob/main/apps/v4/registry/new-york-v4/ui/toggle-group.tsx",
+    "blob_sha": "a227abc4c6d630498bed98bd83d10c7fbe3360fc"
+  },
+  "toggle": {
+    "url": "https://github.com/shadcn-ui/ui/blob/main/apps/v4/registry/new-york-v4/ui/toggle.tsx",
+    "blob_sha": "0291f01cff0429bbf2fb3575a15867556cc88a89"
+  }
+}

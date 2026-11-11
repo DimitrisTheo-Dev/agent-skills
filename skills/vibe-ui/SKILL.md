@@ -47,6 +47,14 @@ For Shape work, read [direction selection](references/direction-selection.md) be
 
 A screenshot supports observations about visible hierarchy, grouping, and styling. It does not establish an exact font, CSS measurements, interaction behavior, accessibility conformance, or conversion performance. Label estimates and distinguish them from inspected source or measured behavior.
 
+## Check comprehension before polishing
+
+On the first rendered viewport, identify the product/task, current object and next action without the builder's explanation. This is a reviewer heuristic, not measured user comprehension. When these are unclear, change grouping, order or prominence before adding help text or animation.
+
+Audit visible copy by its job: identify, help choose, name an action, report state, explain a consequential requirement, or recover. Keep necessary labels and help beside the decision they support. Remove repeated introductions, ornamental counters, corner slogans and internal design rationale when they serve none of those jobs. Expressive editorial copy can earn space on a persuasive page; an operating screen needs immediate access to its objects and actions.
+
+Scale search and other controls to their role in the task. A catalog's search may be compact and secondary; a search-first product may make it the primary region. Preserve usable hit areas and readable input text. Judge the hierarchy again after subtraction, so removing text does not remove meaning.
+
 ## Keep the design specific
 
 Use real content, deliberate typography, authentic imagery, and selective emphasis to distinguish the product. Brand expression can be concentrated in a few places while controls stay predictable. Whitespace and density should serve the task; neither minimalism nor decoration is an objective by itself.
