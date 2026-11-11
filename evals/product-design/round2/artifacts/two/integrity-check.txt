@@ -1,0 +1,3 @@
+PASS: skills.js is a lossless serialization of the four supplied JSON records, including descriptions, instructions, invocation, install, setup, sources and two example files.
+Command: Python json comparison against the supplied input.
+Browser clipboard checks: $product-ux-writing and ln -s "$PWD/skills/vibe-ui" "$HOME/.agents/skills/vibe-ui" matched exact strings.

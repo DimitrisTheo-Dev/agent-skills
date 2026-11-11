@@ -1,0 +1,38 @@
+[
+  {
+    "background": "rgb(245, 244, 238)",
+    "foreground": "rgb(24, 61, 49)",
+    "label": "body",
+    "ratio": 10.89
+  },
+  {
+    "background": "rgb(245, 244, 238)",
+    "foreground": "rgb(91, 107, 97)",
+    "label": "muted",
+    "ratio": 5.12
+  },
+  {
+    "background": "rgb(252, 252, 248)",
+    "foreground": "rgb(91, 107, 97)",
+    "label": "detail muted",
+    "ratio": 5.49
+  },
+  {
+    "background": "rgb(252, 252, 248)",
+    "foreground": "rgb(28, 101, 75)",
+    "label": "action",
+    "ratio": 6.78
+  },
+  {
+    "background": "rgb(25, 61, 49)",
+    "foreground": "rgb(240, 245, 223)",
+    "label": "command",
+    "ratio": 10.74
+  },
+  {
+    "background": "rgb(245, 244, 238)",
+    "foreground": "rgb(123, 140, 125)",
+    "label": "control border",
+    "ratio": 3.24
+  }
+]

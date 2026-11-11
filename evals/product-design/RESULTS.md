@@ -1,8 +1,8 @@
-# Catalog pilot results
+# Catalog comparison results
 
-**Status: diagnostic comparison, not a demonstrated quality win.** The revised workflow produced a design contract and two structural proposals, and an independent reviewer preferred its visual presentation. The same reviewer narrowly preferred the baseline for the complete task. Neither output establishes a compelling signature moment. Owner preference, next-day recall and a second unlike product remain unassessed.
+**Status: diagnostic comparisons, not proof of reliable design quality.** Two paired builds exercised the same real catalog content. The first pair restricted browser access during building; a second pair corrected that limitation. Results below distinguish actual interaction evidence, builder judgments and independent model review. Owner preference, next-day recall and transfer to an unlike product remain unassessed.
 
-## Setup
+## First pair: setup
 
 Run date: 2026-11-11. Two fresh agents received the same task, four-skill content snapshot, dependency-free implementation constraint and 12-minute ceiling. Both inherited the same parent model/effort configuration; the exact backend model identifier was not exposed. Each had one build attempt and zero owner design corrections. A status-only reminder was sent to the candidate after its recorded end. The builders could not see the scoring rubric or were instructed not to inspect each other's artifacts. They had separate output directories on a shared filesystem, not OS-enforced isolation.
 
@@ -38,8 +38,45 @@ Clipboard denial/retry was covered by deterministic stubs, not real browser perm
 
 The independent reviewer received anonymized screenshot labels and only the permitted implementation files. It did not receive builder narratives, skill versions or the desired verdict, and did not operate the interfaces. Its preference is a model judgment, not the owner's. Screenshot scroll positions differ, so above-the-fold counts were not treated as comparable measurements.
 
-## Consequences for the workflow
+## First-pair consequences
 
-Keep the revised instructions explicitly provisional. They improve the stated process and evidence discipline; this run does not show that they reliably produce superior design. The next valid comparison must give each builder equal access to rendering during exploration and refinement, then include an unlike product and owner preference. Do not replace that evidence with additional adjectives or a larger checklist.
+Keep the revised instructions explicitly provisional. They improve the stated process and evidence discipline; this run does not show that they reliably produce superior design. The second pair below gives each builder equal access to rendering during exploration and refinement. An unlike product and owner preference are still needed. Do not replace that evidence with additional adjectives or a larger checklist.
 
-The source review also found a concrete routing conflict: Studio sent direction and implementation craft to Vibe UI while saying to use review mode. The final router now selects brief/build/review according to the task, reserving independent review for assessment. The six documented scope regression requests are prepared but were not all executed; no behavioral pass is claimed for them.
+The source review also found a concrete routing conflict: Studio sent direction and implementation craft to Vibe UI while saying to use review mode. The final router now selects brief/build/review according to the task, reserving independent review for assessment.
+
+## Second pair: browser access during the build
+
+Two new agents used the same input content and inherited model/effort configuration, with one attempt and a 16-minute ceiling each. They had equal access to the existing preview, separate browser tabs and output directories, no other outputs or rubric, and no owner design corrections. Shared storage is not OS-enforced isolation. The exact backend model identifier was not exposed. The candidate used the final routed workflow at `a8687c05b39f5b735fa4b5adfd20b0109120c87f`; [hashes](snapshots.json) preserve the actual inputs and outputs.
+
+| Run | Actual interval, UTC | Runtime | Preserved output |
+| --- | --- | --- | --- |
+| One: baseline | 14:03:26–14:17:59 | 14m 33s | [Catalog](round2/artifacts/one/index.html), [builder record](round2/artifacts/one/BUILD.md) |
+| Two: candidate | 14:03:43–14:18:32 | 14m 49s | [Catalog](round2/artifacts/two/index.html), [builder record](round2/artifacts/two/BUILD.md), [directions](round2/artifacts/two/exploration.html), [design contract](round2/artifacts/two/DESIGN.md) |
+
+Both builders observed search/filtering, source/examples, exact clipboard values, theme changes, narrow browse/detail navigation and keyboard controls. Both exercised clipboard-failure recovery through an explicit rejection fixture, not real permission denial. Baseline measured CSS widths 390/768/1440; candidate measured 390/760/1024/1440. Their document client and scroll widths matched in the measured states. These are CSS iframe checks in Chrome, not physical mobile-device tests. The candidate additionally retained computed color-pair measurements and three repeated copy activations. Neither measured interaction latency or long-term appeal.
+
+The lead independently reran JavaScript syntax checks and compared every bundled input field with the frozen dataset: both matched exactly. Browser observations in this round come from the builders, with screenshots retained for independent visual assessment; the lead did not repeat every interaction. Both builders replaced unsupported arrow glyphs after viewing the page, showing a concrete benefit of rendering during implementation.
+
+[Baseline desktop](round2/evidence/one-desktop.jpg) · [Candidate desktop](round2/evidence/two-desktop.png) · [Baseline narrow](round2/evidence/one-390.jpg) · [Candidate narrow](round2/evidence/two-390.png) · [Rendered alternatives](round2/evidence/two-directions.png)
+
+The candidate compared two compositions on the same content, selected the reference index and recorded its reasons. Its choice of cream/forest/monospace remains similar to earlier outputs. That is an observation, not proof of a fixed house style. The comparison does not establish that the selected direction is the best possible design or that a utility catalog needs spectacle.
+
+### Independent assessment of the second pair
+
+A new reviewer inspected the candidate first, then the baseline, using anonymized screenshots and only each implementation's index and application script. It did not receive skill versions, builder narratives, prior results or a desired verdict. It did not operate either interface. This counterbalances the first review's order; it is still one model judgment, not owner preference or user research.
+
+The reviewer preferred **the baseline for the overall task by a modest margin, and for visual craft more clearly**. Its compact mobile summaries expose more of the collection, and its installation-then-invocation sequence fits both commands in the supplied detail capture. The serif headings, orange accents and index structure were judged more individually authored. Candidate strengths include source provenance with commit information, example-file copying and addressable sections. Its long introduction and verbose mobile rows make discovery slower in the reviewer's walkthrough; its search also excludes full instruction content, which the baseline searches.
+
+The baseline's largest identified weakness is provenance and section navigation: it does not expose the source commit identifier in its source view, and selected tabs are not directly addressable. Neither output demonstrates a credible wow moment in the supplied evidence. The baseline shows coherent product character; the candidate's technical-reference styling was judged less distinctive. Exact source fidelity and actual copy outcomes come from the separate executed checks, not this screenshot review.
+
+### Adoption decision
+
+**Do not promote this candidate as the default or claim a quality improvement.** The approved plan requires better output before adoption. The first reviewer preferred candidate presentation but baseline task fit; the second preferred baseline on both. Owner preference, memorable value and an unlike-product comparison are still missing. The candidate remains in a draft pull request; the installed Studio default was restored and the trial Vibe UI was disabled.
+
+The next revision should investigate why extra exploration and documentation did not improve the selected output. The observed gaps are excessive mobile introduction/row density and weak differentiation between directions. Compare the real task at the same viewport before spending effort on the contract. Preserve useful provenance and recovery work. Do not turn one catalog's result into a universal ban on headings, prose, cards or colors, and do not keep adding criteria until a model agrees.
+
+## Scope regression
+
+A fresh agent received the final workflow and only a localized button-clipping fixture with approved appearance and behavior. It changed the fixed width and nowrap/clipping rules, preserved the palette, type and click handler, and did not start a redesign or variant exercise. The lead inspected the exact diff. Browser evidence confirmed the full label and original click response at the default desktop viewport. The agent calculated that it fits 390px but did not render that viewport, so that part remains unverified. [Record and limitation](regression-fix/RESULT.md).
+
+The other five scope cases are prepared, not executed. No full regression pass is claimed.
