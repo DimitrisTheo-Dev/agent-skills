@@ -1,0 +1,4 @@
+interface:
+  display_name: "UI UX Patterns"
+  short_description: "Choose layouts and flows that fit the user task"
+  default_prompt: "Use $ui-ux-patterns to choose an effective layout and interaction pattern for this task, with concrete tradeoffs."

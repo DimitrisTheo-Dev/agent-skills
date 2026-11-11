@@ -25,7 +25,7 @@ For UI, security, data, scaling or AI behavior, read only the relevant section o
 
 ## 3. Select a procedure
 
-Use [Skill Router](references/03_SKILL_ROUTER.txt) for this phase and [Tool Selection](references/TOOLS_SELECTION.txt) for the requested external tools. Pick one main procedure and a conditional specialist, preserving required helpers.
+Use [Skill Router](references/03_SKILL_ROUTER.txt) for this phase and [Tool Selection](references/TOOLS_SELECTION.txt) for the requested external tools. Pick one main procedure and only the relevant specialists, preserving required helpers. For UI, Vibe UI coordinates layout/UX, typography, color, geometry and motion through five focused helpers. Use one shared design contract and one final quality gate, not five competing pipelines. Small fixes retain the existing direction.
 
 In a short sprint, constrain planning to questions that affect the chosen outcome. The user's scope and timing override broader default exploration. Use tdd for meaningful behavior; use a reproduction-driven approach for defects. Select sol-loop only when its required model route is available and its budget is explicit.
 

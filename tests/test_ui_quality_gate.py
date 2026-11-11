@@ -96,6 +96,36 @@ class QualityRecordTests(unittest.TestCase):
         self.report['findings'] = [{'id': 'F1', 'location': 'primary action', 'observation': 'Not reachable', 'severity': 'major', 'status': 'resolved', 'resolution': 'Edited code'}]
         self.assertTrue(any('recheck evidence' in e for e in self.errors()))
 
+    def resolved_finding(self, areas, evidence):
+        self.report['findings'] = [{'id': 'F1', 'location': 'toolbar',
+            'observation': 'Reported defect', 'severity': 'major',
+            'status': 'resolved', 'resolution': 'Rechecked corrected result',
+            'areas': areas, 'evidence': evidence}]
+
+    def test_rendered_finding_cannot_close_with_source_only(self):
+        self.report['evidence'].append({'id': 'edit', 'path': 'view.html',
+            'sha256': self.digest('view.html'), 'kind': 'source'})
+        self.resolved_finding(['spacing'], ['edit'])
+        self.assertTrue(any('rendered recheck' in e for e in self.errors()))
+
+    def test_behavior_finding_cannot_close_with_measurement_only(self):
+        self.resolved_finding(['accessibility'], ['geometry'])
+        self.assertTrue(any('operated recheck' in e for e in self.errors()))
+        self.report['findings'][0]['evidence'].append('journey')
+        self.assertEqual(self.errors(), [])
+
+    def test_resolved_finding_requires_real_affected_areas(self):
+        self.resolved_finding([], ['geometry', 'journey'])
+        self.assertTrue(any('affected areas' in e for e in self.errors()))
+        self.report['findings'][0]['areas'] = ['invented']
+        self.assertTrue(any('must be inspected' in e for e in self.errors()))
+
+    def test_mixed_finding_requires_both_recheck_modalities(self):
+        self.resolved_finding(['spacing', 'interaction'], ['journey'])
+        self.assertTrue(any('rendered recheck' in e for e in self.errors()))
+        self.report['findings'][0]['evidence'].append('geometry')
+        self.assertEqual(self.errors(), [])
+
     def test_accessibility_pass_requires_operated_evidence(self):
         self.report['scope'] = 'fix'
         self.report['areas'] = [{'id': 'accessibility', 'status': 'pass', 'observation': 'Source inspected, keyboard not operated.', 'evidence': ['geometry']}]

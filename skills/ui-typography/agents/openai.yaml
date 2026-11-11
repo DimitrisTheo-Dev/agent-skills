@@ -1,0 +1,4 @@
+interface:
+  display_name: "UI Typography"
+  short_description: "Choose type roles, hierarchy, and readable rhythm"
+  default_prompt: "Use $ui-typography to choose and apply a typography direction for this product and its actual content."

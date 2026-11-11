@@ -1,12 +1,15 @@
 ---
 name: vibe-ui
 description: Design, build, and polish distinctive interfaces suited to their product and audience. Use for UI art direction, visual redesigns, screenshot-inspired interfaces, typography, layout, or visual polish. Not for backend-only work or unrelated rebrands.
-license: MIT
 ---
 
 # Vibe UI
 
 Choose a visual direction from the user's task, real content, and brand. Use accessible references to study specific relationships; supplied palettes are examples, not a selection menu. When references are unavailable, ground the direction in the product and label that limit. Honor explicit requests for faithful recreation.
+
+## Coordinate the design
+
+Use [specialist orchestration](references/specialist-orchestration.md) to route unresolved choices to ui-ux-patterns, ui-typography, ui-color, ui-geometry and ui-motion. Own one coherent direction and shared design contract. Load only affected specialists for a fix; resolve all five concerns for a new core flow. Their shortlists feed the same two or three direction renders, not separate rounds of variants. UI Quality Gate remains the single final inspection loop.
 
 ## Choose the mode
 
@@ -38,7 +41,7 @@ For Shape work, read [direction selection](references/direction-selection.md) be
 ## Design and execute
 
 1. **Establish context.** Trace the requested view through current design guidance, theme/tokens, shared components, and their actual consumers. Prefer the governing source over isolated styling; inspect content, assets/fonts, framework conventions, and preview/test tools. Identify the actual audience, main task, success moment, trust requirements, and fixed constraints. Classify the view by its job: persuade, operate, read, or showcase. Different views of one product may need different visual registers. Use stated assumptions where details are missing; ask only when a missing detail would invalidate the result. Do not infer taste from age or industry alone.
-2. **Choose the direction.** State briefly how the design should feel, what it must communicate, and which action matters. Select type roles, color roles, density, spacing relationships, imagery, and motion as a coherent system. Explain color roles, proportions and relationship to imagery on actual screens using the craft reference. Record decisions in the existing design contract or DESIGN.md; keep tokens/components as the source of implementation values. Where identity matters, derive a recognizable detail from the product or real content. Dense utility software can express its identity through information design. Keep functional controls familiar.
+2. **Choose the direction.** State briefly how the design should feel, what it must communicate, and which action matters. Select type roles, color roles, density, spacing relationships, imagery, and motion as a coherent system. Use the relevant specialists to resolve concrete role values and constraints; reconcile them on actual screens through the craft reference. Record decisions in the existing design contract or DESIGN.md; keep tokens/components as the source of implementation values. Where identity matters, derive a recognizable detail from the product or real content. Dense utility software can express its identity through information design. Keep functional controls familiar.
 3. **Implement the requested scope.** Before changing existing UI, establish an observable problem, its user or brand impact, and the smallest supported fix. Without evidence, leave cosmetic styling unchanged. Reuse suitable components, tokens, fonts, and assets. Design from actual messages, product examples, and actions. Preserve business logic, backend contracts, authentication, navigation semantics, and unrelated views. Do not invent testimonials, customer logos, metrics, credentials, features, or product screenshots. Add dependencies only for a concrete need the existing stack cannot meet. Include coherent type, spacing, responsive composition, relevant states, immediate feedback and purposeful motion in the first complete flow.
 4. **Inspect the result.** When rendering tools are available, review the actual composition and behavior at representative widths. Substantial responsive work should include mobile and desktop views. Recompose for mobile reading and input rather than merely shrinking the desktop layout. Use the visual QA refinement budget and separate correctness, usability, craft and character. Prioritize the largest observed gap, apply supported corrections and inspect again; change the diagnosis when two rounds leave the same weakness. A clean checklist does not establish a compelling result. When tools are unavailable, review the source, artifact, or description actually supplied. Distinguish user-reported facts from inspected evidence and name the unverified visual behavior.
 
@@ -53,7 +56,7 @@ Judge gradients, cards, illustration, glass, and motion by their product purpose
 ## Read details when needed
 
 - For screenshots, visual references, or reference-free discovery, read [reference intelligence](references/reference-intelligence.md).
-- When choosing or refining type, spacing, color, imagery, or motion, read [art direction and craft](references/art-direction-and-craft.md).
+- For coherent art direction, imagery and signature moments, read [art direction and craft](references/art-direction-and-craft.md).
 - When adapting a visual direction to a different task or audience, read [audience translations](references/audience-translations.md).
 - Before reviewing a rendered implementation or substantial polish, read [visual QA](references/visual-qa.md).
 - Before applying external detail or motion recipes, read [source notes](references/source-notes.md) for reviewed revisions and limits.

@@ -5,7 +5,7 @@ A. DEPTH AND BUDGET
 Fix: a defect or small tweak; preserve established decisions.
 Extend: a screen or flow in an established product; explore only unsettled decisions.
 Shape: a new product, new direction or core journey; explore before locking.
-Choose the lowest depth that fits. State the scope and a refinement budget in rounds, reserving time for the first complete flow, interaction refinement and verification. If unspecified, begin with two critique/correction rounds for Shape and one for Extend, then reassess against the user's scope. A budget bounds effort; it proves nothing about quality. Keep open weaknesses visible when it is exhausted. User constraints take precedence.
+Choose the lowest depth that fits. State the scope and a refinement budget in rounds, reserving time for the first complete flow, interaction refinement and verification. If unspecified, use two critique/correction rounds for Shape and one for Extend as an initial diagnostic checkpoint, then reassess against the user's scope. These defaults are not a hard stop or a quality pass. An explicit user budget is a hard limit: preserve open findings and return blocked/unverified if it prevents completion. User constraints take precedence.
 
 B. READ THE PRODUCT
 Before seeking references, state five facts or labelled assumptions and their design implications: purpose, audience, actual content, personality and platform/input/frequency. Ground major choices in these facts.
@@ -51,3 +51,6 @@ I. CONTRACT AND LEARNING
 At selection, update the existing design contract or create DESIGN.md in the product repository. Keep: product reading; chosen thesis and reasons; rejected alternatives; references and translations; color roles/proportions; typography, spacing, materials and writing; interaction/motion and relevant states; requirements/conventions/hypotheses; moment experiment and results; consequential exceptions; decisions and scoped lessons.
 Keep implementation values in their governing tokens/components and link to them instead of maintaining conflicting copies. Preserve current decisions and evidence rather than the conversation transcript.
 A lesson starts with product scope. Widen guidance only with repeated evidence across unlike products; label preferences as defaults with reasons. Never generalize a project's palette, typeface or motif. One pilot is diagnostic evidence, not proof of reliable taste.
+
+SPECIALIST OWNERSHIP
+Vibe UI coordinates ui-ux-patterns, ui-typography, ui-color, ui-geometry and ui-motion. They resolve distinct concerns within one direction and one existing design contract. At Shape depth, their options feed the same two or three coherent screen directions; never multiply independent type/palette/layout menus. Fix uses only the affected owner. Feedback is planned with the first flow, not deferred until surface styling is finished. UI Quality Gate owns the only final inspection loop and reopens only affected decisions.

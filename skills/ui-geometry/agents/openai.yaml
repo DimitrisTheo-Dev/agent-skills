@@ -1,0 +1,4 @@
+interface:
+  display_name: "UI Geometry"
+  short_description: "Systematize spacing, corners, borders, and alignment"
+  default_prompt: "Use $ui-geometry to make this interface consistent through spacing, component geometry, and optical alignment."
