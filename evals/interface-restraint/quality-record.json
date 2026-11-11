@@ -1,53 +1,77 @@
 {
   "scope": "flow",
   "candidate": {
-    "app/app.js": "d5c0df3e79b98a9bee97fc0e175055483c6a7fafafef8593c7c482c603e24ae4",
+    "app/THIRD_PARTY.md": "97eedcb397e98e22e6db3e9dc5e559a44759cc473d22e2e22ade7c9491f0733c",
+    "app/assets/index-BFD0KeY-.js": "44e45fd8ef33f93d44465ccc69efadbdbd0a480831aeb8b67f977033b68733fc",
+    "app/assets/index-BQ9qCnlG.css": "425597c1aa19a672899ff2d7732240495a8d340f62b5623423ebc4de9b30cef0",
+    "app/index.html": "e3a8c1390b0c825bff5695abdcf05c260a267c22049359e118172c3fcc5f56a0",
+    "app/qa.html": "bbed3c893191e44622daa8a79cb0eabfb0fba168750970a2d8eabb6b5454ad68",
     "app/skills.js": "30374f30062c4125fcfd843c4bd61dc9206fafd2707a9feb32a0c4583b71f849",
-    "app/qa.html": "68298a0620c6e453e7bc36dd7bbcb0fc4370f121be9721662d1f80a3bdd3c259",
-    "app/styles.css": "e75286be365a3ead63cabd6abdfbd08b94e015b6399b17e2432d08c988953d1f",
-    "app/index.html": "ac2cb5d0057da40c99920b83489f6c7704c9be5807058e5cab76eefb25d5d6fe"
+    "shadcn/src/components/ui/button.tsx": "56d87f25b09342adede5728309b061c8197054fb8987b95d60df359552ac8a8e",
+    "shadcn/src/components/ui/collapsible.tsx": "0e2fe309166dff7497f83f1bb7274b07c0955a6ce897b8bcc7fb3a95e58551bf",
+    "shadcn/src/components/ui/dialog.tsx": "318ffcaf485fb06cbb726ec026969993469b612beba0f66f62d70dcc60930a03",
+    "shadcn/src/components/ui/input.tsx": "cddd2a11d7f939de117ab2b47070c0bf044683d0ea0c1e40d0c5082b90d8d85b",
+    "shadcn/src/components/ui/tabs.tsx": "e37e8b54feb84284a7e583c22d2a5cab6772ec94ae3f556eb5651fbd64d72bad",
+    "shadcn/src/components/ui/toggle-group.tsx": "db0c062fd9ae104368acbd6094df0f451c49987d073de37e659619c947aa797e",
+    "shadcn/src/components/ui/toggle.tsx": "21cecd0371e1311a40c29b720397dfc2274b863d5ee0e69082fb4dfd0c4ee677",
+    "shadcn/src/components/ui/tooltip.tsx": "4aa4e9326cd94136ad0d9f590164915c6438dbeef1efe1470ce7c4747e86d329",
+    "shadcn/src/index.css": "2f9d319558f48d6907d2f9d5e212fb2a9f60e81d4823a2ba4aa8e09e84c91df7",
+    "shadcn/src/lib/utils.ts": "c4afe23db29651dec75ca5a3098a8bafe35f78cd45d4773d1db1c8001e640623",
+    "shadcn/src/main.tsx": "96e1f78b5857235ba717d89168842f04620832732535c697a93fdde1c35f6079",
+    "shadcn/package.json": "a1dae8ab3902d49ae771ba182c7f8d1883d9aed9f64c8fd8b6347e0fa60e373e",
+    "shadcn/package-lock.json": "2fb5e75ac7416cbea5fba21084f31371d0d2a829dee9c06ce7ea7b449c0b513c",
+    "shadcn/components.json": "ebc96dc5628a8ec16df3e59581ad9eb9727d5a3aa4b0c87f60ef1a5e86bac635",
+    "shadcn/component-sources.json": "fe420425ab65e1e0c0f1bd671111ca24999cb818eee471d80be171c53cb3a136",
+    "shadcn/vite.config.ts": "8ec5517e52cde5e206ebd7c11e92d7eda4b5de6d8a7d4675feeba75c347dcb7f",
+    "shadcn/tsconfig.json": "1b011e196a006e6936625d1c5735cea05d1fbe8725b0b51a489826c6fee10c85"
   },
   "evidence": [
     {
       "id": "desktop",
       "path": "evidence/desktop.png",
-      "sha256": "cfd2b60118a3b9ef880fcda289dd1b2007f2e6e4e4d8cdbedc829ca17558e330",
+      "sha256": "2f74559e6b2b369b28d3d1259fb7f66eae6fdec679652ea523d1e51773a21536",
       "kind": "image"
     },
     {
       "id": "dark",
       "path": "evidence/dark.png",
-      "sha256": "5b96ed36cc6938c11aa491631dcb31781198f8cdb476107ceadeea3b3303ccb4",
+      "sha256": "13359c45797fb84338c35f213783cafab4079d2a6849ea58a6220ea97abf2a13",
       "kind": "image"
     },
     {
       "id": "mobile-list",
       "path": "evidence/mobile-list.png",
-      "sha256": "445bb2e97c8918f8f277b610b4eec4330f399daf9ff1d5bedd822c1f3e960190",
+      "sha256": "ccf9919e2089357c420e0860b4e1592717781ce2d98b5d0491287c9f7323b91d",
       "kind": "image"
     },
     {
       "id": "mobile-detail",
       "path": "evidence/mobile-detail.png",
-      "sha256": "e612991847a70d223607da415f62d01343ca56be7ff5af64b4e0a32413b2fa66",
+      "sha256": "26f2905257da399e3ce00a96d4d43fa0c0b956a3285682363f89d93c27bb14ee",
       "kind": "image"
     },
     {
       "id": "tablet",
       "path": "evidence/tablet.png",
-      "sha256": "b1cc6cb88cedf8f5cdb079dbbdab82a5245bbc8a213e4257fca1a4e03f1cc42c",
+      "sha256": "884e2f8118f5b191ce944fec29b5d783a3b03e83829b3bd045f5099a775c0355",
+      "kind": "image"
+    },
+    {
+      "id": "panel",
+      "path": "evidence/panel.png",
+      "sha256": "93f387c82d5d1932caa249d987c43153169bab1dfedabd7549c644a64a493fde",
       "kind": "image"
     },
     {
       "id": "journey",
       "path": "evidence/inspection.md",
-      "sha256": "8897d69d70c734563e7a1599a3dfde6687cd4b5dfa83cf2cfb517fe3ed138571",
+      "sha256": "32d9408d861c7631d48adbcaf037a1c17d0a363f1f53154a640619d24930b8de",
       "kind": "interaction"
     },
     {
       "id": "measurements",
       "path": "evidence/measurements.json",
-      "sha256": "5e5a475283e9261c2e7cd4cb6c276910e1aa7fc2b46973e4602e5ffcaa8be376",
+      "sha256": "a7b4e6ea4b61a37c799a25ee7ec312710868c915eab3fde795b77031e7f4fe40",
       "kind": "measurement"
     }
   ],
@@ -55,7 +79,7 @@
     {
       "id": "task",
       "status": "pass",
-      "observation": "Browsing and copying were operated. Actual Copy then Control+V pasted the correct invocation into search; its result was verified.",
+      "observation": "Copy/paste, filtering and selection were operated.",
       "evidence": [
         "journey"
       ]
@@ -63,18 +87,16 @@
     {
       "id": "structure",
       "status": "pass",
-      "observation": "Static invocation and Copy sit near the title; invented icon tiles and disconnected full-width command panel are removed. Default desktop and narrow views inspected.",
+      "observation": "Compact sidebar and detail; Copy aligned with title, static invocation below.",
       "evidence": [
         "desktop",
-        "mobile-list",
-        "mobile-detail",
-        "tablet"
+        "mobile-detail"
       ]
     },
     {
       "id": "terminology",
       "status": "pass",
-      "observation": "Copy names the action in command context; required installation help remains in a disclosure.",
+      "observation": "Copy and Install locally label their operations; no promotional intro.",
       "evidence": [
         "desktop",
         "journey"
@@ -83,7 +105,7 @@
     {
       "id": "typography",
       "status": "pass",
-      "observation": "Titles, task subtitles and action labels remain readable in inspected views; tablet subtitle wrapping is accepted. No font-identity or text-enlargement claim.",
+      "observation": "Hierarchy and wrapping inspected at desktop, 375px and 641px. Enlarged text not tested.",
       "evidence": [
         "desktop",
         "mobile-detail",
@@ -93,36 +115,34 @@
     {
       "id": "spacing",
       "status": "pass",
-      "observation": "Content-width command group is 146.625 by 34px desktop, 44px high at 320px. Related actions are grouped; 700/701px transition checked.",
+      "observation": "Frame reduced from 920\u00d7491 to 768\u00d7382; compact controls and consistent pane padding.",
       "evidence": [
-        "desktop",
-        "tablet",
+        "panel",
         "measurements"
       ]
     },
     {
       "id": "color",
       "status": "pass",
-      "observation": "Selected rows and primary actions are distinct in both inspected themes; sampled text/button contrast pairs pass the checked thresholds.",
+      "observation": "Light and dark compositions inspected; selected state also uses position and chevron. This is not a comprehensive contrast audit.",
       "evidence": [
         "desktop",
-        "dark",
-        "measurements"
+        "dark"
       ]
     },
     {
       "id": "components",
       "status": "pass",
-      "observation": "Functional Lucide assets render; fabricated identity tiles and completion-style checkmarks were removed. Command appearance matches its read/copy role.",
+      "observation": "Authentic shadcn components and lucide-react functional icons; compact outlined Copy.",
       "evidence": [
-        "journey",
-        "desktop"
+        "panel",
+        "mobile-detail"
       ]
     },
     {
       "id": "states",
       "status": "pass",
-      "observation": "Copy feedback, real paste, no-result recovery and denied-clipboard manual dialog were operated.",
+      "observation": "Copy confirmation, no-result state and manual-copy recovery were operated.",
       "evidence": [
         "journey"
       ]
@@ -130,7 +150,7 @@
     {
       "id": "interaction",
       "status": "unverified",
-      "observation": "Keyboard tabs, back-focus return, copy recovery and ten repeated selections were operated. Runtime reduced-motion and temporal performance remain unverified.",
+      "observation": "Keyboard tabs, copy, disclosure and focus return operated; runtime reduced motion and temporal performance unverified.",
       "evidence": [
         "journey"
       ]
@@ -138,18 +158,18 @@
     {
       "id": "responsive",
       "status": "pass",
-      "observation": "Scoped CSS-width fit verified at narrow, boundary and desktop sizes. Native/PWA/software-keyboard behavior remains outside these captures.",
+      "observation": "Scoped CSS-width fit checked at 320,375,640,641 and desktop. Native device behavior unverified.",
       "evidence": [
+        "journey",
         "mobile-list",
         "mobile-detail",
-        "tablet",
-        "measurements"
+        "tablet"
       ]
     },
     {
       "id": "accessibility",
       "status": "unverified",
-      "observation": "Essential keyboard paths and semantic names were checked, but enlarged text and assistive technology were not tested.",
+      "observation": "Keyboard paths and dialog focus return operated; screen readers and enlarged text not tested.",
       "evidence": [
         "journey"
       ]
@@ -157,82 +177,29 @@
     {
       "id": "character",
       "status": "unverified",
-      "observation": "Current self-review addresses the owner-rejected icons and oversized command region. Prior reviewer approval is superseded; owner acceptance and broader native-quality claims are not established.",
+      "observation": "Addresses owner rejection of excess space and amateur controls. Owner acceptance and native quality are not established.",
       "evidence": [
-        "desktop",
-        "mobile-detail",
-        "tablet"
+        "panel"
       ]
     }
   ],
   "findings": [
     {
-      "id": "F1",
+      "id": "F5",
       "areas": [
-        "structure",
-        "spacing"
-      ],
-      "severity": "major",
-      "status": "resolved",
-      "location": "First viewport",
-      "observation": "Owner rejected scattered explanations and dominant search.",
-      "resolution": "Recomposed into compact navigation and selected detail; removed duplicate copy; inspected final captures.",
-      "evidence": [
-        "desktop",
-        "mobile-list",
-        "mobile-detail",
-        "measurements"
-      ]
-    },
-    {
-      "id": "F2",
-      "areas": [
-        "interaction",
-        "accessibility"
-      ],
-      "severity": "major",
-      "status": "resolved",
-      "location": "Skip link and mobile back",
-      "observation": "Skip route invalidated selection and back focused a node before replacing it.",
-      "resolution": "Explicit detail route and render-before-focus; browser focus observations recorded.",
-      "evidence": [
-        "journey"
-      ]
-    },
-    {
-      "id": "F3",
-      "areas": [
-        "responsive",
-        "components"
-      ],
-      "severity": "minor",
-      "status": "resolved",
-      "location": "Intermediate width command row",
-      "observation": "Unnecessary code basis forced Copy below its command.",
-      "resolution": "Adjusted responsive breakpoint and flexible code width; inspected 701px view.",
-      "evidence": [
-        "tablet",
-        "journey"
-      ]
-    },
-    {
-      "id": "F4",
-      "areas": [
-        "structure",
+        "spacing",
         "components",
-        "spacing"
+        "interaction"
       ],
       "severity": "major",
       "status": "resolved",
-      "location": "Skill identities and invocation area",
-      "observation": "Owner rejected invented icon styling and an oversized static value that looked editable. Capability checkmarks also suggested completed state.",
-      "resolution": "Removed fabricated identity tiles, used neutral capability bullets, placed selectable code and compact Copy near the title, tightened related spacing; inspected actual desktop and narrow renders and operated copying. This records the correction, not owner acceptance.",
+      "location": "Frame and controls",
+      "observation": "Owner rejected dead space and amateur buttons, and requested shadcn plus interaction feedback.",
+      "resolution": "Rebuilt with official shadcn/Radix components, reduced shell dimensions, moved Copy beside title and implemented short feedback transitions. Rendered and operated the candidate; owner acceptance remains unverified.",
       "evidence": [
-        "desktop",
-        "mobile-detail",
-        "tablet",
-        "journey",
-        "measurements"
+        "panel",
+        "measurements",
+        "journey"
       ]
     }
   ],

@@ -111,7 +111,7 @@ def validate_repo(root):
             if reference not in reachable:
                 errors.append(f"Unreachable reference: {reference.relative_to(root)}")
 
-    paths = [p for p in root.rglob("*") if p.is_file() and not any(part in {".git", ".venv", "__pycache__", ".eval-results"} for part in p.relative_to(root).parts)]
+    paths = [p for p in root.rglob("*") if p.is_file() and not any(part in {".git", ".venv", "__pycache__", ".eval-results", "node_modules"} for part in p.relative_to(root).parts)]
     for path in paths:
         if path.suffix == ".md":
             link_errors, _ = local_links(path, root)

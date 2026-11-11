@@ -1,34 +1,30 @@
-# Interface restraint correction
+# Skill library: component and density revision
 
-The owner rejected the prior catalog for scattered explanatory copy, an oversized search field and weak immediate comprehension. This replacement keeps the same frozen four-skill source data and rebuilds the composition as a compact library with a selected detail view. It is a working design example, not the live skills catalog or evidence of universal design quality.
+A working UI example for browsing four frozen skill fixtures and copying their invocation. This is not the live skill catalog or proof of universal design quality.
 
-## What changed
+## Current revision
 
-- A compact header and 36px desktop search replace the introductory hero and full-width discovery region.
-- Four text-led entries sit together; selection opens the detail beside them. Narrow screens use list/detail navigation instead of squeezing both panes.
-- Short task descriptions, one compact invocation group and optional installation details replace repeated explanations and numbered command blocks.
-- Copy feedback, manual-copy recovery, focus return, keyboard tabs, search ranking and theme switching are implemented. Source data and commands remain unchanged.
+- Uses React and authentic shadcn/ui components backed by Radix: Button, Input, Tabs, ToggleGroup, Tooltip, Collapsible and Dialog. Source hashes and dependency versions are included.
+- The desktop frame measures 768 × 382px, down from 920 × 491px. The title lives in the detail pane; Copy sits alongside it. The search field is 34px high. No giant command input, invented identity icons or introductory hero.
+- Thin outlines, short hover transitions, press displacement, visible keyboard focus, local copy confirmation, selection transitions and animated disclosure provide feedback. Reduced-motion CSS disables animation and transforms.
+- Narrow screens use list/detail navigation and a 44px Copy target. Clipboard rejection opens a real manual-copy dialog with focus return.
 
-The supplied Moonjar references informed grouping and attention order: quiet navigation, one main object and contextual help. Their palettes, assets and exact geometry were not treated as a template. No behavior was inferred from the supplied still images.
+## Run
 
-## Run locally
+The committed `app/` contains the built static example. Serve this directory with `python -m http.server 8000` and open `http://localhost:8000/app/`.
 
-From this directory, run `python -m http.server 8000`, then open `http://localhost:8000/app/`. The optional `app/qa.html` harness checks CSS viewport widths and denied clipboard permission; it is not part of the product interface. No build step or dependencies are required.
+Editable source is in `shadcn/`. Run `npm ci` and `npm run build` there. The result is `shadcn/dist/`; copy its contents into `app/` when updating the committed static example. The classic `skills.js` file is intentionally copied unchanged from public assets; Vite's non-module-script warning is expected.
 
-## New captures
+`app/qa.html` is an optional CSS-width and clipboard-denial harness. It is not part of the product interface.
 
-[Desktop](evidence/desktop.png) · [Dark](evidence/dark.png) · [Mobile library](evidence/mobile-list.png) · [Mobile detail](evidence/mobile-detail.png) · [701px boundary](evidence/tablet.png)
+## Evidence
 
-Mobile and tablet captures use a CSS-width iframe in desktop Chromium. They are not physical-device or Safari tests. The original rejected captures remain archived in the earlier evaluation; they are not presented again here.
+[Panel](evidence/panel.png) · [Desktop viewport](evidence/desktop.png) · [Dark](evidence/dark.png) · [Mobile library](evidence/mobile-list.png) · [Mobile detail](evidence/mobile-detail.png) · [641px boundary](evidence/tablet.png)
 
-## Latest correction
+[Executed checks and limits](evidence/inspection.md) · [Structured record](quality-record.json) · [Design decisions](design-decisions.md)
 
-The owner rejected the first replacement’s fabricated icon tiles and oversized invocation panel. The current revision removes those tiles, places selectable code beside a compact Copy button near the title, replaces completion-style checks with neutral bullets and tightens the grouping. [Source gap review and comparison](source-gap-review.md) records what was adopted, already covered or excluded. [Design decisions](design-decisions.md) preserves the feedback.
+The mobile captures use a CSS-width iframe in desktop Chromium. Physical devices, Safari, screen readers and runtime reduced-motion settings were not tested. The verdict remains unverified for those limits and owner acceptance; the checker certifies evidence integrity only.
 
-## Guidance changes
+## Earlier instruction evaluation
 
-Vibe UI now checks task/object/action comprehension and audits visible copy by its user job. UI Geometry checks control prominence against task importance. Studio applies this at the first complete render, before expansion. UI Quality Gate treats unclear hierarchy as a major issue even when technical tests pass.
-
-[Review comparison](comparison.md) · [Independent candidate review](independent-review.md) · [Executed checks and limits](evidence/inspection.md) · [Structured quality record](quality-record.json)
-
-The isolated critique comparison supports a narrow instruction effect. It does not establish deterministic taste, improved conversion, user-tested comprehension or an Apple-level result. Native-device and reduced-motion runtime behavior remain unverified; the new revision includes an observed clipboard round trip. The quality record retains the remaining limits.
+[Source gap review](source-gap-review.md), [critique comparison](comparison.md), and [independent review](independent-review.md) concern the earlier instruction/candidate work. They do not evaluate this new React implementation. The previous candidate is archived in [review-02-desktop.png](evidence/review-02-desktop.png) and Git history. This revision demonstrates specific implementation corrections, not deterministic taste.

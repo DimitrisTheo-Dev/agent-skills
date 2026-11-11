@@ -1,23 +1,25 @@
-# Inspection of the affordance revision
+# Current implementation inspection
 
-2026-11-11. Actual local application in desktop Chromium through the browser tool. Source manifest identifies the current files. Desktop screenshots are 1363 × 936. The responsive harness uses CSS-width iframes; it is not physical-device emulation. Earlier review evidence is available at branch commit `3e8b5f5`; the rejected desktop is retained as `review-01-desktop.png`.
+Date: 2026-11-11. React + shadcn/ui candidate; this replaces earlier current-candidate checks. Inspected in desktop Chromium through the managed preview. Width harness is CSS layout emulation, not a mobile device.
 
-## Operated in this revision
+## Operated
 
-- Inspected light and dark desktop composition. Removed fabricated app icons and the duplicate title icon; verified the remaining functional SVGs render. The first Unicode external-link glyph rendered incorrectly and was replaced with an attributed Lucide path before final capture.
-- Inspected 375px list and detail, 320px detail and expanded installation, and the 701px split view. Measured no horizontal overflow at 320, 700, 701 and 1363 CSS px. At 700 the detail becomes a separate mobile view. No native device claim.
-- The desktop invocation group measures 146.625 × 34px; Copy is 70 × 34px. At 320px, the same group is 146.625 × 44px. The value is selectable code, not an editable field. Search remains 36px high on desktop. The long installation command wraps and stays reachable by scrolling at 320px.
-- Clicked Copy and observed Copied feedback. Used an actual Control+V keypress into search, which produced `$vibe-ui`, confirming a clipboard round trip. Initially this query returned no results; after including invocation text in search, repeated the round trip and observed the correct single result.
-- In the harness's denied-clipboard mode, Copy opened the native manual-copy dialog with `$vibe-ui` selected. Escape closed it and returned focus to Copy.
-- Used ArrowRight and ArrowLeft to move between Overview and Instructions with matching panel/focus state.
-- Exercised an unmatched search and Clear filters, then cleared a successful query with Escape.
-- Selected skills ten times in two repeated sequences, finishing on Vibe UI with its correct heading. No measured latency or long-term satisfaction claim.
-- At 700px, Back returned to the library and focused the selected Vibe UI link.
+- Clicked Copy, then pasted into search with Control+V: the field contained `$vibe-ui` and the matching skill remained.
+- ArrowRight from Overview selected Instructions, with the tab's selected state and corresponding text observed. Returned to Overview.
+- Opened and closed Install locally; setup text, wrapped command and Copy command appeared.
+- Filtered Writing: UX writing became the selected detail. Cleared a no-result query to restore the list.
+- At 320px, denied clipboard access through iframe permissions. Copy opened the manual-copy dialog, selected the invocation, and Escape closed it. Focus returned to Copy after the close animation.
+- At 375px, opened Vibe UI and returned via Skills. Focus returned to its library link.
+- Switched light/dark and inspected both rendered themes.
+- Checked 320px and 641px body scroll width equals viewport width; checked 640px library width likewise. Inspected the 641px composition, 375px list/detail and desktop.
+- Measured desktop frame 768 × 382px; Copy 83 × 32px. Computed Copy transitions: 130ms for color/border/shadow, 80ms for transform. Mobile CSS sets a 44px Copy target.
 
-## Scope and limits
+## Evidence scope
 
-The final main screenshot was captured after the final search change. Dark/mobile captures show the same visual revision; subsequent changes only stabilized the expanded installation button width and added invocation matching, neither of which changes those captured default views. Current source was syntax-checked and frozen data remained byte-identical. The broader repository validator and 37 tests passed; those tests assess infrastructure, not aesthetics.
+The final named TabsList build was reloaded and captured for desktop, panel, mobile list and mobile detail. Dark and 641px captures precede the accessible tab-list name and removal of unused count styles; those changes do not alter their rendered appearance. Frozen skills.js remains byte-identical.
 
-The previous independent review is historical and was superseded by owner rejection of the icons and command region. The new matched critique pair examines that previous screenshot; it is not an independent approval of the current implementation. The current visual review is the lead's inspection against the owner's corrections.
+The panel image is a browser screenshot crop with 24px surrounding canvas. The full viewport capture is retained. Gray space outside the compact utility window has not been disguised as occupied content.
 
-Physical devices, Safari/PWA, software keyboards, screen readers, enlarged text and runtime reduced-motion preferences remain unverified. The CSS reduced-motion branch exists but was not exercised. The revised screen has not been described as owner-approved or as proof of deterministic taste.
+## Limits
+
+Runtime reduced-motion settings, physical-device/PWA keyboard behavior, Safari, assistive technology, enlarged text and temporal performance measurements were not tested. Reduced-motion handling was inspected in source. No claim of universal accessibility, native performance, owner acceptance or deterministic design quality follows from these checks. Previous independent-review approval does not apply to this rebuilt candidate.
