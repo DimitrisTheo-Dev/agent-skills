@@ -1,0 +1,4 @@
+interface:
+  display_name: "UI Quality Gate"
+  short_description: "Inspect, repair and verify finished interface quality"
+  default_prompt: "Use $ui-quality-gate to inspect this interface, fix material weaknesses within scope, and verify the rendered result."

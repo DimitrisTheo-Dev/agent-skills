@@ -14,6 +14,7 @@ Design depth / reason / refinement rounds used and remaining:
 Design contract / product reading: path
 Direction / reason / rejected alternatives:
 Moment hypothesis / prototype / first-look and actual repeated-use evidence:
+Quality record / candidate fingerprint / ready, blocked or unverified:
 Assessment: correctness / usability / craft / character; verified / unresolved / not assessed
 Accepted decisions:
 - <decision and short reason>

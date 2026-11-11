@@ -2,7 +2,7 @@
 
 Reusable engineering workflows for OpenAI Codex and other tools that support the [Agent Skills format](https://agentskills.io/specification). Each skill contains focused instructions, supporting references, and evaluations. Skills guide an agent's decisions; they do not certify a product or grant access to it.
 
-**Experimental design workflow:** the Studio and Vibe UI revisions on this branch have not earned adoption. The browser-enabled comparison preferred the baseline. Read the [results and adoption decision](evals/product-design/RESULTS.md) before using these candidate instructions as a default.
+Start product work with **Product Engineering Studio**. It routes visual decisions to **Vibe UI** and implemented interfaces through **UI Quality Gate**, which inspects, repairs and rechecks the result. The [current verification record](evals/product-design/quality-gate-v2.md) separates tested behavior from unproven design-quality claims. Earlier catalog comparisons remain historical evidence, not a claim that instructions guarantee great design.
 
 ## Catalog
 
@@ -11,6 +11,7 @@ Reusable engineering workflows for OpenAI Codex and other tools that support the
 | [agent-readiness](skills/agent-readiness/SKILL.md) | Audit, plan, or implement improvements to how agents discover, read, and use a website, SaaS, or API. Based on AgentReady v2.0 with conditional applicability and explicit evidence. |
 | [product-engineering-studio](skills/product-engineering-studio/SKILL.md) | Start here for product work: choose proportional design depth, explore real alternatives, deliver complete flows and assess correctness, usability, craft and character. |
 | [vibe-ui](skills/vibe-ui/SKILL.md) | Art-direct, build, review, or polish interfaces with product-specific character, deliberate detail and rendered evidence. |
+| [ui-quality-gate](skills/ui-quality-gate/SKILL.md) | Inspect twelve areas of interface quality, drive authorized corrections and verify evidence before calling the work ready. |
 | [landing-page-design](skills/landing-page-design/SKILL.md) | Structure a persuasive page around its audience, offer, proof and next action. |
 | [product-ux-writing](skills/product-ux-writing/SKILL.md) | Write clear interface copy, labels, onboarding, errors and feedback in the product's voice. |
 
@@ -20,7 +21,7 @@ Credit to [AgentReady](https://www.agentready.org/) and its contributors for the
 
 Prerequisites: Codex with local skills support, Git, and a POSIX shell for these examples. These instruction skills have no runtime package dependencies. Agent-readiness HTTP checks need network access and a fetch tool. Vibe UI uses the target project's build tools; visual verification needs a renderer or browser. Python 3.11+ is needed only for library validation and synthetic evaluations.
 
-Clone the library, then link the skills you want. For the product/design workflow, start with Studio and Vibe UI:
+Clone the library, then link the skills you want. For the product/design workflow, install these three together; Studio remains the entry point:
 
 ```sh
 git clone https://github.com/DimitrisTheo-Dev/agent-skills.git
@@ -28,6 +29,7 @@ cd agent-skills
 mkdir -p "$HOME/.agents/skills"
 ln -s "$PWD/skills/product-engineering-studio" "$HOME/.agents/skills/product-engineering-studio"
 ln -s "$PWD/skills/vibe-ui" "$HOME/.agents/skills/vibe-ui"
+ln -s "$PWD/skills/ui-quality-gate" "$HOME/.agents/skills/ui-quality-gate"
 ```
 
 For an existing checkout, start with `cd /absolute/path/to/agent-skills`. `ln -s` deliberately refuses to replace an existing installation. Keep the checkout in place while the link exists. Alternatively, copy just that skill folder into the same destination, and copy future updates explicitly. For a project-only installation use `<project>/.agents/skills/agent-readiness` instead. Other hosts use their own discovery locations; copy the whole skill folder to the location their documentation specifies.

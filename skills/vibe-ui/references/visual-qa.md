@@ -35,7 +35,7 @@ Choose viewports appropriate for the project; examples are ~320, 375/390, 430, 7
 
 ## Phase D: judgment, iteration and evidence
 
-State or reuse the task's refinement budget. Without one, begin with one focused correction/confirmation pass for Fix or Extend and two critique/correction rounds for Shape, then reassess scope and remaining gaps. A budget is an effort bound, never a quality score.
+Use ui-quality-gate when installed; its inspection matrix and readiness criteria govern the review. This reference is the portable fallback. Respect an explicit user budget. Otherwise continue correcting material in-scope weaknesses and rechecking them. Two rounds without improvement require a changed diagnosis or composition, not delivery of the same weakness. A real access or budget limit produces an explicit blocked/unverified result, never a quality pass.
 
 1. Inspect the actual candidate, including new files and relevant states. Use an independent reviewer when available and permitted; otherwise label self-review. Give a reviewer the brief and artifacts rather than the builder's desired verdict.
 2. Connect each observed weakness to its user or brand consequence. Prioritize the largest gap, whether composition, comprehension, interaction or reliability. Do not manufacture findings, a removal quota or aesthetic changes without evidence.

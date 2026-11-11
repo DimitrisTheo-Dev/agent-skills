@@ -1,5 +1,7 @@
 # Catalog comparison results
 
+Historical record of the first candidate, before the operational quality-gate revision. Its adoption decision below describes that point in time. See [the current revision and verification](quality-gate-v2.md) for the subsequent authorized updates; these earlier results have not been rewritten into a positive outcome.
+
 **Status: diagnostic comparisons, not proof of reliable design quality.** Two paired builds exercised the same real catalog content. The first pair restricted browser access during building; a second pair corrected that limitation. Results below distinguish actual interaction evidence, builder judgments and independent model review. Owner preference, next-day recall and transfer to an unlike product remain unassessed.
 
 ## First pair: setup

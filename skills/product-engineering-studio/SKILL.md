@@ -7,7 +7,7 @@ description: Frame a product problem, explain its UI and system design, choose s
 
 Turn a raw brief into a small useful outcome with explicit decisions and observable evidence. Discuss in the user's language; write concise engineering handoffs in English unless requested otherwise.
 
-Target 300-600 words for the initial response, including its first handoff. Use a compact acceptance table and short architecture explanation. Expand when the user requests depth or an essential contract needs it. Keep design exploration and later-stage details behind the references. Explore before committing at Shape depth.
+Start with a concise statement of the intended outcome and consequential assumptions, then do the authorized work. Use a compact acceptance table and architecture explanation when they clarify the task. Keep working design/review records in project artifacts rather than making the user manage the workflow. Explore before committing at Shape depth.
 
 ## 1. Establish the task
 
@@ -39,13 +39,19 @@ State the selected mode, a short reason, owners and next integration checkpoint.
 
 If implementation is authorized and a real repository is accessible, implement the slice using the selected execution mode. Otherwise prepare a bounded packet from [Codex Handoffs](references/05_CODEX_HANDOFFS.txt).
 
-Include goal, acceptance IDs, relevant context, observed scope, essential contracts, checks and checkpoint. Typical target: 10-20 minutes of work and 150-350 words per packet; preserve essential requirements over arbitrary brevity.
+Include goal, acceptance IDs, relevant context, observed scope, essential contracts, checks and checkpoint. Use checkpoints sized to the actual work; do not impose a short demo deadline on a production-quality request. Preserve essential requirements over arbitrary brevity.
 
 For a comprehensive starting prompt, provide the brief, execution rules and bounded first assignment. Keep later assignments adaptive; use the orchestration template in Codex Handoffs rather than specifying the entire implementation upfront.
 
 Include typography, composition, relevant states, immediate feedback and purposeful motion in the first complete UI slice. Inspect the running behavior and actual check output. For UI, retain captures of the rendered flow and a recording or frame strip when timing matters; label missing evidence. At delivery, reuse the repository's documented verification command when it covers the change. For a failure, record the failing case and a command or input that reproduces it. After two unsuccessful fixes with the same symptom, change the diagnostic approach. Keep unrelated cleanup out of scope. Publish or deploy only under the user's authorization.
 
-## 6. Review and continue
+## 6. Apply the UI quality gate
+
+For implemented user-facing work, invoke ui-quality-gate before delivery. It owns the twelve-area inspection, evidence record and repair/recheck loop. Vibe UI owns design decisions; Studio keeps the user task, scope and engineering requirements intact. A focused fix gets a focused gate; backend-only work skips it. If the gate is unavailable, apply Quality and Design plus Creative Quality and explicitly retain unverified areas.
+
+A passing build or clean correctness review does not close usability, craft or character. Continue authorized fixes while major findings remain. After two stagnant rounds change the diagnosis or revisit composition. Ask the user only for a consequential missing decision, not to supply the fundamentals already covered by the skills. Keep their stated taste and corrections in the project design contract so they need not repeat them.
+
+## 7. Review and continue
 
 Review the actual candidate, including new files. Confirm the review method can see the chosen base/range before relying on it. Recheck material fixes. For Extend or Shape, assess correctness, usability, craft and character separately using Creative Quality. Use a reviewer who did not build the flow when permitted and available; otherwise label the self-review limitation. Carry unresolved findings into session state.
 

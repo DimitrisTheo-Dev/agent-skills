@@ -31,6 +31,10 @@ Concentrate creative effort where it has the greatest impact. Keep supporting in
 
 Do not force multiple concepts, animations, mascots, or interactive demos into small UI improvements or products where they add no value.
 
+## Select from evidence, not a persuasive rationale
+
+For Shape work, read [direction selection](references/direction-selection.md) before choosing. Compare the same real task at narrow and wide widths, including an important state transition. Inspect the actual hierarchy and effort, then choose. A longer design explanation does not compensate for a weaker render. Keep the decision record compact and spend the work on the interface.
+
 ## Design and execute
 
 1. **Establish context.** Trace the requested view through current design guidance, theme/tokens, shared components, and their actual consumers. Prefer the governing source over isolated styling; inspect content, assets/fonts, framework conventions, and preview/test tools. Identify the actual audience, main task, success moment, trust requirements, and fixed constraints. Classify the view by its job: persuade, operate, read, or showcase. Different views of one product may need different visual registers. Use stated assumptions where details are missing; ask only when a missing detail would invalidate the result. Do not infer taste from age or industry alone.
@@ -54,6 +58,10 @@ Judge gradients, cards, illustration, glass, and motion by their product purpose
 - Before reviewing a rendered implementation or substantial polish, read [visual QA](references/visual-qa.md).
 - Before applying external detail or motion recipes, read [source notes](references/source-notes.md) for reviewed revisions and limits.
 - For invocation examples, see [usage prompts](examples/invocations.md). For a reference-free service website, see [the business example](examples/context-to-business.md).
+
+## Quality gate
+
+Before handing over implemented UI, invoke the installed ui-quality-gate. It owns the ordered inspection and repair loop; Vibe UI owns the design decisions and corrections. Keep review-only requests read-only. If that skill is unavailable, use the local visual QA reference and record the missing coverage. Inspect rendered results, correct material usability/craft/character weaknesses and recheck affected states. Do not stop because the code builds or one screenshot is attractive.
 
 ## Finish with evidence
 
