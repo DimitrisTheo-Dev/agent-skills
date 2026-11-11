@@ -1,0 +1,220 @@
+{
+  "scope": "flow",
+  "candidate": {
+    "app/app.js": "b7c7bfa32dbd0e23a9d35d638073daa1d64f9f1ce590b97c2c4c04a7c8d0c8cf",
+    "app/skills.js": "30374f30062c4125fcfd843c4bd61dc9206fafd2707a9feb32a0c4583b71f849",
+    "app/qa.html": "68298a0620c6e453e7bc36dd7bbcb0fc4370f121be9721662d1f80a3bdd3c259",
+    "app/styles.css": "5a66550b001be510be52ee329cc2fd03be221273b7cae830d855364b5e2f2918",
+    "app/index.html": "c99e3768ce90085c2d2c0343f7093a87c5787351a4ecce0e01023f642b5677f0"
+  },
+  "evidence": [
+    {
+      "id": "desktop",
+      "path": "evidence/desktop.png",
+      "sha256": "1f5dfa591ec87a798895867c71cd7fe35bb2facfaf53c7f1cae761c0a78b1c28",
+      "kind": "image"
+    },
+    {
+      "id": "dark",
+      "path": "evidence/dark.png",
+      "sha256": "7dbb1155914b65c93f91e367448f8a71d32308cba92c9a7480d016a4f06baa43",
+      "kind": "image"
+    },
+    {
+      "id": "mobile-list",
+      "path": "evidence/mobile-list.png",
+      "sha256": "6b9ac1d9e6e54da8bb3b0c10bef6743baebaa6fe53e32bce84adb69641796eff",
+      "kind": "image"
+    },
+    {
+      "id": "mobile-detail",
+      "path": "evidence/mobile-detail.png",
+      "sha256": "a20e3ae484bb60a2ab9871bd966644cfe02167c1d406e78eef393ccd964a7067",
+      "kind": "image"
+    },
+    {
+      "id": "tablet",
+      "path": "evidence/tablet.png",
+      "sha256": "97ca4f5a34db72cf4af7e269d050a67ae920dee322377b4592ad2b9c59811882",
+      "kind": "image"
+    },
+    {
+      "id": "journey",
+      "path": "evidence/inspection.md",
+      "sha256": "fafa4d0e0a50e245acc19bee4d62ce511bd64f2c14ef281fd48c541e159a0999",
+      "kind": "interaction"
+    },
+    {
+      "id": "measurements",
+      "path": "evidence/measurements.json",
+      "sha256": "8c1740d36acf5f1350cce4e64ffd11f72db10db127d56972bfa772d96a75f400",
+      "kind": "measurement"
+    }
+  ],
+  "areas": [
+    {
+      "id": "task",
+      "status": "unverified",
+      "observation": "Finding/selecting/invoking paths were operated; clipboard success indication was observed, but the separate virtual clipboard prevented a confirmed round trip.",
+      "evidence": [
+        "journey"
+      ]
+    },
+    {
+      "id": "structure",
+      "status": "pass",
+      "observation": "Compact navigation and selected-object detail replace introductory overhead; final desktop and mobile views inspected.",
+      "evidence": [
+        "desktop",
+        "mobile-list",
+        "mobile-detail",
+        "tablet"
+      ]
+    },
+    {
+      "id": "terminology",
+      "status": "pass",
+      "observation": "Copy names the action in command context; required installation help remains in a disclosure.",
+      "evidence": [
+        "desktop",
+        "journey"
+      ]
+    },
+    {
+      "id": "typography",
+      "status": "pass",
+      "observation": "Titles, task subtitles and action labels remain readable in inspected views; tablet subtitle wrapping is accepted. No font-identity or text-enlargement claim.",
+      "evidence": [
+        "desktop",
+        "mobile-detail",
+        "tablet"
+      ]
+    },
+    {
+      "id": "spacing",
+      "status": "pass",
+      "observation": "Final 701px command row fits; 36px desktop search is subordinate; native-like larger mobile controls remain.",
+      "evidence": [
+        "desktop",
+        "tablet",
+        "measurements"
+      ]
+    },
+    {
+      "id": "color",
+      "status": "pass",
+      "observation": "Selected rows and primary actions are distinct in both inspected themes; sampled text/button contrast pairs pass the checked thresholds.",
+      "evidence": [
+        "desktop",
+        "dark",
+        "measurements"
+      ]
+    },
+    {
+      "id": "components",
+      "status": "pass",
+      "observation": "Search, filter, tabs, disclosure, selected rows and modal recovery were exercised; SVG rendering corrected.",
+      "evidence": [
+        "journey",
+        "desktop"
+      ]
+    },
+    {
+      "id": "states",
+      "status": "unverified",
+      "observation": "Empty search and denied-clipboard recovery are observed; a real clipboard success round trip remains unverified.",
+      "evidence": [
+        "journey"
+      ]
+    },
+    {
+      "id": "interaction",
+      "status": "unverified",
+      "observation": "Keyboard paths, focus restoration and ten selections were operated. Reduced-motion runtime and measured temporal performance were not verified.",
+      "evidence": [
+        "journey"
+      ]
+    },
+    {
+      "id": "responsive",
+      "status": "pass",
+      "observation": "Scoped CSS-width fit verified at narrow, boundary and desktop sizes. Native/PWA/software-keyboard behavior remains outside these captures.",
+      "evidence": [
+        "mobile-list",
+        "mobile-detail",
+        "tablet",
+        "measurements"
+      ]
+    },
+    {
+      "id": "accessibility",
+      "status": "unverified",
+      "observation": "Essential keyboard paths and semantic names were checked, but enlarged text and assistive technology were not tested.",
+      "evidence": [
+        "journey"
+      ]
+    },
+    {
+      "id": "character",
+      "status": "pass",
+      "observation": "Reviewer judged the compact library and localized emphasis appropriate to this utility. This scoped judgment is not proof of original style or reliable taste.",
+      "evidence": [
+        "desktop",
+        "mobile-detail",
+        "tablet"
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "F1",
+      "areas": [
+        "structure",
+        "spacing"
+      ],
+      "severity": "major",
+      "status": "resolved",
+      "location": "First viewport",
+      "observation": "Owner rejected scattered explanations and dominant search.",
+      "resolution": "Recomposed into compact navigation and selected detail; removed duplicate copy; inspected final captures.",
+      "evidence": [
+        "desktop",
+        "mobile-list",
+        "mobile-detail",
+        "measurements"
+      ]
+    },
+    {
+      "id": "F2",
+      "areas": [
+        "interaction",
+        "accessibility"
+      ],
+      "severity": "major",
+      "status": "resolved",
+      "location": "Skip link and mobile back",
+      "observation": "Skip route invalidated selection and back focused a node before replacing it.",
+      "resolution": "Explicit detail route and render-before-focus; browser focus observations recorded.",
+      "evidence": [
+        "journey"
+      ]
+    },
+    {
+      "id": "F3",
+      "areas": [
+        "responsive",
+        "components"
+      ],
+      "severity": "minor",
+      "status": "resolved",
+      "location": "Intermediate width command row",
+      "observation": "Unnecessary code basis forced Copy below its command.",
+      "resolution": "Adjusted responsive breakpoint and flexible code width; inspected 701px view.",
+      "evidence": [
+        "tablet",
+        "journey"
+      ]
+    }
+  ],
+  "verdict": "unverified"
+}

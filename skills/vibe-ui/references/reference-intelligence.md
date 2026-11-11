@@ -33,6 +33,12 @@ Prefer a concise mapping like this:
 
 `Visible observation → likely effect → transferable rule → target adaptation → literal thing NOT to copy`
 
+## Compare the target with the reference
+
+For a screenshot-led correction, place the actual candidate beside the supplied reference at comparable viewing scale. Record three visible relationships: which region dominates, where related controls/text cluster, and how much content appears before useful objects/actions. Explain the target adaptation in one sentence each; keep that analysis outside the product UI.
+
+A reference with quiet navigation and one central object does not justify scattering small explanatory labels around the target. Transfer attention order and grouping, then inspect the target with its own content. Compare the same relationships after the edit. Exact sizes need source inspection or measurement; a still image does not establish native behavior.
+
 ## Without visual references
 
 Do not search for a famous aesthetic to imitate by default. Build an evidence-led direction from:
