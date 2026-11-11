@@ -39,7 +39,7 @@ Intent and acceptance: <brief/AC IDs>
 Base and candidate: <observed exact range or explicit working-tree scope>
 Review requirement coverage and defects relevant to this change. Include new files. If using code-review, confirm its actual diff includes this candidate before reviewing. A dirty/untracked file outside that range is not reviewed merely because the skill was invoked.
 Report findings with location, consequence and evidence. Do not rewrite unrelated code. After approved/within-scope fixes, rerun affected checks. Keep one bounded review pass unless new behavior changes need rechecking.
-For UI changes, add a focused interface-review and inspect the changed rendered flow.
+For UI changes, use one scoped ui-quality-gate and inspect the changed rendered flow. Reuse an existing current gate record; do not add a competing interface-review. Route corrections through Vibe UI and the relevant specialist, then recheck affected evidence.
 
 F. RETURN FORMAT
 Status: completed / partial / blocked
@@ -60,7 +60,7 @@ H. ORCHESTRATE ADAPTIVELY
 Act as the lead engineering partner for <brief> within <budget>. Use the product-engineering-studio workflow. Inspect accessible instructions, scripts and the feature path before selecting commands or owners. State the outcome, assumptions, deferred scope, 3-5 acceptance criteria and minimum UI/system design. Ask up to three questions that change the solution; make reversible choices directly.
 Select sequential, hybrid or parallel delivery using the skill's Execution Modes reference. Explain the choice briefly. Keep shared contracts and integration with the lead; assign only the current bounded slice to each worker. Use actual subagent support when available and allowed; otherwise execute sequentially.
 Deliver inspectable checkpoints and continue authorized work unless explicitly asked to pause. At each checkpoint report behavior, executed evidence, remaining gaps, time remaining if known, and the next smallest step. Reassess staffing and scope. Reserve time for integration, failure-path checks and final verification. Deliver a reliable core flow with its visual direction, feedback, relevant states and purposeful motion from the first complete slice. Reserve time to refine its leading moment and remaining craft. Treat these as execution rules, not permission to implement every roadmap item at once.
-First assignment: <one runnable 10-15-minute slice, with constraints, checks and checkpoint>.
+First assignment: <one runnable slice sized to the actual task, with constraints, checks and checkpoint; a checkpoint is not a production-quality deadline>.
 
 I. DELEGATE ONE BOUNDED TASK
 Outcome / acceptance IDs: <part of the current integration checkpoint>

@@ -1,0 +1,4 @@
+interface:
+  display_name: "UI Motion"
+  short_description: "Design responsive feedback and purposeful motion"
+  default_prompt: "Use $ui-motion to polish this flow with appropriate feedback, motion, and truthful async states."

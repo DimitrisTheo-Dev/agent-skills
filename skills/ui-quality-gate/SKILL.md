@@ -25,6 +25,10 @@ For each area record pass, fail, unverified or not applicable, with an observati
 
 ## 3. Convert findings into fixes
 
+Compare rendered decisions to the shared design contract and actual token/component sources. Route structure/task problems to ui-ux-patterns, type problems to ui-typography, palette/contrast to ui-color, spacing/boundaries to ui-geometry and feedback/transitions to ui-motion when available. Vibe UI reconciles coupled decisions. Challenge a contract that harms the task rather than passing a consistently flawed design. This gate owns the loop; specialists return fixes and evidence without starting another gate.
+
+Cover each affected component family, materially different state and exceptional instance. Reuse evidence for identical implementations instead of producing a report per repeated button.
+
 Each finding names location/state, observation, consequence, severity, correction and recheck:
 
 - Blocker: prevents the core task, misleads about a consequential outcome, loses data or blocks essential access.
@@ -47,4 +51,4 @@ Ready requires the main task and relevant recovery paths to work, all applicable
 
 Report the implemented outcome, strongest visible improvement, executed checks and remaining limits. Include before/after captures for substantial visual work when available. Distinguish CSS-width emulation from native-device testing. Never infer browser, screen-reader, motion or performance coverage from screenshots.
 
-When a file-based substantial-flow record is within scope, run `python <this-skill>/scripts/check_report.py <report.json> --root <project-root>`. It rejects missing areas, stale/missing evidence and unsupported readiness. It validates the record, not aesthetic truth; inspect the referenced artifacts yourself.
+When a file-based substantial-flow record is within scope, run `python <this-skill>/scripts/check_report.py <report.json> --root <project-root>`. It rejects missing areas, missing files, changed recorded hashes, unsupported evidence modalities and inconsistent readiness. It cannot establish which source revision produced a capture or detect fabricated observations. Verify capture provenance and inspect the artifacts yourself; record integrity is not aesthetic truth.

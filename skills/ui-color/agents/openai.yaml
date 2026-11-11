@@ -1,0 +1,4 @@
+interface:
+  display_name: "UI Color"
+  short_description: "Create contextual palettes and verified color roles"
+  default_prompt: "Use $ui-color to create a color system suited to this product and check its real interface pairings."

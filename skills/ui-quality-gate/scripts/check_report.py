@@ -121,6 +121,21 @@ def validate(report, root):
             require(words(finding.get('resolution')), f'{fid}: resolution/tradeoff required')
         if status == 'resolved':
             require(bool(kinds), f'{fid}: recheck evidence required')
+            affected = finding.get('areas')
+            if not isinstance(affected, list) or not affected:
+                errors.append(f'{fid}: resolved finding requires affected areas')
+            else:
+                for area_id in affected:
+                    require(isinstance(area_id, str) and area_id in seen,
+                            f'{fid}: affected area must be inspected')
+                    if not isinstance(area_id, str):
+                        continue
+                    if area_id in VISUAL:
+                        require(bool(kinds & {'image', 'recording', 'measurement'}),
+                                f'{fid}: rendered recheck evidence required')
+                    if area_id in BEHAVIOR:
+                        require(bool(kinds & {'interaction', 'recording'}),
+                                f'{fid}: operated recheck evidence required')
         if status == 'accepted':
             require(severity == 'minor', f'{fid}: major/blocker cannot be accepted as ready')
         if status == 'open' and severity == 'minor':
