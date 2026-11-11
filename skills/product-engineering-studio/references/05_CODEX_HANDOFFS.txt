@@ -45,6 +45,7 @@ F. RETURN FORMAT
 Status: completed / partial / blocked
 Changed: paths and observable behavior
 Evidence: exact command or observation, result, and relevant revision. For a failure, include the failing case and reproducible command or input.
+For substantial UI, include captures per width/theme and recordings or frame strips for timing. Report correctness, usability, craft and character separately as verified, unresolved and not assessed.
 Limitations: mocked, untested or unavailable behavior
 Next: one concrete action
 State: compact update suitable for the session template
@@ -58,7 +59,7 @@ Use fresh sessions for a changed objective or stale context, not automatically a
 H. ORCHESTRATE ADAPTIVELY
 Act as the lead engineering partner for <brief> within <budget>. Use the product-engineering-studio workflow. Inspect accessible instructions, scripts and the feature path before selecting commands or owners. State the outcome, assumptions, deferred scope, 3-5 acceptance criteria and minimum UI/system design. Ask up to three questions that change the solution; make reversible choices directly.
 Select sequential, hybrid or parallel delivery using the skill's Execution Modes reference. Explain the choice briefly. Keep shared contracts and integration with the lead; assign only the current bounded slice to each worker. Use actual subagent support when available and allowed; otherwise execute sequentially.
-Deliver inspectable checkpoints and continue authorized work unless explicitly asked to pause. At each checkpoint report behavior, executed evidence, remaining gaps, time remaining if known, and the next smallest step. Reassess staffing and scope. Reserve time for integration, failure-path checks and final verification. Prioritize the core flow, reliability, then polish. Treat these as execution rules, not permission to implement every roadmap item at once.
+Deliver inspectable checkpoints and continue authorized work unless explicitly asked to pause. At each checkpoint report behavior, executed evidence, remaining gaps, time remaining if known, and the next smallest step. Reassess staffing and scope. Reserve time for integration, failure-path checks and final verification. Deliver a reliable core flow with its visual direction, feedback, relevant states and purposeful motion from the first complete slice. Reserve time to refine its leading moment and remaining craft. Treat these as execution rules, not permission to implement every roadmap item at once.
 First assignment: <one runnable 10-15-minute slice, with constraints, checks and checkpoint>.
 
 I. DELEGATE ONE BOUNDED TASK
@@ -70,3 +71,18 @@ Constraints / exclusions: <scope, invariants and mock boundaries>
 Checks / evidence: <discovered commands or observations; exact results required>
 Return: changed paths, actual evidence, limitations and interface changes needed.
 Stop: at this task's checkpoint; report blockers early. Route shared-contract or scope changes to the lead. Keep delegation with the lead unless explicitly assigned otherwise.
+
+J. EXPLORE DIRECTIONS
+Question / user / outcome: <the design decision>
+Product reading: <purpose, audience, content, personality, platform and implications>
+Shared content: <real copy/data source, identical across variants>
+Alternatives: <two or three distinct theses, product reasons and tradeoffs>
+References: <source, relationship studied and translation>
+Build: render disposable variants in the existing stack; vary structure and interaction, not just color. Explain color roles, proportions and materials in use.
+Return: captures at target widths; recommendation and rejected alternatives; leading moment hypothesis and prototype evidence. Proceed on reversible decisions; combine consequential open tradeoffs into one checkpoint only when user input is needed. Preserve evidence before retiring throwaway code.
+
+K. ASSESS THE FLOW
+Candidate / brief: <exact revision or working-tree scope and intended user outcome>
+Evidence: <actual captures, recordings/frame strips, reference sources and task criteria>
+Assess correctness, usability, craft and character separately using Creative Quality. Cover first impression, core task, relevant failures and repeated use. Inspect the artifacts rather than relying on the builder's verdict.
+Return verified findings with evidence/scope, unresolved weaknesses with location/effect, and unassessed areas with reasons. Distinguish reviewer walkthroughs from observed users. Do not edit files or manufacture a preferred variant.

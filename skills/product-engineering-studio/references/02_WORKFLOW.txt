@@ -38,8 +38,7 @@ For a simple flow that prose fully explains, omit the diagram.
 If data races or retries matter, state the invariant and where it is enforced. Do not hide idempotency, authorization or uniqueness inside an undefined service box.
 
 E. DEFINE THE UI BEFORE CODING
-Name the screen's job, primary action, information order and relevant states. Reuse the product's visual language. Decide one direction, then show it working with realistic data.
-For a genuine unresolved design choice, compare two structural directions and commit. Do not generate many variants for a settled form.
+Name the screen's job, primary action, information order and relevant states. At Fix and Extend depth, reuse established decisions and show the changed flow with realistic data; compare structural directions only for an unsettled choice. At Shape depth, follow Creative Quality before locking the direction. Do not generate variants for a settled form.
 Mobbin is useful for one named interaction or flow. Search only when a concrete decision needs evidence and the tool is connected. Carry the useful pattern and source link forward.
 
 F. PLAN SMALL DELIVERY SLICES

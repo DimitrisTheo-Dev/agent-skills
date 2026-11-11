@@ -1,0 +1,82 @@
+{
+  "baseline_commit": "17c23b61b20c352fbd852fafa5edddf23f1be453",
+  "source_content_commit": "bd1aa8023c73064a330ceede91530ee289d3e259",
+  "input_sha256": "3460373618d0b3185db253aef61b82ec0e202ee074f9887f8189db6e4dec5bc4",
+  "baseline": {
+    "sha256": "b4608b22393525bc223e9ac7cbed1b3d09ddc464a535a3e3981bf1279dc89d9a",
+    "files": {
+      "product-engineering-studio/SKILL.md": "0d8e1e1e92d138adbe193bb0131328e190ac09a8fccbcc1359bf9735141bf64d",
+      "product-engineering-studio/agents/openai.yaml": "ea85cfcd21eb78d63d6e9296466661127b06e28ff2e29d92e450334035f8c598",
+      "product-engineering-studio/assets/icon.svg": "e9301497fa98ef56aaca7ede0857b9a18dc06c34040f0679c609a6bf49b1d38b",
+      "product-engineering-studio/references/02_WORKFLOW.txt": "5bf0f1ee5830771b717f06f79046225ca5c90b46903159d45e6a80ddc2a0c41a",
+      "product-engineering-studio/references/03_SKILL_ROUTER.txt": "35202bfb2e37df69bc65816c1de7dac5f6eb5c5f1018e75cf79f1992a34860e1",
+      "product-engineering-studio/references/04_QUALITY_AND_DESIGN.txt": "fe5a44e070fbc48f1523e3f7d075d7715d88d017d24ebb46875a4228f2cfda36",
+      "product-engineering-studio/references/05_CODEX_HANDOFFS.txt": "cda2f85e3d89c3f76f093a73b1ac53003cf80a07e5220c4ef4b072f9b5aee3e6",
+      "product-engineering-studio/references/06_SESSION_STATE.txt": "a4d0f1d624a1575d1a57975757afab7486ceff524111dcc4980ddc7eed24ec17",
+      "product-engineering-studio/references/07_SOURCES.txt": "4dd31d362724cd907a7f2505d69c9e5c1e0c3d250c7edcd94daefcb2fc371aac",
+      "product-engineering-studio/references/09_WORKED_EXAMPLE.txt": "67a5ec4c9b2c9a9d98ef4c138d61e4695045e2e6aa2d61b3f54b2d20e4fb4bb5",
+      "product-engineering-studio/references/10_EXECUTION_MODES.txt": "3b765c22c28acd3cd3cc22c7392ba97c0f39fbe5c004b9d55696a35417ebf103",
+      "product-engineering-studio/references/TOOLS_SELECTION.txt": "a8c9b85e672216b1dc3e0e83dd95898d3b09e69184eab11a9ce4036de11e5ca0",
+      "vibe-ui/LICENSE.txt": "1d6e05992d4965f5b8384d948360893ae835fe57187b039173a6348d70a03fab",
+      "vibe-ui/SKILL.md": "57541175bdd0e2479f4c94e3a937371ae47bb07c04b265186ff3ac32c519dbaa",
+      "vibe-ui/agents/openai.yaml": "060cd719af3fdb17213e11c3b37e85633f9338d8f975fa919d11908ad197dd38",
+      "vibe-ui/examples/context-to-business.md": "4e8dc7e5901005b2cbd531ae2d1e3f795835a1c33ca6005a4073978a09dd775f",
+      "vibe-ui/examples/invocations.md": "9b0f9609318f7f9b80626711de18dbd6fd5d72422219537e45293458da1e45dd",
+      "vibe-ui/references/art-direction-and-craft.md": "62f0ebffac284cd316aa4c5c7767a154f6e03021bb0668a1d95fa7e87c44d147",
+      "vibe-ui/references/audience-translations.md": "2d3f02803a664af0e9aaa62a36cb4a32c9f5e712957a1884fc94d5adf3095742",
+      "vibe-ui/references/reference-intelligence.md": "a8f2809e50e2cb260e6df93eebb1cca80b46277f5634a584aba2e886c11b5a56",
+      "vibe-ui/references/visual-qa.md": "a2604ac114eaa9925f2585b1cbdde40399591f98727546c57ad08624d4687ed7"
+    }
+  },
+  "candidate_pilot": {
+    "sha256": "b1597943ca76d69838fc734c9d1fb926670582d090f7b3d3c4914f8942069251",
+    "files": {
+      "product-engineering-studio/SKILL.md": "e04ebab4bb5edbfc4cab95e323cb85d21f790a4ca9b72e13dcba889ac8862cc7",
+      "product-engineering-studio/agents/openai.yaml": "ea85cfcd21eb78d63d6e9296466661127b06e28ff2e29d92e450334035f8c598",
+      "product-engineering-studio/assets/icon.svg": "e9301497fa98ef56aaca7ede0857b9a18dc06c34040f0679c609a6bf49b1d38b",
+      "product-engineering-studio/references/02_WORKFLOW.txt": "866a546a5c6f5f77dd267bf1ab8447abb2afbb5463832dfc955e62b39759884c",
+      "product-engineering-studio/references/03_SKILL_ROUTER.txt": "023a69827dd39940f7ecad416602dd2a7550b966cb3c8ce078b27a0328d4621a",
+      "product-engineering-studio/references/04_QUALITY_AND_DESIGN.txt": "886c372827216a9abdf6ca0dca103aac6d1842b259367c86c02e0c90449777e3",
+      "product-engineering-studio/references/05_CODEX_HANDOFFS.txt": "581319f888805421bf2f511692a9c7675f5d27b60ecf6b06a85f6ce8def59e22",
+      "product-engineering-studio/references/06_SESSION_STATE.txt": "305d86ff7e565f69d2ac0c581721fa36f8b56890dfa27938168896225231a6c8",
+      "product-engineering-studio/references/07_SOURCES.txt": "140b101f091db09f6e9326c579e3a8e6cdb59d9470d297b627ad6f316c573a34",
+      "product-engineering-studio/references/08_CREATIVE_QUALITY.txt": "ddea877267ca5af8d482e15dd806382ccc1cb53274bfebb9c46bd53414ad7abe",
+      "product-engineering-studio/references/09_WORKED_EXAMPLE.txt": "67a5ec4c9b2c9a9d98ef4c138d61e4695045e2e6aa2d61b3f54b2d20e4fb4bb5",
+      "product-engineering-studio/references/10_EXECUTION_MODES.txt": "0e70c3565e75bf4ec73170be804da42927a2b816e60932ab2c4cc2c53666c10a",
+      "product-engineering-studio/references/TOOLS_SELECTION.txt": "a8c9b85e672216b1dc3e0e83dd95898d3b09e69184eab11a9ce4036de11e5ca0",
+      "vibe-ui/LICENSE.txt": "1d6e05992d4965f5b8384d948360893ae835fe57187b039173a6348d70a03fab",
+      "vibe-ui/SKILL.md": "eb0f7ed184de425f99b2f0fe44063a057f9ba949acb3a4339e40b9c63efc78ca",
+      "vibe-ui/agents/openai.yaml": "060cd719af3fdb17213e11c3b37e85633f9338d8f975fa919d11908ad197dd38",
+      "vibe-ui/examples/context-to-business.md": "4e8dc7e5901005b2cbd531ae2d1e3f795835a1c33ca6005a4073978a09dd775f",
+      "vibe-ui/examples/invocations.md": "9b0f9609318f7f9b80626711de18dbd6fd5d72422219537e45293458da1e45dd",
+      "vibe-ui/references/art-direction-and-craft.md": "06b58f78e8ca7d2c8441a09b23232fcc623eb5a109b3bfe4da2cdb02a4da24c7",
+      "vibe-ui/references/audience-translations.md": "2d3f02803a664af0e9aaa62a36cb4a32c9f5e712957a1884fc94d5adf3095742",
+      "vibe-ui/references/reference-intelligence.md": "1e0dca3eb557c8aacf93c580534e7827f359624c0d6c684975e8eb12faf35730",
+      "vibe-ui/references/source-notes.md": "cd3a9083d3b17a522d003606b355a230440b2a4b65a9f07e2396ccd1586d5c14",
+      "vibe-ui/references/visual-qa.md": "241c9932bbb209604f6d28b1317a199a175fa259f28d2cbff43d30e9243b53df"
+    }
+  },
+  "artifacts": {
+    "sha256": "ee81699cd3278706dafae44325b14b83e477e5e155665ccf4448a421cb02c2e2",
+    "files": {
+      "one/BUILD.md": "6fa527765417e0878b8d470f7d407a0c890d5bb80e48bf76b7c780288f341aef",
+      "one/app.js": "87ff46e5e239f40391a114baf8d042e3caeecd84b7a542021bf3172bdb2fbd3d",
+      "one/check.cjs": "d47ff4a0953ce9b1e69703e44ef1b346d41609260ad03e6b7c3411a8ab2dbf2d",
+      "one/core.js": "8884e0d3456a3f108c64a27047669c085d91068f6b4d69c25afa1723dee454db",
+      "one/data.js": "819b02c8c1ddc99bf96b71b610ce8e7c187837720713a1a3021033f3d20ec295",
+      "one/index.html": "98f5e0beb40acac53fff2335dc22bb3bbe6196964f743615f78cedf6ac9ebfdf",
+      "one/styles.css": "d8a638172110b8c3c3f3d940f957f14efbe8f5e35ecfc1c19888dfa2ee90728c",
+      "two/BUILD.md": "b3c9f6b98c2f1f1d934d121e90e81b3a69b3a93bb16e3dc4056a4857cc791121",
+      "two/DESIGN.md": "414aa271d4292c774b6572ab06da4ac5b0133179d6c3c3225c5ebdd43b0096cd",
+      "two/SESSION_STATE.md": "985eeda95bd2e344d4dc4dffcc9c206cde0c0eb2bb6a555064cd16615acc6c76",
+      "two/app.js": "c0833b5a425b8aedacdaa7b50aaa9c1b66cde37e1f0649849de898062573a0bb",
+      "two/checks.txt": "5b25e7014eab1ee55322afdde64374f36b207130805b2ac4b300e71fb3713b3d",
+      "two/data.js": "30374f30062c4125fcfd843c4bd61dc9206fafd2707a9feb32a0c4583b71f849",
+      "two/exploration.html": "ec54fa64052f8453b89710a86bf9db59025a0fca9d12fa03b4722ac393a7e894",
+      "two/index.html": "6532d55aa797b159d6155a92a327b1a75ea37b82cf13ffd2cd1a418d232dcddb",
+      "two/styles.css": "d13bc08f297eabd3040596ef321a4a1182c1dcc4e43a6099c3e3dd4ce6003a6f",
+      "two/verify.cjs": "bf59184360a8440be861936a7804b02199afc0042eb5d19e453f7bfebe3fad8c"
+    }
+  },
+  "note": "Pilot candidate precedes the final optional-tool cleanup and the independently reviewed correction to choose Vibe UI mode by task. Raw snapshots remain in local .eval-results; final source is the reviewed skill in this repository."
+}

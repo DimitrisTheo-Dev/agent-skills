@@ -4,15 +4,16 @@ Select the concerns introduced by the task. This is a judgment guide, not a dema
 PRODUCT AND UX
 Describe the screen's job in one sentence. Give it a primary action and an obvious next step. Show useful content before asking for optional setup.
 Specify relevant states: initial/empty, loading, partial, success, validation error, request failure and permission denial. Destructive actions need appropriate recovery or confirmation. Preserve input on recoverable errors. Avoid trapping a user in a spinner.
+Treat responsibility as craft: honest progress, clear consequences, appropriate recovery and respect for attention.
 Represent realistic content density, long labels, missing values and small viewports. Distinguish optimistic feedback from confirmed server success when that distinction matters.
 
 DESIGN JUDGMENT
 Use the available vibe-ui principles: context, intentionality, strong fundamentals and rendered verification. These principles are distilled from prior discussion; consult the real local skill for its full workflow.
 State a creative thesis only when designing a new identity: which user, which feeling, which functional benefit. Keep typography, spacing, color, geometry and interactions coherent.
-For existing products, preserve identity and tokens unless redesign is requested. Choose one visual direction early. Make one functional interaction memorable when the product benefits; do not decorate every region.
-Design references should answer a question. From a relevant reference, extract the helpful hierarchy, disclosure or interaction pattern and explain why it fits. No reference is a requirement to imitate its full aesthetic.
+For existing products, preserve identity and tokens unless redesign is requested. Choose direction using Creative Quality at the selected depth. Derive new directions from the product and test signature moments as hypotheses. Ask what each choice contributes to understanding, confidence, pleasure or identity.
+Design references should answer a question. From a relevant reference, extract the helpful hierarchy, disclosure or interaction pattern and explain why it fits. Study relationships, including color proportions; references are examples, not a fixed palette or style menu. Honor explicit requests for faithful recreation.
 Avoid generic large-card layouts when the data wants a list, table or editorial structure. Use visual density that matches the task. Animations should clarify change and respect reduced-motion settings.
-Inspect the actual render. Check common content, an empty/error state and the relevant viewport. Limit polish to a focused pass in Sprint mode unless visible defects require another.
+Inspect the actual render. Check common content, an empty/error state and the relevant viewport. Build craft into the first complete flow and spend the stated refinement budget. Sprint scope can shrink; unresolved craft or character weaknesses must remain visible in the report.
 
 ACCESSIBILITY
 Check semantic controls, accessible labels, visible keyboard focus, logical focus order and keyboard operation. Avoid relying on color alone. Ensure useful contrast and reflow with larger text. Announce relevant asynchronous status where needed.

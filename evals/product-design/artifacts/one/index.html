@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Find a skill for your coding agent. Read its instructions and source, then copy its installation command and invocation.">
+  <title>Agent Skills — Find your next skill</title>
+  <script>try{document.documentElement.dataset.theme=localStorage.getItem('catalog-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}catch{document.documentElement.dataset.theme='light'}</script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="data.js" defer></script>
+  <script src="core.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#/" aria-label="Agent Skills, catalog home"><span class="brand-symbol" aria-hidden="true">↗</span><span>agent<span class="brand-slash">/</span>skills</span></a>
+      <nav aria-label="Main navigation"><a href="#/" class="nav-catalog">Catalog</a><a class="repo-link" href="https://github.com/DimitrisTheo-Dev/agent-skills/tree/bd1aa8023c73064a330ceede91530ee289d3e259" target="_blank" rel="noreferrer">Repository <span aria-hidden="true">↗</span></a></nav>
+      <button id="theme-toggle" class="icon-button" type="button" aria-label="Switch to dark theme" title="Switch theme"><span aria-hidden="true">◐</span></button>
+    </div>
+  </header>
+  <main id="main" tabindex="-1"></main>
+  <footer class="site-footer"><div><span class="footer-brand">agent/skills</span><span>Instructions worth reading before running.</span></div><a href="https://github.com/DimitrisTheo-Dev/agent-skills/tree/bd1aa8023c73064a330ceede91530ee289d3e259" target="_blank" rel="noreferrer">Source snapshot <code>bd1aa802</code> ↗</a></footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <dialog id="copy-dialog" aria-labelledby="copy-dialog-title">
+    <div class="dialog-heading"><h2 id="copy-dialog-title">Copy manually</h2><button class="icon-button" id="close-dialog" aria-label="Close copy dialog">×</button></div>
+    <p>Your browser didn’t allow clipboard access. Select the text below, then use your device’s copy action.</p>
+    <label class="sr-only" for="manual-copy">Text to copy</label><textarea id="manual-copy" readonly rows="5" spellcheck="false"></textarea>
+    <button class="primary-button" id="select-copy" type="button">Select text</button>
+  </dialog>
+  <noscript><p class="noscript">This catalog needs JavaScript for search and skill details. <a href="https://github.com/DimitrisTheo-Dev/agent-skills/tree/bd1aa8023c73064a330ceede91530ee289d3e259">Read the source repository</a>.</p></noscript>
+</body>
+</html>

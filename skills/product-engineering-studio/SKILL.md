@@ -7,15 +7,17 @@ description: Frame a product problem, explain its UI and system design, choose s
 
 Turn a raw brief into a small useful outcome with explicit decisions and observable evidence. Discuss in the user's language; write concise engineering handoffs in English unless requested otherwise.
 
-Target 300-600 words for the initial response, including its first handoff. Use a compact acceptance table and short architecture explanation. Expand when the user requests depth or an essential contract needs it. Keep optional design exploration and later-stage details behind the references.
+Target 300-600 words for the initial response, including its first handoff. Use a compact acceptance table and short architecture explanation. Expand when the user requests depth or an essential contract needs it. Keep design exploration and later-stage details behind the references. Explore before committing at Shape depth.
 
 ## 1. Establish the task
 
 Read the supplied brief and accessible repository instructions. Separate confirmed requirements, observations and reversible assumptions. Ask up to three consequential questions initially; continue independent inspection while a necessary answer is missing. Respect design-only or no-code scope.
 
-Capture user, outcome, constraints, real versus mocked behavior, 3-5 acceptance criteria, verification methods and deferred work. For ambiguous inputs consult [Workflow](references/02_WORKFLOW.txt), section A.
+Capture user, outcome, constraints, real versus mocked behavior, 3-5 acceptance criteria, verification methods and deferred work. For user-facing work, choose Fix (a focused correction), Extend (an established product) or Shape (a new direction or core journey). State a refinement budget; at Shape depth include criteria for correctness, usability, craft and character. For Extend or Shape, read [Creative Quality](references/08_CREATIVE_QUALITY.txt). For ambiguous inputs consult [Workflow](references/02_WORKFLOW.txt), section A.
 
 ## 2. Explain the smallest useful design
+
+At Shape depth, read the product, render competing directions and prototype the strongest moment hypothesis before locking the design. Follow Creative Quality; proceed on a reasoned recommendation and combine consequential open choices into one checkpoint when user input is necessary.
 
 Describe the main UI flow, required states, data entities, interfaces, trust boundaries and important failure behavior. Use a compact Mermaid diagram when relationships help. Reuse the actual repository stack. State a scaling trigger before adding infrastructure.
 
@@ -41,11 +43,11 @@ Include goal, acceptance IDs, relevant context, observed scope, essential contra
 
 For a comprehensive starting prompt, provide the brief, execution rules and bounded first assignment. Keep later assignments adaptive; use the orchestration template in Codex Handoffs rather than specifying the entire implementation upfront.
 
-Inspect the running behavior and actual check output. At delivery, reuse the repository's documented verification command when it covers the change. For a failure, record the failing case and a command or input that reproduces it. After two unsuccessful fixes with the same symptom, change the diagnostic approach. Keep unrelated cleanup out of scope. Publish or deploy only under the user's authorization.
+Include typography, composition, relevant states, immediate feedback and purposeful motion in the first complete UI slice. Inspect the running behavior and actual check output. For UI, retain captures of the rendered flow and a recording or frame strip when timing matters; label missing evidence. At delivery, reuse the repository's documented verification command when it covers the change. For a failure, record the failing case and a command or input that reproduces it. After two unsuccessful fixes with the same symptom, change the diagnostic approach. Keep unrelated cleanup out of scope. Publish or deploy only under the user's authorization.
 
 ## 6. Review and continue
 
-Review the actual candidate, including new files. Confirm the review method can see the chosen base/range before relying on it. Recheck material fixes.
+Review the actual candidate, including new files. Confirm the review method can see the chosen base/range before relying on it. Recheck material fixes. For Extend or Shape, assess correctness, usability, craft and character separately using Creative Quality. Use a reviewer who did not build the flow when permitted and available; otherwise label the self-review limitation. Carry unresolved findings into session state.
 
 Report changed behavior, actual evidence, limitations and next action. Update [Session State](references/06_SESSION_STATE.txt); do not replay complete logs or claim automatic ChatGPT/Codex synchronization. If file tools are unavailable, return the compact state for copying.
 

@@ -9,6 +9,7 @@ Estimate the current deliverable's work, its dependency chain and the lead's int
 | One focused fix, a short slice, or strongly shared files | Sequential | Lead implements and verifies. |
 | Several uncertain decisions or one risky dependency | Hybrid | Lead resolves the critical dependency; optionally delegate bounded read-only investigation or review. |
 | Two useful independent implementation tasks with stable contracts | Parallel slice | Lead integrates; one or two workers own separate areas. |
+| Two or three unsettled design directions on identical content | Parallel exploration if permitted | Workers own disjoint prototype routes; lead compares renders, recommends and integrates one direction. |
 | Larger build with several independent outcomes | Phased parallel work | Lead groups tasks by dependency, starts a small worker set, and expands only after clean integration. |
 
 Large or long-running work can remain sequential when coupling dominates. Small work can benefit from one independent diagnostic pass when it resolves a concrete uncertainty. Evaluate the parallel gate before spawning workers.
@@ -26,6 +27,7 @@ When the gate passes, spawn workers with bounded packets from Codex Handoffs. Wh
 C. SIZE THE TEAM AND BUDGET
 Start with the fewest workers that remove a real bottleneck. In a 120-minute exercise, normally cap concurrent work at one lead plus two implementation workers. Use a smaller team if the repository, time or contracts warrant it. For larger work, cap workers by independent ready tasks, runtime limits, review capacity and any explicit cost budget.
 Reserve roughly the final quarter of a short sprint for integration, reliability checks and demonstration; integrate throughout the sprint. Aim for the core live flow by its midpoint, adjusting for observed setup costs. If behind, reduce optional scope and worker count before sacrificing required behavior.
+At Shape depth, reserve an explicit share for refining the leading moment and everyday interaction.
 The lead remains available for integration and decisions. Give it only a short non-overlapping task while workers run. Reuse an idle worker for a concrete verification concern rather than automatically spawning a reviewer. Avoid recursive delegation unless the lead assigns a bounded reason and budget.
 
 D. PREPARE THE CHECKPOINT

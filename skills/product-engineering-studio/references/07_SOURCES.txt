@@ -36,7 +36,7 @@ Product framing and scope choices are useful selectively. Documentation checked 
 DESIGN
 https://github.com/jakubkrehel/skills
 Changed-interface review and domain helpers.
-The local vibe-ui skill was listed in the user's supplied inventory; this bundle contains discussion-derived design principles, not that skill's full source. Read its actual local file before using it.
+Vibe UI is a separately distributed optional specialist. Read its accessible source before using it; core framing and assessment remain available in this bundle.
 Mobbin connection instructions and tools are runtime-specific. Use current in-app guidance; this bundle does not establish a live connection.
 
 FALLOW
@@ -59,7 +59,7 @@ CAPABILITY LEDGER
 - Project files: these reference texts can be uploaded manually.
 - Live repository: discover in the execution environment.
 - Installed local skills: the shared 2026-11-07 inventory is a snapshot.
-- vibe-ui exact contents: not included or audited here.
+- vibe-ui: separate optional skill; resolve its actual installed content. The design update reviewed the public source at bd1aa8023c73064a330ceede91530ee289d3e259 on 2026-11-11.
 - T3/gstack/Fallow dependencies: not installed by this bundle.
 - Mobbin/Figma/browser: discover current tools before claiming access.
 - Checks, costs, token usage and cache rates: unknown unless observed/measured.
@@ -67,3 +67,10 @@ CAPABILITY LEDGER
 
 PROVENANCE
 The operating rules also incorporate the user's prior checklist, short feedback-loop preference and available design/workflow discussions. Prior long orchestration prompts inform selective context and evidence practices; they are not imported as universal runtime instructions. No claim is made that every historical chat or private source was retrieved.
+
+DESIGN UPDATE, REVIEWED 2026-11-11
+https://github.com/jakubkrehel/make-interfaces-feel-better/tree/35545ea1512ad59fa463e6b1f95ca9c052981fe6/skills/make-interfaces-feel-better
+https://github.com/emilkowalski/skills/tree/715c1807e08c497cfd1dc4feb450a2a3300ef2a9/skills/emil-design-eng
+https://github.com/emilkowalski/skills/tree/715c1807e08c497cfd1dc4feb450a2a3300ef2a9/skills/find-animation-opportunities
+These are third-party design guidance, not standards or proof of quality. Their useful lenses include optical balance, interrupted motion, state coverage and frequency-aware judgment. Exact press scales, stroke weights, timing recipes, blanket keyboard-animation bans and universal compositor claims are not adopted as requirements. Verify current library/browser behavior before applying technical recipes. No upstream scripts, assets or source text are bundled; this update uses original prose and source links.
+The product-specific exploration, four assessments and proportional autonomy derive from the owner's design brief and supplied V3 plan. The supplied UI Skills playbook is a set of examples, not an additional mandatory ruleset.

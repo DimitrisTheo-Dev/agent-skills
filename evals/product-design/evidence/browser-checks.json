@@ -1,0 +1,304 @@
+[
+  {
+    "version": 1,
+    "check": "copy invocation",
+    "clipboard": "$vibe-ui"
+  },
+  {
+    "version": 2,
+    "check": "copy invocation",
+    "clipboard": "$vibe-ui"
+  },
+  {
+    "version": 2,
+    "check": "20 alternating search changes",
+    "results": [
+      {
+        "empty": true,
+        "vibe": false
+      },
+      {
+        "empty": false,
+        "vibe": true
+      },
+      {
+        "empty": true,
+        "vibe": false
+      },
+      {
+        "empty": false,
+        "vibe": true
+      },
+      {
+        "empty": true,
+        "vibe": false
+      },
+      {
+        "empty": false,
+        "vibe": true
+      },
+      {
+        "empty": true,
+        "vibe": false
+      },
+      {
+        "empty": false,
+        "vibe": true
+      },
+      {
+        "empty": true,
+        "vibe": false
+      },
+      {
+        "empty": false,
+        "vibe": true
+      },
+      {
+        "empty": true,
+        "vibe": false
+      },
+      {
+        "empty": false,
+        "vibe": true
+      },
+      {
+        "empty": true,
+        "vibe": false
+      },
+      {
+        "empty": false,
+        "vibe": true
+      },
+      {
+        "empty": true,
+        "vibe": false
+      },
+      {
+        "empty": false,
+        "vibe": true
+      },
+      {
+        "empty": true,
+        "vibe": false
+      },
+      {
+        "empty": false,
+        "vibe": true
+      },
+      {
+        "empty": true,
+        "vibe": false
+      },
+      {
+        "empty": false,
+        "vibe": true
+      }
+    ]
+  },
+  {
+    "version": 1,
+    "check": "20 alternating search changes",
+    "results": [
+      {
+        "empty": true,
+        "vibe": false
+      },
+      {
+        "empty": false,
+        "vibe": true
+      },
+      {
+        "empty": true,
+        "vibe": false
+      },
+      {
+        "empty": false,
+        "vibe": true
+      },
+      {
+        "empty": true,
+        "vibe": false
+      },
+      {
+        "empty": false,
+        "vibe": true
+      },
+      {
+        "empty": true,
+        "vibe": false
+      },
+      {
+        "empty": false,
+        "vibe": true
+      },
+      {
+        "empty": true,
+        "vibe": false
+      },
+      {
+        "empty": false,
+        "vibe": true
+      },
+      {
+        "empty": true,
+        "vibe": false
+      },
+      {
+        "empty": false,
+        "vibe": true
+      },
+      {
+        "empty": true,
+        "vibe": false
+      },
+      {
+        "empty": false,
+        "vibe": true
+      },
+      {
+        "empty": true,
+        "vibe": false
+      },
+      {
+        "empty": false,
+        "vibe": true
+      },
+      {
+        "empty": true,
+        "vibe": false
+      },
+      {
+        "empty": false,
+        "vibe": true
+      },
+      {
+        "empty": true,
+        "vibe": false
+      },
+      {
+        "empty": false,
+        "vibe": true
+      }
+    ]
+  },
+  {
+    "version": 1,
+    "check": "dark frame widths",
+    "results": [
+      {
+        "scroll": 375,
+        "theme": "dark",
+        "width": 390
+      },
+      {
+        "scroll": 753,
+        "theme": "dark",
+        "width": 768
+      },
+      {
+        "scroll": 1265,
+        "theme": "dark",
+        "width": 1280
+      },
+      {
+        "scroll": 1425,
+        "theme": "dark",
+        "width": 1440
+      }
+    ]
+  },
+  {
+    "version": 2,
+    "check": "light frame widths",
+    "results": [
+      {
+        "scroll": 375,
+        "theme": "light",
+        "width": 390
+      },
+      {
+        "scroll": 753,
+        "theme": "light",
+        "width": 768
+      },
+      {
+        "scroll": 1265,
+        "theme": "light",
+        "width": 1280
+      },
+      {
+        "scroll": 1425,
+        "theme": "light",
+        "width": 1440
+      }
+    ]
+  },
+  {
+    "version": 2,
+    "check": "dark frame widths",
+    "results": [
+      {
+        "scroll": 375,
+        "theme": "dark",
+        "width": 390
+      },
+      {
+        "scroll": 753,
+        "theme": "dark",
+        "width": 768
+      },
+      {
+        "scroll": 1265,
+        "theme": "dark",
+        "width": 1280
+      },
+      {
+        "scroll": 1425,
+        "theme": "dark",
+        "width": 1440
+      }
+    ]
+  },
+  {
+    "version": 2,
+    "check": "slash focus, typed search, Enter detail",
+    "result": "vibe-ui detail visible"
+  },
+  {
+    "version": 1,
+    "check": "keyboard search, Enter detail, installation clipboard",
+    "clipboard": "ln -s \"$PWD/skills/vibe-ui\" \"$HOME/.agents/skills/vibe-ui\""
+  },
+  {
+    "version": 2,
+    "check": "installation clipboard",
+    "clipboard": "ln -s \"$PWD/skills/vibe-ui\" \"$HOME/.agents/skills/vibe-ui\""
+  },
+  {
+    "version": 1,
+    "check": "light frame widths",
+    "results": [
+      {
+        "width": 390,
+        "scroll": 375,
+        "theme": "light"
+      },
+      {
+        "width": 768,
+        "scroll": 753,
+        "theme": "light"
+      },
+      {
+        "width": 1280,
+        "scroll": 1265,
+        "theme": "light"
+      },
+      {
+        "width": 1440,
+        "scroll": 1425,
+        "theme": "light"
+      }
+    ],
+    "source": "Observed DOM measurements in the browser transcript; 390 measured separately before the remaining three widths."
+  }
+]

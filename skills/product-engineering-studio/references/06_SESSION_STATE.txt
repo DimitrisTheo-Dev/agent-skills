@@ -10,6 +10,11 @@ Acceptance:
 - AC1: expected behavior; planned evidence; status
 - AC2:
 - AC3:
+Design depth / reason / refinement rounds used and remaining:
+Design contract / product reading: path
+Direction / reason / rejected alternatives:
+Moment hypothesis / prototype / first-look and actual repeated-use evidence:
+Assessment: correctness / usability / craft / character; verified / unresolved / not assessed
 Accepted decisions:
 - <decision and short reason>
 Assumptions:

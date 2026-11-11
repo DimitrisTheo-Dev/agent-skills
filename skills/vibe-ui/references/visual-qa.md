@@ -17,7 +17,7 @@ Ask, without zooming into components:
 - Headlines: spelling, contrast, exact wrapping, balanced length, appropriate weights/letter spacing.
 - Content grouping: paragraph/headline distance, CTA context, proof placement.
 - Grid: optical centering, alignment lines, visual balance, clipping and overflow.
-- Colors: foreground legibility, accent scarcity, warm/cool consistency, functional states.
+- Colors: computed foreground legibility, accent roles/proportions, material relationships and relevant functional states.
 - Components: border/radius consistency, icon optical size, visible focus, hover/pressed/disabled states, tappability.
 - Images: resolution, aspect ratio, crop, realness, truthful captions.
 - Motion: purpose, performance, latency, respect for reduced motion.
@@ -33,13 +33,28 @@ Choose viewports appropriate for the project; examples are ~320, 375/390, 430, 7
 - Reasonable target sizes and spacing for the platform; do not let visual minimalism create tiny touch surfaces.
 - Functional buttons/links, no unexpected auth/data/API changes.
 
-## Phase D: iteration and evidence
+## Phase D: judgment, iteration and evidence
 
-1. Before changing existing UI, connect each observed problem to its user or brand impact and the smallest supported fix. Without evidence, leave cosmetic styling unchanged. Prioritize up to three meaningful defects; do not invent findings to reach a count.
-2. Batch first-round desktop/mobile screenshot inspection where practical, then apply supported blockers and high-impact corrections together.
-3. Confirm the corrections in one rendering pass when practical. Continue only for unresolved blockers.
-4. Stop when the remaining issues are minor, outside scope, or unsupported by evidence. Do not endlessly churn UI for aesthetics alone.
-5. Report actual commands/tests/screenshots reviewed. Separate verified behavior from assumptions or untested device claims.
+State or reuse the task's refinement budget. Without one, begin with one focused correction/confirmation pass for Fix or Extend and two critique/correction rounds for Shape, then reassess scope and remaining gaps. A budget is an effort bound, never a quality score.
+
+1. Inspect the actual candidate, including new files and relevant states. Use an independent reviewer when available and permitted; otherwise label self-review. Give a reviewer the brief and artifacts rather than the builder's desired verdict.
+2. Connect each observed weakness to its user or brand consequence. Prioritize the largest gap, whether composition, comprehension, interaction or reliability. Do not manufacture findings, a removal quota or aesthetic changes without evidence.
+3. Apply supported corrections and inspect again. If the same weakness survives two rounds, revise the diagnosis or revisit the direction rather than polishing around it.
+4. Respect scope and budget. Leave unresolved weaknesses explicit; stop out-of-scope churn. The absence of blockers does not establish distinctive craft.
+5. Report actual commands, inspected captures and interactions. Separate measured facts, reviewer judgments, assumptions and untested device claims.
+
+Assess substantial flows four ways:
+
+| Assessment | Evidence and questions |
+| --- | --- |
+| Correctness | Which requested behaviors, states and failure paths were exercised? |
+| Usability | Can the cold-start task be understood and completed by the relevant inputs? Label reviewer walkthroughs; they are not observed-user tests. |
+| Craft | Are composition, rhythm, type, color, optical detail, states and interaction deliberate at the tested widths/themes? Measure when possible. |
+| Character | What is specific to this product? Does one point of view survive without its special moment? Does it hold up beside references and after repeated use? |
+
+For each, give verified evidence and scope, unresolved weaknesses and consequences, and anything not assessed with its reason. Use recordings, frame strips, timing measurements or live interaction for temporal claims. A screenshot cannot prove motion quality; model judgments of feel remain provisional. Record actual repeat counts and keep imagined long-term behavior separate.
+
+When the owner expresses a preference, retain the choice and reason with product scope. Predicting preference helps calibration but does not replace comprehension or task completion. A passing checklist does not show that a product is more than ordinary.
 
 ## Useful acceptance criteria
 

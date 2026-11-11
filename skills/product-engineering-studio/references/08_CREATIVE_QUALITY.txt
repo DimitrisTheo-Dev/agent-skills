@@ -1,0 +1,53 @@
+CREATIVE QUALITY
+Read for Extend or Shape work. Fix reuses the established system and reviews the changed behavior. This guide governs exploration and judgment; Quality and Design still applies to correctness, accessibility and trust.
+
+A. DEPTH AND BUDGET
+Fix: a defect or small tweak; preserve established decisions.
+Extend: a screen or flow in an established product; explore only unsettled decisions.
+Shape: a new product, new direction or core journey; explore before locking.
+Choose the lowest depth that fits. State the scope and a refinement budget in rounds, reserving time for the first complete flow, interaction refinement and verification. If unspecified, begin with two critique/correction rounds for Shape and one for Extend, then reassess against the user's scope. A budget bounds effort; it proves nothing about quality. Keep open weaknesses visible when it is exhausted. User constraints take precedence.
+
+B. READ THE PRODUCT
+Before seeking references, state five facts or labelled assumptions and their design implications: purpose, audience, actual content, personality and platform/input/frequency. Ground major choices in these facts.
+Apply a swap test to identity decisions: if the explanation works unchanged for an unrelated product, make it more specific and test it in the render. Shared conventions such as legible text or predictable navigation remain valid across products. A plausible rationale alone is not evidence that a choice works.
+
+C. STUDY RELATIONSHIPS
+Use supplied screenshots, palettes and source material as evidence. Name the relationship studied, why it matters here and how it translates: accent proportions, text/image balance, density, disclosure, or interaction continuity. Record accessible sources and distinguish observations from interpretation. Study a reference interaction live or in recorded evidence when behavior matters. Never infer motion from a still.
+Gather a small relevant comparison set when tools permit. If access fails, use available evidence and record the limit. Match explicit recreation requests; otherwise interpret references for the product rather than offering a fixed style or palette menu.
+
+D. EXPLORE BEFORE LOCKING
+For Shape, render two or three directions on the same realistic content before freezing layout, components and tokens. Each needs a thesis, a product-specific reason and a tradeoff. Change composition, hierarchy, information architecture or interaction meaningfully; a color swap is not another direction. At Extend, compare only a genuinely unresolved choice. Fix needs no variants.
+Use an accessible prototype skill if appropriate; otherwise use the existing stack and disposable routes or a local switcher. Parallel exploration is optional under Execution Modes. Do not require missing skills, extra installations or a new framework.
+Compare the renders, recommend one and record why the others lost or what they taught. Proceed autonomously on reversible choices. Ask only when a consequential identity decision or costly tradeoff depends on missing user priorities; combine open decisions into one checkpoint. Existing authorization and preferences count. Preserve comparison evidence before retiring agent-created throwaway code; keep accepted behavior and user-owned work.
+
+E. COLOR IN CONTEXT
+For each direction explain dominant surfaces, text, accent meanings, supporting status/data colors, rough proportions and the relationship to imagery or materials. Judge the palette on real screens, content and supported themes, not equal-sized swatches. A familiar palette may be correct when grounded in the product.
+After selection, build semantic roles and relevant hover/pressed/selected/focus/disabled and feedback pairings. Measure contrast on computed colors. Keep the palette consistent within this product; never promote its hues, typeface or motif as a default for the next product.
+
+F. CHARACTER AND MOMENTS
+Carry a point of view through composition, typography, writing, materials and everyday interaction. Remove the signature moment mentally: the remainder must still feel considered and specific.
+Seek places where the actual value becomes unusually tangible, effortless or satisfying. A convenience or short transition is not automatically a wow moment. Pleasure, atmosphere and identity are valid contributions alongside understanding and confidence.
+Distinguish a beat (rare first result, onboarding or completion, which can shorten on repetition) from feel (frequent direct manipulation, continuity or removing expected work, which remains fast). Prototype the strongest hypothesis before full implementation. If none earns its cost, record that finding and concentrate on everyday feel; never invent a spectacle to satisfy a quota.
+For the leading hypothesis record: trigger; benefit; feeling; visible behavior; expected 2nd/20th/500th-use behavior; performance/build cost; keyboard, screen-reader and reduced-motion alternatives; confirming and refuting evidence; rejected candidates and reasons. Test first impression and repeated use, including rapid reversal. Record the actual repeat count; 500th-use behavior is a hypothesis until observed.
+
+G. BUILD CRAFT INTO THE FIRST FLOW
+Ship deliberate hierarchy, type, spacing, responsive composition, relevant component states, immediate feedback and purposeful motion in the first complete slice. Preserve existing components and dependencies where suitable. Avoid a placeholder visual system with craft deferred to a final pass.
+Judge each choice by contribution to understanding, confidence, pleasure or identity and the effort it costs. Remove unnecessary effort and refine what remains. Do not impose cross-project bans on gradients, multiple accents, shadows, density or expressive motion. Space can create rhythm and attention without moving.
+Separate requirements (accessibility and basic responsiveness), platform conventions and design hypotheses (sizes, scales, timings, colors). Test hypotheses in context. Document consequential exceptions, not every pixel adjustment.
+Give immediate press feedback, while committing ordinary actions on click/release with cancellation and keyboard semantics intact. Frequent motion must stay interruptible, retarget from current state and never delay input. Reduce spatial motion when requested while preserving understandable feedback. Verify rather than assume compositor performance.
+Use honest progress, clear consequences, appropriate undo/recovery and respect for attention. Distinguish optimistic feedback from confirmed results; never simulate work or urgency.
+
+H. ASSESS FOUR WAYS
+Use a reviewer who did not build the flow when tools and delegation rules permit. Supply the exact candidate, product brief, real references and evidence; withhold the builder's self-rating and desired verdict. If independent review is unavailable, do a labelled self-review and continue authorized work.
+Correctness: execute behavior criteria, relevant states and failure paths. Checks support only the exercised cases.
+Usability: attempt a cold-start task by the relevant inputs and assess first-look comprehension. Observe people when available; otherwise label this a reviewer walkthrough, not a user test.
+Craft: inspect rendered composition, type, rhythm, color, optical alignment, surfaces, states, input and motion at representative widths, adjacent breakpoints and supported themes. Measure what can be measured. A passing checklist can still describe an ordinary product.
+Character: assess a compelling composition, product specificity, distinctive care/value, repeated-use satisfaction and comparison to references. Evaluate the whole flow with the signature moment present and absent.
+Use screenshots for appearance and recordings, frame strips, measurements or live interaction for temporal claims. State what the reviewer actually inspected and the limits of that medium. Model judgments of feel and long-term appeal remain provisional.
+Report each assessment as verified (evidence and scope), unresolved (location and consequence), and not assessed (reason). Keep observed facts separate from subjective judgments. Aesthetic approval does not establish usability or correctness. Owner preferences calibrate character; retain their reasons and check task clarity too.
+Prioritize the largest observed gap and refine within budget. After two rounds leave the same weakness, change the diagnosis or return to exploration. Do not add reviewers until they agree or claim success from a clean checklist.
+
+I. CONTRACT AND LEARNING
+At selection, update the existing design contract or create DESIGN.md in the product repository. Keep: product reading; chosen thesis and reasons; rejected alternatives; references and translations; color roles/proportions; typography, spacing, materials and writing; interaction/motion and relevant states; requirements/conventions/hypotheses; moment experiment and results; consequential exceptions; decisions and scoped lessons.
+Keep implementation values in their governing tokens/components and link to them instead of maintaining conflicting copies. Preserve current decisions and evidence rather than the conversation transcript.
+A lesson starts with product scope. Widen guidance only with repeated evidence across unlike products; label preferences as defaults with reasons. Never generalize a project's palette, typeface or motif. One pilot is diagnostic evidence, not proof of reliable taste.

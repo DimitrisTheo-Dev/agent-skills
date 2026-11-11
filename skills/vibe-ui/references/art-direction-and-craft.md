@@ -12,7 +12,7 @@ Decide five things before expanding UI:
 4. **Main tension:** the contrast that gives the composition life, e.g. expressive typography against quiet controls, or quiet editorial type against rich original photography.
 5. **Restraint rule:** what won't be used, because it would dilute the signature or add cognitive burden.
 
-If two directions are equally plausible and exploring them would add value, describe them briefly, then commit to the strongest. Do not give the user five interchangeable AI concepts instead of doing the work.
+For Shape work, derive two or three directions from the product reading and compare renders with identical content. Give each a thesis, a reason and a tradeoff; vary hierarchy, composition or interaction. For an extension, explore only an unsettled decision. Make a recommendation and proceed on reversible choices; ask only for consequential missing priorities. Keep comparison evidence before retiring disposable code.
 
 ## Typography is identity and information architecture
 
@@ -34,11 +34,12 @@ If two directions are equally plausible and exploring them would add value, desc
 
 ## Color and material
 
-- Pick canvas/background, main text, secondary text, accent, boundaries, and feedback colors as roles. Start with contrast and hierarchy.
+- Explain six parts: dominant surfaces; text; accent meanings; supporting status/data colors; approximate area proportions; relationship to imagery, texture or materials. Judge them on realistic screens in the supported themes, not equal-sized swatches.
+- Choose semantic roles and relevant state pairings after the direction is selected. Check computed contrast, including selected, focus, error and disabled distinctions under the applicable criterion. Keep a palette within its product, never as a universal default.
 - Warm/cool neutrals and near-black hues carry personality. Pure white/black can be perfectly appropriate; do not force tasteful off-white.
-- Keep the accent scarce enough to mean something. Branding accent does not have to be the CTA color if the contrast and action hierarchy already work.
+- Give accents defined roles and deliberate proportions. Multiple accents can be appropriate for data, status, content or identity; preserve action hierarchy. The branding accent need not be the CTA color.
 - Choose border radii, stroke widths, shadow/texture, and icon weight as one coherent material language.
-- Don't apply blur, noise, grain, glass, or gradient just because a page feels empty. Add real evidence or a better composition first.
+- Judge material choices by their contribution to understanding, confidence, pleasure or identity. A material may carry atmosphere without explaining a feature; assess it in the whole composition, including its readability and performance cost.
 
 ## Signature and imagery
 
@@ -47,12 +48,25 @@ If two directions are equally plausible and exploring them would add value, desc
 - Do not add a random animated blob to a website that needs to convey serious operational competence. Equally, don't make a creative brand indistinguishable from a generic enterprise dashboard.
 - If visual output can be inspected, remove the logo mentally. If everything else is generic, improve type, composition, imagery, and product specificity instead of increasing decoration.
 
+## Moment hypothesis
+
+Distinguish an occasional beat (first result, onboarding, completion) from everyday feel (direct manipulation, spatial continuity, less expected work). An attractive transition is not automatically memorable. Describe the leading candidate with trigger, benefit, intended feeling, visible behavior, expected 2nd/20th/500th-use behavior, cost, accessible alternatives, confirming/refuting evidence and rejected candidates. Prototype within build scope and report what was actually exercised, including rapid interruption. Future frequency claims stay hypotheses.
+
+Character must remain in composition, typography, writing, materials and everyday interaction when the special moment is removed. When none improves the experience, retain that finding instead of manufacturing spectacle.
+
 ## Motion and native feel
 
 - Motion should show state, spatial continuity, progress, transformation, or a purposeful moment of delight.
-- Prefer smooth, restrained, interruptible interactions; respect `prefers-reduced-motion` and user input latency.
+- Give immediate feedback. Commit ordinary actions on click/release, preserving cancellation and keyboard activation; pointer-down feedback is not authorization to perform the action.
+- Match motion to frequency, task and personality. Frequent interactions must retarget from their current state, remain interruptible and never make input wait. Respect reduced-motion preferences with legible feedback and less spatial movement. Numeric durations, press scales and easing curves are hypotheses, not cross-project requirements.
 - Avoid permanent motion behind text, multiple simultaneously competing animations, scroll hijacking, keyboard-induced layout shifts, and fake loading experiences.
 - A native-feeling interaction is predictable and stable. The user should not perceive zoom jumps, focus flicker, content displacement, or phantom taps.
+
+## Detail inspection
+
+Inspect optical alignment and text wrapping; stable numeric columns where values change; related corner geometry where surfaces are concentric; icon weight and meaning; image crop and reserved space; and the difference between structural borders and elevation. Apply corrections in the existing styling system. None implies a universal font, stroke, radius or press scale.
+
+For motion, compare normal speed and slowed playback when available, interrupt and reverse mid-transition, and inspect the next action while the first is settling. Prefer explicit animated properties. Profile expensive paints or compositing before adding performance hints; CSS, transforms or a motion library alone do not guarantee smoothness. Check touch/hover differences and alternative input paths.
 
 ## Anti-patterns, without banning whole styles
 

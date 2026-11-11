@@ -16,10 +16,13 @@ CORE CHOICES
 - Interface or module design: codebase-design. Prefer a simple caller contract.
 - Defined behavior: tdd. Agree the meaningful testing boundary and build in small behavior steps.
 - Difficult reproducible failure: diagnosing-bugs. Find evidence before fixing.
-- One unsettled UI/state decision: prototype. Its result answers a question; check what must be hardened before final delivery.
+- Unsettled UI/state decisions or Shape exploration: prototype when its actual instructions are accessible. Compare directions on identical content and prototype the strongest moment hypothesis; otherwise use disposable routes in the existing stack. Retain evidence and retire only the throwaway code you created.
 - Finished code: code-review. Its documented default uses a committed range and a supplied base. A scope override must be explicit and honored; otherwise snapshot the intended work before review. Include new files.
-- Changed UI: interface-review. It uses better-interface and relevant better-* domain rules. Preserve those supporting directories.
-- UI intent: local vibe-ui, if its content is available. Read it, then use the judgment principles in the quality guide. Do not claim this bundle contains the exact original.
+- Changed UI: interface-review when accessible, with its required helpers. Otherwise use Quality and Design and Creative Quality for a bounded evidence-based review.
+- Direction, implementation craft and character review: vibe-ui when accessible. Select brief, build or review mode to match the current task. During assessment, use review mode with an independent worker when permitted; otherwise label self-review. Keep correctness, usability, craft and character distinct.
+- Color ramps, contrast and gamut: better-colors when accessible; otherwise inspect computed pairings directly.
+- Interface copy, empty states, errors and voice: product-ux-writing when accessible. For persuasion and page narrative, landing-page-design when accessible.
+- Fine interface details or motion: selectively consult make-interfaces-feel-better or an Emil specialist when accessible and relevant. Read Creative Quality and the source caveats first; retain the product contract and treat numeric recipes as hypotheses. Do not load the entire upstream collection or install tools merely to complete this route.
 - Sensitive data/auth flow: local vibe-security where available, plus applicable checks from the quality guide.
 - SQL/Postgres work: supabase-postgres-best-practices when installed. It is a database guide, not evidence that Supabase is the chosen platform.
 - Browser/frontend detail: modern-web-guidance only for the specific concern and actual runtime.
