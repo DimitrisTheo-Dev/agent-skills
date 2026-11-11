@@ -1,0 +1,69 @@
+ADAPTIVE EXECUTION
+Choose staffing from the work and its dependencies. Agent count is a means to shorten useful delivery time, not a target. Apply actual tool availability, environment delegation rules and user scope first.
+
+A. CHOOSE A MODE AFTER INSPECTION
+Estimate the current deliverable's work, its dependency chain and the lead's integration capacity. Treat time estimates as planning judgments, not measured speedups. Use this starting guide:
+
+| Work observed | Starting mode | Ownership |
+| --- | --- | --- |
+| One focused fix, a short slice, or strongly shared files | Sequential | Lead implements and verifies. |
+| Several uncertain decisions or one risky dependency | Hybrid | Lead resolves the critical dependency; optionally delegate bounded read-only investigation or review. |
+| Two useful independent implementation tasks with stable contracts | Parallel slice | Lead integrates; one or two workers own separate areas. |
+| Two or three unsettled design directions on identical content | Parallel exploration if permitted | Workers own disjoint prototype routes; lead compares renders, recommends and integrates one direction. |
+| Larger build with several independent outcomes | Phased parallel work | Lead groups tasks by dependency, starts a small worker set, and expands only after clean integration. |
+
+Large or long-running work can remain sequential when coupling dominates. Small work can benefit from one independent diagnostic pass when it resolves a concrete uncertainty. Evaluate the parallel gate before spawning workers.
+
+B. PARALLEL GATE
+Delegate implementation only when all of these hold:
+1. Each task has a bounded outcome and useful checks; it can progress while its sibling runs.
+2. Shared interfaces and invariants are settled enough for this checkpoint. The lead owns decisions and contract changes.
+3. File ownership is disjoint, or actual isolated worktrees/branches and an integration plan exist.
+4. Expected time saved exceeds dispatch, context transfer, waiting, review and merge effort. Enough budget remains to integrate and verify.
+5. Required agent tools and permitted concurrency are available.
+
+When the gate passes, spawn workers with bounded packets from Codex Handoffs. When it fails, work sequentially or settle the blocking dependency first. Do not create infrastructure or enable account features solely to obtain parallelism.
+
+C. SIZE THE TEAM AND BUDGET
+Start with the fewest workers that remove a real bottleneck. In a 120-minute exercise, normally cap concurrent work at one lead plus two implementation workers. Use a smaller team if the repository, time or contracts warrant it. For larger work, cap workers by independent ready tasks, runtime limits, review capacity and any explicit cost budget.
+Reserve roughly the final quarter of a short sprint for integration, reliability checks and demonstration; integrate throughout the sprint. Aim for the core live flow by its midpoint, adjusting for observed setup costs. If behind, reduce optional scope and worker count before sacrificing required behavior.
+At Shape depth, reserve an explicit share for refining the leading moment and everyday interaction.
+The lead remains available for integration and decisions. Give it only a short non-overlapping task while workers run. Reuse an idle worker for a concrete verification concern rather than automatically spawning a reviewer. Avoid recursive delegation unless the lead assigns a bounded reason and budget.
+
+D. PREPARE THE CHECKPOINT
+Before dispatch, record:
+- One demonstrable slice outcome and acceptance IDs.
+- Baseline revision, relevant instructions and actual run/check commands.
+- Shared request/response shapes, errors, mocks and important invariants.
+- Worker owners, allowed files and dependencies; lead-owned shared files.
+- A 10-20-minute work boundary, required evidence and the integration checkpoint.
+
+Let the lead settle scaffolding, dependency changes, shared types, package manifests and lockfiles before concurrent edits. In a shared workspace, reserve those files to the lead. Use isolated worktrees only when useful and supported; account for installing dependencies, shared ports and merge effort. Never assume isolation or automatic cross-agent memory.
+Workers return implementation, evidence and blockers within their packet. They propose contract changes to the lead before adopting them. Report missing access, changed assumptions and overlap promptly rather than waiting until the task ends.
+
+E. INTEGRATE AND STEER EARLY
+At every checkpoint:
+1. Inspect actual changes and new files; reconcile the current candidate before applying patches or commits. In a shared workspace, completed worker edits may already be present.
+2. Verify agreement between the interfaces and run the slice's real user flow. Passing worker checks alone do not establish integration.
+3. Exercise relevant failure and stale-state behavior; record real versus mocked dependencies.
+4. Report changed behavior, actual evidence, remaining gaps and the next smallest useful step. Record remaining time when known, or label it an estimate.
+5. Update compact session state and decide the next mode, owners and assignments.
+
+Reassess after each slice. When workers overlap, wait on changing contracts, or outpace review capacity, finish their bounded tasks and reduce concurrency. Keep contract-dependent implementation paused until the contract is resolved. Stop feature expansion when the core integration or verification is behind.
+Continue already-authorized work after a checkpoint report unless the user requested a pause or a consequential unresolved decision requires input. A checkpoint provides steering and evidence; it need not create another approval step.
+
+F. EXAMPLE: 120-MINUTE DOCUMENT Q&A EXERCISE
+This is a planning example, not executed application evidence.
+0-15 minutes: lead inspects the repo, settles the minimum answer/error contract and delivers a runnable input shell. Check provider access early without printing secrets.
+15-40 minutes: if the gate passes, one worker adds answer/evidence/pending/error UI and another implements the server/provider path. The lead owns shared types and integration. Assign only this checkpoint, not the full roadmap.
+40-60 minutes: integrate a live grounded answer and the unsupported-answer branch. An explicitly permitted, clearly labeled fixture can verify UI branches while credentials are unavailable; it does not verify live model behavior.
+60-90 minutes: test failures, retry, stale requests and document-embedded instructions. Parallelize only independent remaining tasks.
+90-120 minutes: resolve critical gaps, run relevant checks, inspect the rendered flow and prepare a brief demonstration. Defer optional polish when core acceptance remains incomplete.
+
+G. ROUTING EXAMPLES
+Use these as reasoning examples, not evidence of measured agent performance.
+- A 15-minute validation fix in one component: sequential.
+- A 120-minute UI/API exercise with agreed types and separate files: parallel implementation inside shared checkpoints, if tools permit.
+- A larger migration whose API contract and shared schema keep changing: settle the migration design sequentially; delegate only independent investigation until boundaries stabilize.
+- A multi-day build with independent ready features: phased parallel slices; expand staffing after verifying integration capacity.
+- Missing subagent tools: use the same bounded packets sequentially and report the capability limit.

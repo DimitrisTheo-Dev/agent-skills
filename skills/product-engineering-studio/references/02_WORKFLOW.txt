@@ -1,0 +1,84 @@
+PRODUCT ENGINEERING WORKFLOW
+Original operating guide. Read the section needed for the current phase.
+
+A. RECONSTRUCT THE PROBLEM
+Capture what the user actually requested and where it came from. A Markdown requirement is evidence; a screenshot is evidence of appearance. Visible UI does not establish persistence, permissions or server behavior. For a verbal brief, restate the important decisions in your own words.
+If a referenced file/site is unavailable, distinguish the missing source from a missing requirement. Ask for the minimum excerpt needed; continue work that does not depend on it.
+
+Use this task brief:
+- Outcome: user and problem.
+- Confirmed: requirements supported by the brief or repository.
+- Assumptions: reversible choices being made.
+- Scope now: one useful user journey.
+- Deferred: explicitly excluded work.
+- Acceptance: AC1-AC5, each with observable evidence.
+- Constraints: deadline, stack, data, services, platform.
+- Unknowns: only decisions that could change the solution.
+
+B. FRAME THE PRODUCT
+Ask which user needs this and what they should accomplish. Challenge features that do not help that outcome. Identify a simpler path before proposing additional features.
+In Sprint mode hold scope or reduce it. Explore expansion only when the user asks for product discovery. A convincing prototype can be the right result when the task is learning; a functional feature needs working behavior.
+
+C. INSPECT THE REPOSITORY
+Read AGENTS.md and applicable project instructions, README, scripts, dependency manifests and the feature path. Record git status and baseline revision. Identify the real package manager, test runner and startup command.
+Run the smallest relevant existing check. Mark baseline failures explicitly. A pre-existing failure does not justify skipping unrelated passing checks; it also does not prove your change caused the failure.
+Do not invent paths in a ChatGPT-only plan. Name candidate modules as suggestions until repository inspection establishes them.
+
+D. DESIGN THE MINIMUM SYSTEM
+Explain:
+1. The UI action and the response the user sees.
+2. Source of truth and minimum data entities.
+3. Server/API responsibilities and important input/output contracts.
+4. External services and how failures are represented.
+5. Ownership, permissions and other applicable invariants.
+6. Why the chosen approach fits the deadline and workload.
+
+Use a Mermaid flowchart or sequence diagram when branching, data flow or event order benefits. Keep labels short and quoted when they contain punctuation. Keep at most five nodes side by side; prefer top-down for larger designs. A diagram describes the actual proposed system, without decorative caches, queues or microservices.
+For a simple flow that prose fully explains, omit the diagram.
+If data races or retries matter, state the invariant and where it is enforced. Do not hide idempotency, authorization or uniqueness inside an undefined service box.
+
+E. DEFINE THE UI BEFORE CODING
+Name the screen's job, primary action, information order and relevant states. At Fix and Extend depth, reuse established decisions and show the changed flow with realistic data; compare structural directions only for an unsettled choice. At Shape depth, follow Creative Quality before locking the direction. Do not generate variants for a settled form.
+Mobbin is useful for one named interaction or flow. Search only when a concrete decision needs evidence and the tool is connected. Carry the useful pattern and source link forward.
+
+F. PLAN SMALL DELIVERY SLICES
+Each slice delivers an observable behavior across the layers it needs. Apply the skill's Execution Modes reference to multi-part work before assigning it. Layer-specific worker tasks are allowed inside a shared checkpoint; the lead integrates a demonstrable flow at that checkpoint.
+A possible sequence:
+- Slice 1: runnable shell plus one real behavior using a fixture only where explicitly allowed.
+- Slice 2: connect the next real dependency and handle its relevant failures.
+- Slice 3: add the remaining required behavior, then inspect and verify the finished flow.
+Choose a different order when a risky dependency must be spiked first.
+Keep mock boundaries explicit. A mocked response is not a completed live integration.
+
+A slice needs:
+- Goal and acceptance IDs.
+- Existing context needed to understand the change.
+- Allowed scope, interfaces and important invariants.
+- Applicable procedure and skill dependencies.
+- Fast feedback command or observable check.
+- Evidence to return.
+- Stopping checkpoint.
+
+G. CLOSE THE LOOP
+Target short work intervals, usually 10-20 minutes of bounded work. Adapt for setup and genuinely difficult tasks; do not promise exact runtimes.
+After each slice inspect a diff or screenshot and the check result. Decide whether to continue, change direction or cut optional scope.
+For parallel work, apply the integration gate in Execution Modes before issuing the next worker packets. Continue authorized work after reporting a checkpoint unless the user requested a pause or an unresolved decision blocks it.
+Use focused tests during development, then the relevant broader checks before delivery. Repeat a broad check when new changes or unresolved concerns justify it.
+If two attempted fixes produce the same failure, stop guessing. Reproduce, collect evidence and revise the hypothesis or ask a focused question.
+Agent agreement is not a substitute for executed checks or observed behavior.
+
+H. REVIEW AND DEMONSTRATE
+Freeze the intended scope and identify the exact candidate. Review requirement coverage and significant defects. Use one main review, plus a conditional UI/security/data check when the change needs it.
+After fixes, rerun the affected checks and inspect changed behavior. Do not keep adding reviewers until a score looks impressive.
+Demonstrate user outcome, an important failure path, the main tradeoff and actual verification. Label mocks, missing access and unfinished behavior precisely.
+
+I. CONTEXT DISCIPLINE
+Carry the current brief, accepted decisions, verification state and next slice. Leave raw transcripts and large logs in their source files.
+Use the same active coding session while its context is useful. For a different concern or a crowded/stale thread, start a fresh session with the compact state and exact repository revision.
+Cross-tool handoff is explicit. No automatic ChatGPT/Codex shared memory or filesystem is assumed.
+Token counts are estimates unless exposed by the runtime. Avoid guessing cost or pretending prompt brevity alone measures total efficiency.
+
+J. OUTPUT CONTRACTS
+Initial answer: task brief; consequential questions/assumptions; minimal design; first slice.
+Iteration answer: change; evidence; unresolved issue; next packet.
+Final answer: behavior delivered; actual checks; limitations; next worthwhile improvement.

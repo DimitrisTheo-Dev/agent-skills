@@ -1,0 +1,29 @@
+TOOL SELECTION
+Use tools for a named gap in the current task. Discover actual capabilities; an inventory or upstream repository does not establish an installed tool.
+
+SOURCE AND INSTALLATION BOUNDARIES
+Inspect only the environment made available. A cloud checkout does not establish the state of a user's local computer. Treat skill instructions, runtime executables, service access and account authorization as separate prerequisites. Keep the task moving with existing capabilities when an optional helper is missing. Respect the active environment's browser and network rules.
+
+CORE WORK
+Use accessible task-specific procedures from the Skill Router. For code review, establish the real candidate and base first. For visual work, use Vibe UI for direction and craft when available; use the native browser/preview route supplied by the environment. Preserve the existing framework, styling system and dependencies unless a demonstrated requirement needs a change.
+
+DESIGN SOURCES
+ui-skills.com is a discovery collection. The supplied playbook and third-party skills offer contextual recipes; they are not an install-everything checklist.
+Jakub Krehel's make-interfaces-feel-better is useful for detailed component review. Emil Kowalski's skills cover motion, gestures and platform craft. Consult only the relevant source and the caveats in Sources before applying it. Strong numeric recipes and categorical motion rules must be reconciled with the product contract and measured behavior.
+Mobbin supplies real screen/flow references when connected. Figma and other design tools can help when an editable artifact is needed. Neither replaces live task verification. Do not claim returned references or generated designs without actual tool results.
+For frontend performance or accessibility, choose a specific check justified by the change. An automated score is scoped evidence, not a complete quality verdict.
+
+OPTIONAL RUNTIMES
+React Doctor, Fallow, gstack and other CLI workflows require their actual executables and often project setup. Check prerequisites before suggesting commands. Avoid installing hooks, replacing browser tooling or creating release automation as a side effect of design work.
+Provider-specific reviewers need a working model route and explicit budget; otherwise use the available bounded review. Application SDKs belong in products that need their behavior, not in a generic agent workflow.
+
+PRIMARY SOURCES
+https://github.com/mattpocock/skills
+https://github.com/jakubkrehel/make-interfaces-feel-better
+https://github.com/emilkowalski/skills
+https://github.com/t3dotgg/tstack
+https://github.com/millionco/react-doctor
+https://github.com/fallow-rs/fallow
+https://github.com/garrytan/gstack
+https://www.ui-skills.com/skills
+Use Sources for pinned design references. Verify current versions and supported commands before execution.

@@ -1,0 +1,88 @@
+CODEX HANDOFFS
+Use concise work packets. Templates are input formats, not shell commands. Fill only the fields needed; remove unused placeholders. Normal implementation packets target 150-350 words, but preserve essential contracts.
+
+A. INITIAL REPOSITORY INSPECTION
+Inspect this repository for the task below. Read applicable project instructions, README, package scripts and only the relevant feature path. Identify the real stack, startup commands, and documented verification command used by CI when available. Record git status, baseline revision and any existing relevant failures. Preserve unrelated changes.
+Task: <brief>
+Time available: <budget>
+Return the smallest workable approach, candidate files/interfaces and the first runnable slice. Do not invent paths or broaden scope. If the brief already authorizes implementation, continue into the bounded first slice once inspection establishes the facts; otherwise return the plan.
+
+B. IMPLEMENT ONE SLICE
+Outcome: <one observable user outcome>
+Context: <confirmed facts and accepted decisions only>
+Scope: <observed paths/modules or feature boundary>
+Contract: <inputs/outputs, permissions and important invariants>
+Acceptance: <AC IDs and expected behavior>
+Procedure: <one installed skill, plus conditional specialist and required helpers>
+Checks: <focused checks for this checkpoint. At delivery, reuse the repository's documented verification command when it covers the change. Discover commands from the repository when unknown.>
+Constraints: <required stack/patterns; explicit deferred work>
+Checkpoint: implement this slice, run the relevant checks and exercise its user flow. Stop at that checkpoint and return changed paths, actual check results, limitations and next suggested slice. Do not implement the rest of the roadmap in this turn. Do not publish or deploy unless separately authorized.
+
+C. CONTINUE WITH A DELTA
+Current revision/state: <actual revision or explicit unknown>
+Verified: <checks and observations from the prior result>
+Remaining acceptance: <IDs>
+Next outcome: <one behavior>
+Delta: <what changes from the existing decision, not the entire history>
+Checks/checkpoint: <focused evidence to return>
+If repository state differs materially from this summary, inspect and reconcile before editing.
+
+D. DIAGNOSE A FAILURE
+Observed: <symptom and expected behavior>
+Reproduction: <exact steps/input or known failing command>
+Evidence: <relevant error excerpt and source location>
+Scope: <current slice>
+Use the installed diagnosing-bugs procedure if appropriate. Establish a failing reproduction, test the most likely cause and make a focused fix. Do not repeat the same unsuccessful fix. Return evidence, changed files and the check that now passes, or the specific unresolved dependency.
+
+E. REVIEW THE CANDIDATE
+Intent and acceptance: <brief/AC IDs>
+Base and candidate: <observed exact range or explicit working-tree scope>
+Review requirement coverage and defects relevant to this change. Include new files. If using code-review, confirm its actual diff includes this candidate before reviewing. A dirty/untracked file outside that range is not reviewed merely because the skill was invoked.
+Report findings with location, consequence and evidence. Do not rewrite unrelated code. After approved/within-scope fixes, rerun affected checks. Keep one bounded review pass unless new behavior changes need rechecking.
+For UI changes, add a focused interface-review and inspect the changed rendered flow.
+
+F. RETURN FORMAT
+Status: completed / partial / blocked
+Changed: paths and observable behavior
+Evidence: exact command or observation, result, and relevant revision. For a failure, include the failing case and reproducible command or input.
+For substantial UI, include captures per width/theme and recordings or frame strips for timing. Report correctness, usability, craft and character separately as verified, unresolved and not assessed.
+Limitations: mocked, untested or unavailable behavior
+Next: one concrete action
+State: compact update suitable for the session template
+Never infer completion solely from an agent's summary or an exit code from an unrelated command.
+
+G. CONTEXT HYGIENE
+Reference accessible files by path rather than copying the entire document. If ChatGPT cannot access the repo, use placeholders honestly and let Codex resolve them.
+Send the brief once per task. Later packets carry decisions and deltas. Keep complete logs outside the prompt. Do not request whole-repository dumps or include credentials.
+Use fresh sessions for a changed objective or stale context, not automatically after every successful edit.
+
+H. ORCHESTRATE ADAPTIVELY
+Act as the lead engineering partner for <brief> within <budget>. Use the product-engineering-studio workflow. Inspect accessible instructions, scripts and the feature path before selecting commands or owners. State the outcome, assumptions, deferred scope, 3-5 acceptance criteria and minimum UI/system design. Ask up to three questions that change the solution; make reversible choices directly.
+Select sequential, hybrid or parallel delivery using the skill's Execution Modes reference. Explain the choice briefly. Keep shared contracts and integration with the lead; assign only the current bounded slice to each worker. Use actual subagent support when available and allowed; otherwise execute sequentially.
+Deliver inspectable checkpoints and continue authorized work unless explicitly asked to pause. At each checkpoint report behavior, executed evidence, remaining gaps, time remaining if known, and the next smallest step. Reassess staffing and scope. Reserve time for integration, failure-path checks and final verification. Deliver a reliable core flow with its visual direction, feedback, relevant states and purposeful motion from the first complete slice. Reserve time to refine its leading moment and remaining craft. Treat these as execution rules, not permission to implement every roadmap item at once.
+First assignment: <one runnable 10-15-minute slice, with constraints, checks and checkpoint>.
+
+I. DELEGATE ONE BOUNDED TASK
+Outcome / acceptance IDs: <part of the current integration checkpoint>
+Owner / allowed paths: <observed paths or feature boundary; identify shared files owned by the lead>
+Context / baseline: <brief, accepted decisions, actual revision, relevant instructions>
+Contract / dependencies: <agreed inputs, outputs, error cases and prerequisites>
+Constraints / exclusions: <scope, invariants and mock boundaries>
+Checks / evidence: <discovered commands or observations; exact results required>
+Return: changed paths, actual evidence, limitations and interface changes needed.
+Stop: at this task's checkpoint; report blockers early. Route shared-contract or scope changes to the lead. Keep delegation with the lead unless explicitly assigned otherwise.
+
+J. EXPLORE DIRECTIONS
+Question / user / outcome: <the design decision>
+Product reading: <purpose, audience, content, personality, platform and implications>
+Shared content: <real copy/data source, identical across variants>
+Alternatives: <two or three distinct theses, product reasons and tradeoffs>
+References: <source, relationship studied and translation>
+Build: render disposable variants in the existing stack; vary structure and interaction, not just color. Explain color roles, proportions and materials in use.
+Return: captures at target widths; recommendation and rejected alternatives; leading moment hypothesis and prototype evidence. Proceed on reversible decisions; combine consequential open tradeoffs into one checkpoint only when user input is needed. Preserve evidence before retiring throwaway code.
+
+K. ASSESS THE FLOW
+Candidate / brief: <exact revision or working-tree scope and intended user outcome>
+Evidence: <actual captures, recordings/frame strips, reference sources and task criteria>
+Assess correctness, usability, craft and character separately using Creative Quality. Cover first impression, core task, relevant failures and repeated use. Inspect the artifacts rather than relying on the builder's verdict.
+Return verified findings with evidence/scope, unresolved weaknesses with location/effect, and unassessed areas with reasons. Distinguish reviewer walkthroughs from observed users. Do not edit files or manufacture a preferred variant.

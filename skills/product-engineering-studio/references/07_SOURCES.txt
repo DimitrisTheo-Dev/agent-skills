@@ -1,0 +1,76 @@
+SOURCES AND CAPABILITIES
+Reference review date: 2026-11-07. Live sources can change.
+This bundle is an original concise synthesis; it does not redistribute complete upstream skill packages, PDFs or executables.
+
+OPENAI OFFICIAL DOCUMENTATION
+https://learn.chatgpt.com/docs/projects
+Project instructions and uploaded/connected sources organize related work. A web project does not automatically grant access to a local codebase.
+https://learn.chatgpt.com/docs/customization/memories
+Use explicit documents for required guidance; memory is a recall layer.
+https://learn.chatgpt.com/docs/build-skills
+Codex invocation, local discovery and packaged skill concepts.
+https://learn.chatgpt.com/docs/agent-configuration/agents-md
+Repository instructions and discovery.
+
+MATT POCOCK
+https://www.aihero.dev/skills
+https://github.com/mattpocock/skills
+https://www.aihero.dev/skills-grill-with-docs
+https://www.aihero.dev/skills-tdd
+https://www.aihero.dev/skills-code-review
+https://www.aihero.dev/skills-codebase-design
+https://www.aihero.dev/skills-prototype
+Use the task-specific procedure; verify dependencies and diff visibility in the installed version.
+
+T3
+https://github.com/t3dotgg/tstack
+https://github.com/t3dotgg/tstack/blob/main/skills/sol-loop/SKILL.md
+https://github.com/t3dotgg/tstack/blob/main/skills/full-stop/SKILL.md
+Optional review and shipping workflows. Provider access and broader side effects depend on the selected procedure.
+
+GSTACK
+https://github.com/garrytan/gstack
+https://github.com/garrytan/gstack/blob/main/docs/skills.md
+Product framing and scope choices are useful selectively. Documentation checked on the review date says plan-eng-review was removed November 6 and references autoplan for that role. Check installed versions before using commands.
+
+DESIGN
+https://github.com/jakubkrehel/skills
+Changed-interface review and domain helpers.
+Vibe UI is a separately distributed optional specialist. Read its accessible source before using it; core framing and assessment remain available in this bundle.
+Mobbin connection instructions and tools are runtime-specific. Use current in-app guidance; this bundle does not establish a live connection.
+
+FALLOW
+https://github.com/fallow-rs/fallow
+https://github.com/fallow-rs/fallow-skills
+Structural JS/TS analysis. Check executable and skill availability separately.
+
+SECURITY AND ACCESSIBILITY
+https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html
+Authorization guidance for protected features.
+https://www.w3.org/WAI/WCAG22/quickref/
+Reference for specific accessibility criteria; a short review is not full conformance certification.
+
+AI EVALUATION
+https://claude.dev/blog/automating-eval-design-and-hillclimbing/
+https://github.com/anthropics/skills/tree/main/skills/claude-api
+Evaluation/optimization principles and provider-specific workflows. Namespaces vary by client; do not assume a Claude command is installed in Codex.
+
+CAPABILITY LEDGER
+- Project files: these reference texts can be uploaded manually.
+- Live repository: discover in the execution environment.
+- Installed local skills: the shared 2026-11-07 inventory is a snapshot.
+- vibe-ui: separate optional skill; resolve its actual installed content. The design update reviewed the public source at bd1aa8023c73064a330ceede91530ee289d3e259 on 2026-11-11.
+- T3/gstack/Fallow dependencies: not installed by this bundle.
+- Mobbin/Figma/browser: discover current tools before claiming access.
+- Checks, costs, token usage and cache rates: unknown unless observed/measured.
+- ChatGPT/Codex synchronization: explicit file/handoff transfer unless a real integration establishes it.
+
+PROVENANCE
+The operating rules also incorporate the user's prior checklist, short feedback-loop preference and available design/workflow discussions. Prior long orchestration prompts inform selective context and evidence practices; they are not imported as universal runtime instructions. No claim is made that every historical chat or private source was retrieved.
+
+DESIGN UPDATE, REVIEWED 2026-11-11
+https://github.com/jakubkrehel/make-interfaces-feel-better/tree/35545ea1512ad59fa463e6b1f95ca9c052981fe6/skills/make-interfaces-feel-better
+https://github.com/emilkowalski/skills/tree/715c1807e08c497cfd1dc4feb450a2a3300ef2a9/skills/emil-design-eng
+https://github.com/emilkowalski/skills/tree/715c1807e08c497cfd1dc4feb450a2a3300ef2a9/skills/find-animation-opportunities
+These are third-party design guidance, not standards or proof of quality. Their useful lenses include optical balance, interrupted motion, state coverage and frequency-aware judgment. Exact press scales, stroke weights, timing recipes, blanket keyboard-animation bans and universal compositor claims are not adopted as requirements. Verify current library/browser behavior before applying technical recipes. No upstream scripts, assets or source text are bundled; this update uses original prose and source links.
+The product-specific exploration, four assessments and proportional autonomy derive from the owner's design brief and supplied V3 plan. The supplied UI Skills playbook is a set of examples, not an additional mandatory ruleset.

@@ -15,6 +15,8 @@ For each observation, distinguish:
 
 A screenshot alone cannot verify actual font family, exact CSS values, animation, interactive states, accessibility, platform support, or user-test performance.
 
+For each reference, name one relationship to study, its relevance to the current product and the intended translation. Compare color proportions and surrounding materials, not only sampled swatches. Keep the reference palette, typeface and motif out of cross-project defaults. Use live or recorded behavior when drawing interaction lessons.
+
 ## Seven-layer analysis
 
 | Layer | Inspect | Extract |
@@ -42,7 +44,7 @@ Do not search for a famous aesthetic to imitate by default. Build an evidence-le
 5. **The interface:** familiar patterns that reduce work and uncertainty.
 6. **The signature:** one ownable, product-specific expression, if differentiation matters.
 
-Generate 1 coherent direction with a concise rationale. An optional second contrasting direction is justified only if the brief is exploratory. When there is no usable brand material, treat palette and typography as proposals rather than claiming them as existing tokens.
+Use the entrypoint depth: render two or three structural directions at Shape; reuse established decisions at Fix/Extend unless a choice is unsettled. When there is no usable brand material, label palette and typography as proposals. Record the selected rationale and evidence. Familiar patterns remain valid; originality comes from the product interpretation, not compulsory novelty.
 
 ## Generic example of principle transfer
 

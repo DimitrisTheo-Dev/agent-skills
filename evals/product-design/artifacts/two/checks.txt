@@ -1,0 +1,31 @@
+PASS all four supplied skills appear
+PASS category filters return 3 design / 1 agent skill
+PASS search normalizes invocation, case and hyphens
+PASS multiple query terms must match
+PASS no-results state appears and offers recovery
+PASS reset clears query and restores four results
+PASS agent-readiness: original source and invocation rendered
+PASS agent-readiness: exact install copied only after resolution
+PASS agent-readiness: exact invocation copied only after resolution
+PASS landing-page-design: original source and invocation rendered
+PASS landing-page-design: exact install copied only after resolution
+PASS landing-page-design: exact invocation copied only after resolution
+PASS product-ux-writing: original source and invocation rendered
+PASS product-ux-writing: exact install copied only after resolution
+PASS product-ux-writing: exact invocation copied only after resolution
+PASS vibe-ui: original source and invocation rendered
+PASS vibe-ui: exact install copied only after resolution
+PASS vibe-ui: exact invocation copied only after resolution
+PASS vibe-ui has both source example filenames
+PASS clipboard rejection exposes manual-copy recovery
+PASS manual recovery selects the command source
+PASS missing Clipboard API also exposes recovery
+PASS retry after failure succeeds and clears error
+PASS missing examples are explicit
+PASS malformed detail link has recoverable not-found state
+PASS query survives detail round trip
+PASS theme toggle updates theme and accessible name
+PASS untrusted source HTML is escaped
+PASS source revision parses full pinned commit
+
+29 deterministic checks passed; 8 exact command copy successes. Mock DOM/clipboard only; no browser rendering or skill evaluations performed.
