@@ -1,14 +1,43 @@
 {
-  "method": "Read-only browser DOM/computed-style inspection; contrast ratios calculated with sRGB relative luminance. Values characterize these pairs, not full WCAG conformance.",
-  "desktop_viewport": 1363,
-  "desktop_search_height": 36,
-  "copy_success_button": {
-    "width": 88,
-    "height": 34
+  "command": {
+    "height": 34,
+    "width": 146.625
+  },
+  "copy": {
+    "height": 34,
+    "width": 70
+  },
+  "muted": {
+    "background": "rgba(0, 0, 0, 0)",
+    "color": "rgb(108, 107, 117)"
+  },
+  "primary": {
+    "background": "rgb(100, 84, 206)",
+    "color": "rgb(255, 255, 255)"
+  },
+  "scrollWidth": 1363,
+  "search": {
+    "height": 36,
+    "width": 211
+  },
+  "sidebar": {
+    "background": "rgb(248, 248, 250)",
+    "color": "rgb(36, 35, 43)"
+  },
+  "title": "Vibe UI",
+  "viewport": 1363,
+  "workspace": {
+    "height": 491,
+    "width": 920
+  },
+  "method": "Read-only browser DOM and computed style inspection; CSS-width harness for narrow sizes.",
+  "mobile_command": {
+    "width": 146.625,
+    "height": 44
   },
   "horizontal_overflow": {
     "320": false,
-    "375": false,
+    "700": false,
     "701": false,
     "1363": false
   },
@@ -17,5 +46,6 @@
     "light_primary": 5.67,
     "dark_muted_on_sidebar": 7.41,
     "dark_primary": 7.44
-  }
+  },
+  "contrast_scope": "Light values confirmed by current DOM; dark pairs read from unchanged theme tokens and rendered dark view. These sampled pairs are not full accessibility conformance."
 }

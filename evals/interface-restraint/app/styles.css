@@ -1,5 +1,5 @@
 :root {
-  font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
   color:#24232b;
   background:#eeeef2;
   font-synthesis:none;
@@ -83,7 +83,7 @@ svg {
   stroke-linejoin:round;
 }
 .workspace {
-  width:min(1060px,100%);
+  width:min(920px,100%);
   background:var(--bg);
   border:1px solid var(--line);
   border-radius:18px;
@@ -91,8 +91,8 @@ svg {
   overflow:clip;
 }
 .bar {
-  height:66px;
-  padding:0 26px;
+  height:56px;
+  padding:0 24px;
   display:flex;
   align-items:center;
   justify-content:space-between;
@@ -105,17 +105,6 @@ svg {
   font-size:17px;
   font-weight:650;
   letter-spacing:-.4px;
-}
-.brand-icon {
-  width:24px;
-  height:24px;
-  color:var(--text);
-  stroke-width:1.6;
-}
-.bar-actions {
-  display:flex;
-  align-items:center;
-  gap:8px;
 }
 .source-link {
   font-size:13px;
@@ -140,12 +129,12 @@ svg {
 }
 .panes {
   display:grid;
-  grid-template-columns:306px minmax(0,1fr);
-  min-height:502px;
+  grid-template-columns:248px minmax(0,1fr);
+  min-height:400px;
 }
 .library {
   background:var(--aside);
-  padding:22px 14px 16px;
+  padding:20px 12px 16px;
   border-right:1px solid var(--line);
 }
 .search-box {
@@ -193,10 +182,10 @@ kbd {
 .filters {
   display:flex;
   gap:2px;
-  margin:0 5px 20px;
+  margin:0 5px 12px;
 }
 .filters button {
-  padding:6px 9px;
+  padding:6px 8px;
   border-radius:6px;
   font-size:12px;
   background:transparent;
@@ -216,11 +205,11 @@ kbd {
   display:flex;
   align-items:center;
   gap:12px;
-  padding:14px 12px;
-  margin-bottom:5px;
+  padding:12px 12px;
+  margin-bottom:3px;
   border-radius:10px;
   transition:background 130ms;
-  min-height:76px;
+  min-height:64px;
 }
 .skill:hover {
   background:var(--hover);
@@ -243,42 +232,6 @@ kbd {
   line-height:18px;
   color:var(--muted);
 }
-.skill-chevron {
-  width:14px;
-  opacity:0;
-}
-.skill[aria-current=page] .skill-chevron {
-  opacity:.6;
-  color:var(--accent);
-}
-.app-icon {
-  width:40px;
-  height:40px;
-  flex-shrink:0;
-  border-radius:10px;
-  display:grid;
-  place-items:center;
-  color:white;
-  box-shadow:inset 0 1px 0 #ffffff40,0 2px 4px #00000010;
-  background:var(--icon);
-}
-.app-icon svg {
-  width:23px;
-  height:23px;
-  stroke-width:1.6;
-}
-.app-icon.vibe {
-  --icon:linear-gradient(145deg,#9986ed,#6650c7);
-}
-.app-icon.landing {
-  --icon:linear-gradient(145deg,#edb47d,#ba743d);
-}
-.app-icon.writing {
-  --icon:linear-gradient(145deg,#82b5a1,#407d6a);
-}
-.app-icon.agents {
-  --icon:linear-gradient(145deg,#87a5d2,#4d70a7);
-}
 .count {
   font-size:12px;
   color:var(--muted);
@@ -300,7 +253,7 @@ kbd {
 }
 main {
   min-width:0;
-  padding:38px 42px 28px;
+  padding:30px 32px 28px;
   display:flex;
   flex-direction:column;
   align-items:stretch;
@@ -309,25 +262,13 @@ main:focus {
   outline:none;
 }
 .detail-header {
-  display:flex;
-  align-items:center;
-  gap:20px;
-  margin:0 0 32px;
-}
-.detail-header .app-icon {
-  width:64px;
-  height:64px;
-  border-radius:16px;
-}
-.detail-header .app-icon svg {
-  width:36px;
-  height:36px;
+  margin:0 0 28px;
 }
 .detail-header h1 {
-  font-size:28px;
+  font-size:26px;
   font-weight:620;
   line-height:1.2;
-  letter-spacing:-1px;
+  letter-spacing:-.7px;
   margin:0 0 7px;
 }
 .detail-header p {
@@ -335,18 +276,11 @@ main:focus {
   color:var(--muted);
   margin:0;
 }
-.description {
-  font-size:16px;
-  line-height:1.65;
-  letter-spacing:-.15px;
-  margin:0 0 28px;
-  max-width:520px;
-}
 .detail-tabs {
   display:flex;
   gap:24px;
   border-bottom:1px solid var(--line);
-  margin-bottom:26px;
+  margin-bottom:20px;
 }
 .detail-tabs button {
   position:relative;
@@ -371,35 +305,19 @@ main:focus {
   border-radius:2px;
 }
 .uses {
-  margin:0 0 26px;
-  padding:0;
-  list-style:none;
+  margin:0;
+  padding-left:16px;
   display:grid;
-  gap:15px;
+  gap:10px;
   font-size:14px;
 }
 .uses li {
-  display:flex;
-  align-items:flex-start;
-  gap:11px;
-  line-height:1.45;
+  padding-left:4px;
+  line-height:1.5;
 }
-.uses svg {
-  color:var(--accent);
-  width:17px;
-  height:17px;
-  flex-shrink:0;
-  margin-top:2px;
-}
-.command-block {
-  margin-top:auto;
-  padding-top:10px;
-}
-.command-label {
-  font-size:12px;
+.uses li::marker {
   color:var(--muted);
-  display:block;
-  margin-bottom:10px;
+  font-size:10px;
 }
 .command {
   display:flex;
@@ -417,7 +335,7 @@ main:focus {
   min-width:0;
 }
 .primary {
-  min-width:88px;
+  min-width:70px;
   background:var(--accent);
   color:#fff;
   font-size:12px;
@@ -437,30 +355,34 @@ main:focus {
 }
 .detail-foot {
   display:flex;
-  justify-content:space-between;
-  gap:12px;
-  align-items:center;
-  margin-top:20px;
+  flex-wrap:wrap;
+  align-items:baseline;
+  column-gap:24px;
+  row-gap:8px;
+  margin-top:26px;
+  padding-top:16px;
+  border-top:1px solid var(--line);
   font-size:12px;
   color:var(--muted);
 }
-.detail-foot svg {
-  width:13px;
-  height:13px;
-  vertical-align:middle;
-  margin-left:3px;
+.detail-foot details {
+  display:contents;
+}
+.detail-foot details[open] {
+  display:block;
+  flex-basis:100%;
 }
 .detail-foot a:hover {
   color:var(--accent);
 }
 details {
-  margin-top:20px;
-  font-size:13px;
+  margin-top:0;
+  font-size:12px;
 }
 summary {
   cursor:pointer;
   color:var(--muted);
-  padding:4px 0;
+  padding:6px 0;
   width:fit-content;
 }
 details p {
@@ -482,7 +404,7 @@ details .command code {
   border:1px solid var(--line);
   border-radius:8px;
   padding:18px;
-  margin:0 0 24px;
+  margin:0;
   max-height:280px;
   overflow:auto;
 }
@@ -495,11 +417,6 @@ details .command code {
   min-height:32px;
   font-size:14px;
   width:fit-content;
-}
-.back svg {
-  vertical-align:middle;
-  width:16px;
-  margin-right:5px;
 }
 .detail-in {
   animation:arrive 160ms ease-out;
@@ -604,7 +521,7 @@ textarea {
     padding:24px 16px;
   }
   .panes {
-    grid-template-columns:252px minmax(0,1fr);
+    grid-template-columns:232px minmax(0,1fr);
   }
   main {
     padding:28px 24px;
@@ -623,14 +540,6 @@ textarea {
   }
   .detail-header h1 {
     font-size:24px;
-  }
-  .detail-header .app-icon {
-    width:52px;
-    height:52px;
-    border-radius:13px;
-  }
-  .description {
-    font-size:15px;
   }
   .command {
     flex-wrap:wrap;
@@ -658,9 +567,6 @@ textarea {
   }
   .source-link {
     font-size:12px;
-  }
-  .bar-actions {
-    gap:12px;
   }
   .panes {
     display:block;
@@ -696,8 +602,8 @@ textarea {
     box-shadow:none;
   }
   .skill {
-    padding:17px 12px;
-    min-height:84px;
+    padding:14px 12px;
+    min-height:72px;
   }
   .skill-name {
     font-size:16px;
@@ -707,21 +613,13 @@ textarea {
     font-size:13px;
     line-height:20px;
   }
-  .app-icon {
-    width:44px;
-    height:44px;
-    border-radius:11px;
-  }
-  .skill-chevron {
-    opacity:.4;
-  }
   .count {
     margin-top:24px;
   }
   main {
     display:none;
     padding:22px 24px 32px;
-    min-height:calc(100svh - 62px);
+    min-height:0;
   }
   body.detail-open main {
     display:flex;
@@ -730,26 +628,20 @@ textarea {
     display:none;
   }
   .back {
-    display:block;
+    display:flex;
+    align-items:center;
+    min-height:44px;
+    margin-bottom:20px;
   }
   .detail-header {
     gap:16px;
-    margin-bottom:26px;
+    margin-bottom:20px;
   }
   .detail-header h1 {
-    font-size:28px;
-  }
-  .detail-header .app-icon {
-    width:60px;
-    height:60px;
-    border-radius:15px;
-  }
-  .description {
-    font-size:16px;
-    margin-bottom:24px;
+    font-size:26px;
   }
   .detail-tabs {
-    margin-bottom:25px;
+    margin-bottom:20px;
   }
   .detail-tabs button {
     font-size:14px;
@@ -757,10 +649,7 @@ textarea {
   }
   .uses {
     font-size:15px;
-    gap:18px;
-  }
-  .command-block {
-    margin-top:28px;
+    gap:12px;
   }
   .command {
     flex-wrap:nowrap;
@@ -823,6 +712,41 @@ textarea {
     display:none;
   }
 }
-.bar-actions a svg {
-  stroke-width:2.1;
+
+.invocation {
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:14px;
+  margin-top:18px;
+  width:fit-content;
+  max-width:100%;
 }
+.invocation code {
+  font:13px/1.5 ui-monospace,SFMono-Regular,monospace;
+  overflow-wrap:anywhere;
+  min-width:0;
+}
+.secondary {
+  min-width:116px;
+  min-height:34px;
+  padding:8px 12px;
+  border:1px solid var(--line);
+  border-radius:7px;
+  background:var(--bg);
+  font-size:12px;
+  font-weight:600;
+}
+.secondary:hover {
+  background:var(--hover);
+}
+@media(max-width:700px) {
+  .invocation { margin-top:18px; }
+  .detail-foot summary,.source-link { min-height:44px; display:inline-flex; align-items:center; }
+  .detail-foot summary { display:list-item; padding:13px 0; }
+  .secondary { min-height:44px; }
+}
+
+.source-link svg { width:13px; height:13px; margin-left:3px; vertical-align:-2px; }
+.back { gap:4px; }
+.back svg { width:16px; height:16px; }

@@ -1,61 +1,61 @@
 {
   "scope": "flow",
   "candidate": {
-    "app/app.js": "b7c7bfa32dbd0e23a9d35d638073daa1d64f9f1ce590b97c2c4c04a7c8d0c8cf",
+    "app/app.js": "d5c0df3e79b98a9bee97fc0e175055483c6a7fafafef8593c7c482c603e24ae4",
     "app/skills.js": "30374f30062c4125fcfd843c4bd61dc9206fafd2707a9feb32a0c4583b71f849",
     "app/qa.html": "68298a0620c6e453e7bc36dd7bbcb0fc4370f121be9721662d1f80a3bdd3c259",
-    "app/styles.css": "5a66550b001be510be52ee329cc2fd03be221273b7cae830d855364b5e2f2918",
-    "app/index.html": "c99e3768ce90085c2d2c0343f7093a87c5787351a4ecce0e01023f642b5677f0"
+    "app/styles.css": "e75286be365a3ead63cabd6abdfbd08b94e015b6399b17e2432d08c988953d1f",
+    "app/index.html": "ac2cb5d0057da40c99920b83489f6c7704c9be5807058e5cab76eefb25d5d6fe"
   },
   "evidence": [
     {
       "id": "desktop",
       "path": "evidence/desktop.png",
-      "sha256": "1f5dfa591ec87a798895867c71cd7fe35bb2facfaf53c7f1cae761c0a78b1c28",
+      "sha256": "cfd2b60118a3b9ef880fcda289dd1b2007f2e6e4e4d8cdbedc829ca17558e330",
       "kind": "image"
     },
     {
       "id": "dark",
       "path": "evidence/dark.png",
-      "sha256": "7dbb1155914b65c93f91e367448f8a71d32308cba92c9a7480d016a4f06baa43",
+      "sha256": "5b96ed36cc6938c11aa491631dcb31781198f8cdb476107ceadeea3b3303ccb4",
       "kind": "image"
     },
     {
       "id": "mobile-list",
       "path": "evidence/mobile-list.png",
-      "sha256": "6b9ac1d9e6e54da8bb3b0c10bef6743baebaa6fe53e32bce84adb69641796eff",
+      "sha256": "445bb2e97c8918f8f277b610b4eec4330f399daf9ff1d5bedd822c1f3e960190",
       "kind": "image"
     },
     {
       "id": "mobile-detail",
       "path": "evidence/mobile-detail.png",
-      "sha256": "a20e3ae484bb60a2ab9871bd966644cfe02167c1d406e78eef393ccd964a7067",
+      "sha256": "e612991847a70d223607da415f62d01343ca56be7ff5af64b4e0a32413b2fa66",
       "kind": "image"
     },
     {
       "id": "tablet",
       "path": "evidence/tablet.png",
-      "sha256": "97ca4f5a34db72cf4af7e269d050a67ae920dee322377b4592ad2b9c59811882",
+      "sha256": "b1cc6cb88cedf8f5cdb079dbbdab82a5245bbc8a213e4257fca1a4e03f1cc42c",
       "kind": "image"
     },
     {
       "id": "journey",
       "path": "evidence/inspection.md",
-      "sha256": "fafa4d0e0a50e245acc19bee4d62ce511bd64f2c14ef281fd48c541e159a0999",
+      "sha256": "8897d69d70c734563e7a1599a3dfde6687cd4b5dfa83cf2cfb517fe3ed138571",
       "kind": "interaction"
     },
     {
       "id": "measurements",
       "path": "evidence/measurements.json",
-      "sha256": "8c1740d36acf5f1350cce4e64ffd11f72db10db127d56972bfa772d96a75f400",
+      "sha256": "5e5a475283e9261c2e7cd4cb6c276910e1aa7fc2b46973e4602e5ffcaa8be376",
       "kind": "measurement"
     }
   ],
   "areas": [
     {
       "id": "task",
-      "status": "unverified",
-      "observation": "Finding/selecting/invoking paths were operated; clipboard success indication was observed, but the separate virtual clipboard prevented a confirmed round trip.",
+      "status": "pass",
+      "observation": "Browsing and copying were operated. Actual Copy then Control+V pasted the correct invocation into search; its result was verified.",
       "evidence": [
         "journey"
       ]
@@ -63,7 +63,7 @@
     {
       "id": "structure",
       "status": "pass",
-      "observation": "Compact navigation and selected-object detail replace introductory overhead; final desktop and mobile views inspected.",
+      "observation": "Static invocation and Copy sit near the title; invented icon tiles and disconnected full-width command panel are removed. Default desktop and narrow views inspected.",
       "evidence": [
         "desktop",
         "mobile-list",
@@ -93,7 +93,7 @@
     {
       "id": "spacing",
       "status": "pass",
-      "observation": "Final 701px command row fits; 36px desktop search is subordinate; native-like larger mobile controls remain.",
+      "observation": "Content-width command group is 146.625 by 34px desktop, 44px high at 320px. Related actions are grouped; 700/701px transition checked.",
       "evidence": [
         "desktop",
         "tablet",
@@ -113,7 +113,7 @@
     {
       "id": "components",
       "status": "pass",
-      "observation": "Search, filter, tabs, disclosure, selected rows and modal recovery were exercised; SVG rendering corrected.",
+      "observation": "Functional Lucide assets render; fabricated identity tiles and completion-style checkmarks were removed. Command appearance matches its read/copy role.",
       "evidence": [
         "journey",
         "desktop"
@@ -121,8 +121,8 @@
     },
     {
       "id": "states",
-      "status": "unverified",
-      "observation": "Empty search and denied-clipboard recovery are observed; a real clipboard success round trip remains unverified.",
+      "status": "pass",
+      "observation": "Copy feedback, real paste, no-result recovery and denied-clipboard manual dialog were operated.",
       "evidence": [
         "journey"
       ]
@@ -130,7 +130,7 @@
     {
       "id": "interaction",
       "status": "unverified",
-      "observation": "Keyboard paths, focus restoration and ten selections were operated. Reduced-motion runtime and measured temporal performance were not verified.",
+      "observation": "Keyboard tabs, back-focus return, copy recovery and ten repeated selections were operated. Runtime reduced-motion and temporal performance remain unverified.",
       "evidence": [
         "journey"
       ]
@@ -156,8 +156,8 @@
     },
     {
       "id": "character",
-      "status": "pass",
-      "observation": "Reviewer judged the compact library and localized emphasis appropriate to this utility. This scoped judgment is not proof of original style or reliable taste.",
+      "status": "unverified",
+      "observation": "Current self-review addresses the owner-rejected icons and oversized command region. Prior reviewer approval is superseded; owner acceptance and broader native-quality claims are not established.",
       "evidence": [
         "desktop",
         "mobile-detail",
@@ -213,6 +213,26 @@
       "evidence": [
         "tablet",
         "journey"
+      ]
+    },
+    {
+      "id": "F4",
+      "areas": [
+        "structure",
+        "components",
+        "spacing"
+      ],
+      "severity": "major",
+      "status": "resolved",
+      "location": "Skill identities and invocation area",
+      "observation": "Owner rejected invented icon styling and an oversized static value that looked editable. Capability checkmarks also suggested completed state.",
+      "resolution": "Removed fabricated identity tiles, used neutral capability bullets, placed selectable code and compact Copy near the title, tightened related spacing; inspected actual desktop and narrow renders and operated copying. This records the correction, not owner acceptance.",
+      "evidence": [
+        "desktop",
+        "mobile-detail",
+        "tablet",
+        "journey",
+        "measurements"
       ]
     }
   ],

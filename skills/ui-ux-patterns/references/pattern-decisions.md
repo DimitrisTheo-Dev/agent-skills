@@ -8,6 +8,7 @@ The tables are a retrieval aid, not a ranking of fashionable patterns. Select fr
 | People compare many homogeneous records | Aligned list or table | A few repeated attributes determine choice; sorting/bulk actions matter | Unique visual identity is the main decision factor | Compare multiple records without opening each |
 | People resume ongoing work | A concise resume item plus organized collection | The next unfinished task is known and useful | Recency is not the user's priority or evidence is unreliable | Resume correctly and still discover other work |
 | A long form has dependencies or distinct stages | Steps with persistent summary/preview | Later choices depend on earlier ones and a meaningful intermediate outcome exists | A few independent fields fit comfortably or experts edit across sections | Back/edit without losing values; see commitment before final submit |
+| People read or copy an existing value | Selectable text/code with an adjacent copy action | The value is static and recognition or reuse is the task | Editing is real, a multiline value needs a selection surface, or established read-only field conventions aid comparison | Can the person tell whether they can edit, copy or navigate before interacting? Confirm copy and failure recovery |
 | A short form looks oversized | Single page with stronger grouping and optional sections | Inputs are independent and completion is quick | Conditional branches create real complexity | Complete on a phone without unnecessary navigation |
 | Choices alter a visible output | Editor plus live preview or sample result | The preview is truthful and helps a decision | It implies backend results that are not available or steals needed input space | Change an input and recognize its actual effect |
 | Too many options fill the screen | Searchable selection, categories or progressive disclosure | Volume exceeds useful scanning and choices have recognizable labels | A few frequent choices benefit from staying visible | Discover, select, edit and remove with keyboard and touch |
@@ -30,6 +31,10 @@ The tables are a retrieval aid, not a ranking of fashionable patterns. Select fr
 **Preview.** A style editor can update a truthful local preview immediately. A generated result that needs a server should show a labeled sample or an honest pending state until the real output exists. Do not build fake certainty into a beautiful preview.
 
 **Responsive detail.** Wide layouts can retain a list beside details. Narrow layouts may navigate to a detail view with an explicit back path, restored selection/scroll and a shareable route. Merely squeezing the same two columns changes the experience for the worse.
+
+## Match appearance to behavior
+
+Check what a component appears to invite before inspecting its implementation. A recessed bordered region with placeholder-like text suggests editing; a checkmark suggests completion; a colored logo tile suggests identity. Semantic HTML alone does not resolve a contradictory visual cue. For a short static command, try plain selectable code with a nearby Copy button before a full-width field. Preserve a visible label when the value needs context. Read-only form fields remain appropriate when their role is clear; do not turn this example into a global border ban.
 
 ## Avoid formulaic upgrades
 

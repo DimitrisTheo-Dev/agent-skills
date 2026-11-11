@@ -1,0 +1,27 @@
+[
+  {
+    "name": "moon",
+    "source": "https://github.com/lucide-icons/lucide/blob/main/icons/moon.svg",
+    "blob_sha": "3c4bc3110eb5f7d4caababf5da4ad51af1145a5b"
+  },
+  {
+    "name": "sun",
+    "source": "https://github.com/lucide-icons/lucide/blob/main/icons/sun.svg",
+    "blob_sha": "3ecadd68c530e3124e6378f32954c27659b79c11"
+  },
+  {
+    "name": "search",
+    "source": "https://github.com/lucide-icons/lucide/blob/main/icons/search.svg",
+    "blob_sha": "03e442a5440cff92c219fe3a3c1f2b0788d30701"
+  },
+  {
+    "name": "arrow-up-right",
+    "source": "https://github.com/lucide-icons/lucide/blob/main/icons/arrow-up-right.svg",
+    "blob_sha": "93bdeea23865b4b238dd3038414160949a10f925"
+  },
+  {
+    "name": "chevron-left",
+    "source": "https://github.com/lucide-icons/lucide/blob/main/icons/chevron-left.svg",
+    "blob_sha": "056d5abc06e44940302c8b2a1912a382ea26b36d"
+  }
+]

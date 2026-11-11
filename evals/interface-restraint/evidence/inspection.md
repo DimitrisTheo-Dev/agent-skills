@@ -1,29 +1,23 @@
-# Executed inspection
+# Inspection of the affordance revision
 
-2026-11-11, Chromium cloud browser. Preview served the working app through a managed local static preview with a symlink to `app/`. All final captures were taken after reloading that source. The boundary is all files in `app/`; SHA-256 values are in `source-manifest.json`. The frozen `skills.js` file exactly matches the earlier four-skill fixture.
+2026-11-11. Actual local application in desktop Chromium through the browser tool. Source manifest identifies the current files. Desktop screenshots are 1363 × 936. The responsive harness uses CSS-width iframes; it is not physical-device emulation. Earlier review evidence is available at branch commit `3e8b5f5`; the rejected desktop is retained as `review-01-desktop.png`.
 
-## Rendered changes and corrections
+## Operated in this revision
 
-The first replacement still repeated its subtitle in an introductory sentence and had a collection-provenance footer. Both were removed. A unicode brand mark and external arrows rendered inconsistently; SVGs replaced them. The independent reviewer found broken skip navigation, imprecise copy wording and a faint GitHub glyph; those were corrected and rechecked. An intermediate 601px two-pane layout wrapped the Copy control unnecessarily. The single-pane breakpoint moved to 700px and the unnecessary code-width basis was removed; the final 701px capture shows the intact command row. Sidebar subtitles were shortened when tablet wrapping added noise. Long source instructions were bounded on mobile so the command remained reachable.
+- Inspected light and dark desktop composition. Removed fabricated app icons and the duplicate title icon; verified the remaining functional SVGs render. The first Unicode external-link glyph rendered incorrectly and was replaced with an attributed Lucide path before final capture.
+- Inspected 375px list and detail, 320px detail and expanded installation, and the 701px split view. Measured no horizontal overflow at 320, 700, 701 and 1363 CSS px. At 700 the detail becomes a separate mobile view. No native device claim.
+- The desktop invocation group measures 146.625 × 34px; Copy is 70 × 34px. At 320px, the same group is 146.625 × 44px. The value is selectable code, not an editable field. Search remains 36px high on desktop. The long installation command wraps and stays reachable by scrolling at 320px.
+- Clicked Copy and observed Copied feedback. Used an actual Control+V keypress into search, which produced `$vibe-ui`, confirming a clipboard round trip. Initially this query returned no results; after including invocation text in search, repeated the round trip and observed the correct single result.
+- In the harness's denied-clipboard mode, Copy opened the native manual-copy dialog with `$vibe-ui` selected. Escape closed it and returned focus to Copy.
+- Used ArrowRight and ArrowLeft to move between Overview and Instructions with matching panel/focus state.
+- Exercised an unmatched search and Clear filters, then cleared a successful query with Escape.
+- Selected skills ten times in two repeated sequences, finishing on Vibe UI with its correct heading. No measured latency or long-term satisfaction claim.
+- At 700px, Back returned to the library and focused the selected Vibe UI link.
 
-## Operated paths
+## Scope and limits
 
-- Entered `landing`: title matches rank before instruction-body matches. Pressed Enter: observed Landing pages heading, invocation and hash route. One immediate DOM read preceded the route paint; the settled accessibility tree confirmed the destination.
-- Entered `zzzz no match`: observed No skills found and Clear filters. Cleared: four skills returned and search regained focus.
-- Selected Writing filter: one result and UX writing detail. The selected detail updates with filtering. The final source keeps its desktop hash aligned.
-- Switched Landing pages/Vibe UI ten times in the final browser run. No lost selected state was observed. This is repeated-use interaction evidence, not a performance measurement or long-term preference study.
-- Operated tab arrows: Right selected Instructions and focused its tab; Left restored Overview. Installation disclosure exposed the exact frozen command and setup text.
-- Copy: observed Copied and success announcement after the browser clipboard promise resolved. The button remained 88px wide. Browser Use's separate virtual clipboard returned empty and refused paste; a real clipboard round trip is unverified. No claim that those two clipboard stores are equivalent.
-- Denied iframe clipboard-write permission: Copy opened the manual-copy dialog with `$vibe-ui` selected. Escape closed it and returned focus to Copy.
-- At 375px, selected Vibe UI to open detail; Skills back restored the selected library link's focus. Activated Skip to selected skill: the detail became visible and focus was `detail`. The reviewer separately confirmed these source fixes.
-- Switched light/dark appearance and inspected the actual settled views. Computed foreground/background pairs are in measurements.json.
-- Inspected 320/375 narrow layouts and intermediate 768/601 layouts during correction. Final rechecks include 320px no overflow, 375px list/detail, 701px no overflow and intact command row, and 1363px desktop light/dark. These are CSS viewport checks.
-- Opened long Instructions at 375px: a 320px scroll area contained the original source and the Copy control remained reachable (top713px in the content viewport). No horizontal overflow was measured. The visible page had normal vertical scrolling as well as the code area's scroll.
+The final main screenshot was captured after the final search change. Dark/mobile captures show the same visual revision; subsequent changes only stabilized the expanded installation button width and added invocation matching, neither of which changes those captured default views. Current source was syntax-checked and frozen data remained byte-identical. The broader repository validator and 37 tests passed; those tests assess infrastructure, not aesthetics.
 
-## Verification boundaries
+The previous independent review is historical and was superseded by owner rejection of the icons and command region. The new matched critique pair examines that previous screenshot; it is not an independent approval of the current implementation. The current visual review is the lead's inspection against the owner's corrections.
 
-The final screenshots are desktop, dark, mobile-list, mobile-detail and tablet PNGs. The tab retained for the owner is the new desktop example. The earlier rejected screenshots are not re-presented.
-
-JavaScript syntax checks passed. The repository validator and 37 existing tests passed; those checks concern skill packaging, records and existing fixtures, not this UI's aesthetic quality. `git diff --check` passed. Frozen source data was compared byte-for-byte.
-
-Reduced-motion support is present in source, but the OS media preference was not exercised in this browser. Native devices, Safari, physical keyboards on mobile, assistive technology and enlarged text settings were not tested. No latency, conversion or user-comprehension timing was measured. Some browser log entries belonged to the browser extension; they were not attributed to application code. The quality verdict stays unverified for these runtime coverage limits rather than claiming universal readiness.
+Physical devices, Safari/PWA, software keyboards, screen readers, enlarged text and runtime reduced-motion preferences remain unverified. The CSS reduced-motion branch exists but was not exercised. The revised screen has not been described as owner-approved or as proof of deterministic taste.

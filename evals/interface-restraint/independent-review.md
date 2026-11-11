@@ -1,3 +1,5 @@
+> Historical review of revision `3e8b5f5`. Subsequent owner feedback rejected its icons and command proportions. This is not approval of the current revision; see source-gap-review.md and evidence/inspection.md.
+
 # Independent interface review
 
 Evidence: desktop screenshot `evidence/desktop.png`; targeted reads of `app.js`, `index.html`, and `styles.css`. No interaction was executed. Mobile, dark mode, and assistive technology behavior were not visually verified.
