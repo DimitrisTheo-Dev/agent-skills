@@ -22,6 +22,14 @@ Check the hero with the logo masked: does its composition, product demonstration
 
 When a distinct art direction is requested, use **Vibe UI's creative exploration gate** and compare meaningfully different compositions before polishing. Read [material and texture direction](references/material-and-texture-direction.md) only when hero material/imagery is genuinely undecided; those ten effects are inspiration, not completion criteria.
 
+## Positioning when the platform serves multiple markets
+
+Distinguish the **current product**, the **underlying technology** and **possible future use cases** before writing the hero. A narrow commercial wedge does not automatically define the entire company, but speculative opportunities must not be presented as available features.
+
+For a platform that already offers one proven vertical product and has credible reusable capabilities, consider a two-level narrative: a clear category-level promise and one prominent working use case. Use a short secondary section for adjacent applications only when the roadmap status is visible and supported. Do not bury a working, compelling product demo behind a generic platform manifesto.
+
+If the audience, go-to-market and maturity suggest that one vertical is still the most effective first-time entry, prefer a vertical landing page linked to a truthful platform story. Keep calls to action aligned with actual destinations, and label concepts, proposed SDKs, prototypes and future product bets accurately. Never invent API availability, engine performance, latency, pricing, privacy assurances or deployed integrations.
+
 ## Design the page
 
 1. **Define the decision.** Identify the primary visitor, the task or problem that brought them here, the outcome the product supports, and one primary action available at this stage. Use the brief, product, docs, and assets as evidence. Mark consequential gaps before writing claims or promising an action.
