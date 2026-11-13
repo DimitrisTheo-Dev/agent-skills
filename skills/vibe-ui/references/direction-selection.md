@@ -8,6 +8,8 @@ For a new direction, create two or three small working compositions of the same 
 
 Do not give one direction richer content or a more complete implementation and call that a style preference. Keep scope comparable. A static image can compare composition; it cannot establish interaction quality.
 
+For Shape work that explicitly asks for a distinctive identity, apply the [creative exploration and rejection protocol](creative-rejection.md). A centered/split variant, palette swap or new gradient alone is not a materially distinct concept. Protect recognizable owned product assets before replacing them with abstract art.
+
 ## Choose by observed relationships
 Inspect before writing the recommendation:
 
