@@ -77,6 +77,8 @@ Inspect semantics, names, heading/reading order, keyboard order, visible and uno
 Close specific performed checks, not “WCAG compliant” from a scan. Preserve user zoom and control.
 
 ## Character
+For ambitious brand/landing-page work, use the [creative rejection protocol](creative-rejection.md) to distinguish a product-specific concept from polished generic styling. Explicitly check logo interchangeability, authentic asset preservation, product proof, meaningful concept exploration and character after subtracting decorative effects. Record a major finding when the distinctiveness brief is visibly unmet, even if ordinary UI checks pass. Do not impose an originality quota on conventional utility or faithful-recreation work.
+
 Compare the current render with the brief and actual references at comparable sizes. Explain what content, type, composition, materials and interaction express together. Mentally remove the logo/showcase animation: the rest should still feel considered. Changing a template's colors is not sufficient evidence of identity. References supply relationships, not a default palette. Expressive visuals can earn space through atmosphere, recognition or real value while maintaining task clarity.
 
 Close with a concrete judgment: strongest distinctive decision, largest remaining weakness and why the composition fits this product. If the brief asks for a memorable moment, prototype a real candidate; don't rename a copy toast “wow”. User preference calibrates judgment, but missing preference does not block routine authorized progress.
