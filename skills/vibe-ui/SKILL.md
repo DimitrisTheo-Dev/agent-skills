@@ -34,6 +34,18 @@ Concentrate creative effort where it has the greatest impact. Keep supporting in
 
 Do not force multiple concepts, animations, mascots, or interactive demos into small UI improvements or products where they add no value.
 
+## Creative exploration gate for Shape work
+
+Before presenting alternatives, inventory the product's real differentiators: brand assets, authentic screenshots, interaction moments, user language and approved proof. Identify what must survive a redesign. An ownable avatar or real product demonstration must not be discarded simply to fit a trendier illustration.
+
+**Make the alternatives structurally different.** Compare two or three concepts using identical content and constraints. Each must change the visitor's narrative, layout composition, product demonstration or meaningful interaction. A palette, font, gradient, texture or centered-versus-split toggle *alone* does not qualify as a second concept. If the concepts remain interchangeable when their styling is removed, return to the brief and explore again. See the [creative rejection protocol](references/creative-rejection.md) for specific tests and evidence boundaries.
+
+**Require a recognizable product moment.** For a persuasive landing page, show what the visitor gives, experiences or receives. The expressive artwork may frame the moment, but must not conceal the actual offering. For a product without useful UI, choose an honest artifact or explanatory visual; never manufacture proof.
+
+Run the logo-swap test on the **render**, not merely its written rationale: hide the logo and imagine a peer company's name in its place. If the same composition and hero imagery would work unchanged, treat that as an unresolved creative defect **when the brief calls for differentiation**. A restrained, familiar design can still be right when authenticity, usability or explicit fidelity makes it appropriate.
+
+A visually neat first implementation is not an acceptance criterion. If the best variant fails first-view clarity or product character, revise the concept before polishing icons and shadows. Record the observed difference between alternatives and the reason the rejected candidate lost.
+
 ## Select from evidence, not a persuasive rationale
 
 For Shape work, read [direction selection](references/direction-selection.md) before choosing. Compare the same real task at narrow and wide widths, including an important state transition. Inspect the actual hierarchy and effort, then choose. A longer design explanation does not compensate for a weaker render. Keep the decision record compact and spend the work on the interface.
