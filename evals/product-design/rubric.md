@@ -13,6 +13,10 @@ For each assessment report verified observations, unresolved findings and unasse
 
 Record whether exploration produced meaningful structural alternatives using identical content and whether the leading moment was tested or honestly rejected. These are process observations, not a visual quality score. Do not reward a workflow merely for reciting its instructions.
 
+## Distinctive landing-page acceptance
+
+For ambitious landing-page or brand work, distinguish product specificity from visual novelty. A candidate should make the actual offering recognizable through its content, authentic product representation and composition; preserve meaningful existing avatars/assets unless a justified alternative improves the experience; and compare concepts that differ in narrative, product artifact or interaction, rather than merely tokens. Run the logo-swap heuristic on the rendered first viewport and explain exactly which visual relationship is interchangeable. Reject polished generic cards or detached artwork if the supplied differentiation brief is materially unmet. A calm real-product presentation can still pass. This is reviewer judgment, not user-recall measurement.
+
 ## Scope regressions
 
 Small fixes preserve the established design and avoid variant workshops. Extensions preserve the governing contract and explore only unsettled decisions. Review-only mode remains read-only and does not infer motion from stills. Missing optional tools do not cause installation or abandonment. A rejected moment does not become mandatory spectacle. Backend work does not start a UI design process.
