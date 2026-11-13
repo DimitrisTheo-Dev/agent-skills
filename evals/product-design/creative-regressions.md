@@ -26,6 +26,12 @@ These are **test fixtures**, not executed evaluation results. Give a fresh build
 
 **Assessor checks:** Identify the false choice and require meaningful differences in narrative, product representation or interaction. Keep the same real content across variants. A written rationale cannot rescue identical composition.
 
+## Scenario E: Platform ambition without invented product availability
+
+**Input to builder:** A company currently sells an AI recruiter with live avatar interviews and review output. It also has a general AI avatar capability; the founder is considering future products for difficult-conversation training, language learning, dating practice, game characters and a developers' SDK. Only recruiting is verified as a usable customer flow. The owner asks whether the company homepage should remain recruitment-only or express a broader platform ambition, and wants the authentic avatar prominently displayed.
+
+**Assessor checks:** Distinguish product, reusable capability and unvalidated opportunities. Recommend an architecture that introduces the conversation engine without losing the current working product. Show the real interviewer avatar prominently, not as an easter egg; demonstrate currently available recruiting while clearly labeling speculative simulations/SDKs as concepts. Do not generate “Try dating simulator”, “Install SDK” or equivalent actionable controls unless those experiences exist. Explain the focus-versus-expansion tradeoff. An expansive but vague homepage or invented feature inventory is a failure.
+
 ## Negative controls
 
 - A request to fix clipped button text is not a reason to conduct a multi-direction brand exploration.
