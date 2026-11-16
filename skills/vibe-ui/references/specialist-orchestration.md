@@ -54,6 +54,12 @@ The user's requirements, task, accessibility and technical constraints govern th
 
 Each specialist changes its own concern and reports cross-concern consequences. Shared files need one integration owner; helper use does not imply parallel workers.
 
+## Carry an accepted direction through delivery
+
+For several owned surfaces or a returning focus/shift/hit-target defect, use the installed design-playbook when available. It supplies execution packets and scoped proof inside this workflow; it does not start another exploration or final gate. Without it, retain the shared contract and local QA process.
+
+Translate owner corrections into their words, a product-scoped rule and a reproducing check. Keep the accepted palette, density and interaction intent. Resolve literal values in tokens/components without asking the owner for routine hex values or timings. Reference the implementation source from DESIGN.md and reconcile stale copies after changes. Give workers accessible reference images plus written relationships when supported; verify their actual tools rather than assuming they can or cannot see images.
+
 ## One final review
 
 UI Quality Gate inspects the complete result, compares it to the shared contract and challenges the contract when it fails the task. It routes fixes to the relevant owner, then rechecks affected states. Specialists do not each start another gate. Passing token checks establishes consistency; passing runtime checks establishes specific behavior; neither alone establishes character.

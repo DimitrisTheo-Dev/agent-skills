@@ -1,0 +1,4 @@
+interface:
+  display_name: "Design Playbook"
+  short_description: "Carry an agreed design through build and proof"
+  default_prompt: "Use $design-playbook to turn this agreed direction into one verified flow with shared tokens, bounded ownership and measured craft checks."

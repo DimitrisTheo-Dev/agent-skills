@@ -14,11 +14,15 @@ A reversible preference or favorite can be a candidate. Payment, availability, p
 
 Handle success, failure, timeout, retry and a later result arriving after a newer request where relevant. A skeleton should match the expected structure and reserve useful space. Preserve existing content during refresh when appropriate. Avoid forced skeleton delays and fabricated stages or percentages.
 
+Keep one authoritative loading visual for the same operation. Inspect the shell-to-content geometry, font/media loading and failure replacement. A failed load must retire the loading label and expose recovery, rather than displaying the same error in multiple regions. Wait for actual rendered readiness in checks; continuously polling apps may never reach network idle.
+
 ## Interruption and performance
 
 Retarget from the current visual state; rapid reversal must not restart from a stale origin or accumulate event handlers. Check interactions while a prior transition is settling. Keep animation work out of the critical input path.
 
 Prefer properties and techniques suited to the actual browser/framework. Transform and opacity are often good candidates, not a ban on all layout transitions or a performance guarantee. Profile suspected expensive paints/layouts and large layers. Reserve image/content dimensions to avoid unintended shifts. Avoid applying will-change everywhere.
+
+Keep interactive hit regions stable during feedback. A transform can change the containing block of a stretched pseudo-element and shrink a whole-row target. Operate target edges during press and rapid pointer movement; animate an inner visual face when appropriate. Measure a named component's displacement separately from page CLS. “Zero shift” is a scoped observation with a method, not a universal property inferred from a clean performance score.
 
 ## Reduced motion and optional feedback
 

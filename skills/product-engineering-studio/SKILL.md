@@ -15,11 +15,15 @@ Read the supplied brief and accessible repository instructions. Separate confirm
 
 Capture user, outcome, constraints, real versus mocked behavior, 3-5 acceptance criteria, verification methods and deferred work. For user-facing work, choose Fix (a focused correction), Extend (an established product) or Shape (a new direction or core journey). State a refinement budget; at Shape depth include criteria for correctness, usability, craft and character. For Extend or Shape, read [Creative Quality](references/08_CREATIVE_QUALITY.txt). For ambiguous inputs consult [Workflow](references/02_WORKFLOW.txt), section A.
 
+At project kickoff, a release-readiness request, or a feature changing public routes/capabilities, use product-readiness when installed to choose applicable discovery, sharing, state, accessibility, offline, trust and operational requirements. Keep its decisions in the existing acceptance record. For a focused fix, revisit only affected requirements. If unavailable, record the relevant categories, concrete checks and justified deferrals here; a missing tool leaves verification unknown. Keep offline HTML, network fallback, offline task completion and PWA installability distinct.
+
 ## 2. Explain the smallest useful design
 
 At Shape depth, read the product, render competing directions and prototype the strongest moment hypothesis before locking the design. Follow Creative Quality; proceed on a reasoned recommendation and combine consequential open choices into one checkpoint when user input is necessary.
 
 Describe the main UI flow, required states, data entities, interfaces, trust boundaries and important failure behavior. Use a compact Mermaid diagram when relationships help. Reuse the actual repository stack. State a scaling trigger before adding infrastructure.
+
+Start from the result the user must reach and work backward to the smallest complete flow. For provider-dependent work or a timed demo, read [Delivery Proof](references/11_DELIVERY_PROOF.txt) before expanding dependent screens. Confirm what the deployed path can produce and consume, including required configuration and migrations. A working shell or healthy endpoint does not establish the promised artifact.
 
 For UI, security, data, scaling or AI behavior, read only the relevant section of [Quality and Design](references/04_QUALITY_AND_DESIGN.txt). Use local vibe-ui only when its actual content is accessible. Use Mobbin only for a concrete screen/flow question with an available connection.
 
@@ -41,6 +45,8 @@ If implementation is authorized and a real repository is accessible, implement t
 
 Include goal, acceptance IDs, relevant context, observed scope, essential contracts, checks and checkpoint. Use checkpoints sized to the actual work; do not impose a short demo deadline on a production-quality request. Preserve essential requirements over arbitrary brevity.
 
+When an accepted design spans owned workstreams or recurring craft defects, use the installed design-playbook for contract-to-build handoffs and scoped measurements. Keep this Studio as product/integration owner, Vibe UI as design owner and UI Quality Gate as the single final gate. If unavailable, use the existing contract, bounded handoff and verification references here.
+
 For a comprehensive starting prompt, provide the brief, execution rules and bounded first assignment. Keep later assignments adaptive; use the orchestration template in Codex Handoffs rather than specifying the entire implementation upfront.
 
 Include typography, composition, relevant states, immediate feedback and purposeful motion in the first complete UI slice. At that first render, check task/object/action comprehension before expanding the flow. Keep design rationale in project notes; product text must help its user identify, decide, act or recover. Carry concrete owner corrections forward as acceptance criteria and recheck the exact rejected condition, rather than asking the owner to repeat it. Inspect the running behavior and actual check output. For UI, retain captures of the rendered flow and a recording or frame strip when timing matters; label missing evidence. At delivery, reuse the repository's documented verification command when it covers the change. For a failure, record the failing case and a command or input that reproduces it. After two unsuccessful fixes with the same symptom, change the diagnostic approach. Keep unrelated cleanup out of scope. Publish or deploy only under the user's authorization.
@@ -56,5 +62,7 @@ A passing build or clean correctness review does not close usability, craft or c
 Review the actual candidate, including new files. Confirm the review method can see the chosen base/range before relying on it. Recheck material fixes. For Extend or Shape, assess correctness, usability, craft and character separately using Creative Quality. Use a reviewer who did not build the flow when permitted and available; otherwise label the self-review limitation. Carry unresolved findings into session state.
 
 Report changed behavior, actual evidence, limitations and next action. Update [Session State](references/06_SESSION_STATE.txt); do not replay complete logs or claim automatic ChatGPT/Codex synchronization. If file tools are unavailable, return the compact state for copying.
+
+For a launch or changed readiness boundary, reconcile the product-readiness record with this candidate. Reuse the UI gate's evidence; do not create a competing visual gate. Separate locally verified and verified-live behavior, and carry required unknowns as release blockers rather than claiming overall readiness from a successful build or scanner score.
 
 For a synthetic example consult [Worked Example](references/09_WORKED_EXAMPLE.txt). For source provenance and unavailable capabilities consult [Sources](references/07_SOURCES.txt). Consult references on demand rather than loading every file.

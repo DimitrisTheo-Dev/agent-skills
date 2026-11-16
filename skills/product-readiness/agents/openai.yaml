@@ -1,0 +1,4 @@
+interface:
+  display_name: "Product readiness"
+  short_description: "Plan and verify the details of a complete product"
+  default_prompt: "Use $product-readiness to plan the applicable completeness baseline for this project and define observable acceptance checks."

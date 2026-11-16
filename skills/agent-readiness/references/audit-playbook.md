@@ -58,6 +58,8 @@ Do not assign vendor grades or a percentage of "readiness". Overall AgentReady c
 
 ## Turn findings into a plan
 
+For an existing authorized Is Agentic report or an explicitly requested scan, preserve its URL, date, public scope, observed evidence and methodology version when available. Separate its vendor score from AgentReady levels and practical task severity. Its current public methodology distinguishes essential, applicable recommended and emerging checks; recheck that methodology when interpreting a new report. Do not create empty protocols or expose private routes to increase a score. Carry scanner findings into this report only with their evidence and limitations; private workflows and unavailable observations remain unknown. An ordinary audit does not authorize submitting a URL to a third-party scanner.
+
 1. **Essential:** restore the expected public answer and honest routing; resolve security blockers and an intended task's missing action/auth path. Separate practical blockers from formal v2.0 conformance gaps.
 2. **Useful:** improve canonical task docs, operation/error contracts, discovery links, sitemap, llms.txt, and factual structured data according to observed demand.
 3. **Speculative:** AI Catalog, server cards, Markdown mirrors, MCP Apps, NLWeb, payment protocols, or draft browser mechanisms without a demonstrated supported client. WebMCP retains SHOULD even when its implementation is deferred here.
