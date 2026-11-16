@@ -27,3 +27,7 @@ Selection was inspected separately: both agents named the actual snapshot files 
 The new skill passed the bundled quick validator. Repository format, metadata, contained resources, local links/anchors and Python syntax passed `scripts/check.py`, along with all 38 existing tests on Python 3.12 after installing the pinned development dependencies. No runtime script was added. The missing uploaded `ring-audit.mjs` was replaced by documented scoped checks, not a fabricated implementation.
 
 The retrospective inspected public source history and reports, not current production behavior. These planning exercises contain useful trigger inputs and are only one attempt per revision. They do not test implementation under deadline pressure, actual agent concurrency, visual craft, accessibility conformance or live service success. A future build should exercise a real representative flow before claiming those improvements.
+
+## Reference follow-up
+
+A later 2026-11-16 inspection added a bounded composition/source map, public capability-copy drift and commit/deadline chronology to the two Faceful references. The entrypoint, routing and core delivery procedure remain unchanged. The planning comparison above still refers to its recorded snapshots; it does not evaluate a reusable code kit or establish a speed improvement. Repository checks and all 38 tests passed again for the follow-up. Live interface observations do not rerun the reported accessibility or performance suites.
