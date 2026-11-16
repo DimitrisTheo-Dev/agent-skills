@@ -9,6 +9,7 @@ Start product work with **Product Engineering Studio**. It routes visual decisio
 | Skill | Use it for |
 | --- | --- |
 | [agent-readiness](skills/agent-readiness/SKILL.md) | Audit, plan, or implement improvements to how agents discover, read, and use a website, SaaS, or API. Based on AgentReady v2.0 with conditional applicability and explicit evidence. |
+| [product-readiness](skills/product-readiness/SKILL.md) | Choose and verify a product-specific completeness baseline at kickoff and release: discovery, sharing, UI states, accessibility, offline behavior, trust and operations. |
 | [product-engineering-studio](skills/product-engineering-studio/SKILL.md) | Start here for product work: choose proportional design depth, explore real alternatives, deliver complete flows and assess correctness, usability, craft and character. |
 | [vibe-ui](skills/vibe-ui/SKILL.md) | Art-direct, build, review, or polish interfaces with product-specific character, deliberate detail and rendered evidence. |
 | [design-playbook](skills/design-playbook/SKILL.md) | Carry an agreed design across owned workstreams, repair returning craft defects and require scoped proof on the integrated candidate. |
@@ -33,7 +34,7 @@ Clone the library, then link the skills you want. For the product/design workflo
 git clone https://github.com/DimitrisTheo-Dev/agent-skills.git
 cd agent-skills
 mkdir -p "$HOME/.agents/skills"
-for skill in product-engineering-studio vibe-ui design-playbook ui-ux-patterns ui-typography ui-color ui-geometry ui-motion ui-quality-gate; do
+for skill in product-engineering-studio product-readiness agent-readiness vibe-ui design-playbook ui-ux-patterns ui-typography ui-color ui-geometry ui-motion ui-quality-gate; do
   ln -s "$PWD/skills/$skill" "$HOME/.agents/skills/$skill"
 done
 ```
@@ -59,6 +60,18 @@ The first complete UI flow includes deliberate layout/type, relevant states, fee
 Design Playbook applies when the agreed direction must survive several workstreams or a craft defect keeps returning. It supplies token/ownership contracts and concrete checks within the existing workflow. It does not reopen accepted art direction or add another final gate. [Faceful lessons and source limits](skills/design-playbook/references/faceful-history.md) · [Workflow comparison and limits](evals/design-playbook/RESULTS.md)
 
 See the [comparison protocol](evals/product-design/README.md) for the local catalog pilot, raw artifacts and evidence limits. A single pilot cannot establish reliable taste.
+
+## Use product-readiness
+
+For the broader product baseline, Studio routes to product-readiness at kickoff, when a feature changes relevant capabilities, and before release. It makes applicability decisions in one project record, distinguishes optional capabilities from required behavior, and consumes existing UI and agent evidence. The [coverage matrix](skills/product-readiness/references/coverage.md) includes discoverability, OG images, error/empty/loading states, accessibility, data integrity, operations and conditional capabilities. [Offline decisions](skills/product-readiness/references/offline.md) distinguish initial HTML, standalone exports, network fallback, offline tasks and installability.
+
+```text
+$product-readiness Plan the completeness baseline for this project.
+Choose what applies, when it must ship and how we will verify it.
+Use the existing stack and keep the first useful flow small.
+```
+
+The workflow is implemented as instructions and acceptance criteria, not an extracted application starter. See the [evaluation record](evals/product-readiness/RESULTS.md) for evidence and limits.
 
 ## Use agent-readiness
 

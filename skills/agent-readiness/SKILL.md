@@ -8,6 +8,8 @@ license: MIT
 
 Make the user's intended agent tasks possible with evidence and the smallest useful changes. AgentReady v2.0 is the baseline, verified 2026-10-25. Its requirement levels do not imply that every protocol applies to every product.
 
+Keep broader product completeness with product-readiness when installed: SEO, share assets, UI states, offline/PWA behavior and launch operations have separate acceptance checks. Reuse shared raw-HTML/status evidence without treating an agent-readiness result as overall product readiness. See the audit playbook for handling supplied or explicitly requested external scanner reports.
+
 ## Choose the mode and scope
 
 - **Audit** for review, diagnosis, or an unspecified readiness request. Inspect code and make bounded read-only HTTP checks. Make no target changes, including generated report files, dependencies, configuration, or third-party scan submissions. Return the report in the conversation unless the user requests an artifact.

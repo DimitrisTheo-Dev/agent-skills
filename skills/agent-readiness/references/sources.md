@@ -2,6 +2,8 @@
 
 Last verified **2026-10-25**. Refresh the normative map when AgentReady changes; recheck protocol maturity and framework APIs before implementing version-sensitive code. The requirement map is a maintained snapshot, not a live certification service.
 
+Addendum **2026-11-16**: reopened the AgentReady public guide and [Is Agentic](https://is-agentic.com/) homepage to clarify scanner evidence boundaries. The scanner describes essential checks, capability-dependent recommendations, optional emerging checks and limitations of public observations. This addendum does not recertify the normative map or every protocol version below. No scan was submitted.
+
 ## Baseline and evidence
 
 - [Canonical AgentReady guide](https://www.agentready.org/), v2.0, October 2026. Opened the guide, normative tables, evidence blocks, and changelog.

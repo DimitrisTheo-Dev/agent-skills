@@ -24,6 +24,8 @@ Feedback is part of the first complete flow. Polish covers immediate response, t
 
 ## Keep it fast
 
+Product Readiness chooses the applicable completeness baseline at kickoff and reconciles evidence before release. It covers discovery, sharing, states, offline behavior and operational requirements in the existing project record. It consumes the UI gate's findings rather than adding a second visual gate. Agent Readiness retains ownership of detailed agent requirements; public scanner scores remain supporting evidence. Isolated fixes revisit only affected requirements.
+
 - A small fix uses the affected helper and existing decisions.
 - An extension explores only unresolved choices.
 - A new direction compares two or three coherent alternatives total, sharing real content and captures.

@@ -10,6 +10,7 @@ Names include grill-with-docs, grilling, domain-modeling, codebase-design, tdd, 
 This is a shared snapshot, not a live health check. Full local skill content was not copied into this bundle. Local modifications may be intentional.
 
 CORE CHOICES
+- Project kickoff, public route/capability change, or product completeness before release: product-readiness when accessible. Select applicable discovery, sharing, states, offline, trust and operational checks in one existing record. It consumes UI Quality Gate evidence and delegates detailed agent requirements to agent-readiness; it does not reopen every category on an isolated fix. If unavailable, record applicable acceptance checks and remaining unknowns within Studio.
 - Unclear feature inside a repository: grill-with-docs. Resolve scope; cap the initial question round. It uses grilling and domain-modeling.
 - Idea clarification outside a repository: use the intake procedure here; grill-me is optional if actually installed.
 - Ambiguous terms or roles: domain-modeling. Define the terms affecting this change.
