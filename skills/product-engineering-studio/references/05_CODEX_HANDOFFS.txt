@@ -65,6 +65,7 @@ First assignment: <one runnable slice sized to the actual task, with constraints
 I. DELEGATE ONE BOUNDED TASK
 Outcome / acceptance IDs: <part of the current integration checkpoint>
 Owner / allowed paths: <observed paths or feature boundary; identify shared files owned by the lead>
+Runtime ownership: <server/port, build and evidence paths when concurrent work could collide>
 Context / baseline: <brief, accepted decisions, actual revision, relevant instructions>
 Contract / dependencies: <agreed inputs, outputs, error cases and prerequisites>
 Constraints / exclusions: <scope, invariants and mock boundaries>

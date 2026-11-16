@@ -41,6 +41,10 @@ Before dispatch, record:
 Let the lead settle scaffolding, dependency changes, shared types, package manifests and lockfiles before concurrent edits. In a shared workspace, reserve those files to the lead. Use isolated worktrees only when useful and supported; account for installing dependencies, shared ports and merge effort. Never assume isolation or automatic cross-agent memory.
 Workers return implementation, evidence and blockers within their packet. They propose contract changes to the lead before adopting them. Report missing access, changed assumptions and overlap promptly rather than waiting until the task ends.
 
+Assign runtime ownership with file ownership: dev-server port/process, mutable build directory and private evidence output. Serialize builds/installs that share mutable directories; use separate dependency installs when worktrees need isolation. Offline installs require a suitable cache. Keep another session's server and artifacts intact. Wait for a meaningful rendered state before browser interaction; a polling app may never reach network idle.
+
+After an interruption, inspect the actual checkout and running work, preserve unrelated changes, then resume with a short priority delta. Do not restart a productive session merely to add workers. Shared-label changes also need a check of accessible-name selectors and sibling tests.
+
 E. INTEGRATE AND STEER EARLY
 At every checkpoint:
 1. Inspect actual changes and new files; reconcile the current candidate before applying patches or commits. In a shared workspace, completed worker edits may already be present.

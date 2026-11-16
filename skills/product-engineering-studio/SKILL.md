@@ -21,6 +21,8 @@ At Shape depth, read the product, render competing directions and prototype the 
 
 Describe the main UI flow, required states, data entities, interfaces, trust boundaries and important failure behavior. Use a compact Mermaid diagram when relationships help. Reuse the actual repository stack. State a scaling trigger before adding infrastructure.
 
+Start from the result the user must reach and work backward to the smallest complete flow. For provider-dependent work or a timed demo, read [Delivery Proof](references/11_DELIVERY_PROOF.txt) before expanding dependent screens. Confirm what the deployed path can produce and consume, including required configuration and migrations. A working shell or healthy endpoint does not establish the promised artifact.
+
 For UI, security, data, scaling or AI behavior, read only the relevant section of [Quality and Design](references/04_QUALITY_AND_DESIGN.txt). Use local vibe-ui only when its actual content is accessible. Use Mobbin only for a concrete screen/flow question with an available connection.
 
 ## 3. Select a procedure
@@ -40,6 +42,8 @@ State the selected mode, a short reason, owners and next integration checkpoint.
 If implementation is authorized and a real repository is accessible, implement the slice using the selected execution mode. Otherwise prepare a bounded packet from [Codex Handoffs](references/05_CODEX_HANDOFFS.txt).
 
 Include goal, acceptance IDs, relevant context, observed scope, essential contracts, checks and checkpoint. Use checkpoints sized to the actual work; do not impose a short demo deadline on a production-quality request. Preserve essential requirements over arbitrary brevity.
+
+When an accepted design spans owned workstreams or recurring craft defects, use the installed design-playbook for contract-to-build handoffs and scoped measurements. Keep this Studio as product/integration owner, Vibe UI as design owner and UI Quality Gate as the single final gate. If unavailable, use the existing contract, bounded handoff and verification references here.
 
 For a comprehensive starting prompt, provide the brief, execution rules and bounded first assignment. Keep later assignments adaptive; use the orchestration template in Codex Handoffs rather than specifying the entire implementation upfront.
 

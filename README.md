@@ -11,6 +11,7 @@ Start product work with **Product Engineering Studio**. It routes visual decisio
 | [agent-readiness](skills/agent-readiness/SKILL.md) | Audit, plan, or implement improvements to how agents discover, read, and use a website, SaaS, or API. Based on AgentReady v2.0 with conditional applicability and explicit evidence. |
 | [product-engineering-studio](skills/product-engineering-studio/SKILL.md) | Start here for product work: choose proportional design depth, explore real alternatives, deliver complete flows and assess correctness, usability, craft and character. |
 | [vibe-ui](skills/vibe-ui/SKILL.md) | Art-direct, build, review, or polish interfaces with product-specific character, deliberate detail and rendered evidence. |
+| [design-playbook](skills/design-playbook/SKILL.md) | Carry an agreed design across owned workstreams, repair returning craft defects and require scoped proof on the integrated candidate. |
 | [ui-ux-patterns](skills/ui-ux-patterns/SKILL.md) | Choose task-appropriate layouts and flows using sixteen conditional pattern decisions. |
 | [ui-typography](skills/ui-typography/SKILL.md) | Choose from ten adaptable type directions and resolve readable roles, rhythm and wrapping. |
 | [ui-color](skills/ui-color/SKILL.md) | Construct contextual palettes from eight approaches, define semantic roles and verify actual pairings. |
@@ -32,7 +33,7 @@ Clone the library, then link the skills you want. For the product/design workflo
 git clone https://github.com/DimitrisTheo-Dev/agent-skills.git
 cd agent-skills
 mkdir -p "$HOME/.agents/skills"
-for skill in product-engineering-studio vibe-ui ui-ux-patterns ui-typography ui-color ui-geometry ui-motion ui-quality-gate; do
+for skill in product-engineering-studio vibe-ui design-playbook ui-ux-patterns ui-typography ui-color ui-geometry ui-motion ui-quality-gate; do
   ln -s "$PWD/skills/$skill" "$HOME/.agents/skills/$skill"
 done
 ```
@@ -54,6 +55,8 @@ carry the chosen character through the complete flow, and verify the result.
 Studio chooses Fix, Extend or Shape from the task. Small fixes reuse the product's decisions. New directions compare realistic alternatives before committing. Vibe UI coordinates only the relevant design specialists when installed; Studio includes a fallback when an optional specialist is absent. No fixed palette, typography preset or animation quota applies across products.
 
 The first complete UI flow includes deliberate layout/type, relevant states, feedback and purposeful motion. Report correctness, usability, craft and character separately. Keep decisions in the product's existing design contract or `DESIGN.md`; tests and reviewer judgments remain distinct evidence. User input is needed only for consequential missing priorities, not routine implementation choices.
+
+Design Playbook applies when the agreed direction must survive several workstreams or a craft defect keeps returning. It supplies token/ownership contracts and concrete checks within the existing workflow. It does not reopen accepted art direction or add another final gate. [Faceful lessons and source limits](skills/design-playbook/references/faceful-history.md) · [Workflow comparison and limits](evals/design-playbook/RESULTS.md)
 
 See the [comparison protocol](evals/product-design/README.md) for the local catalog pilot, raw artifacts and evidence limits. A single pilot cannot establish reliable taste.
 
