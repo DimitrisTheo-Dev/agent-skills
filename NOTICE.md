@@ -16,6 +16,8 @@ The five design specialists (ui-color, ui-typography, ui-geometry, ui-ux-pattern
 
 `product-readiness` contains original applicability decisions, coverage prompts and synthetic evaluation cases. Its [source record](skills/product-readiness/references/sources.md) credits AgentReady, Is Agentic, Google Search Central, Open Graph, W3C, web.dev and MDN. No source articles, implementation code, assets or datasets are bundled. Technical readiness does not establish legal compliance, universal accessibility, ranking or business success.
 
+Its engineering extension also credits React Doctor (Million), Vercel React Best Practices, Vibe Security (Chris Raroque and contributors), OWASP, Chrome Developers and PostgreSQL documentation. Their tools, rule catalogs and source examples are linked, not redistributed. Version/scope notes and independently authored acceptance guidance are recorded with the sources.
+
 ## Design Playbook provenance
 
 Design Playbook and its related workflow maintenance are original instructions synthesized from the owner-supplied draft and the public history of [Hackathon-gen-ai](https://github.com/DimitrisTheo-Dev/Hackathon-gen-ai), inspected on 2026-11-16. [Evidence and limits](skills/design-playbook/references/faceful-history.md) identify the exact records. The source repository states that it grants no general license; this repository imports no Faceful code, fonts, artwork or customer media. Its historical token example does not grant rights to external assets. Synthetic evaluation inputs are original.

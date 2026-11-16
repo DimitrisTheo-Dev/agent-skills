@@ -73,6 +73,8 @@ Use the existing stack and keep the first useful flow small.
 
 The workflow is implemented as instructions and acceptance criteria, not an extracted application starter. See the [evaluation record](evals/product-readiness/RESULTS.md) for evidence and limits.
 
+Engineering coverage includes [React Doctor and Vercel guidance](skills/product-readiness/references/react-engineering.md), [security verification](skills/product-readiness/references/security.md), [N+1 and scaling checks](skills/product-readiness/references/scaling.md), and [Lighthouse/accessibility budgets](skills/product-readiness/references/quality-budgets.md). Defaults propose 90+ Lighthouse Performance and 100 on applicable automated audits, with separate field metrics and operated accessibility checks. They are contextual targets, not certification or automatic installation of third-party tools. [Engineering comparison](evals/product-readiness/ENGINEERING-RESULTS.md)
+
 ## Use agent-readiness
 
 ```text

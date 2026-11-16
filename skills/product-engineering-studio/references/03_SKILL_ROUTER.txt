@@ -16,6 +16,7 @@ CORE CHOICES
 - Ambiguous terms or roles: domain-modeling. Define the terms affecting this change.
 - Interface or module design: codebase-design. Prefer a simple caller contract.
 - Defined behavior: tdd. Agree the meaningful testing boundary and build in small behavior steps.
+- React/Next.js performance or changed data/render paths: use the installed Vercel React Best Practices selectively and React Doctor diagnostics when the pinned tool is available. Product Readiness carries portable fallbacks and quality budgets. Prioritize waterfalls/bundles, preserve the actual framework and state library, and keep tool scores distinct from runtime behavior.
 - Difficult reproducible failure: diagnosing-bugs. Find evidence before fixing.
 - Unsettled UI/state decisions or Shape exploration: prototype when its actual instructions are accessible. Compare directions on identical content and prototype the strongest moment hypothesis; otherwise use disposable routes in the existing stack. Retain evidence and retire only the throwaway code you created.
 - Finished code: code-review. Its documented default uses a committed range and a supplied base. A scope override must be explicit and honored; otherwise snapshot the intended work before review. Include new files.
@@ -26,7 +27,8 @@ CORE CHOICES
 - Advanced color ramps/gamut: better-colors is an optional helper when accessible and a concrete need remains; ui-color keeps the product role decisions.
 - Interface copy, empty states, errors and voice: product-ux-writing when accessible. For persuasion and page narrative, landing-page-design when accessible.
 - Fine interface details or motion: selectively consult make-interfaces-feel-better or an Emil specialist when accessible and relevant. Read Creative Quality and the source caveats first; retain the product contract and treat numeric recipes as hypotheses. Do not load the entire upstream collection or install tools merely to complete this route.
-- Sensitive data/auth flow: local vibe-security where available, plus applicable checks from the quality guide.
+- Sensitive data/auth flow: local vibe-security where available, plus applicable OWASP-backed checks in Product Readiness or this Studio's quality guide. Verify legitimate and denied object/tenant operations at the server boundary. A clean dependency or frontend scan does not establish authorization.
+- Collections, queries, expensive work or scaling requests: use Product Readiness's workload/query-count checks when accessible; otherwise inspect bounded queries, batching, plans, connection/fan-out limits and cache ownership here. Promise.all does not remove N+1 work. Add infrastructure only for a measured or explicit workload need.
 - SQL/Postgres work: supabase-postgres-best-practices when installed. It is a database guide, not evidence that Supabase is the chosen platform.
 - Browser/frontend detail: modern-web-guidance only for the specific concern and actual runtime.
 - Context transfer: handoff when the session needs a durable summary.

@@ -24,6 +24,8 @@ Use `pass`, `fail`, `unknown` or `not applicable`. Deferred work stays applicabl
 
 - Candidate/build and environment:
 - Commands and journeys actually executed, with results:
+- Tool versions/configuration, comparison base, route/workload budgets and exclusions:
+- Lighthouse repeated results versus field data; query/call counts and denial-test evidence where applicable:
 - Rendered routes/states and supported browsers sampled:
 - Existing evidence reused and why it remains valid:
 - Unavailable tools, blocked prerequisites and unresolved failures:

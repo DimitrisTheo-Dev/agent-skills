@@ -1,6 +1,6 @@
 ---
 name: product-readiness
-description: Establish a product-specific completeness baseline at project kickoff, when a feature changes public routes or capabilities, or before a release. Cover discoverability, sharing, UI states, accessibility, offline behavior, trust and operations with applicability decisions and observable acceptance checks. Use for product completeness and launch readiness, not every isolated code fix.
+description: Establish a product-specific completeness baseline at project kickoff, when a feature changes public routes or capabilities, or before a release. Cover discovery, UI states, React quality, security, scaling, Lighthouse, accessibility, offline behavior and operations with applicability decisions and observable checks. Use for product completeness and launch readiness, not every isolated code fix.
 ---
 
 # Product readiness
@@ -29,6 +29,10 @@ Load only relevant detail:
 
 - Public pages, SEO, AEO, link previews or machine consumers: [discovery and sharing](references/discovery.md).
 - Any request mentioning offline HTML, offline support, installability or PWA: [offline decisions](references/offline.md). Separate initial HTML, a standalone export, a network fallback and offline task completion.
+- React/Next.js implementation or React Doctor findings: [React engineering](references/react-engineering.md), using relevant Vercel rules and the project's existing tooling.
+- Authentication, data boundaries, externally reachable actions, uploads or AI tools: [security verification](references/security.md), using applicable Vibe Security and OWASP guidance.
+- Collections, database access, expensive work or traffic growth: [scaling and data access](references/scaling.md), with query-count and workload evidence.
+- Lighthouse targets, interaction performance or accessibility acceptance: [quality budgets](references/quality-budgets.md), separating automated scores, operated journeys and field evidence.
 - Version-sensitive requirements or external claims: [primary sources and limits](references/sources.md). Verify the target's installed versions and deployed behavior.
 
 Finish this step with bounded commitments, not a list of every feature the product could acquire. A public landing page normally needs discovery, sharing and resilient forms; a private dashboard needs access boundaries and recovery; an offline field app needs explicit storage and synchronization behavior. PWA, MCP, billing, push notifications and extra locales require a real use case.
@@ -42,6 +46,8 @@ Use agent-readiness for detailed public agent discovery or intended agent action
 Put stable behavior in reusable starter code: metadata defaults, OG image template, error/not-found boundaries, common loading/empty/error components, environment validation and a smoke path. Keep product-specific audience, routes, policy, offline depth, permissions and integrations in the project record. Configure existing components before building duplicates. Preserve accepted signature compositions while checking performance, semantics and reduced motion.
 
 Deliver the applicable baseline with each vertical slice. Resolve architecture-sensitive choices such as rendering, persistence and offline writes before building dependent screens. Reserve launch checks for deployment-specific evidence, not discovering missing product states at the end.
+
+Keep engineering review inside this delivery loop: run focused checks during changes and the agreed broader checks on the integrated candidate. Resolve genuine high-impact security/correctness defects before score improvements. Use installed specialist instructions where available and these references as a portable fallback. Preserve the existing framework, component system and data-fetching library unless the task justifies a change; a vendor recommendation alone does not justify a migration.
 
 ## 4. Verify the candidate
 
