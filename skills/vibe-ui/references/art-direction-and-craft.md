@@ -6,7 +6,7 @@ Vibe UI owns the relationship between structure, type, color, materials, imagery
 
 State the functional promise, desired emotional register, recognizable product-specific detail and main visual tension. For example, expressive content can sit inside quiet functional chrome. Name a restraint that protects the idea. Avoid a direction made only of adjectives.
 
-For Shape work, compare two or three coherent directions on identical content. Vary composition, hierarchy or interaction meaningfully. For Extend, compare only an unsettled choice. Keep evidence before retiring disposable code. Make reversible choices autonomously; ask only for consequential missing priorities.
+Use [direction selection](direction-selection.md) when a meaningful choice is open. Keep evidence before retiring disposable code. Make reversible choices autonomously and ask when a consequential user priority is missing.
 
 ## Signature and imagery
 
@@ -18,7 +18,7 @@ Judge materials by the whole composition. Gradients, glass, texture, shadows and
 
 ## Moment hypothesis
 
-Distinguish an occasional beat, such as the first useful result, from everyday feel, such as direct manipulation or less expected work. Specify trigger, benefit, feeling, behavior, repeated-use cost, accessible alternative and confirming/refuting evidence. Prototype the strongest candidate in build scope. A copy toast does not become a signature moment by renaming it.
+Distinguish an occasional beat, such as the first useful result, from everyday feel, such as direct manipulation or less expected work. When testing a signature interaction, name the benefit, what would confirm it and how it works with varied inputs and on repeat use. Use an accessible alternative where needed. Prototype it in build scope when its effect could change the decision.
 
 Character should remain in composition, type, content and ordinary interactions when the special moment is removed. If no candidate earns its cost, improve everyday feel and state that finding. A satisfying response can be quiet.
 

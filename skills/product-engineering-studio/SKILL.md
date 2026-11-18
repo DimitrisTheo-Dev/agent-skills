@@ -1,27 +1,27 @@
 ---
 name: product-engineering-studio
-description: Frame a product problem, explain its UI and system design, choose sequential or parallel delivery, and deliver small verified slices or concise Codex handoffs. Use for product development briefs, scoped builds, design-to-build planning and adaptive multi-agent execution.
+description: Frame, prototype, build, and verify product changes. Use for product development briefs, feasibility experiments, scoped builds, design-to-build planning, and adaptive multi-agent delivery.
 ---
 
 # Product Engineering Studio
 
 Turn a raw brief into a small useful outcome with explicit decisions and observable evidence. Discuss in the user's language; write concise engineering handoffs in English unless requested otherwise.
 
-Start with a concise statement of the intended outcome and consequential assumptions, then do the authorized work. Use a compact acceptance table and architecture explanation when they clarify the task. Keep working design/review records in project artifacts rather than making the user manage the workflow. Explore before committing at Shape depth.
+Start with the intended outcome and consequential assumptions, then do the authorized work. Use a compact acceptance table or architecture explanation when it clarifies the task.
 
 ## 1. Establish the task
 
-Read the supplied brief and accessible repository instructions. Separate confirmed requirements, observations and reversible assumptions. Ask up to three consequential questions initially; continue independent inspection while a necessary answer is missing. Respect design-only or no-code scope.
+Read the brief and applicable repository instructions. Separate requirements, observations and reversible assumptions. Ask when a missing decision would materially change the work. Continue independent inspection while an answer is pending. Respect design-only or no-code scope.
 
-Capture user, outcome, constraints, real versus mocked behavior, 3-5 acceptance criteria, verification methods and deferred work. For user-facing work, choose Fix (a focused correction), Extend (an established product) or Shape (a new direction or core journey). State a refinement budget; at Shape depth include criteria for correctness, usability, craft and character. For Extend or Shape, read [Creative Quality](references/08_CREATIVE_QUALITY.txt). For ambiguous inputs consult [Workflow](references/02_WORKFLOW.txt), section A.
+Identify who will use the result, the useful outcome, what constrains it and how to observe success. For UI work, use Fix, Extend or Shape as shorthand for the depth of change. Read [Creative Quality](references/08_CREATIVE_QUALITY.txt) when choosing a direction or reviewing substantial UI. For ambiguous inputs, see section A of [Workflow](references/02_WORKFLOW.txt).
 
-At project kickoff, a release-readiness request, or a feature changing public routes/capabilities, use product-readiness when installed to choose applicable discovery, sharing, state, accessibility, offline, trust and operational requirements. Keep its decisions in the existing acceptance record. For a focused fix, revisit only affected requirements. If unavailable, record the relevant categories, concrete checks and justified deferrals here; a missing tool leaves verification unknown. Keep offline HTML, network fallback, offline task completion and PWA installability distinct.
+When setting a delivery baseline, assessing release readiness or changing a product's supported capabilities, use product-readiness if installed. Carry applicable checks and evidence into the existing acceptance record. If unavailable, record relevant checks and deferrals here. Scope fixes and learning prototypes to their affected requirements and actual risks.
 
 ## 2. Explain the smallest useful design
 
-At Shape depth, read the product, render competing directions and prototype the strongest moment hypothesis before locking the design. Follow Creative Quality; proceed on a reasoned recommendation and combine consequential open choices into one checkpoint when user input is necessary.
+Choose the activity that resolves the consequential uncertainty. Use existing user evidence when the problem is unclear. If an unfamiliar capability or interaction is the question, a small prototype with realistic inputs can be the first useful result. Section B of [Workflow](references/02_WORKFLOW.txt) covers this choice. For an unsettled visual or interaction direction, compare alternatives when seeing or operating them could change the decision. Reuse a settled direction and proceed with a reasoned choice when the work is reversible.
 
-Describe the main UI flow, required states, data entities, interfaces, trust boundaries and important failure behavior. Use a compact Mermaid diagram when relationships help. Reuse the actual repository stack. State a scaling trigger before adding infrastructure.
+Work through the UI flow, data and interface contracts, trust boundaries and important failure behavior. Explain the parts that affect delivery. Use a compact Mermaid diagram when relationships help. Reuse the actual repository stack. State a scaling trigger before adding infrastructure.
 
 Start from the result the user must reach and work backward to the smallest complete flow. For provider-dependent work or a timed demo, read [Delivery Proof](references/11_DELIVERY_PROOF.txt) before expanding dependent screens. Confirm what the deployed path can produce and consume, including required configuration and migrations. A working shell or healthy endpoint does not establish the promised artifact.
 
@@ -29,7 +29,7 @@ For UI, security, data, scaling or AI behavior, read only the relevant section o
 
 ## 3. Select a procedure
 
-Use [Skill Router](references/03_SKILL_ROUTER.txt) for this phase and [Tool Selection](references/TOOLS_SELECTION.txt) for the requested external tools. Pick one main procedure and only the relevant specialists, preserving required helpers. For UI, Vibe UI coordinates layout/UX, typography, color, geometry and motion through five focused helpers. Use one shared design contract and one final quality gate, not five competing pipelines. Small fixes retain the existing direction.
+Use [Skill Router](references/03_SKILL_ROUTER.txt) for specialist decisions and [Tool Selection](references/TOOLS_SELECTION.txt) for external tools. Vibe UI owns the shared design direction and brings in relevant helpers. UI Quality Gate owns the final rendered review.
 
 In a short sprint, constrain planning to questions that affect the chosen outcome. The user's scope and timing override broader default exploration. Use tdd for meaningful behavior; use a reproduction-driven approach for defects. Select sol-loop only when its required model route is available and its budget is explicit.
 
@@ -49,19 +49,17 @@ When an accepted design spans owned workstreams or recurring craft defects, use 
 
 For a comprehensive starting prompt, provide the brief, execution rules and bounded first assignment. Keep later assignments adaptive; use the orchestration template in Codex Handoffs rather than specifying the entire implementation upfront.
 
-Include typography, composition, relevant states, immediate feedback and purposeful motion in the first complete UI slice. At that first render, check task/object/action comprehension before expanding the flow. Keep design rationale in project notes; product text must help its user identify, decide, act or recover. Carry concrete owner corrections forward as acceptance criteria and recheck the exact rejected condition, rather than asking the owner to repeat it. Inspect the running behavior and actual check output. For UI, retain captures of the rendered flow and a recording or frame strip when timing matters; label missing evidence. At delivery, reuse the repository's documented verification command when it covers the change. For a failure, record the failing case and a command or input that reproduces it. After two unsuccessful fixes with the same symptom, change the diagnostic approach. Keep unrelated cleanup out of scope. Publish or deploy only under the user's authorization.
+Include composition, readable type, relevant states and clear feedback in the first complete UI slice. At first render, check whether the task, current object and next action are apparent before expanding. Carry owner corrections forward as scoped acceptance checks. Inspect the running behavior and relevant check output. Reuse the repository's documented verification command when it covers the change. For a failure, record the input or command that reproduces it. If repeated fixes leave the same symptom, change the diagnosis. Publish or deploy only under the user's authorization.
 
 ## 6. Apply the UI quality gate
 
 For implemented user-facing work, invoke ui-quality-gate before delivery. It owns the twelve-area inspection, evidence record and repair/recheck loop. Vibe UI owns design decisions; Studio keeps the user task, scope and engineering requirements intact. A focused fix gets a focused gate; backend-only work skips it. If the gate is unavailable, apply Quality and Design plus Creative Quality and explicitly retain unverified areas.
 
-A passing build or clean correctness review does not close usability, craft or character. Continue authorized fixes while major findings remain. After two stagnant rounds change the diagnosis or revisit composition. Ask the user only for a consequential missing decision, not to supply the fundamentals already covered by the skills. Keep their stated taste and corrections in the project design contract so they need not repeat them.
-
 ## 7. Review and continue
 
-Review the actual candidate, including new files. Confirm the review method can see the chosen base/range before relying on it. Recheck material fixes. For Extend or Shape, assess correctness, usability, craft and character separately using Creative Quality. Use a reviewer who did not build the flow when permitted and available; otherwise label the self-review limitation. Carry unresolved findings into session state.
+Review the actual candidate, including new files. Confirm the review method sees the chosen base and range. Recheck material fixes and use Creative Quality for the limits of substantial UI evidence.
 
-Report changed behavior, actual evidence, limitations and next action. Update [Session State](references/06_SESSION_STATE.txt); do not replay complete logs or claim automatic ChatGPT/Codex synchronization. If file tools are unavailable, return the compact state for copying.
+Report changed behavior, actual evidence and material limits. Retain consequential decisions in the project's existing notes when useful. Use [Session State](references/06_SESSION_STATE.txt) when interrupted work or a handoff needs context.
 
 For a launch or changed readiness boundary, reconcile the product-readiness record with this candidate. Reuse the UI gate's evidence; do not create a competing visual gate. Separate locally verified and verified-live behavior, and carry required unknowns as release blockers rather than claiming overall readiness from a successful build or scanner score.
 

@@ -16,9 +16,9 @@ Start with **Product Engineering Studio** for a product task, or **Vibe UI** for
 
 ## What changes in practice
 
-A new product resolves all five design concerns as one composition. Color includes eight construction methods; typography includes ten directions. These are adaptable starting points with tradeoffs, not fixed themes. The agent chooses concrete values for the product and checks them against actual content.
+Resolve open design concerns together in the first working flow. The color and typography references offer adaptable starting points. Check choices against actual content and established components.
 
-Layout includes sixteen conditional decisions. A visually distinctive course library can benefit from meaningful thumbnails; an operational collection can benefit from aligned rows. A dependent creation process can benefit from stages and a preview; a few independent fields can stay on one screen. The pattern must reduce effort or improve understanding.
+A course library can use meaningful thumbnails for recognition. An operational collection can use aligned rows for comparison. Let the task and content determine the structure.
 
 Feedback is part of the first complete flow. Polish covers immediate response, truthful pending state, interruption, failure, keyboard/touch behavior and reduced motion. Haptics are optional and platform-dependent. Static content can remain still.
 
@@ -28,8 +28,8 @@ Product Readiness chooses the applicable completeness baseline at kickoff and re
 
 - A small fix uses the affected helper and existing decisions.
 - An extension explores only unresolved choices.
-- A new direction compares two or three coherent alternatives total, sharing real content and captures.
-- Helpers write to one design record. Tokens and components remain the source of implementation values.
+- A consequential open direction may benefit from comparing realistic alternatives. A capability experiment can start with a single prototype and a comparison with the current workflow.
+- Retain durable choices in the existing design record when useful. Tokens and components remain the source of implementation values.
 - One quality gate checks the completed result. It reopens affected decisions rather than restarting the whole process.
 
 Design Playbook is conditional: use it for several owned surfaces or a recurring interaction defect. Small ordinary edits keep the shorter path. It preserves the accepted brand and connects the existing owners rather than adding another art director or review pipeline.

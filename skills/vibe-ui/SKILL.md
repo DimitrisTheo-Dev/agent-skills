@@ -9,7 +9,7 @@ Choose a visual direction from the user's task, real content, and brand. Use acc
 
 ## Coordinate the design
 
-Use [specialist orchestration](references/specialist-orchestration.md) to route unresolved choices to ui-ux-patterns, ui-typography, ui-color, ui-geometry and ui-motion. Own one coherent direction and shared design contract. Load only affected specialists for a fix; resolve all five concerns for a new core flow. Their shortlists feed the same two or three direction renders, not separate rounds of variants. UI Quality Gate remains the single final inspection loop.
+Own one coherent direction. Use [specialist orchestration](references/specialist-orchestration.md) for open UX, typography, color, geometry and motion choices. Carry the relevant decisions into one design contract and let UI Quality Gate inspect the integrated result.
 
 ## Choose the mode
 
@@ -20,41 +20,23 @@ Use [specialist orchestration](references/specialist-orchestration.md) to route 
 | Build, redesign, or polish | Inspect the project and implement the requested changes. Keep the scope proportional to the request. |
 | Faithful recreation | Prioritize the requested visual fidelity. Identify unavailable assets and uncertain properties rather than silently substituting a different aesthetic. |
 
-Choose proportional depth: Fix for a focused correction, Extend for an established product, Shape for a new direction or core journey. Reuse the design contract at Fix/Extend and explore only unsettled decisions. At Shape, render alternatives before committing. A review-only request stays read-only: missing renders become a finding or recommendation, not permission to build prototypes.
+Use Fix for a focused correction, Extend to build on an established product, and Shape for a new direction or core journey. Preserve settled design decisions at any depth. Compare alternatives when a consequential choice is open and the requested artifact permits it. In review, report missing render evidence as a limit.
 
-### Creative direction for substantial new designs
+### Resolve the open design question
 
-Before designing, establish a specific creative thesis that defines the intended personality and its visual tension, such as expressive branding paired with restrained functional UI. Avoid vague directions like "modern and clean."
+For a substantial new direction, state what should feel distinctive and which user need constrains that choice. Expressive product content can sit inside quiet functional controls. Ground the direction in the product's actual mechanisms, output, language and recognizable assets.
 
-For a new direction or core journey, derive two or three alternatives from purpose, audience, actual content, personality and platform. Render them on the same realistic content; vary structure and interaction meaningfully, not only styling. Compare fit, clarity, character and feasibility, then recommend one. Follow the requested artifact and scope in brief/review modes; label unrendered proposals.
+When exploring alternatives, read [direction selection](references/direction-selection.md). Compare task access, hierarchy and character using the same realistic content and difficult state. Vary composition, narrative or interaction in ways that could change the decision. Label unrendered proposals.
 
-Treat a signature experience as a hypothesis. State confirming and refuting evidence, prototype the strongest candidate within implementation scope, and inspect first impression and repeated use. It amplifies character already present in composition, typography, writing, materials and everyday interaction. If no candidate earns its cost, say so and refine everyday feel. Read the craft reference for the moment specification.
+For an ambitious identity or redesign, use the [creative rejection protocol](references/creative-rejection.md) to keep alternatives meaningfully distinct, preserve real product evidence and detect interchangeable compositions in the render. If the direction fails the brief, revisit the hierarchy or product representation before polishing individual elements.
 
-Concentrate creative effort where it has the greatest impact. Keep supporting interfaces familiar, cohesive, and easy to use.
-
-Do not force multiple concepts, animations, mascots, or interactive demos into small UI improvements or products where they add no value.
-
-## Creative exploration gate for Shape work
-
-Before presenting alternatives, inventory the product's real differentiators: brand assets, authentic screenshots, interaction moments, user language and approved proof. Identify what must survive a redesign. An ownable avatar or real product demonstration must not be discarded simply to fit a trendier illustration.
-
-**Make the alternatives structurally different.** Compare two or three concepts using identical content and constraints. Each must change the visitor's narrative, layout composition, product demonstration or meaningful interaction. A palette, font, gradient, texture or centered-versus-split toggle *alone* does not qualify as a second concept. If the concepts remain interchangeable when their styling is removed, return to the brief and explore again. See the [creative rejection protocol](references/creative-rejection.md) for specific tests and evidence boundaries.
-
-**Require a recognizable product moment.** For a persuasive landing page, show what the visitor gives, experiences or receives. The expressive artwork may frame the moment, but must not conceal the actual offering. For a product without useful UI, choose an honest artifact or explanatory visual; never manufacture proof.
-
-Run the logo-swap test on the **render**, not merely its written rationale: hide the logo and imagine a peer company's name in its place. If the same composition and hero imagery would work unchanged, treat that as an unresolved creative defect **when the brief calls for differentiation**. A restrained, familiar design can still be right when authenticity, usability or explicit fidelity makes it appropriate.
-
-A visually neat first implementation is not an acceptance criterion. If the best variant fails first-view clarity or product character, revise the concept before polishing icons and shadows. Record the observed difference between alternatives and the reason the rejected candidate lost.
-
-## Select from evidence, not a persuasive rationale
-
-For Shape work, read [direction selection](references/direction-selection.md) before choosing. Compare the same real task at narrow and wide widths, including an important state transition. Inspect the actual hierarchy and effort, then choose. A longer design explanation does not compensate for a weaker render. Keep the decision record compact and spend the work on the interface.
+A signature interaction earns exploration when it could make the product's value clearer, easier to reach or more memorable. Use the craft reference to check first use and repeated use. Concentrate effort on everyday interaction when that matters more to the task.
 
 ## Design and execute
 
 1. **Establish context.** Trace the requested view through current design guidance, theme/tokens, shared components, and their actual consumers. Prefer the governing source over isolated styling; inspect content, assets/fonts, framework conventions, and preview/test tools. Identify the actual audience, main task, success moment, trust requirements, and fixed constraints. Classify the view by its job: persuade, operate, read, or showcase. Different views of one product may need different visual registers. Use stated assumptions where details are missing; ask only when a missing detail would invalidate the result. Do not infer taste from age or industry alone.
-2. **Choose the direction.** State briefly how the design should feel, what it must communicate, and which action matters. Select type roles, color roles, density, spacing relationships, imagery, and motion as a coherent system. Use the relevant specialists to resolve concrete role values and constraints; reconcile them on actual screens through the craft reference. Record decisions in the existing design contract or DESIGN.md; keep tokens/components as the source of implementation values. Where identity matters, derive a recognizable detail from the product or real content. Dense utility software can express its identity through information design. Keep functional controls familiar.
-3. **Implement the requested scope.** Before changing existing UI, establish an observable problem, its user or brand impact, and the smallest supported fix. Without evidence, leave cosmetic styling unchanged. Reuse suitable components, tokens, fonts, and assets. Design from actual messages, product examples, and actions. Preserve business logic, backend contracts, authentication, navigation semantics, and unrelated views. Do not invent testimonials, customer logos, metrics, credentials, features, or product screenshots. Add dependencies only for a concrete need the existing stack cannot meet. Include coherent type, spacing, responsive composition, relevant states, immediate feedback and purposeful motion in the first complete flow.
+2. **Choose the direction.** State how the design should feel, what it must communicate and which action matters. Resolve type, color, density, spacing, imagery and feedback as a coherent system on actual screens. Retain durable decisions in the existing design contract and keep implementation values in tokens or components. Dense utility software can express its identity through information design. Keep functional controls recognizable.
+3. **Implement the requested scope.** Tie edits to an observed problem, product goal or stated preference. Reuse suitable components, tokens, fonts and assets. Use actual messages, product examples and actions. Preserve business logic, backend contracts, authentication and navigation semantics. Keep product claims and proof factual. Add dependencies only for a concrete need the stack cannot meet. Include typography, responsive composition, relevant states and feedback in the first complete flow.
 4. **Inspect the result.** When rendering tools are available, review the actual composition and behavior at representative widths. Substantial responsive work should include mobile and desktop views. Recompose for mobile reading and input rather than merely shrinking the desktop layout. Use the visual QA refinement budget and separate correctness, usability, craft and character. Prioritize the largest observed gap, apply supported corrections and inspect again; change the diagnosis when two rounds leave the same weakness. A clean checklist does not establish a compelling result. When tools are unavailable, review the source, artifact, or description actually supplied. Distinguish user-reported facts from inspected evidence and name the unverified visual behavior.
 
 A screenshot supports observations about visible hierarchy, grouping, and styling. It does not establish an exact font, CSS measurements, interaction behavior, accessibility conformance, or conversion performance. Label estimates and distinguish them from inspected source or measured behavior.

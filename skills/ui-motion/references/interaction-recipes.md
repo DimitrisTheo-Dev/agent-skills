@@ -19,13 +19,11 @@ For each affected family, specify applicable states. An empty state belongs to a
 | Empty to populated | Clear next action, then stable insertion/result | A first useful outcome can earn a brief reveal | Subsequent results stay efficient; no forced replay |
 | Completion milestone | Confirmation tied to actual completed work | Optional restrained product-specific celebration | Shorten or omit on repetition; make the result clear without effects |
 
-## Timing as a starting point
+## Timing in context
 
-Distinguish onset from settling time. Immediate feedback should occur promptly, aiming around 100ms or less where measurable; a 200ms transition can still start immediately. Network completion is a different measurement.
+Distinguish feedback onset, visual settling and network completion. A control can acknowledge an input immediately and let a slower operation continue with honest pending feedback.
 
-If no system exists, test roughly 80–150ms for small state feedback, 120–220ms for menus/small surfaces and 180–320ms for larger spatial changes. These ranges are hypotheses. Choose based on distance, frequency and continuity; do not apply one duration to every interaction. Record exact chosen tokens and inspect them.
-
-Use easing that communicates the intended change. Entering surfaces often settle; direct manipulation should follow input. If using springs, specify parameters supported by the actual library and inspect overshoot and interruption. Do not prescribe magic values without the library and object behavior.
+When choosing timing directly, start with the project's tokens or the platform primitive. Tune against distance, repetition and interruptibility. Entering surfaces can settle while remaining ready for input. Direct manipulation should track the input. Check the chosen values in the actual implementation.
 
 ## Character and repetition
 

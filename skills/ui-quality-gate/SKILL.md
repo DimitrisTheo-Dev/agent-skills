@@ -13,7 +13,7 @@ Review-only means inspect and report without changing files. Build/polish means 
 
 Read the brief, design contract, implementation and supplied references. Identify the exact candidate and main journey. Capture the existing view and outcome before editing. Record supported themes, languages, viewports and input methods from the project rather than promising every device.
 
-For a substantial flow, keep a short quality record beside existing verification artifacts using [the report contract](references/report-contract.md). For a small fix or any review-only request, equivalent evidence in the response is enough; do not create a project record unless the user requested that artifact. Keep the working record internal; give the user outcomes and material limits, not twelve reports.
+Keep evidence with the project's existing verification artifacts. Use [the report contract](references/report-contract.md) when a substantial flow needs a reusable evidence record or the user requests one. For a focused fix or review-only request, evidence in the response is usually enough. Keep review-only requests read-only unless a report artifact is requested.
 
 ## 2. Inspect from whole flow to details
 
@@ -27,15 +27,9 @@ When focus clipping, pointer instability, duplicate loading or claimed zero shif
 
 For each area record pass, fail, unverified or not applicable, with an observation and evidence. Aesthetic judgments must name a visible relationship and its effect. “Premium”, “looks good” and a self-awarded score do not close a finding. Missing rendering leaves visual and temporal claims unverified; complete useful source checks and state the limit.
 
-### Creative rejection check for major redesigns
+### Character when the brief calls for differentiation
 
-For a landing page, rebrand or ambitious visual redesign, inspect the rendered first viewport **without the designer's explanation**. Use the [creative rejection rubric](references/creative-rejection.md) after the standard character questions. Evaluate three distinct risks:
-
-1. **Interchangeability:** Hide the logo. Could another comparable startup reuse the same composition, hero art and feature layout with only a copy/color swap?
-2. **Product displacement:** Did decorative art replace an authentic avatar, application screen, customer artifact or other meaningful proof? Can a visitor point to the actual product moment?
-3. **Concept collapse:** Were the supposedly different directions only visual restylings of one structure? Is the accepted design merely the most polished variant of a generic template?
-
-When the brief requires a recognizable, distinctive brand, a clearly observed failure is a **major character finding** even if accessibility, component consistency and responsive checks pass. State the visible evidence and consequence; reject readiness and route the fix back to concept/composition, not more gradients, shadows or cards. Do not automatically penalize conventional, evidence-rich pages when the audience or brief calls for restraint. Missing renders mean **unverified**, not a creative pass. A logo-swap thought experiment is a reviewer heuristic, not measured visitor recall or a claim about uniqueness.
+Use the [creative rejection rubric](references/creative-rejection.md) for an ambitious identity or redesign. Assess the render for interchangeability, displaced product proof and superficial alternatives when they were supplied. An observed failure to express the distinctive identity in the brief can be a major finding even when technical checks pass. Route it back to the concept or composition. Assess restrained, conventional interfaces against their actual task.
 
 ## 3. Convert findings into fixes
 
@@ -49,7 +43,7 @@ Each finding names location/state, observation, consequence, severity, correctio
 - Major: materially harms comprehension, hierarchy, interaction, readability, identity or consistency in scope. A visual defect can be major even if every button works.
 - Minor: a localized imperfection with limited impact; retain an explicit accepted/deferred reason if not fixed.
 
-Fix the highest-impact cause first. Correct information order before shadows; correct copy before forced line breaks. Reuse governing tokens/components and inspect their affected consumers. Preserve approved areas and a known-good checkpoint before changing composition.
+Fix the cause with the greatest effect on task completion, trust or identity. Consider severity and how often people encounter it. Correct information order before shadows and copy before forced line breaks. Reuse governing tokens and components and inspect their affected consumers. Preserve a known-good checkpoint before changing composition.
 
 ## 4. Re-render and repeat
 
