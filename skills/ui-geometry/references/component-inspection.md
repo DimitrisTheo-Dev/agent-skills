@@ -25,3 +25,13 @@ Inspect full viewport, component crops and full viewport again. Pixel-level adju
 For clipped or doubled focus, inspect computed outline, border and shadow plus cascade-layer precedence. Check every clipping ancestor, both overflow axes, masks/edge fades and breakpoint overrides. Reserve room for the outer indicator or use a visible inset treatment. Scroll padding/margin can improve placement but does not by itself enlarge a clipping box. Keyboard-check the first and last control at both scroll extremes and recheck affected shared consumers.
 
 For a stretched row target, inspect the positioned containing block before and during hover/press. A transform on the button can move its absolute pseudo-element's reference box from the row to the button. Check center and row-edge activation while pressed, cancellation and keyboard input. Keep the real target stable; apply visual feedback to an inner face when suitable. Do not remove focus or make unrelated density changes to hide the defect.
+
+## Inspect an instrument panel
+
+Match an icon's apparent weight to its label at the actual rendered size. Compare a light glyph such as a plus with a dense one such as a settings wheel. Reserve a fixed icon slot so swapping the glyph leaves the text baseline and control width steady. Inspect concentric corners using the matching border edges and inset described in the geometry rules.
+
+A masked edge can hint that a strip of samples continues offscreen. Show the fade only on a side with hidden content, and keep the focus outline and final value visible. Test the keyboard path at both scroll limits and with forced colors. A plain scrollable strip is a usable fallback.
+
+Use dynamic viewport units for a sheet that should follow mobile browser chrome. For a visual that needs stable bounds while scrolling, compare the small viewport unit. Keep long sheet contents scrollable, honor safe-area insets where relevant, and operate the last field and footer with the software keyboard open. Desktop viewport emulation alone cannot verify that keyboard behavior.
+
+CSS definitions checked 2026-11-18. [CSS Masking](https://www.w3.org/TR/css-masking-1/) · [Viewport-relative lengths](https://www.w3.org/TR/css-values-4/#viewport-relative-lengths)

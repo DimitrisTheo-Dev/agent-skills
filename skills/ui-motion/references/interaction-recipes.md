@@ -30,3 +30,7 @@ When choosing timing directly, start with the project's tokens or the platform p
 A memorable moment needs a trigger, a user benefit, a relationship to product content and a clear end. Consider how it feels on the second and twentieth encounter. A result arriving with less expected work may be more valuable than a celebration. Keep everyday controls fast even when the product has expressive moments.
 
 An atmospheric animation may serve identity if it preserves reading and attention. Avoid perpetual movement competing with the main task. Record why a proposed effect was kept, shortened or removed; do not fill an animation quota.
+
+## Replacing a control glyph
+
+For a discrete change such as copy to copied, reserve one icon slot and update the accessible action or status immediately. Try a short crossfade first. A small blur on the outgoing glyph can soften the swap when it remains legible at its rendered size. Keep the label and container sharp. Rapidly trigger the action twice, keyboard-activate it and reverse it mid-transition. The newest state should win without delaying input. Show the final glyph immediately for reduced motion. Continuous chart inspection and run selection benefit from immediate updates.
