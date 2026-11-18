@@ -36,6 +36,7 @@ Use transactions for operations that must succeed together. A UI-disabled button
 SCALING AND OPERATIONS
 Record actual or assumed load, data size and latency constraints. Use one simple deployable architecture when it fits.
 Start with bounded queries, pagination where needed, appropriate indexes and explicit external-call limits. Measure a bottleneck before optimizing it.
+For a collection, measure query/call counts as result size grows; batch or join per-item lookups instead of merely making N+1 calls concurrent. Bound fan-out and pool use, retain tenant-scoped cache keys, and inspect representative query plans. Use Product Readiness's scaling and quality-budget references when installed; otherwise record the expected workload, checks and unverified capacity here.
 For each expansion, give a trigger and consequence. Example: move document ingestion to a durable background job when observed/requested duration exceeds the request budget; then define job state, idempotency and retry limits.
 A cache needs a correctness/invalidation policy. A queue needs ownership and retry behavior. Microservices need an operational reason.
 Capture actionable errors, request IDs and latency where applicable. Distinguish an app bug from missing credentials, provider failure or quota exhaustion.

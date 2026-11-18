@@ -20,6 +20,12 @@ If only a subset is changed, inspect that subset and its affected neighbors. Mar
 
 Inspect full viewport, component crops and full viewport again. Pixel-level adjustments that weaken overall hierarchy are regressions. Measure before changing a shared token; local fixes should not alter unrelated consumers.
 
+## Recurring focus and hit-region defects
+
+For clipped or doubled focus, inspect computed outline, border and shadow plus cascade-layer precedence. Check every clipping ancestor, both overflow axes, masks/edge fades and breakpoint overrides. Reserve room for the outer indicator or use a visible inset treatment. Scroll padding/margin can improve placement but does not by itself enlarge a clipping box. Keyboard-check the first and last control at both scroll extremes and recheck affected shared consumers.
+
+For a stretched row target, inspect the positioned containing block before and during hover/press. A transform on the button can move its absolute pseudo-element's reference box from the row to the button. Check center and row-edge activation while pressed, cancellation and keyboard input. Keep the real target stable; apply visual feedback to an inner face when suitable. Do not remove focus or make unrelated density changes to hide the defect.
+
 ## Inspect an instrument panel
 
 Match an icon's apparent weight to its label at the actual rendered size. Compare a light glyph such as a plus with a dense one such as a settings wheel. Reserve a fixed icon slot so swapping the glyph leaves the text baseline and control width steady. Inspect concentric corners using the matching border edges and inset described in the geometry rules.

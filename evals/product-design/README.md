@@ -20,6 +20,10 @@ Use the current skill on [the bounded requests](regressions.md) in fresh context
 
 The [localized-button case](regression-fix/RESULT.md) was executed. Its source change stayed within scope; actual 390px rendering remains unverified. The other five cases are prepared, not claimed as behavioral passes.
 
+## Creative regression suite (prepared, not yet executed)
+
+[Creative regression scenarios](creative-regressions.md) add four cases covering a polished generic SaaS page, decorative art displacing an authentic avatar, cosmetic variants disguised as concepts, and a restrained product-specific design that must not be over-styled. Run these in isolated blinded baseline/candidate sessions before attributing any improvement to the new instructions. Existing validation and repository checks alone cannot establish superior taste or visual outcomes.
+
 ## Evidence
 
 [Results](RESULTS.md) records actual runs and limits. Raw local traces and snapshots are kept under the ignored `.eval-results/` directory. Sanitized browser artifacts and source outputs are included only when they contain no private data. Do not claim external participant tests, device coverage or skill causality from this small comparison.

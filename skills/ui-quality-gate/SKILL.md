@@ -23,7 +23,19 @@ Before the detailed matrix, inspect the first viewport without the builder's exp
 
 Operate the main journey without the builder explaining it. Inspect full viewports at normal scale, then component crops, then the whole screen again. Measure suspicious geometry and computed styles instead of guessing pixels from images. Test realistic long content, loading and failure, not only ideal fixtures. Keep first use and repeated use distinct.
 
+When focus clipping, pointer instability, duplicate loading or claimed zero shift is in scope, apply the [recurring-defect checks](references/recurring-defects.md). A clean detector is supplementary evidence. Keep automated accessibility scope/exclusions and local-versus-live performance conditions beside the result.
+
 For each area record pass, fail, unverified or not applicable, with an observation and evidence. Aesthetic judgments must name a visible relationship and its effect. “Premium”, “looks good” and a self-awarded score do not close a finding. Missing rendering leaves visual and temporal claims unverified; complete useful source checks and state the limit.
+
+### Creative rejection check for major redesigns
+
+For a landing page, rebrand or ambitious visual redesign, inspect the rendered first viewport **without the designer's explanation**. Use the [creative rejection rubric](references/creative-rejection.md) after the standard character questions. Evaluate three distinct risks:
+
+1. **Interchangeability:** Hide the logo. Could another comparable startup reuse the same composition, hero art and feature layout with only a copy/color swap?
+2. **Product displacement:** Did decorative art replace an authentic avatar, application screen, customer artifact or other meaningful proof? Can a visitor point to the actual product moment?
+3. **Concept collapse:** Were the supposedly different directions only visual restylings of one structure? Is the accepted design merely the most polished variant of a generic template?
+
+When the brief requires a recognizable, distinctive brand, a clearly observed failure is a **major character finding** even if accessibility, component consistency and responsive checks pass. State the visible evidence and consequence; reject readiness and route the fix back to concept/composition, not more gradients, shadows or cards. Do not automatically penalize conventional, evidence-rich pages when the audience or brief calls for restraint. Missing renders mean **unverified**, not a creative pass. A logo-swap thought experiment is a reviewer heuristic, not measured visitor recall or a claim about uniqueness.
 
 ## 3. Convert findings into fixes
 
