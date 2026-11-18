@@ -114,6 +114,6 @@ python3 -m venv .venv
 
 The same check runs in GitHub Actions. It validates metadata, local links, and Python syntax with the pinned upstream validator and repository checks, then runs the unit tests for the validator and synthetic HTTP fixtures. For behavior changes, compare the current and proposed skill on the same cases. [Evaluation workflow](evals/README.md)
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) before adding a skill and [the prioritized backlog](docs/SKILL_BACKLOG.md) for future work.
+See [CONTRIBUTING.md](CONTRIBUTING.md) before adding a skill.
 
 Original material is [MIT licensed](LICENSE). [NOTICE.md](NOTICE.md) records external attribution and source-license boundaries. No private project source is bundled.
