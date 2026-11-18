@@ -1,6 +1,6 @@
 # Creative exploration and rejection
 
-Use for **Shape** work with an explicit differentiation, brand identity or ambitious redesign brief. This is not a universal originality quota for operational interfaces, established brand systems or narrow repairs.
+Use for a differentiation, new brand identity or ambitious redesign brief. Match the character bar to the product and the requested scope.
 
 ## Before composing
 
@@ -10,14 +10,14 @@ State one creative tension in concrete terms, such as “human conversation show
 
 ## Explore truly different concepts
 
-Render **two or three** concepts with identical real copy, core features, CTA, and evidence. Different concepts should make different decisions about **at least two meaningful axes**, such as:
+When multiple directions would help, render concepts with comparable facts, core features, actions and proof. Give each a different product reason that changes the experience. Useful differences include:
 
 - The opening narrative: lead with a person, an interaction, a transformation or an outcome.
 - The product artifact: actual avatar interview, review output, workflow diagram or real application surface.
 - The composition: immersive scene, editorial sequence, split interaction or other justified information architecture.
 - The interaction: directly try a supported task, inspect a real output, compare perspectives or watch an honest recorded example.
 
-A new font, palette, background texture, border radius, centered/split alignment, or card rearrangement **alone is not a distinct concept**. Do not manufacture difference by giving one variant weaker copy or less proof.
+Test differences that affect comprehension, product identity or use. Keep copy and proof equally credible across variants.
 
 For a meaningful product asset, keep a clear view of it in at least one concept; if a concept intentionally omits it, document the reason and verify that comprehension or character actually improves.
 
@@ -33,7 +33,7 @@ Inspect:
 5. Repetition: ordinary interactions remain usable, without spectacle or forced motion.
 6. Honesty: authentic footage/screens vs conceptual visuals are unmistakably distinguished.
 
-Record **one visible win, one failure and one specific rejected tradeoff** per concept. If both concepts still look like interchangeable SaaS templates, change the narrative or product representation instead of selecting the one with prettier textures.
+Name the observed differences that explain the decision. If the renders still look interchangeable, try a different narrative or product representation.
 
 ## Stop conditions
 

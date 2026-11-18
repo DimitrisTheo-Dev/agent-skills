@@ -5,6 +5,8 @@ Coverage: task, structure, terminology, typography, spacing, color, components, 
 ## Task
 State the user, job and successful outcome. Complete the main journey from a cold start with relevant inputs. Identify avoidable steps, repeated entry, unexplained waits and recovery work. Onboarding reaches actual value rather than finishing a tour. Utilities expose useful content promptly; marketing explains the offering, evidence and next action. Preserve necessary consent and consequential confirmation.
 
+When the flow works but feels laborious, operate a realistic batch of the daily task. For example, a dispatch queue may be visually tidy while every assignment hides its deadline and eligibility in a drawer. Compare showing those attributes in the rows and retaining selection and focus after assignment. Tie the correction to the user's decision or repeated work, then operate the same batch again.
+
 Close when the next action is discoverable and the actual success/failure behavior matches its wording. Label reviewer walkthroughs separately from user research.
 
 ## Structure
@@ -60,7 +62,7 @@ Map relevant default, hover, focus-visible, pressed, selected, expanded, disable
 Close when users can tell what happened and what to do next without losing work. A spinner or toast alone does not prove completion. Implement this state inventory in the first complete slice.
 
 ## Interaction
-Specify trigger, immediate feedback, transition, settled state and reversal. Include pointer, touch and keyboard where relevant. Press feedback can start immediately; commit ordinary actions on click/release with cancellation preserved. Menus originate coherently, focus follows navigation and repeated input remains responsive. Interrupt/reverse transitions, reactivate before settling and revisit after navigation. Repeat the main frequent interaction ten times as a practical review default and record the actual count; do not infer long-term satisfaction.
+Specify trigger, immediate feedback, transition, settled state and reversal. Include pointer, touch and keyboard where relevant. Press feedback can start immediately; commit ordinary actions on click/release with cancellation preserved. Menus originate coherently, focus follows navigation and repeated input remains responsive. Interrupt or reverse transitions, reactivate before settling and revisit after navigation. Use a representative sequence of repeated actions and record what it exercised.
 
 Inspect at normal speed and use slowed playback/recordings to diagnose discontinuity. Prefer explicit animated properties and suitable transform/opacity transitions, but measure expensive effects in context; a property or library does not guarantee smoothness. Test reduced motion with understandable feedback retained. Distinguish input feedback from network completion and record latency only when measured.
 
@@ -68,6 +70,8 @@ Close when actions receive clear feedback, motion preserves continuity without d
 
 ## Responsive
 Inspect narrow, intermediate and wide layouts plus widths across changed breakpoints. Stress long content, sticky regions, modals and orientation where relevant. For input-heavy mobile work, test keyboard open/dismiss, focused-field visibility, safe areas, browser chrome and scroll restoration in an available target runtime. Include PWA/embedded-browser checks when in scope and accessible. Preserve native zoom, selection, scrolling, browser back and platform shortcuts.
+
+For supported right-to-left locales, operate a narrow view containing localized text beside names, amounts or left-to-right identifiers. Check layout direction, directional controls, keyboard order and inline punctuation. Verify the exact copied value when the flow includes copying.
 
 Close when the supported journey has no accidental overflow, obscured controls, focus jumps or broken navigation. CSS iframe inspection is CSS-width evidence, not a physical-device test. Unavailable device/browser coverage stays unverified.
 

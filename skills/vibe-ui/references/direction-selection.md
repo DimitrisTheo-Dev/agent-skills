@@ -4,11 +4,11 @@
 Use stated preferences as evidence: native-feeling control, deliberate density, expressive but coherent visuals, readable hierarchy and purposeful motion can coexist. Preserve concrete accepted/rejected examples and the reasons in the project's design contract. Do not infer a favorite palette from an inspiration screenshot. Do not require a new taste questionnaire for each task. Record the exact region, the accepted/rejected relationship, the reason and the scope of the preference. An agent review does not establish owner approval. If later feedback rejects a reviewed design, reopen that finding and carry the correction into the next render; do not defend it with the earlier score or reviewer agreement.
 
 ## Make alternatives comparable
-For a new direction, create two or three small working compositions of the same important screen and real content. Change information order, spatial organization, visual voice or interaction, not just colors. Include a narrow and a wide render and one important transition. Existing products and focused fixes retain their approved direction unless a structural choice is genuinely open.
+When the direction is open, use the smallest comparison that can settle it. A substantial identity decision may benefit from two or three working compositions. Use comparable content and constraints, and vary information order, spatial organization, visual voice or interaction. Inspect the widths, content density and state transitions that could change the choice. Preserve the approved direction where it serves the task.
 
 Do not give one direction richer content or a more complete implementation and call that a style preference. Keep scope comparable. A static image can compare composition; it cannot establish interaction quality.
 
-For Shape work that explicitly asks for a distinctive identity, apply the [creative exploration and rejection protocol](creative-rejection.md). A centered/split variant, palette swap or new gradient alone is not a materially distinct concept. Protect recognizable owned product assets before replacing them with abstract art.
+For a distinctive identity brief, apply the [creative exploration and rejection protocol](creative-rejection.md). Test the direction with a realistic busy view or difficult content as well as its most expressive view.
 
 ## Choose by observed relationships
 Inspect before writing the recommendation:
@@ -26,6 +26,6 @@ Choose the strongest combination of task clarity, coherent craft and product cha
 Record the selected direction, one visible reason it serves the task, one visible reason it has character, the rejected tradeoff and remaining uncertainty. Keep tokens in code and link to governing components. Capture the alternatives before retiring disposable code. Continue reversible work autonomously; ask only where consequential missing priorities change the product.
 
 ## Build the complete first flow
-Specify the component/state inventory and the motion behavior before implementation. Include hierarchy, typography, spacing, material, copy, feedback and meaningful transitions in the first complete flow. Use suitable existing components and dependencies. Reduce optional feature scope when time is limited rather than leaving the core flow visually unfinished.
+Resolve layout, type, copy, relevant states and feedback as the first complete flow takes shape. Use suitable existing components and dependencies. When time is limited, protect the core flow and reduce optional feature scope.
 
 Use ui-quality-gate for the full inspection and correction loop. A comparison may reveal a weakness without justifying a universal rule. Keep product-specific lessons scoped and update the source of a repeated defect.

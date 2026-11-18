@@ -16,13 +16,13 @@ Check the actual installed instructions before relying on a helper. An unavailab
 
 - **Fix:** use the existing contract, invoke only the affected specialist and review neighboring effects. No new art direction, palette menu or full five-part report.
 - **Extend:** inherit established decisions; invoke the owners of new or conflicting choices. Check the completed slice through one gate.
-- **Shape:** resolve all five concerns. Start with the user's task and representation, jointly choose type/color character, settle geometry and specify interactions as the first flow is built. Revisit coupled decisions together rather than passing a flawed layout through a styling waterfall.
+- **Shape:** start with the user's task and representation. Resolve open decisions together as the first flow takes shape. Established components and tokens can settle several concerns.
 
 A palette or font concern can be handled directly without Studio. Standalone helpers give their relevant evidence and limitations; they do not automatically summon every sibling.
 
 ## Share one contract
 
-Use the existing design record or one compact DESIGN.md when implementation/artifact creation is authorized. Review-only returns the record in the response. Store actual implementation values in governing tokens/components, referenced by path; avoid duplicate token files.
+Use the existing design record. When a consequential decision needs to survive and the project has no suitable record, a compact DESIGN.md can carry it within the authorized scope. Review-only returns findings in the response. Keep implementation values in the governing tokens and components.
 
 Record only consequential decisions:
 
@@ -38,9 +38,9 @@ A localized change updates only its section and affected evidence. Preserve acce
 
 ## Keep alternatives bounded and comparable
 
-At Shape depth, use two or three coherent whole-screen directions total. Typography and color shortlists feed those same directions; do not render a Cartesian product of five specialties or ten type profiles. Reuse the same content, state fixtures and responsive captures.
+When a comparison will resolve an open decision, fold typography, color and the other concerns into the same candidates. Use comparable content, states and viewports. See [direction selection](direction-selection.md) for choosing the scope of the comparison.
 
-At Extend depth, compare only the consequential unresolved choice. At Fix depth, inspect before and after. Stop generating alternatives when evidence supports a choice. Spend further effort on observed deficiencies, not novelty for its own sake.
+For a focused fix, inspect before and after. Once the choice is supported, spend further effort on observed deficiencies.
 
 ## Reconcile conflicts explicitly
 

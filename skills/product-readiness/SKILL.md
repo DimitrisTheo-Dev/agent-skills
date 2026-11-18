@@ -1,11 +1,11 @@
 ---
 name: product-readiness
-description: Establish a product-specific completeness baseline at project kickoff, when a feature changes public routes or capabilities, or before a release. Cover discovery, UI states, React quality, security, scaling, Lighthouse, accessibility, offline behavior and operations with applicability decisions and observable checks. Use for product completeness and launch readiness, not every isolated code fix.
+description: Choose and verify product completeness requirements for delivery planning, changed product capabilities, and releases. Use for core-journey acceptance, public discovery, recovery, accessibility, security, performance, offline behavior, and operational readiness.
 ---
 
 # Product readiness
 
-Make the details that complete a product explicit early and verify them on the release candidate. Optimize for a useful, dependable journey and fewer repeated corrections. A complete checklist is not proof of a good product or a successful launch.
+Identify what users need to get a useful, dependable result. Verify the commitments the product makes and make remaining gaps visible before release.
 
 ## 1. Set the boundary
 
@@ -15,13 +15,13 @@ Read the brief, repository instructions, existing release checklist and actual s
 - **Audit:** for a completeness review, inspect code and authorized read-only surfaces. Report findings without modifying the target or submitting it to external scanners.
 - **Implement:** for an authorized build or fixes, make the applicable changes and verify them. This mode does not itself authorize deployment, publication, account changes or third-party scan submissions.
 
-Record audience, useful outcome, deadline, public versus private routes, supported devices/locales, data sensitivity, external dependencies and deployment target. Name one observable core journey. For a feature, scope the review to changed contracts and their consumers; a chevron alignment fix does not trigger a site-wide launch audit.
+Name one observable core journey, the audience and the constraints that affect it. For a feature, scope the review to changed commitments and their consumers. For a learning prototype, check the capability, trust boundaries and experiment's result. Apply the delivery baseline when moving toward a product people will depend on.
 
 ## 2. Choose the applicable baseline
 
-Read [the coverage matrix](references/coverage.md). Account for each category once at kickoff. Carry its decisions through implementation and release; reopen only affected categories on later changes.
+Use [the coverage matrix](references/coverage.md) to catch meaningful omissions in the delivery baseline. At release, revisit the agreed checks and changed risks. Use the product outcome guidance there when improving first value or repeat use.
 
-For each applicable requirement, record scope, acceptance check, owner and delivery stage: **first usable slice**, **before public release**, or **deferred with a reason and revisit trigger**. Mark genuinely irrelevant requirements **not applicable** with a reason. Missing tools, time or credentials mean **unknown/blocked**, not not applicable. A core data-loss, access-control or false-success defect remains a blocker even under a deadline.
+For a delivery or release baseline, record applicable scope, acceptance checks and which gaps need an owner or deadline. Use the stages **first usable slice**, **before public release**, or **deferred with a reason and revisit trigger** when they help the team deliver. Mark checked but inapplicable requirements with a reason. Missing tools, time or credentials leave a check **unknown/blocked**. A core data-loss, access-control or false-success defect remains a blocker even under a deadline.
 
 Reuse the project's tracker or checklist. If it has none, use [the compact record](references/readiness-record.md); one table is sufficient. Keep applicability separate from verification status: `pass`, `fail`, `unknown`, `not applicable`. A deferred applicable gap remains fail or unknown until resolved. Avoid manufactured percentages and promises of 100% readiness.
 
@@ -61,4 +61,4 @@ Use synthetic users, local fixtures or authorized sandbox services for mutations
 
 Give the useful outcome reached, highest-impact gaps, evidence boundaries and next action. Separate implemented, locally verified and verified-live behavior. Claim readiness only for the named scope with its required checks passing; list applicable unknowns and deferrals. If a release prerequisite is unverified, say **not verified for release** and continue independent authorized work.
 
-For the starter's next reuse, track time to first deployed useful outcome, owner correction rounds and fresh-session demo success. Keep recurring failures as reproducible cases in the shared component or integration that owns them. Do not claim speed gains from checklist coverage alone.
+Use available feedback or actual task outcomes to revisit the decision after release. Keep recurring failures as reproducible cases in the shared component or integration that owns them.

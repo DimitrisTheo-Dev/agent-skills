@@ -50,7 +50,7 @@ Do not search for a famous aesthetic to imitate by default. Build an evidence-le
 5. **The interface:** familiar patterns that reduce work and uncertainty.
 6. **The signature:** one ownable, product-specific expression, if differentiation matters.
 
-Use the entrypoint depth: render two or three structural directions at Shape; reuse established decisions at Fix/Extend unless a choice is unsettled. When there is no usable brand material, label palette and typography as proposals. Record the selected rationale and evidence. Familiar patterns remain valid; originality comes from the product interpretation, not compulsory novelty.
+Reuse established decisions where they fit. Use [direction selection](direction-selection.md) for consequential open choices. When there is no usable brand material, label palette and typography as proposals. Ground any distinctive choice in the product.
 
 ## Generic example of principle transfer
 

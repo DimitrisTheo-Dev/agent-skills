@@ -1,6 +1,6 @@
 # Coverage and acceptance
 
-These are original engineering prompts, not universal mandates or a certification standard. Assess every category at kickoff; select concrete checks for the actual product. At release, revisit the agreed checks and changes since kickoff. For a narrow feature, inspect only affected categories. Reuse existing evidence and specialist ownership.
+Choose checks for the actual product and the commitments it is making. Reuse existing evidence. At release, revisit agreed checks and changed risks. For a narrow feature, inspect the affected categories.
 
 | Category | Decisions to make early | Observable acceptance examples |
 | --- | --- | --- |
@@ -20,7 +20,13 @@ These are original engineering prompts, not universal mandates or a certificatio
 | Data integrity | Ownership, validation, concurrency, idempotency, migrations, retry boundaries and retention | Repeat or interrupt a core write in a sandbox; verify one intended effect and visible recovery. Verify authorization on the server and valid old data after migration. Exercise backup/restore for durable data where loss matters. |
 | Trust and privacy | Vibe Security/OWASP checks for actual boundaries, secrets, sessions, object permissions, input/output handling and abuse controls | Pair valid-operation checks with denied-user/tenant/role tests; inspect privileged-data exposure and costly-action limits. Keep privacy/legal requirements grounded in current guidance; a scanner or notice is not proof. |
 | Operations and release | Required configuration, build/start commands, migrations, dependency health, logging, alerts, rollback, support owner and clean demo data | Build from documented inputs; validate required variable names without printing values. Smoke-test the deployed path, trace a failure with a request ID and confirm the recovery/rollback procedure. Reset synthetic demo state reproducibly. |
-| Measurement and maintenance | One success funnel, error/latency/cost signals, source freshness, dependency ownership and revisit triggers | Observe an event from the actual journey without secrets or unnecessary personal data. Confirm a useful failure signal reaches the responsible owner. Record applicable deferred work with a trigger. |
+| Measurement and maintenance | Observable task outcome, useful interval for repeat use, error/latency/cost signals and revisit triggers | Observe task completion or recovery in the real journey. Verify applicable signals without secrets or unnecessary personal data. Confirm a useful failure signal reaches the responsible owner. |
+
+## First value and return visits
+
+When improving activation, find where people abandon, repeat input or fail to reach the first useful result. Use available analytics, support reports or a walkthrough. Choose one change that reduces that friction and check successful completion alongside a guardrail such as errors, bad submissions or recovery effort. Label expected gains as hypotheses until measured.
+
+For repeat use, start from a recurring user need. Saved work, history or reusable settings can make the next visit more useful. A reminder earns its place when it helps with a real event or deadline and people can control it. Keep a clear stopping point. For a monthly reconciliation tool, check whether eligible teams finish their next close with fewer corrections. Daily visits and repeated reminder clicks offer little evidence of that outcome.
 
 ## Conditional capabilities
 
@@ -37,4 +43,4 @@ Select only capabilities the product offers. Keep their requirements alongside t
 
 Reuse a small set of tested primitives and recipes. Metadata defaults must allow route overrides; OG generation must have an available fallback; error pages must work when the failing feature cannot mount. Skeletons use the component's actual geometry. Keep one focus-indicator owner, stable border widths, fixed icon geometry and non-shifting hit targets in shared controls.
 
-Provide optional modules for offline storage, installability, payments and agent interfaces. Avoid enabling them merely because the starter contains them. Theme and density changes should preserve control behavior and contrast checks. Reuse the accepted rotating headline, glow frame and demo composition with configurable content, a stable readable heading, reserved dimensions, reduced-motion behavior and a useful media fallback.
+Keep offline storage, installability, payments and agent interfaces conditional on the task. Reuse accepted compositions from the project's design system and verify behavior and contrast when adapting them.

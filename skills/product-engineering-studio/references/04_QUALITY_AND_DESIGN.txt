@@ -10,10 +10,10 @@ Represent realistic content density, long labels, missing values and small viewp
 DESIGN JUDGMENT
 Use the available vibe-ui principles: context, intentionality, strong fundamentals and rendered verification. These principles are distilled from prior discussion; consult the real local skill for its full workflow.
 State a creative thesis only when designing a new identity: which user, which feeling, which functional benefit. Keep typography, spacing, color, geometry and interactions coherent.
-For existing products, preserve identity and tokens unless redesign is requested. Choose direction using Creative Quality at the selected depth. Derive new directions from the product and test signature moments as hypotheses. Ask what each choice contributes to understanding, confidence, pleasure or identity.
+Use Creative Quality to decide how much exploration the task needs. Reuse the product's identity and tokens where they serve the brief. Ask what a new choice contributes to understanding, confidence, pleasure or identity.
 Design references should answer a question. From a relevant reference, extract the helpful hierarchy, disclosure or interaction pattern and explain why it fits. Study relationships, including color proportions; references are examples, not a fixed palette or style menu. Honor explicit requests for faithful recreation.
 Avoid generic large-card layouts when the data wants a list, table or editorial structure. Use visual density that matches the task. Animations should clarify change and respect reduced-motion settings.
-Inspect the actual render. Check common content, an empty/error state and the relevant viewport. Build craft into the first complete flow and spend the stated refinement budget. Sprint scope can shrink; unresolved craft or character weaknesses must remain visible in the report.
+Inspect the actual render with representative content, relevant states and the affected viewport. Refine the first complete flow where the observed result falls short. Report unresolved craft or character weaknesses that matter to the brief.
 
 ACCESSIBILITY
 Check semantic controls, accessible labels, visible keyboard focus, logical focus order and keyboard operation. Avoid relying on color alone. Ensure useful contrast and reflow with larger text. Announce relevant asynchronous status where needed.

@@ -9,7 +9,7 @@ Use accessible task-specific procedures from the Skill Router. For code review, 
 
 DESIGN SOURCES
 ui-skills.com is a discovery collection. The supplied playbook and third-party skills offer contextual recipes; they are not an install-everything checklist.
-Jakub Krehel's make-interfaces-feel-better is useful for detailed component review. Emil Kowalski's skills cover motion, gestures and platform craft. Consult only the relevant source and the caveats in Sources before applying it. Strong numeric recipes and categorical motion rules must be reconciled with the product contract and measured behavior.
+Jakub Krehel's make-interfaces-feel-better is useful for detailed component review. Emil Kowalski's skill index was reviewed 2026-11-18 for the optional handoffs in Skill Router. Their published guidance is practitioner advice. Use the installed version and verify techniques against the product's actual behavior.
 Mobbin supplies real screen/flow references when connected. Figma and other design tools can help when an editable artifact is needed. Neither replaces live task verification. Do not claim returned references or generated designs without actual tool results.
 For frontend performance or accessibility, choose a specific check justified by the change. An automated score is scoped evidence, not a complete quality verdict.
 

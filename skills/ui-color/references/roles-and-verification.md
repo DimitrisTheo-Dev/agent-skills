@@ -35,3 +35,12 @@ Inspect selected, focused, error, placeholder and hover text where present. Disa
 ## Inspect the composition
 
 At normal scale, find the next action without reading the rationale. Check that saturated fields do not overpower primary controls, muted text remains readable and surfaces separate where needed. Observe with and without the hero asset. Record the strongest observed improvement and unresolved weakness.
+
+## Surfaces on a working screen
+
+- For an OKLCH palette, begin with a lightness sequence and a restrained chroma for each semantic family. Inspect the colors after gamut mapping on the target display. Choose the foreground for each role from measured rendered contrast. Equal steps in perceptual lightness do not guarantee equal contrast ratios.
+- An alpha border can follow the material underneath a card. Composite it over the page, the raised surface and the darkest supported backdrop. Give essential input boundaries a solid fallback if the blended edge disappears. In dark mode, first distinguish the page, panel and floating menu by surface lightness, then judge whether a separator or shadow adds a visible cue.
+- Use an OKLCH gradient when interpolation serves the image or the encoded quantity. Inspect the midpoint as well as the stops, particularly when crossing the hue seam. For a data gradient, verify monotonic rendered lightness and label the scale. Set a solid or sRGB fallback where target support requires one.
+- Multiply blending can integrate an illustration into pale paper. Isolate the illustration's blending context, check it against the darkest supported surface, and keep text, focus indicators and information-bearing plot lines on an unblended layer.
+
+Color, interpolation and layer behavior checked 2026-11-18. [CSS Color 4](https://www.w3.org/TR/css-color-4/) · [Compositing and Blending](https://www.w3.org/TR/compositing-1/)

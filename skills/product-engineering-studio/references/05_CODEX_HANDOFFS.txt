@@ -59,7 +59,7 @@ Use fresh sessions for a changed objective or stale context, not automatically a
 H. ORCHESTRATE ADAPTIVELY
 Act as the lead engineering partner for <brief> within <budget>. Use the product-engineering-studio workflow. Inspect accessible instructions, scripts and the feature path before selecting commands or owners. State the outcome, assumptions, deferred scope, 3-5 acceptance criteria and minimum UI/system design. Ask up to three questions that change the solution; make reversible choices directly.
 Select sequential, hybrid or parallel delivery using the skill's Execution Modes reference. Explain the choice briefly. Keep shared contracts and integration with the lead; assign only the current bounded slice to each worker. Use actual subagent support when available and allowed; otherwise execute sequentially.
-Deliver inspectable checkpoints and continue authorized work unless explicitly asked to pause. At each checkpoint report behavior, executed evidence, remaining gaps, time remaining if known, and the next smallest step. Reassess staffing and scope. Reserve time for integration, failure-path checks and final verification. Deliver a reliable core flow with its visual direction, feedback, relevant states and purposeful motion from the first complete slice. Reserve time to refine its leading moment and remaining craft. Treat these as execution rules, not permission to implement every roadmap item at once.
+Deliver inspectable checkpoints and continue authorized work unless explicitly asked to pause. At each checkpoint report behavior, executed evidence, remaining gaps, time remaining if known, and the next smallest step. Reassess staffing and scope. Reserve time for integration, failure-path checks and final verification. Include visual direction, relevant states and feedback in the first complete flow. Refine the parts of the experience that most affect the task.
 First assignment: <one runnable slice sized to the actual task, with constraints, checks and checkpoint; a checkpoint is not a production-quality deadline>.
 
 I. DELEGATE ONE BOUNDED TASK
@@ -77,10 +77,10 @@ J. EXPLORE DIRECTIONS
 Question / user / outcome: <the design decision>
 Product reading: <purpose, audience, content, personality, platform and implications>
 Shared content: <real copy/data source, identical across variants>
-Alternatives: <two or three distinct theses, product reasons and tradeoffs>
+Alternatives: <distinct approaches that could resolve the open decision>
 References: <source, relationship studied and translation>
 Build: render disposable variants in the existing stack; vary structure and interaction, not just color. Explain color roles, proportions and materials in use.
-Return: captures at target widths; recommendation and rejected alternatives; leading moment hypothesis and prototype evidence. Proceed on reversible decisions; combine consequential open tradeoffs into one checkpoint only when user input is needed. Preserve evidence before retiring throwaway code.
+Return: comparable evidence and a recommendation with its tradeoff. Include prototype evidence when testing an interaction. Proceed on reversible decisions and group consequential open tradeoffs when user input is needed. Preserve evidence before retiring throwaway code.
 
 K. ASSESS THE FLOW
 Candidate / brief: <exact revision or working-tree scope and intended user outcome>

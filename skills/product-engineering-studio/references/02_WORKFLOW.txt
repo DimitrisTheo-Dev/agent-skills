@@ -16,8 +16,9 @@ Use this task brief:
 - Unknowns: only decisions that could change the solution.
 
 B. FRAME THE PRODUCT
-Ask which user needs this and what they should accomplish. Challenge features that do not help that outcome. Identify a simpler path before proposing additional features.
-In Sprint mode hold scope or reduce it. Explore expansion only when the user asks for product discovery. A convincing prototype can be the right result when the task is learning; a functional feature needs working behavior.
+Name the person, the useful outcome and the hardest part of their current path. Learn from existing usage, support reports or a walkthrough when those can change the decision. Look for a step the product can remove or a decision it can make easier.
+When a capability suggests a better workflow, try it on a representative task before specifying the feature. For example, turn an incident note into an editable handoff draft. Compare the time and corrections needed to reach a usable handoff with the manual path. Try an ambiguous input and check whether the person can spot and recover from a wrong suggestion. Use permitted inputs and label fixtures.
+Choose the smallest experiment that could change the next decision. A prototype can show feasibility or expose a better interaction. Demand and repeat value need evidence from actual use. When the goal is delivery, prove the required behavior through the real path.
 
 C. INSPECT THE REPOSITORY
 Read AGENTS.md and applicable project instructions, README, scripts, dependency manifests and the feature path. Record git status and baseline revision. Identify the real package manager, test runner and startup command.
@@ -37,8 +38,8 @@ Use a Mermaid flowchart or sequence diagram when branching, data flow or event o
 For a simple flow that prose fully explains, omit the diagram.
 If data races or retries matter, state the invariant and where it is enforced. Do not hide idempotency, authorization or uniqueness inside an undefined service box.
 
-E. DEFINE THE UI BEFORE CODING
-Name the screen's job, primary action, information order and relevant states. At Fix and Extend depth, reuse established decisions and show the changed flow with realistic data; compare structural directions only for an unsettled choice. At Shape depth, follow Creative Quality before locking the direction. Do not generate variants for a settled form.
+E. WORK OUT THE UI
+Name the screen's job, primary action, information order and relevant states. Use established decisions and realistic data. Follow Creative Quality when a material direction is open or the existing direction fails the task.
 Mobbin is useful for one named interaction or flow. Search only when a concrete decision needs evidence and the tool is connected. Carry the useful pattern and source link forward.
 
 F. PLAN SMALL DELIVERY SLICES

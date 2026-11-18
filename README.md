@@ -10,10 +10,10 @@ Start product work with **Product Engineering Studio**. It routes visual decisio
 | --- | --- |
 | [agent-readiness](skills/agent-readiness/SKILL.md) | Audit, plan, or implement improvements to how agents discover, read, and use a website, SaaS, or API. Based on AgentReady v2.0 with conditional applicability and explicit evidence. |
 | [product-readiness](skills/product-readiness/SKILL.md) | Choose and verify a product-specific completeness baseline at kickoff and release: discovery, sharing, UI states, accessibility, offline behavior, trust and operations. |
-| [product-engineering-studio](skills/product-engineering-studio/SKILL.md) | Start here for product work: choose proportional design depth, explore real alternatives, deliver complete flows and assess correctness, usability, craft and character. |
+| [product-engineering-studio](skills/product-engineering-studio/SKILL.md) | Frame product work, test consequential uncertainties, and deliver a useful verified flow. |
 | [vibe-ui](skills/vibe-ui/SKILL.md) | Art-direct, build, review, or polish interfaces with product-specific character, deliberate detail and rendered evidence. |
 | [design-playbook](skills/design-playbook/SKILL.md) | Carry an agreed design across owned workstreams, repair returning craft defects and require scoped proof on the integrated candidate. |
-| [ui-ux-patterns](skills/ui-ux-patterns/SKILL.md) | Choose task-appropriate layouts and flows using sixteen conditional pattern decisions. |
+| [ui-ux-patterns](skills/ui-ux-patterns/SKILL.md) | Choose layouts and flows that reduce effort, keep context visible and preserve user control. |
 | [ui-typography](skills/ui-typography/SKILL.md) | Choose from ten adaptable type directions and resolve readable roles, rhythm and wrapping. |
 | [ui-color](skills/ui-color/SKILL.md) | Construct contextual palettes from eight approaches, define semantic roles and verify actual pairings. |
 | [ui-geometry](skills/ui-geometry/SKILL.md) | Establish consistent spacing, dimensions, borders, outlines, radii and optical alignment. |
@@ -53,9 +53,9 @@ Use the existing stack and real content. Explore unsettled design choices,
 carry the chosen character through the complete flow, and verify the result.
 ```
 
-Studio chooses Fix, Extend or Shape from the task. Small fixes reuse the product's decisions. New directions compare realistic alternatives before committing. Vibe UI coordinates only the relevant design specialists when installed; Studio includes a fallback when an optional specialist is absent. No fixed palette, typography preset or animation quota applies across products.
+Studio uses Fix, Extend and Shape to describe the depth of the work. Reuse settled decisions and explore what could materially change the outcome. A capability experiment may start with one prototype. A new visual identity may benefit from comparing realistic alternatives. Vibe UI coordinates relevant design specialists, with a fallback for standalone work.
 
-The first complete UI flow includes deliberate layout/type, relevant states, feedback and purposeful motion. Report correctness, usability, craft and character separately. Keep decisions in the product's existing design contract or `DESIGN.md`; tests and reviewer judgments remain distinct evidence. User input is needed only for consequential missing priorities, not routine implementation choices.
+The first complete UI flow includes deliberate layout and type, relevant states and clear feedback. Report correctness, usability, craft and character from the evidence available. Keep durable decisions where the project already records them, with implementation values in tokens or components.
 
 Design Playbook applies when the agreed direction must survive several workstreams or a craft defect keeps returning. It supplies token/ownership contracts and concrete checks within the existing workflow. It does not reopen accepted art direction or add another final gate. [Faceful lessons and source limits](skills/design-playbook/references/faceful-history.md) · [Workflow comparison and limits](evals/design-playbook/RESULTS.md)
 
@@ -63,7 +63,7 @@ See the [comparison protocol](evals/product-design/README.md) for the local cata
 
 ## Use product-readiness
 
-For the broader product baseline, Studio routes to product-readiness at kickoff, when a feature changes relevant capabilities, and before release. It makes applicability decisions in one project record, distinguishes optional capabilities from required behavior, and consumes existing UI and agent evidence. The [coverage matrix](skills/product-readiness/references/coverage.md) includes discoverability, OG images, error/empty/loading states, accessibility, data integrity, operations and conditional capabilities. [Offline decisions](skills/product-readiness/references/offline.md) distinguish initial HTML, standalone exports, network fallback, offline tasks and installability.
+Studio uses product-readiness when setting a delivery baseline, changing supported capabilities or assessing a release. Product Readiness chooses applicable checks and uses existing UI and agent evidence. Its [coverage matrix](skills/product-readiness/references/coverage.md) covers core outcomes, discovery, interface states, accessibility, data integrity and operations. [Offline decisions](skills/product-readiness/references/offline.md) distinguish initial HTML, standalone exports, network fallback, offline tasks and installability.
 
 ```text
 $product-readiness Plan the completeness baseline for this project.

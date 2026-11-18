@@ -20,6 +20,12 @@ Use tabular figures for changing/aligned numeric columns when supported; proport
 
 Use emphasis with a consistent purpose. Uppercase can serve short labels but needs script-aware handling and sufficient readability. Avoid broad letter spacing on long body text. Check ambiguous glyphs such as 0/O and 1/l/I for technical content.
 
+## Text direction
+
+For a supported right-to-left locale, set the document language and base direction, for example `<html lang="ar" dir="rtl">`. Use logical start/end properties where the layout follows reading direction. Mirror icons that indicate navigation when their direction changes, while preserving the meaning of symbols such as brand marks and play buttons.
+
+Isolate embedded text whose direction differs from its surroundings. In an Arabic invoice row, wrap the left-to-right invoice ID in a tight element with `dir="ltr"` and isolate an inserted customer name of unknown direction with `<bdi>` or `dir="auto"` on its own element. Keep surrounding punctuation outside the inserted text and preserve the original string for copying. Test a real localized label with the ID, amount and name together.
+
 ## Wrapping, truncation and fallback
 
 Define which content wraps and which can truncate, along with how the complete value is recovered. Critical amounts, errors and primary actions need usable full meaning. A tooltip alone is insufficient for a touch user. Test long names, translated labels, unbroken URLs and empty/missing values.
