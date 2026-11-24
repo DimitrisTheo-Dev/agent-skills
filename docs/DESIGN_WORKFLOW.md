@@ -18,7 +18,7 @@ Start with **Product Engineering Studio** for a product task, or **Vibe UI** for
 | Product Readiness | Decide what must be true before release, beyond the visuals | A readiness record with checks, owners and deferrals |
 | Agent Readiness | Let agents discover, read and use the product | Findings or changes for discovery, documentation and agent actions |
 
-In a project that uses [dtheo/ui](https://ui.dtheo.dev), Vibe UI looks components up through its MCP server and runs `dtheo check` before the rendered review. [product-engineering-quality-gate](https://github.com/DimitrisTheo-Dev/product-engineering-quality-gate) runs the same check in CI, and Product Readiness reads its report.
+In a project that uses [dtheo/ui](https://ui.dtheo.dev), Vibe UI looks components up through its MCP server and runs `dtheo check` before the rendered review. [product-engineering-quality-gate](https://github.com/DimitrisTheo-Dev/product-engineering-quality-gate) runs it in CI once it is listed in `quality-gate.config.json`, and Product Readiness reads its report.
 
 ## What changes in practice
 

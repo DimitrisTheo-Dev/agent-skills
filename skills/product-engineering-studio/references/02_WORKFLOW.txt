@@ -23,7 +23,7 @@ Choose the smallest experiment that could change the next decision. A prototype 
 C. INSPECT THE REPOSITORY
 Read AGENTS.md and applicable project instructions, README, scripts, dependency manifests and the feature path. Record git status and baseline revision. Identify the real package manager, test runner and startup command.
 Run the smallest relevant existing check. Mark baseline failures explicitly. A pre-existing failure does not justify skipping unrelated passing checks; it also does not prove your change caused the failure.
-Do not invent paths in a ChatGPT-only plan. Name candidate modules as suggestions until repository inspection establishes them.
+Do not invent paths in a plan made without repository access. Name candidate modules as suggestions until repository inspection establishes them.
 
 D. DESIGN THE MINIMUM SYSTEM
 Explain:

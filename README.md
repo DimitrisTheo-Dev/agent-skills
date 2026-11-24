@@ -18,7 +18,7 @@ This installs the 13 skills below as `/dtheo:<skill>` and connects the read-only
 a duration histogram and a limit line. Use dtheo/ui and verify the result.
 ```
 
-For Codex and other hosts, see [Install in Codex](#install-in-codex).
+Update with `/plugin marketplace update dtheo`. For Codex and other hosts, see [Install in Codex](#install-in-codex).
 
 ## Three parts, one workflow
 
@@ -28,7 +28,7 @@ For Codex and other hosts, see [Install in Codex](#install-in-codex).
 | Build | [dtheo/ui](https://github.com/DimitrisTheo-Dev/dtheo-ui) | React components and engineering charts, an MCP server for agents, and `dtheo check` for design mistakes |
 | Ship | [product-engineering-quality-gate](https://github.com/DimitrisTheo-Dev/product-engineering-quality-gate) | A GitHub Actions gate that runs your checks, `dtheo check` included, and reports each one |
 
-Each part works alone. Together, Vibe UI looks components up in dtheo/ui and runs `dtheo check` before the rendered review, and the gate runs the same check on every pull request. [dtheo/ui](https://github.com/DimitrisTheo-Dev/dtheo-ui) is built with all three.
+Each part works alone. Together, Vibe UI looks components up in dtheo/ui and runs `dtheo check` before the rendered review, and the gate runs it on every pull request once it is listed in `quality-gate.config.json`. [dtheo/ui](https://github.com/DimitrisTheo-Dev/dtheo-ui) is built with all three.
 
 ## Catalog
 
@@ -62,7 +62,7 @@ Clone the library and link every skill:
 git clone https://github.com/DimitrisTheo-Dev/agent-skills.git
 cd agent-skills
 mkdir -p "$HOME/.agents/skills"
-for dir in "$PWD"/skills/*/; do ln -s "${dir%/}" "$HOME/.agents/skills/$(basename "$dir")"; done
+for dir in "$PWD"/skills/*/; do ln -sn "${dir%/}" "$HOME/.agents/skills/$(basename "$dir")"; done
 ```
 
 `ln -s` refuses to replace an existing installation. Keep the checkout in place while the links exist, or copy a skill folder instead and copy updates yourself. For a project-only installation, use `<project>/.agents/skills/<skill>`. Other hosts have their own discovery locations; copy the whole skill folder there.
