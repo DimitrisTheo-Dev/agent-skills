@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "dtheo-ui": {
+      "type": "http",
+      "url": "https://ui.dtheo.dev/mcp"
+    }
+  }
+}

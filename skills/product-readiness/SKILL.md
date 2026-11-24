@@ -1,6 +1,7 @@
 ---
 name: product-readiness
-description: Choose and verify product completeness requirements for delivery planning, changed product capabilities, and releases. Use for core-journey acceptance, public discovery, recovery, accessibility, security, performance, offline behavior, and operational readiness.
+description: Choose and verify what a product needs beyond its visual design before it ships. Use for launch and release checklists, delivery baselines, core-journey acceptance, public discovery, recovery, accessibility, security, performance, offline behavior and operational readiness. Rendered UI review belongs to ui-quality-gate.
+license: MIT
 ---
 
 # Product readiness
@@ -54,6 +55,8 @@ Keep engineering review inside this delivery loop: run focused checks during cha
 Inspect the production build, not just the development server. Record commit/build, environment, route/state, browser/device where relevant, check, result and evidence. Reuse still-valid evidence for unchanged boundaries; recheck affected behavior after integration, configuration or routing changes.
 
 Exercise a fresh-session core journey, a representative failure and a recovery. Verify public deep links and actual missing-route status; inspect raw HTML and the served share image when applicable. Exercise keyboard/mobile behavior and chosen offline guarantees. Check representative content extremes and incomplete permissions, not only seeded happy paths. A skeleton disappearing into an error is different from a skeleton that never ends.
+
+When the project runs [product-engineering-quality-gate](https://github.com/DimitrisTheo-Dev/product-engineering-quality-gate), its report (`.quality-gate/report.json`, or the job summary) is the evidence for the checks it ran. Read its rows instead of repeating them. A `SKIPPED` row stays unknown unless its reason makes the check not applicable.
 
 Use synthetic users, local fixtures or authorized sandbox services for mutations. External scores are supporting diagnostics for their observed public scope; they cannot establish private flow correctness, accessibility, security, indexing or commercial value. Use existing authorized reports or an explicitly requested scan. Redact private captures before sharing.
 

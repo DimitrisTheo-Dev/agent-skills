@@ -1,6 +1,7 @@
 ---
 name: vibe-ui
-description: Design, build, and polish distinctive interfaces suited to their product and audience. Use for UI art direction, visual redesigns, screenshot-inspired interfaces, typography, layout, or visual polish. Not for backend-only work or unrelated rebrands.
+description: Set the visual direction for an app interface, then build or polish it with the ui-* specialists. Use for UI art direction, visual redesigns, screenshot-inspired interfaces and whole-screen polish. For one concern such as type or color alone, use that specialist; for marketing pages, landing-page-design. Not for backend-only work.
+license: MIT
 ---
 
 # Vibe UI
@@ -10,6 +11,14 @@ Choose a visual direction from the user's task, real content, and brand. Use acc
 ## Coordinate the design
 
 Own one coherent direction. Use [specialist orchestration](references/specialist-orchestration.md) for open UX, typography, color, geometry and motion choices. Carry the relevant decisions into one design contract and let UI Quality Gate inspect the integrated result.
+
+## Build with the project's design system
+
+When the project has a design system, use its components and tokens before writing new ones, and run its checker before the quality gate. For [dtheo/ui](https://ui.dtheo.dev) (a `dtheo.css` stylesheet, components added with `npx dtheo add`):
+
+1. Look components up before writing code: the dtheo/ui MCP server (`list_components`, `get_component`, `get_guidelines`, `get_tokens`), or `npx dtheo list <query>` without it.
+2. Add a missing component with `npx dtheo add <name>` instead of rebuilding it.
+3. Run `npx dtheo check <changed files>` and fix every error before the rendered review. An exception needs a reason on the line above: `// dtheo-check-ignore-next-line (reason)`.
 
 ## Choose the mode
 
