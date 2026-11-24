@@ -1,4 +1,4 @@
-CODEX HANDOFFS
+WORK PACKETS
 Use concise work packets. Templates are input formats, not shell commands. Fill only the fields needed; remove unused placeholders. Normal implementation packets target 150-350 words, but preserve essential contracts.
 
 A. INITIAL REPOSITORY INSPECTION
@@ -52,7 +52,7 @@ State: compact update suitable for the session template
 Never infer completion solely from an agent's summary or an exit code from an unrelated command.
 
 G. CONTEXT HYGIENE
-Reference accessible files by path rather than copying the entire document. If ChatGPT cannot access the repo, use placeholders honestly and let Codex resolve them.
+Reference accessible files by path rather than copying the entire document. If the planner cannot see the repository, mark paths as placeholders for the implementer.
 Send the brief once per task. Later packets carry decisions and deltas. Keep complete logs outside the prompt. Do not request whole-repository dumps or include credentials.
 Use fresh sessions for a changed objective or stale context, not automatically after every successful edit.
 

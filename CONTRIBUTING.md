@@ -10,7 +10,7 @@ Add knowledge that changes an agent's decisions or makes a difficult workflow re
 - Add scripts only when deterministic execution earns their maintenance cost. State dependencies, inputs, outputs, side effects, bounds, and failure behavior. Test observable behavior, including failure paths. Never conceal network activity or mutate targets during a read-only mode.
 - Use original prose and synthetic fixtures. Attribute primary sources with URLs, verification dates, maturity/version, and license boundaries. Separate normative requirements, implementation advice, and empirical evidence. Do not include secrets, private captures, employer code, internal endpoints, or proprietary documentation.
 
-Use the built-in `$skill-creator` when available. Its quick validator is useful author feedback, not a substitute for behavioral evaluation. Avoid maintaining a second skill README that repeats the root catalog and the entrypoint.
+Use a skill-creator skill if your host has one. Its quick validator is useful author feedback, not a substitute for behavioral evaluation. Avoid maintaining a second skill README that repeats the root catalog and the entrypoint.
 
 ## Verification
 

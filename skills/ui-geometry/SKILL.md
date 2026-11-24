@@ -1,6 +1,7 @@
 ---
 name: ui-geometry
 description: Establish consistent spacing and component geometry. Use for padding, gaps, alignment, density, borders, outlines, corner radii, elevation, control sizing and nested-surface polish. Preserve the existing system during localized repairs.
+license: MIT
 ---
 
 # UI Geometry

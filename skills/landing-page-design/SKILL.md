@@ -1,6 +1,6 @@
 ---
 name: landing-page-design
-description: Plan, write, review, or build marketing landing pages for products and services. Use when deciding page structure, hero messaging, product demonstrations, trust signals, or calls to action.
+description: Plan, write, review, build or redesign a marketing landing page for a product or service. Use when deciding page structure, hero messaging, product demonstrations, trust signals or calls to action. In-product screens belong to vibe-ui.
 license: MIT
 ---
 
@@ -20,7 +20,7 @@ For a new landing page or major redesign, inventory real screens, signature asse
 
 Check the hero with the logo masked: does its composition, product demonstration or editorial voice still belong to this product? If only the brand name, colors and a generic feature-card grid distinguish it, revisit the narrative and art direction. Do not mandate spectacle on utility pages, and do not invent product capabilities to create a memorable image.
 
-When a distinct art direction is requested, use **Vibe UI's creative exploration gate** and compare meaningfully different compositions before polishing. Read [material and texture direction](references/material-and-texture-direction.md) only when hero material/imagery is genuinely undecided; those ten effects are inspiration, not completion criteria.
+When a distinct art direction is requested, compare at least two clearly different compositions on the same real content before polishing (Vibe UI's creative rejection protocol helps when it is installed). Read [material and texture direction](references/material-and-texture-direction.md) only when hero material/imagery is genuinely undecided; those ten effects are inspiration, not completion criteria.
 
 ## Positioning when the platform serves multiple markets
 

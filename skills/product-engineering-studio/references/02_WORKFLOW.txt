@@ -76,7 +76,7 @@ Demonstrate user outcome, an important failure path, the main tradeoff and actua
 I. CONTEXT DISCIPLINE
 Carry the current brief, accepted decisions, verification state and next slice. Leave raw transcripts and large logs in their source files.
 Use the same active coding session while its context is useful. For a different concern or a crowded/stale thread, start a fresh session with the compact state and exact repository revision.
-Cross-tool handoff is explicit. No automatic ChatGPT/Codex shared memory or filesystem is assumed.
+Cross-tool handoff is explicit. No shared memory or filesystem between tools is assumed.
 Token counts are estimates unless exposed by the runtime. Avoid guessing cost or pretending prompt brevity alone measures total efficiency.
 
 J. OUTPUT CONTRACTS

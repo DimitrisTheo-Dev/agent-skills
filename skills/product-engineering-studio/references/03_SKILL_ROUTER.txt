@@ -5,9 +5,8 @@ Use the installed version's actual instructions and dependencies. Upstream descr
 DEFAULT
 Choose one main procedure for the current problem. Add a specialist only for a distinct concern. Required helper skills remain required. Avoid running a full product, design, architecture and review pipeline on every small change.
 
-OBSERVED IN THE USER-SHARED CODEX INVENTORY ON 2026-11-07
-Names include grill-with-docs, grilling, domain-modeling, codebase-design, tdd, diagnosing-bugs, prototype, code-review, interface-review, better-interface, the better-* helpers, vibe-ui, vibe-security, supabase-postgres-best-practices, modern-web-guidance and handoff.
-This is a shared snapshot, not a live health check. Full local skill content was not copied into this bundle. Local modifications may be intentional.
+OPTIONAL SKILLS
+Every skill named below is optional and not part of this pack, except product-readiness, agent-readiness, vibe-ui, ui-quality-gate and design-playbook. If one is missing, do the step directly using this file.
 
 CORE CHOICES
 - Delivery baseline, changed product commitments or release readiness: product-readiness when accessible. Reuse the existing acceptance record and UI Quality Gate evidence. Use agent-readiness for detailed agent requirements. If unavailable, record applicable checks and remaining unknowns within Studio.
@@ -52,5 +51,5 @@ MOBBIN
 Use the connected tool for one specific screen, flow or section. Follow its current search instructions. If unavailable, state that and proceed with the supplied references and own design rationale. Never invent returned references.
 
 INVOCATION
-In Codex CLI/IDE, explicit invocation uses $skill-name or the /skills picker where supported. Other clients and plugins have their own namespaces. Check the exact installed name before issuing a command.
+Invocation syntax depends on the host: `/name` or `/plugin:name` in Claude Code, `$name` in Codex. Check the host before naming a command.
 Do not interpret a suggested command in a reference as permission to install, publish or change account settings.

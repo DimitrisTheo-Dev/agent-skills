@@ -37,7 +37,7 @@ flowchart TD
   M --> V["Validated result"]
   V --> U
 
-FIRST CODEX PACKET
+FIRST WORK PACKET
 Outcome: make the question/answer flow runnable for one supplied document.
 Context: repository paths and commands are unknown. Inspect applicable instructions, package scripts and the relevant UI/server path before editing. Reuse the stack.
 Scope: one form and server handler with a typed answer interface. Use a deterministic provider fixture for the first checkpoint only if the brief permits it; label it clearly. Keep retrieval/model/auth details behind the required contract rather than inventing an entire platform.
