@@ -14,7 +14,7 @@ Use a skill-creator skill if your host has one. Its quick validator is useful au
 
 ## Verification
 
-Run `python scripts/check.py` with the development dependencies installed. CI uses the same entrypoint, which runs `scripts/validate.py` and the unit tests. The validator uses the pinned official `skills-ref` demonstration package plus repository checks. Update the source dependency revision in a separate reviewed change and rerun validation. Check changed external sources manually and record the date.
+Run `python scripts/check.py` with the development dependencies installed, and `claude plugin validate --strict .` for the plugin manifests. Bump `version` in `.claude-plugin/plugin.json` in any change to a skill: Claude Code installs update only when that version changes. CI uses the same entrypoints. `scripts/check.py` runs `scripts/validate.py` and the unit tests. The validator uses the pinned official `skills-ref` demonstration package plus repository checks. Update the source dependency revision in a separate reviewed change and rerun validation. Check changed external sources manually and record the date.
 
 For a substantial workflow, add realistic scenarios under `evals/<skill>/` with raw artifacts, requests, and a separate scoring rubric. Include cases that should not activate the skill, inapplicable branches, incomplete evidence, and unsafe proposed fixes. Test trigger selection and behavior separately. An independent agent should see only the skill, request, and raw artifacts, without the expected answer. Use isolated temporary workspaces and authorized local services. Do not use live accounts or billable services without the user's authorization.
 

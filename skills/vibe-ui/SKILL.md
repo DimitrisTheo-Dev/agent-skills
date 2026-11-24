@@ -1,6 +1,6 @@
 ---
 name: vibe-ui
-description: Set the visual direction for an app interface, then build or polish it with the ui-* specialists. Use for UI art direction, visual redesigns, screenshot-inspired interfaces and whole-screen polish. For one concern such as type or color alone, use that specialist; for marketing pages, landing-page-design. Not for backend-only work.
+description: Set the visual direction for an app or website interface, then build or polish it with the ui-* specialists. Use for UI art direction, visual redesigns, screenshot-inspired interfaces and whole-screen polish. For one concern such as type or color alone, use that specialist; for a single landing page's structure and messaging, landing-page-design. Not for backend-only work.
 license: MIT
 ---
 

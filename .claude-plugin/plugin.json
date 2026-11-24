@@ -9,5 +9,11 @@
   "homepage": "https://github.com/DimitrisTheo-Dev/agent-skills",
   "repository": "https://github.com/DimitrisTheo-Dev/agent-skills",
   "license": "MIT",
-  "keywords": ["product-engineering", "ui-design", "design-system", "quality", "agent-readiness"]
+  "keywords": [
+    "product-engineering",
+    "ui-design",
+    "design-system",
+    "quality",
+    "agent-readiness"
+  ]
 }

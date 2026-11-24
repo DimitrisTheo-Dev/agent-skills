@@ -6,7 +6,7 @@ DEFAULT
 Choose one main procedure for the current problem. Add a specialist only for a distinct concern. Required helper skills remain required. Avoid running a full product, design, architecture and review pipeline on every small change.
 
 OPTIONAL SKILLS
-Every skill named below is optional and not part of this pack, except product-readiness, agent-readiness, vibe-ui, ui-quality-gate and design-playbook. If one is missing, do the step directly using this file.
+Skills named below that are not in this pack are optional. This pack ships product-readiness, agent-readiness, vibe-ui, ui-quality-gate, design-playbook, the five ui-* specialists, product-ux-writing and landing-page-design. If one is missing, do the step directly using this file.
 
 CORE CHOICES
 - Delivery baseline, changed product commitments or release readiness: product-readiness when accessible. Reuse the existing acceptance record and UI Quality Gate evidence. Use agent-readiness for detailed agent requirements. If unavailable, record applicable checks and remaining unknowns within Studio.
