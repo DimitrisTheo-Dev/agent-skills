@@ -1,6 +1,7 @@
 ---
 name: product-engineering-studio
-description: Frame, prototype, build, and verify product changes. Use for product development briefs, feasibility experiments, scoped builds, design-to-build planning, and adaptive multi-agent delivery.
+description: The entry point for product work. Frame a brief, prove the risky part, then build and verify one working flow. Use for product development briefs, feasibility experiments, scoped builds, design-to-build planning and adaptive multi-agent delivery. Launch checklists go to product-readiness.
+license: MIT
 ---
 
 # Product Engineering Studio
@@ -25,13 +26,13 @@ Work through the UI flow, data and interface contracts, trust boundaries and imp
 
 Start from the result the user must reach and work backward to the smallest complete flow. For provider-dependent work or a timed demo, read [Delivery Proof](references/11_DELIVERY_PROOF.txt) before expanding dependent screens. Confirm what the deployed path can produce and consume, including required configuration and migrations. A working shell or healthy endpoint does not establish the promised artifact.
 
-For UI, security, data, scaling or AI behavior, read only the relevant section of [Quality and Design](references/04_QUALITY_AND_DESIGN.txt). Use local vibe-ui only when its actual content is accessible. Use Mobbin only for a concrete screen/flow question with an available connection.
+For UI, security, data, scaling or AI behavior, read only the relevant section of [Quality and Design](references/04_QUALITY_AND_DESIGN.txt). Use vibe-ui for visual direction. Use Mobbin only for a concrete screen/flow question with an available connection.
 
 ## 3. Select a procedure
 
 Use [Skill Router](references/03_SKILL_ROUTER.txt) for specialist decisions and [Tool Selection](references/TOOLS_SELECTION.txt) for external tools. Vibe UI owns the shared design direction and brings in relevant helpers. UI Quality Gate owns the final rendered review.
 
-In a short sprint, constrain planning to questions that affect the chosen outcome. The user's scope and timing override broader default exploration. Use tdd for meaningful behavior; use a reproduction-driven approach for defects. Select sol-loop only when its required model route is available and its budget is explicit.
+In a short sprint, constrain planning to questions that affect the chosen outcome. The user's scope and timing override broader default exploration. Write tests first for meaningful behavior, using a TDD skill if one is installed. Reproduce a defect before fixing it.
 
 ## 4. Choose execution mode
 
@@ -41,13 +42,13 @@ State the selected mode, a short reason, owners and next integration checkpoint.
 
 ## 5. Deliver one observable slice
 
-If implementation is authorized and a real repository is accessible, implement the slice using the selected execution mode. Otherwise prepare a bounded packet from [Codex Handoffs](references/05_CODEX_HANDOFFS.txt).
+If implementation is authorized and a real repository is accessible, implement the slice using the selected execution mode. Otherwise prepare a bounded packet from [Work Packets](references/05_WORK_PACKETS.txt).
 
 Include goal, acceptance IDs, relevant context, observed scope, essential contracts, checks and checkpoint. Use checkpoints sized to the actual work; do not impose a short demo deadline on a production-quality request. Preserve essential requirements over arbitrary brevity.
 
 When an accepted design spans owned workstreams or recurring craft defects, use the installed design-playbook for contract-to-build handoffs and scoped measurements. Keep this Studio as product/integration owner, Vibe UI as design owner and UI Quality Gate as the single final gate. If unavailable, use the existing contract, bounded handoff and verification references here.
 
-For a comprehensive starting prompt, provide the brief, execution rules and bounded first assignment. Keep later assignments adaptive; use the orchestration template in Codex Handoffs rather than specifying the entire implementation upfront.
+For a comprehensive starting prompt, provide the brief, execution rules and bounded first assignment. Keep later assignments adaptive; use the orchestration template in Work Packets rather than specifying the entire implementation upfront.
 
 Include composition, readable type, relevant states and clear feedback in the first complete UI slice. At first render, check whether the task, current object and next action are apparent before expanding. Carry owner corrections forward as scoped acceptance checks. Inspect the running behavior and relevant check output. Reuse the repository's documented verification command when it covers the change. For a failure, record the input or command that reproduces it. If repeated fixes leave the same symptom, change the diagnosis. Publish or deploy only under the user's authorization.
 

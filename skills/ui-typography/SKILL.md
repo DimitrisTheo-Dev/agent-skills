@@ -1,6 +1,7 @@
 ---
 name: ui-typography
-description: Choose and implement typography for interface hierarchy, reading, display and data. Use for font direction, type scales, heading structure, line length, wrapping, labels, numeric alignment or multilingual typography. Keep established type systems during narrow fixes.
+description: Choose and implement typography for interface hierarchy, reading, display and data. Use for font direction, type scales, heading structure, line length, wrapping, labels, numeric alignment, multilingual text, or polishing a screen's type. Wording belongs to product-ux-writing and whole-screen direction to vibe-ui.
+license: MIT
 ---
 
 # UI Typography

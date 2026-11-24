@@ -1,6 +1,7 @@
 ---
 name: ui-motion
 description: Design and verify interface feedback, transitions and motion. Use for microinteractions, perceived latency, loading, optimistic UI, interruption, reduced motion and supported mobile haptics. Preserve action semantics and existing platform behavior.
+license: MIT
 ---
 
 # UI Motion

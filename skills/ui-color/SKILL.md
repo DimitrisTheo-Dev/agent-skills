@@ -1,6 +1,7 @@
 ---
 name: ui-color
 description: Choose contextual UI palettes and implement semantic color roles. Use for palette direction, color combinations, theme design, accent hierarchy, contrast or state-color problems. Preserve established brand decisions during localized fixes.
+license: MIT
 ---
 
 # UI Color

@@ -1,6 +1,7 @@
 ---
 name: ui-ux-patterns
-description: Choose useful interface structures and interaction patterns from the user's task. Use for information architecture, list versus card decisions, complex forms, staged flows, previews, onboarding, navigation, comparison and overloaded screens. Preserve working workflows during focused changes.
+description: Choose useful interface structures and interaction patterns from the user's task. Use for information architecture, list versus card decisions, complex forms, staged flows, previews, navigation, comparison and overloaded screens. Wording belongs to product-ux-writing and spacing to ui-geometry.
+license: MIT
 ---
 
 # UI UX Patterns
