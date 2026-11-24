@@ -1,6 +1,7 @@
 ---
 name: ui-quality-gate
-description: Inspect rendered interface quality and drive corrections before delivery. Use for UI quality gates, final design review, visual polish verification, responsive and interaction audits, or when Studio or Vibe UI needs a release decision. Supports read-only critique and authorized implementation; not backend-only code review.
+description: Inspect a built, rendered interface, drive corrections and recheck before delivery. Use for a UI quality gate, pre-release UI review, final design review, responsive and interaction audits, or when Studio or Vibe UI needs a release decision. Not for choosing a direction (vibe-ui), launch requirements beyond the UI (product-readiness) or backend-only code review.
+license: MIT
 ---
 
 # UI Quality Gate

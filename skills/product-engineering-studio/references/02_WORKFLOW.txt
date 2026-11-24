@@ -23,7 +23,7 @@ Choose the smallest experiment that could change the next decision. A prototype 
 C. INSPECT THE REPOSITORY
 Read AGENTS.md and applicable project instructions, README, scripts, dependency manifests and the feature path. Record git status and baseline revision. Identify the real package manager, test runner and startup command.
 Run the smallest relevant existing check. Mark baseline failures explicitly. A pre-existing failure does not justify skipping unrelated passing checks; it also does not prove your change caused the failure.
-Do not invent paths in a ChatGPT-only plan. Name candidate modules as suggestions until repository inspection establishes them.
+Do not invent paths in a plan made without repository access. Name candidate modules as suggestions until repository inspection establishes them.
 
 D. DESIGN THE MINIMUM SYSTEM
 Explain:
@@ -76,7 +76,7 @@ Demonstrate user outcome, an important failure path, the main tradeoff and actua
 I. CONTEXT DISCIPLINE
 Carry the current brief, accepted decisions, verification state and next slice. Leave raw transcripts and large logs in their source files.
 Use the same active coding session while its context is useful. For a different concern or a crowded/stale thread, start a fresh session with the compact state and exact repository revision.
-Cross-tool handoff is explicit. No automatic ChatGPT/Codex shared memory or filesystem is assumed.
+Cross-tool handoff is explicit. No shared memory or filesystem between tools is assumed.
 Token counts are estimates unless exposed by the runtime. Avoid guessing cost or pretending prompt brevity alone measures total efficiency.
 
 J. OUTPUT CONTRACTS

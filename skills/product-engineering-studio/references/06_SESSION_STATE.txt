@@ -32,11 +32,11 @@ Active owners / path boundaries / shared contract:
 Integration checkpoint / unresolved worker dependencies:
 Relevant paths and commands:
 Active skill / required helpers:
-Next action owner: ChatGPT / Codex / user
+Next action owner: planner / implementer / user
 
 UPDATE RULES
 Keep the latest facts and decisions; do not append the full story.
 Separate implemented, tested and reviewed status.
 A changed code/spec revision can make earlier evidence stale.
 Persist when file tools are available. Otherwise return this state for copying.
-Project context, Codex sessions and repository files are separate until explicitly connected.
+Planning context, agent sessions and repository files are separate until explicitly connected.

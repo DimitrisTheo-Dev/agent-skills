@@ -13,6 +13,12 @@ Start with **Product Engineering Studio** for a product task, or **Vibe UI** for
 | UI Geometry | Make mechanics consistent | Spacing, control dimensions, borders, radii and alignment |
 | UI Motion | Make meaningful actions responsive | Feedback, transitions, pending/results, recovery and reduced motion |
 | UI Quality Gate | Inspect the real result and drive corrections | Evidence, findings, repairs and a supported readiness verdict |
+| Product UX Writing | Write the words inside the product | Labels, empty states, errors, confirmations and notifications |
+| Landing Page Design | Persuade one visitor on a marketing page | Page structure, hero message, proof and call to action |
+| Product Readiness | Decide what must be true before release, beyond the visuals | A readiness record with checks, owners and deferrals |
+| Agent Readiness | Let agents discover, read and use the product | Findings or changes for discovery, documentation and agent actions |
+
+In a project that uses [dtheo/ui](https://ui.dtheo.dev), Vibe UI looks components up through its MCP server and runs `dtheo check` before the rendered review. [product-engineering-quality-gate](https://github.com/DimitrisTheo-Dev/product-engineering-quality-gate) runs it in CI once it is listed in `quality-gate.config.json`, and Product Readiness reads its report.
 
 ## What changes in practice
 
@@ -43,7 +49,7 @@ The gate checks every affected component family, materially different state and 
 ## Use it
 
 ```text
-$product-engineering-studio Build this experience for [person] to [outcome].
+Use product-engineering-studio to build this experience for [person] to [outcome].
 Use our existing stack and real content. Make the design decisions, include
 feedback in the first complete flow, and verify the result before handoff.
 ```

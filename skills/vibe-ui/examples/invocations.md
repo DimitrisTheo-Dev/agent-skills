@@ -1,17 +1,17 @@
 # Use vibe-ui
 
 ```text
-$vibe-ui Art-direct this service website from its existing audience, content,
+Use vibe-ui to art-direct this service website from its existing audience, content,
 and brand. No visual reference is provided. Return a concise design brief;
 do not change code.
 
-$vibe-ui Redesign this onboarding screen using the attached screenshot as
+Use vibe-ui to redesign this onboarding screen using the attached screenshot as
 inspiration. Adapt its hierarchy to our product and preserve sign-in behavior.
 
-$vibe-ui Review this dashboard for visual clarity and responsiveness.
+Use vibe-ui to review this dashboard for visual clarity and responsiveness.
 Prioritize concrete findings without editing files.
 
-$vibe-ui Polish this page's typography and spacing using the existing tokens.
+Use vibe-ui to polish this page's typography and spacing using the existing tokens.
 Keep the changes focused and verify the rendered result where tools permit.
 ```
 

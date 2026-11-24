@@ -1,0 +1,15 @@
+{
+  "name": "dtheo",
+  "owner": {
+    "name": "Dimitris Theodoropoulos",
+    "url": "https://dtheo.dev"
+  },
+  "description": "Product engineering skills, the dtheo/ui MCP server and the quality gate workflow.",
+  "plugins": [
+    {
+      "name": "dtheo",
+      "source": "./",
+      "description": "Skills for product engineering: frame the work, design and build the interface, check it against dtheo/ui, and verify it before release."
+    }
+  ]
+}

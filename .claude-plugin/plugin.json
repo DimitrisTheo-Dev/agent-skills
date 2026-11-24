@@ -1,0 +1,19 @@
+{
+  "name": "dtheo",
+  "version": "1.0.0",
+  "description": "Skills for product engineering: frame the work, design and build the interface, check it against dtheo/ui, and verify it before release.",
+  "author": {
+    "name": "Dimitris Theodoropoulos",
+    "url": "https://dtheo.dev"
+  },
+  "homepage": "https://github.com/DimitrisTheo-Dev/agent-skills",
+  "repository": "https://github.com/DimitrisTheo-Dev/agent-skills",
+  "license": "MIT",
+  "keywords": [
+    "product-engineering",
+    "ui-design",
+    "design-system",
+    "quality",
+    "agent-readiness"
+  ]
+}

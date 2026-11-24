@@ -1,6 +1,6 @@
 ---
 name: product-ux-writing
-description: Design, write, review, or implement interface copy and the interactions it describes. Use for in-product navigation, onboarding, forms, dashboards, settings, billing, notifications, and feedback for errors or other product states.
+description: Write, review or implement the words inside a product and the interactions they describe. Use for labels, buttons, empty states, errors, confirmations, onboarding copy, forms, settings, billing and notifications. Marketing page copy belongs to landing-page-design and screen structure to ui-ux-patterns.
 license: MIT
 ---
 

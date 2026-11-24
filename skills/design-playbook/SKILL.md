@@ -1,6 +1,7 @@
 ---
 name: design-playbook
-description: Carry an agreed interface direction through implementation with a shared token contract, bounded work packets and measured proof. Use for multi-surface UI delivery, design-agent handoffs, recurring focus or layout defects, or an explicit Faceful-style request. Reuse existing art direction; skip backend-only work.
+description: Carry an already chosen interface direction across several surfaces or workers with a shared token contract, bounded work packets and measured proof. Use for multi-surface UI delivery, design-agent handoffs, focus and layout defects that keep returning, or an explicit Faceful-style request. It does not choose a new direction; skip backend-only work.
+license: MIT
 ---
 
 # Design playbook

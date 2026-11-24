@@ -22,7 +22,7 @@ Delegate implementation only when all of these hold:
 4. Expected time saved exceeds dispatch, context transfer, waiting, review and merge effort. Enough budget remains to integrate and verify.
 5. Required agent tools and permitted concurrency are available.
 
-When the gate passes, spawn workers with bounded packets from Codex Handoffs. When it fails, work sequentially or settle the blocking dependency first. Do not create infrastructure or enable account features solely to obtain parallelism.
+When the gate passes, spawn workers with bounded packets from Work Packets. When it fails, work sequentially or settle the blocking dependency first. Do not create infrastructure or enable account features solely to obtain parallelism.
 
 C. SIZE THE TEAM AND BUDGET
 Start with the fewest workers that remove a real bottleneck. In a 120-minute exercise, normally cap concurrent work at one lead plus two implementation workers. Use a smaller team if the repository, time or contracts warrant it. For larger work, cap workers by independent ready tasks, runtime limits, review capacity and any explicit cost budget.
