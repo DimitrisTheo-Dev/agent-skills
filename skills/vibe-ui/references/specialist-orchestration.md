@@ -1,32 +1,28 @@
-# Coordinate five specialists
+# Coordinate the design references
 
-Vibe UI owns the coherent design. Specialists resolve bounded decisions; they are not five
-independent art directors. Studio remains the entry point for full product work. The user should not
-need to select or invoke these helpers manually.
+Vibe UI owns the coherent design. Each reference resolves a bounded decision; together they are not
+six independent art directors. Studio remains the entry point for full product work.
 
 ## Route only what is unsettled
 
-| Concern | Owner | Return |
+| Concern | Reference | Return |
 | --- | --- | --- |
-| Information order, collection representation, forms, navigation and first value | ui-ux-patterns | Chosen structure, conditions, tradeoff, responsive journey and states |
-| Type identity, roles, readability and text rhythm | ui-typography | Actual family/role system, wrapping and language constraints |
-| Palette construction, semantic meaning and contrast | ui-color | Contextual palette, role map, area distribution and checked pairs |
-| Density, spacing, corners, borders, outlines and elevation | ui-geometry | Concrete tokens, component geometry and optical exceptions |
-| Feedback, transitions, async states and supported haptics | ui-motion | Interaction/state specification, reduced motion and runtime evidence |
+| Information order, collection representation, forms, navigation and first value | [UX patterns](ux-patterns.md) | Chosen structure, conditions, tradeoff, responsive journey and states |
+| Type identity, roles, readability and text rhythm | [Typography](typography.md) | Actual family/role system, wrapping and language constraints |
+| Palette construction, semantic meaning and contrast | [Color](color.md) | Contextual palette, role map, area distribution and checked pairs |
+| Density, spacing, corners, borders, outlines and elevation | [Geometry](geometry.md) | Concrete tokens, component geometry and optical exceptions |
+| Feedback, transitions, async states and supported haptics | [Motion](motion.md) | Interaction/state specification, reduced motion and runtime evidence |
+| Labels, errors, empty states and confirmations | [Interface writing](ux-writing.md) | Copy by job, with the state and recovery it explains |
 
-Check the actual installed instructions before relying on a helper. An unavailable helper does not
-authorize installation or block useful work: use the task brief, existing system and local craft/QA
-guidance, then name any unverified coverage.
-
-- **Fix:** use the existing contract, invoke only the affected specialist and review neighboring
-  effects. No new art direction, palette menu or full five-part report.
-- **Extend:** inherit established decisions; invoke the owners of new or conflicting choices. Check
-  the completed slice through one gate.
+- **Fix:** use the existing contract, read only the affected reference and review neighboring
+  effects. No new art direction, palette menu or full six-part report.
+- **Extend:** inherit established decisions; resolve new or conflicting choices with their
+  references. Check the completed slice through one gate.
 - **Shape:** start with the user's task and representation. Resolve open decisions together as the
   first flow takes shape. Established components and tokens can settle several concerns.
 
-A palette or font concern can be handled directly without Studio. Standalone helpers give their
-relevant evidence and limitations; they do not automatically summon every sibling.
+A palette or font concern can be handled directly without Studio. A single-concern answer gives its
+evidence and limitations; it does not pull in every other reference.
 
 ## Share one contract
 
@@ -74,15 +70,15 @@ resolves conflicts within that context:
 - A sticky preview can become an accessible summary on narrow screens.
 - A lively transition must not delay input or make pending work look confirmed.
 
-Each specialist changes its own concern and reports cross-concern consequences. Shared files need
-one integration owner; helper use does not imply parallel workers.
+Each decision changes its own concern and reports cross-concern consequences. Shared files need one
+integration owner; using several references does not imply parallel workers.
 
 ## Carry an accepted direction through delivery
 
-For several owned surfaces or a returning focus/shift/hit-target defect, use the installed
-design-playbook when available. It supplies execution packets and scoped proof inside this workflow;
-it does not start another exploration or final gate. Without it, retain the shared contract and
-local QA process.
+For several owned surfaces or a returning focus/shift/hit-target defect, use Product Engineering
+Studio's design playbook. It supplies execution packets and scoped proof inside this workflow; it
+does not start another exploration or final gate. Without it, retain the shared contract and local
+QA process.
 
 Translate owner corrections into their words, a product-scoped rule and a reproducing check. Keep
 the accepted palette, density and interaction intent. Resolve literal values in tokens/components
@@ -95,7 +91,7 @@ cannot see images.
 
 UI Quality Gate inspects the complete result, compares it to the shared contract and challenges the
 contract when it fails the task. It routes fixes to the relevant owner, then rechecks affected
-states. Specialists do not each start another gate. Passing token checks establishes consistency;
+states. No reference starts another gate. Passing token checks establishes consistency;
 passing runtime checks establishes specific behavior; neither alone establishes character.
 
 Cover each affected component family and each exceptional instance/state. Reuse evidence for

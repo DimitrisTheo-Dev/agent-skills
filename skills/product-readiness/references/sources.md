@@ -7,7 +7,7 @@ license; no source code, articles, images or datasets are bundled.
 
 | Primary source | Use and limits |
 | --- | --- |
-| [AgentReady](https://www.agentready.org/) | Public discovery/readability and conditional agent action guidance. Use agent-readiness's maintained map for exact IDs and levels. This review did not recertify all upstream protocol versions. |
+| [AgentReady](https://www.agentready.org/) | Public discovery/readability and conditional agent action guidance. Use the agent readiness reference's maintained map for exact IDs and levels. This review did not recertify all upstream protocol versions. |
 | [Is Agentic](https://is-agentic.com/) | Public-surface scanner with essential, applicable recommended and emerging checks; its homepage explains scope and score limitations. A vendor report is neither universal conformance nor private-flow verification. |
 | [Google AI features](https://developers.google.com/search/docs/appearance/ai-features) | Established SEO fundamentals, visible useful content and truthful structured data; no special AI file/schema requirement for these Google features. Eligibility is not guaranteed inclusion. |
 | [Open Graph protocol](https://ogp.me/) | Core share metadata and optional descriptive/image properties. Destination-specific image crops still require testing. |

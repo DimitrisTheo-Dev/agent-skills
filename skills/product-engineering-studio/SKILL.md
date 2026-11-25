@@ -83,10 +83,10 @@ Include goal, acceptance IDs, relevant context, observed scope, essential contra
 checkpoint. Use checkpoints sized to the actual work; do not impose a short demo deadline on a
 production-quality request. Preserve essential requirements over arbitrary brevity.
 
-When an accepted design spans owned workstreams or recurring craft defects, use the installed
-design-playbook for contract-to-build handoffs and scoped measurements. Keep this Studio as
-product/integration owner, Vibe UI as design owner and UI Quality Gate as the single final gate. If
-unavailable, use the existing contract, bounded handoff and verification references here.
+When an accepted design spans owned workstreams or recurring craft defects, use the [design
+playbook](references/design-playbook.md) for contract-to-build handoffs and scoped measurements.
+Keep this Studio as product/integration owner, Vibe UI as design owner and UI Quality Gate as the
+single final gate.
 
 For a comprehensive starting prompt, provide the brief, execution rules and bounded first
 assignment. Keep later assignments adaptive; use the orchestration template in Work Packets rather

@@ -20,6 +20,8 @@ button:focus-visible { outline: 3px solid blue; } .bare:focus-visible { outline:
 <div style="width: 600px">A row wider than a phone</div>
 <div style="width: 80px; white-space: nowrap">A label that does not fit its box</div>
 <div style="overflow-x: auto; width: 200px"><div style="width: 500px">A wide table</div></div>
+<div style="width: 60px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap">
+<span style="display: inline-flex">Review badge</span></div>
 <div style="overflow: hidden; width: 120px; height: 40px">
 <button style="margin: 0">Cut</button></div>
 <button class="bare">No ring</button>
@@ -31,7 +33,9 @@ button:focus-visible { outline: 2px solid #0b57d0; outline-offset: 2px; }
 a { color: inherit; } .hit { position: relative; display: inline-flex; }
 .hit::after { content: ''; position: absolute; inset: -4px; }</style></head>
 <body><main><h1>Synthetic fixture</h1><p>Nothing here overflows.</p><button>Save</button>
-<a class="hit" href="#top">A link with a larger hit area</a></main></body></html>'''
+<a class="hit" href="#top">A link with a larger hit area</a>
+<p style="width: 120px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap">A long label
+that is shortened on purpose</p></main></body></html>'''
 
 
 @unittest.skipUnless(NODE, 'needs Node')
@@ -71,7 +75,7 @@ class RenderCheckTests(unittest.TestCase):
         found = {(f['status'], f['check']) for f in report['findings']}
         for expected in [('fail', 'wider-than-screen'), ('fail', 'text-spill'),
                          ('check', 'scroll-region'), ('fail', 'console-error'),
-                         ('check', 'focus'), ('fail', 'focus')]:
+                         ('check', 'focus'), ('fail', 'focus'), ('fail', 'cut-off')]:
             self.assertIn(expected, found)
         cut = next(f for f in report['findings'] if f['status'] == 'fail' and f['check'] == 'focus')
         self.assertIn('"Cut"', cut['items'][0])

@@ -36,10 +36,10 @@ schema or AI text file for eligibility. Treat other engines according to their o
 No implementation can promise ranking, indexing, citations or recommendation frequency. Separate
 technical verification from later measurement in search/analytics tools.
 
-Use agent-readiness for AgentReady requirement IDs, maturity and conditional Act applicability when
-available. Link useful machine resources from normal documentation. Add llms.txt, a Markdown mirror
-or a machine contract only when it serves a real consumer; keep it synchronized with canonical docs.
-A landing page does not acquire MCP or a CLI solely to improve a score.
+Use [agent readiness](agent-readiness.md) for AgentReady requirement IDs, maturity and conditional
+Act applicability. Link useful machine resources from normal documentation. Add llms.txt, a Markdown
+mirror or a machine contract only when it serves a real consumer; keep it synchronized with
+canonical docs. A landing page does not acquire MCP or a CLI solely to improve a score.
 
 ## Share package
 

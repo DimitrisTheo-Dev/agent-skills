@@ -78,10 +78,11 @@ and rendered behavior; carry their evidence into this record instead of running 
 review. Without those skills, inspect the chosen journey's layout, keyboard/touch behavior and
 material states directly, and label missing evidence.
 
-Use agent-readiness for detailed public agent discovery or intended agent actions when installed.
-Without it, verify initial public HTML, usable links, honest HTTP responses, canonical task
-documentation and the existing authorized action interface. Record any unassessed protocol
-conformance as unknown. Keep public indexing separate from private authorization.
+For detailed public agent discovery or intended agent actions, use [agent
+readiness](references/agent-readiness.md). For a quick pass, verify initial public HTML, usable
+links, honest HTTP responses, canonical task documentation and the existing authorized action
+interface. Record any unassessed protocol conformance as unknown. Keep public indexing separate from
+private authorization.
 
 Put stable behavior in reusable starter code: metadata defaults, OG image template, error/not-found
 boundaries, common loading/empty/error components, environment validation and a smoke path. Keep

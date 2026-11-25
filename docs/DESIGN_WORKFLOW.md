@@ -1,23 +1,15 @@
 # Design workflow
 
 Start with **Product Engineering Studio** for a product task, or **Vibe UI** for a focused interface
-task. You do not need to select the helpers yourself.
+task. You do not need to pick the references yourself.
 
-| Part | Responsibility | Concrete output |
+| Skill | Responsibility | Concrete output |
 | --- | --- | --- |
-| Product Engineering Studio | Product scope, engineering and delivery | One useful, verified flow |
-| Vibe UI | Coherent direction and specialist coordination | One shared design contract |
-| Design Playbook | Carry an agreed direction across workstreams or repair returning craft defects | Bounded ownership, contract-to-build handoffs and scoped proof |
-| UI UX Patterns | Choose how people understand and complete the task | Structure, navigation, representation and recovery |
-| UI Typography | Choose voice and readable hierarchy | Families, type roles, measures and wrapping rules |
-| UI Color | Build contextual combinations and semantic roles | Palette, state pairings and contrast evidence |
-| UI Geometry | Make mechanics consistent | Spacing, control dimensions, borders, radii and alignment |
-| UI Motion | Make meaningful actions responsive | Feedback, transitions, pending/results, recovery and reduced motion |
+| Product Engineering Studio | Product scope, engineering and delivery. Its design playbook carries an agreed direction across workstreams or repairs returning craft defects | One useful, verified flow |
+| Vibe UI | Coherent direction, with references for UX patterns, typography, color, geometry, motion and interface writing | One shared design contract |
 | UI Quality Gate | Inspect the real result and drive corrections | Evidence, findings, repairs and a supported readiness verdict |
-| Product UX Writing | Write the words inside the product | Labels, empty states, errors, confirmations and notifications |
 | Landing Page Design | Persuade one visitor on a marketing page | Page structure, hero message, proof and call to action |
-| Product Readiness | Decide what must be true before release, beyond the visuals | A readiness record with checks, owners and deferrals |
-| Agent Readiness | Let agents discover, read and use the product | Findings or changes for discovery, documentation and agent actions |
+| Product Readiness | Decide what must be true before release, beyond the visuals. Its agent readiness reference lets agents discover, read and use the product | A readiness record with checks, owners and deferrals |
 
 In a project that uses [dtheo/ui](https://ui.dtheo.dev), Vibe UI looks components up through its MCP
 server and runs `dtheo check` before the rendered review.
@@ -42,10 +34,10 @@ platform-dependent. Static content can remain still.
 Product Readiness chooses the applicable completeness baseline at kickoff and reconciles evidence
 before release. It covers discovery, sharing, states, offline behavior and operational requirements
 in the existing project record. It consumes the UI gate's findings rather than adding a second
-visual gate. Agent Readiness retains ownership of detailed agent requirements; public scanner scores
-remain supporting evidence. Isolated fixes revisit only affected requirements.
+visual gate. Its agent readiness reference owns the detailed agent requirements; public scanner
+scores remain supporting evidence. Isolated fixes revisit only affected requirements.
 
-- A small fix uses the affected helper and existing decisions.
+- A small fix uses the affected reference and existing decisions.
 - An extension explores only unresolved choices.
 - A consequential open direction may benefit from comparing realistic alternatives. A capability
   experiment can start with a single prototype and a comparison with the current workflow.
@@ -54,9 +46,9 @@ remain supporting evidence. Isolated fixes revisit only affected requirements.
 - One quality gate checks the completed result. It reopens affected decisions rather than restarting
   the whole process.
 
-Design Playbook is conditional: use it for several owned surfaces or a recurring interaction defect.
-Small ordinary edits keep the shorter path. It preserves the accepted brand and connects the
-existing owners rather than adding another art director or review pipeline.
+Studio's design playbook is conditional: use it for several owned surfaces or a recurring
+interaction defect. Small ordinary edits keep the shorter path. It preserves the accepted brand and
+connects the existing owners rather than adding another art director or review pipeline.
 
 For provider-dependent builds and timed demos, trace backward from the user's result and prove the
 risky boundary early with the actual output its consumer needs. Confirm relevant
@@ -67,8 +59,8 @@ or passing worker branch does not establish a complete product outcome.
 Retain an owner correction as their words, a scoped rule and a reproducing check. Inspect the
 running candidate after integration, keep evidence outputs private until sanitized, and reconcile
 design notes with token/component sources. See the [Faceful
-history](../skills/design-playbook/references/faceful-history.md) for the observed changes and
-limits behind these additions.
+history](../skills/product-engineering-studio/references/design-playbook/faceful-history.md) for the
+observed changes and limits behind these additions.
 
 The gate checks every affected component family, materially different state and exceptional
 instance. Identical repeated components can reuse evidence. It inspects whole-page composition
