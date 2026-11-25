@@ -47,6 +47,13 @@ then component crops, then the whole screen again. Measure suspicious geometry a
 instead of guessing pixels from images. Test realistic long content, loading and failure, not only
 ideal fixtures. Keep first use and repeated use distinct.
 
+For a web page, run `node <this-skill>/scripts/render_check.mjs <url>` from the project directory
+before looking at details. It loads the page at 390 and 1280 px in light and dark and measures
+content wider than the screen, text wider than its box, sideways scroll areas, console errors, focus
+with no ring or a cut-off ring and, when the project has axe-core, accessibility violations. It
+needs Playwright and writes screenshots and `report.json` to `render-check/`. Its results are
+measurements to inspect, not a verdict: it cannot see hierarchy, spacing or character.
+
 When focus clipping, pointer instability, duplicate loading or claimed zero shift is in scope, apply
 the [recurring-defect checks](references/recurring-defects.md). A clean detector is supplementary
 evidence. Keep automated accessibility scope/exclusions and local-versus-live performance conditions
@@ -103,10 +110,12 @@ Do not add reviewers until they agree. Respect an explicit deadline or real acce
 stops correction, return blocked or unverified with the exact remaining issue. A time limit is not a
 quality pass.
 
-For substantial new UI use a fresh reviewer when tools and delegation rules permit. Give the brief,
-references and candidate, withholding the builder's desired verdict. Judge findings yourself. If
-independent review is unavailable, label self-review and continue. Opinion does not replace
-operating the product.
+Before a new screen or flow is called ready, have a fresh reviewer inspect it: an agent or person
+that did not build it. Send [the fresh review brief](references/fresh-review.md) with the request,
+how to open the candidate and the render check output, and withhold the builder's reasoning and
+expected verdict. In Claude Code, start the reviewer with the Agent tool. Judge each finding
+yourself and reproduce it before fixing. When no independent reviewer is available, label the
+result self-review and continue. Opinion does not replace operating the product.
 
 ## 5. Decide and deliver
 
@@ -115,7 +124,8 @@ have current evidence, and no open blocker or major finding. Assess character se
 functional anonymous template can fail the brief. Keep accepted minor tradeoffs visible. Not
 applicable needs a reason; unverified is not pass.
 
-Report the implemented outcome, strongest visible improvement, executed checks and remaining limits.
+Report the implemented outcome, strongest visible improvement, executed checks, who reviewed (fresh
+reviewer or self-review) and remaining limits.
 Include before/after captures for substantial visual work when available. Distinguish CSS-width
 emulation from native-device testing. Never infer browser, screen-reader, motion or performance
 coverage from screenshots.
