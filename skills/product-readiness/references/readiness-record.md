@@ -1,6 +1,8 @@
 # Compact project record
 
-Reuse an existing project record before creating a new file. In plan/audit mode, return this in the conversation unless a saved artifact is requested. This is an evidence template, not a new project-management system.
+Reuse an existing project record before creating a new file. In plan/audit mode, return this in the
+conversation unless a saved artifact is requested. This is an evidence template, not a new
+project-management system.
 
 ## Context
 
@@ -18,14 +20,17 @@ Reuse an existing project record before creating a new file. In plan/audit mode,
 | Example: public sharing | Public article routes | Before public release / web owner | Fetch and inspect route metadata and public image | unknown | Not executed | Run against release origin |
 | Example: offline writes | Not applicable: public read-only brochure | Not applicable | No write capability offered | not applicable | Product scope | Revisit if task requires editing offline |
 
-Use `pass`, `fail`, `unknown` or `not applicable`. Deferred work stays applicable and retains its actual status. Split local and deployment checks if their evidence differs. Add only rows needed to account for the coverage categories and chosen capabilities.
+Use `pass`, `fail`, `unknown` or `not applicable`. Deferred work stays applicable and retains its
+actual status. Split local and deployment checks if their evidence differs. Add only rows needed to
+account for the coverage categories and chosen capabilities.
 
 ## Verification scope
 
 - Candidate/build and environment:
 - Commands and journeys actually executed, with results:
 - Tool versions/configuration, comparison base, route/workload budgets and exclusions:
-- Lighthouse repeated results versus field data; query/call counts and denial-test evidence where applicable:
+- Lighthouse repeated results versus field data; query/call counts and denial-test evidence where
+  applicable:
 - Rendered routes/states and supported browsers sampled:
 - Existing evidence reused and why it remains valid:
 - Unavailable tools, blocked prerequisites and unresolved failures:
@@ -36,6 +41,8 @@ Use `pass`, `fail`, `unknown` or `not applicable`. Deferred work stays applicabl
 - Required checks passed versus release blockers:
 - Accepted deferrals with reason, owner and revisit trigger:
 - Implemented / locally verified / verified live:
-- Reuse measurements available: time to useful deployed outcome, owner correction rounds, fresh-session demo result:
+- Reuse measurements available: time to useful deployed outcome, owner correction rounds,
+  fresh-session demo result:
 
-Never infer a successful check from the existence of a file, a passing build, another deployment's screenshot or an external score.
+Never infer a successful check from the existence of a file, a passing build, another deployment's
+screenshot or an external score.

@@ -1,20 +1,49 @@
 DELIVERY PROOF
-Use for external-provider dependencies, multi-service delivery or a timed demo. Apply the user's authorization and the task's environment boundary. A local UI fix does not require production access.
+Use for external-provider dependencies, multi-service delivery or a timed demo. Apply the user's
+authorization and the task's environment boundary. A local UI fix does not require production
+access.
 
 A. START WITH THE RESULT
-Name the first useful outcome and work backward through only its required steps. Write the minimum contract for each boundary: input, output artifact/state, owner, failure and consumer. For example, creating a draft, queueing a render, producing a playable video and attaching it to an approvable post are separate outcomes. Prefer one complete path before secondary screens, broader settings or optional animation.
+Name the first useful outcome and work backward through only its required steps. Write the minimum
+contract for each boundary: input, output artifact/state, owner, failure and consumer. For example,
+creating a draft, queueing a render, producing a playable video and attaching it to an approvable
+post are separate outcomes. Prefer one complete path before secondary screens, broader settings or
+optional animation.
 
 B. PROVE THE RISKIEST DEPENDENCY EARLY
-Before dependent implementation expands, check access, required migrations/configuration and the actual output the next stage consumes. Read provider documentation or existing adapters; do not invent endpoints. A 200 health response, queued job, unit mock or uploaded text object proves only that narrower check. For media, inspect playable output, persistence and downstream attachment. For agents, exercise the intended real client when claiming client compatibility, not only direct HTTP.
-Use the authorized test environment and bounded inputs. Respect explicit user limits and existing safety boundaries. If live action needs authorization not already supplied, prepare the concrete candidate and complete independent verification first. Do not send a real post or charge a payment merely to close a test.
+Before dependent implementation expands, check access, required migrations/configuration and the
+actual output the next stage consumes. Read provider documentation or existing adapters; do not
+invent endpoints. A 200 health response, queued job, unit mock or uploaded text object proves only
+that narrower check. For media, inspect playable output, persistence and downstream attachment. For
+agents, exercise the intended real client when claiming client compatibility, not only direct HTTP.
+Use the authorized test environment and bounded inputs. Respect explicit user limits and existing
+safety boundaries. If live action needs authorization not already supplied, prepare the concrete
+candidate and complete independent verification first. Do not send a real post or charge a payment
+merely to close a test.
 
 C. ONE READINESS RECORD
-Keep a compact table with capability, environment, candidate revision, state, evidence time, owner and next action. Distinguish implemented, verified locally, verified with live services, blocked and deferred. Keep fixture/replay evidence labeled. Reconcile superseded paragraphs when a blocker changes; avoid accumulating contradictory morning and afternoon status claims.
-Inspect migration state and provider configuration before diagnosing UI errors that may be deployment failures. A region/latency mismatch or ambiguous timeout needs authoritative state inspection before a retry that could duplicate a side effect. Preserve existing idempotency and approval semantics across clients.
+Keep a compact table with capability, environment, candidate revision, state, evidence time, owner
+and next action. Distinguish implemented, verified locally, verified with live services, blocked and
+deferred. Keep fixture/replay evidence labeled. Reconcile superseded paragraphs when a blocker
+changes; avoid accumulating contradictory morning and afternoon status claims.
+Inspect migration state and provider configuration before diagnosing UI errors that may be
+deployment failures. A region/latency mismatch or ambiguous timeout needs authoritative state
+inspection before a retry that could duplicate a side effect. Preserve existing idempotency and
+approval semantics across clients.
 
 D. INTEGRATE AND REHEARSE
-At each slice boundary, use the actual output in its next consumer on the integrated candidate. Include relevant failure, retry, stale revision and permission cases. Confirm approved content remains approved only for the same consequential payload, where the product has such an approval contract. Worker summaries and branch-local checks do not establish the merged flow.
-For a timed demonstration, set a feature-freeze checkpoint from the actual deadline and reserve time for a cold-start rehearsal, configured account, known seed/reset state and output inspection. If the critical path is behind, defer optional surfaces and reduce coordination overhead. Keep an explicitly labeled replay or narrower demonstrated outcome when appropriate; do not relax a real consent, permission or data-integrity requirement to make a demo pass.
+At each slice boundary, use the actual output in its next consumer on the integrated candidate.
+Include relevant failure, retry, stale revision and permission cases. Confirm approved content
+remains approved only for the same consequential payload, where the product has such an approval
+contract. Worker summaries and branch-local checks do not establish the merged flow.
+For a timed demonstration, set a feature-freeze checkpoint from the actual deadline and reserve time
+for a cold-start rehearsal, configured account, known seed/reset state and output inspection. If the
+critical path is behind, defer optional surfaces and reduce coordination overhead. Keep an
+explicitly labeled replay or narrower demonstrated outcome when appropriate; do not relax a real
+consent, permission or data-integrity requirement to make a demo pass.
 
 E. DELIVER THE TRUE SCOPE
-State what the user can now do, what was exercised and what remains blocked. Attach the source revision and environment to evidence. Keep implementation readiness, visual quality and live-service success separate. A deadline can end with a partial result; it cannot turn missing proof into verified delivery.
+State what the user can now do, what was exercised and what remains blocked. Attach the source
+revision and environment to evidence. Keep implementation readiness, visual quality and live-service
+success separate. A deadline can end with a partial result; it cannot turn missing proof into
+verified delivery.

@@ -10,7 +10,10 @@
 | Focused utility | Offer an interactive example when the public path is supported and safe for its inputs. Otherwise use a labeled sample interaction or input and output pair. |
 | Prototype or prelaunch | Use a clearly labeled concept, sample result, or simple explanation of the planned workflow. Match the action to actual availability. |
 
-Stack the message, action, and example when the visual needs width. Use a split hero when both sides can be understood at a glance. On small screens, keep the offer and next action in reading order and give the visual enough room to show its decisive detail. Keep essential content available when animation is paused or media fails.
+Stack the message, action, and example when the visual needs width. Use a split hero when both sides
+can be understood at a glance. On small screens, keep the offer and next action in reading order and
+give the visual enough room to show its decisive detail. Keep essential content available when
+animation is paused or media fails.
 
 ## Give each section a job
 
@@ -22,8 +25,16 @@ Stack the message, action, and example when the visual needs width. Use a split 
 | “What will this cost or require?” | Explain setup, access, pricing, or data handling where they affect the decision. Use an FAQ for genuine objections with known answers. |
 | “How do I take the next step?” | Make the path specific to the offer, such as opening an example, installing from docs, joining a waitlist, or requesting a sales conversation. |
 
-Choose between a short capabilities list, a grid, or a longer walkthrough by the detail the visitor needs. Use one relevant customer quote when it adds evidence. Confirm the source, the claim it supports, and permission to publish before using a quote, logo, or case study. Date metrics when their meaning depends on the measurement period.
+Choose between a short capabilities list, a grid, or a longer walkthrough by the detail the visitor
+needs. Use one relevant customer quote when it adds evidence. Confirm the source, the claim it
+supports, and permission to publish before using a quote, logo, or case study. Date metrics when
+their meaning depends on the measurement period.
 
 ## Source and scope
 
-Evil Martians published Anton Lovchikov and Travis Turner's analysis of more than 100 developer-tool landing pages on July 8, 2025. It describes recurring design patterns in that sample. Use them as starting points for developer tools and adapt them to other audiences. The selection rules and implementation checks here are original practice guidance. Source text and assets remain with their respective rightsholders. Source verified November 9, 2026. [Evil Martians article](https://evilmartians.com/chronicles/we-studied-100-devtool-landing-pages-here-is-what-actually-works-in-2025)
+Evil Martians published Anton Lovchikov and Travis Turner's analysis of more than 100 developer-tool
+landing pages on July 8, 2025. It describes recurring design patterns in that sample. Use them as
+starting points for developer tools and adapt them to other audiences. The selection rules and
+implementation checks here are original practice guidance. Source text and assets remain with their
+respective rightsholders. Source verified November 9, 2026. [Evil Martians
+article](https://evilmartians.com/chronicles/we-studied-100-devtool-landing-pages-here-is-what-actually-works-in-2025)

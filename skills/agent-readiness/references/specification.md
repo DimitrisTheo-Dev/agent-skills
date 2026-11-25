@@ -1,8 +1,16 @@
 # AgentReady requirement map
 
-Verified **2026-10-25** against [the canonical v2.0 guide](https://www.agentready.org/) and [the versioned source](https://github.com/agentready-org/standard/blob/273d2d7c991f30cd0785415023801b03766abc67/spec/spec.md). This is an original condensed interpretation, not a new specification. The source declares MIT. Protocol requirements come from their own specifications; AgentReady's adoption recommendations do not change those protocols.
+Verified **2026-10-25** against [the canonical v2.0 guide](https://www.agentready.org/) and [the
+versioned
+source](https://github.com/agentready-org/standard/blob/273d2d7c991f30cd0785415023801b03766abc67/spec/spec.md).
+This is an original condensed interpretation, not a new specification. The source declares MIT.
+Protocol requirements come from their own specifications; AgentReady's adoption recommendations do
+not change those protocols.
 
-The level column preserves the source's normative strength. Scope and assessment guidance are this skill's interpretation. SHOULD permits a reasoned exception; MAY is optional. Severity depends on the blocked user task, not just the level. Treat inaccessible downstream checks as **unknown**, with the blocking prerequisite, rather than pretending they pass or are inapplicable.
+The level column preserves the source's normative strength. Scope and assessment guidance are this
+skill's interpretation. SHOULD permits a reasoned exception; MAY is optional. Severity depends on
+the blocked user task, not just the level. Treat inaccessible downstream checks as **unknown**, with
+the blocking prerequisite, rather than pretending they pass or are inapplicable.
 
 ## Find
 
@@ -13,7 +21,11 @@ The level column preserves the source's normative strength. Scope and assessment
 | AR-FIND-03 | SHOULD | List public pages in a sitemap referenced by robots.txt. | Inspect actual URLs, host, canonical paths, and access. Omit private records. |
 | AR-FIND-04 | MAY | Publish an AI Catalog at `/.well-known/ai-catalog.json`, advertised in the homepage head and HTTP Link header. | Emerging discovery convention for resources actually shipped. Not an established universal manifest schema. |
 
-The crawl notes recommend a wildcard baseline instead of enumerating every agent. Specific groups override wildcard behavior; preserve deliberate training-crawler exclusions. Robots is a crawl policy, never authorization. A challenge page can return 200 while still blocking reading. User-agent simulation is only a local observation; provider-verified requests and operator logs are stronger evidence.
+The crawl notes recommend a wildcard baseline instead of enumerating every agent. Specific groups
+override wildcard behavior; preserve deliberate training-crawler exclusions. Robots is a crawl
+policy, never authorization. A challenge page can return 200 while still blocking reading.
+User-agent simulation is only a local observation; provider-verified requests and operator logs are
+stronger evidence.
 
 ## Read
 
@@ -30,11 +42,14 @@ The crawl notes recommend a wildcard baseline instead of enumerating every agent
 | AR-READ-09 | MAY | Advertise Markdown alternatives through alternate links or HTTP Link. | An optimization after HTML works. No evidence here that adding a mirror alone fixes task failure. |
 | AR-READ-11 | SHOULD | Publish pricing, plans, free tier, and limits as first-party HTML text. | Applies when pricing exists. For bespoke pricing describe the actual model and known limits; never invent a price. |
 
-`AR-READ-10` is retired. Do not reintroduce a requirement for website `AGENTS.md` or `SKILLS.md`. The earlier `AR-DISC`, `AR-CONT`, `AR-CAPA`, `AR-IDEN`, `AR-COMM` identifiers and `/spec.json` artifact are superseded. Include READ-09 even though some abbreviated checklists omit it.
+`AR-READ-10` is retired. Do not reintroduce a requirement for website `AGENTS.md` or `SKILLS.md`.
+The earlier `AR-DISC`, `AR-CONT`, `AR-CAPA`, `AR-IDEN`, `AR-COMM` identifiers and `/spec.json`
+artifact are superseded. Include READ-09 even though some abbreviated checklists omit it.
 
 ## Act
 
-These checks concern products intended for agent-executed tasks. Where a row has an additional condition, evaluate that condition explicitly.
+These checks concern products intended for agent-executed tasks. Where a row has an additional
+condition, evaluate that condition explicitly.
 
 | ID | Level | Requirement summary | Scope and assessment |
 | --- | --- | --- | --- |
@@ -49,4 +64,5 @@ These checks concern products intended for agent-executed tasks. Where a row has
 | AR-ACT-09 | MAY | Provide NLWeb /ask and an MCP ask tool for content queries. | Optional for content-heavy products; does not make Act mandatory for an informational site. |
 | AR-ACT-10 | MUST | Supply at least one useful MCP server or CLI for agent task completion. | Conditional on intended action. REST alone is not the source's stated alternative. Assess actual task coverage and supported clients, not the existence of an empty endpoint or binary. |
 
-Do not relabel a SHOULD as MAY because a protocol is immature. Preserve the level and explain maturity, target support, applicability, and the implementation decision independently.
+Do not relabel a SHOULD as MAY because a protocol is immature. Preserve the level and explain
+maturity, target support, applicability, and the implementation decision independently.

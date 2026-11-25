@@ -1,6 +1,12 @@
 # Faceful lessons and evidence boundaries
 
-Reviewed 2026-11-16. This is an original synthesis of the supplied playbook and public Hackathon-gen-ai repository history. Commits establish changes; repository reports establish what their authors recorded. A follow-up inspected the current interface and historical captures; the reusable composition map is in [the Faceful example](look-faceful.md). Performance and accessibility scans were not rerun. This public reference does not include private session evidence. The submitted hackathon recording was unavailable. Neither current production nor the last main-branch commit establishes what judges saw or why the project did or did not place.
+Reviewed 2026-11-16. This is an original synthesis of the supplied playbook and public
+Hackathon-gen-ai repository history. Commits establish changes; repository reports establish what
+their authors recorded. A follow-up inspected the current interface and historical captures; the
+reusable composition map is in [the Faceful example](look-faceful.md). Performance and accessibility
+scans were not rerun. This public reference does not include private session evidence. The submitted
+hackathon recording was unavailable. Neither current production nor the last main-branch commit
+establishes what judges saw or why the project did or did not place.
 
 ## What to retain
 
@@ -21,16 +27,39 @@ Reviewed 2026-11-16. This is an original synthesis of the supplied playbook and 
 | [Rendered-output attachment](https://github.com/DimitrisTheo-Dev/Hackathon-gen-ai/commit/5c37418eeefd296f50eb79329d9f7087bf89f943) connected the finished reel to the draft's publishable video. | Test each boundary with the actual artifact the next stage consumes; isolated green components do not establish the final outcome. |
 | [Late flow clarification](https://github.com/DimitrisTheo-Dev/Hackathon-gen-ai/commit/aeacd9f55b39db968faec14ceffad7f82ee80a26) and [rendering visibility](https://github.com/DimitrisTheo-Dev/Hackathon-gen-ai/commit/fa70c63a7176781f493ebd8ff1255bb64bece0f2) made required steps more discoverable. | Rehearse the intended task before polishing secondary surfaces. Treat first-value comprehension as a checkpoint. |
 
-The readiness document set a 14:00 feature freeze and an 18:00 submission target on 15 November, Athens time. Commit timestamps place rendered-output attachment at 17:33 and approval preservation at 17:56. A further [creation/rendering flow revision](https://github.com/DimitrisTheo-Dev/Hackathon-gen-ai/commit/b6c98e1b07ee25817d292d6ce3f1e53bb19b0879) arrived at 20:31. These timestamps show integration changing near and after the documented target; they do not establish deployment times, the actual submission revision, or hours spent on any feature.
+The readiness document set a 14:00 feature freeze and an 18:00 submission target on 15 November,
+Athens time. Commit timestamps place rendered-output attachment at 17:33 and approval preservation
+at 17:56. A further [creation/rendering flow
+revision](https://github.com/DimitrisTheo-Dev/Hackathon-gen-ai/commit/b6c98e1b07ee25817d292d6ce3f1e53bb19b0879)
+arrived at 20:31. These timestamps show integration changing near and after the documented target;
+they do not establish deployment times, the actual submission revision, or hours spent on any
+feature.
 
-The public landing page inspected on 16 November also said “21 tools” inside its studio illustration and “13 tools” in its agent section. This is observable copy drift, independent of backend correctness. Readiness and capability copy need the same current source as the demonstrated flow. Broad surface coverage and green checks did not establish a complete rendered-and-published outcome in the late-morning report.
+The public landing page inspected on 16 November also said “21 tools” inside its studio illustration
+and “13 tools” in its agent section. This is observable copy drift, independent of backend
+correctness. Readiness and capability copy need the same current source as the demonstrated flow.
+Broad surface coverage and green checks did not establish a complete rendered-and-published outcome
+in the late-morning report.
 
 ## Claims corrected during this import
 
-- The upload had escaped Markdown, cut-off instructions and missing references/scripts. This package supplies complete references and an explicit audit procedure; it does not pretend to recover the missing original script.
-- The statement that detectors missed every important defect was not independently established. Automated checks supplement visual/interaction evidence.
-- [Recorded axe results](https://github.com/DimitrisTheo-Dev/Hackathon-gen-ai/blob/b0bfb45e9ee61be9d4305d028781cd006886db91/docs/demo/evidence/quality/axe-summary.json) report 45 serious/critical nodes before and zero after **with a stated rule/node exclusion**. This is scoped automated evidence, not full accessibility conformance.
-- [Recorded Lighthouse results](https://github.com/DimitrisTheo-Dev/Hackathon-gen-ai/blob/b0bfb45e9ee61be9d4305d028781cd006886db91/docs/demo/evidence/quality/lighthouse-summary.json) distinguish local and production-like servers and include nonzero CLS. “Zero layout shift” remains a scoped target, not a proven property of the whole product.
-- Exact palettes, radii, motion timings, file paths and environment flags belong to their project. The reusable rules preserve ownership, truthful state and observed proof without forcing Faceful's style on unrelated work.
+- The upload had escaped Markdown, cut-off instructions and missing references/scripts. This package
+  supplies complete references and an explicit audit procedure; it does not pretend to recover the
+  missing original script.
+- The statement that detectors missed every important defect was not independently established.
+  Automated checks supplement visual/interaction evidence.
+- [Recorded axe
+  results](https://github.com/DimitrisTheo-Dev/Hackathon-gen-ai/blob/b0bfb45e9ee61be9d4305d028781cd006886db91/docs/demo/evidence/quality/axe-summary.json)
+  report 45 serious/critical nodes before and zero after **with a stated rule/node exclusion**. This
+  is scoped automated evidence, not full accessibility conformance.
+- [Recorded Lighthouse
+  results](https://github.com/DimitrisTheo-Dev/Hackathon-gen-ai/blob/b0bfb45e9ee61be9d4305d028781cd006886db91/docs/demo/evidence/quality/lighthouse-summary.json)
+  distinguish local and production-like servers and include nonzero CLS. “Zero layout shift” remains
+  a scoped target, not a proven property of the whole product.
+- Exact palettes, radii, motion timings, file paths and environment flags belong to their project.
+  The reusable rules preserve ownership, truthful state and observed proof without forcing Faceful's
+  style on unrelated work.
 
-Public source links are evidence pointers. Faceful's repository states that it grants no general code license; no source code or media is copied into this package. The new instructions and synthetic evaluation inputs are original material under this repository's license.
+Public source links are evidence pointers. Faceful's repository states that it grants no general
+code license; no source code or media is copied into this package. The new instructions and
+synthetic evaluation inputs are original material under this repository's license.

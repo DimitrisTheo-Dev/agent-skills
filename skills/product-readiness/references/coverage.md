@@ -1,6 +1,8 @@
 # Coverage and acceptance
 
-Choose checks for the actual product and the commitments it is making. Reuse existing evidence. At release, revisit agreed checks and changed risks. For a narrow feature, inspect the affected categories.
+Choose checks for the actual product and the commitments it is making. Reuse existing evidence. At
+release, revisit agreed checks and changed risks. For a narrow feature, inspect the affected
+categories.
 
 | Category | Decisions to make early | Observable acceptance examples |
 | --- | --- | --- |
@@ -24,23 +26,45 @@ Choose checks for the actual product and the commitments it is making. Reuse exi
 
 ## First value and return visits
 
-When improving activation, find where people abandon, repeat input or fail to reach the first useful result. Use available analytics, support reports or a walkthrough. Choose one change that reduces that friction and check successful completion alongside a guardrail such as errors, bad submissions or recovery effort. Label expected gains as hypotheses until measured.
+When improving activation, find where people abandon, repeat input or fail to reach the first useful
+result. Use available analytics, support reports or a walkthrough. Choose one change that reduces
+that friction and check successful completion alongside a guardrail such as errors, bad submissions
+or recovery effort. Label expected gains as hypotheses until measured.
 
-For repeat use, start from a recurring user need. Saved work, history or reusable settings can make the next visit more useful. A reminder earns its place when it helps with a real event or deadline and people can control it. Keep a clear stopping point. For a monthly reconciliation tool, check whether eligible teams finish their next close with fewer corrections. Daily visits and repeated reminder clicks offer little evidence of that outcome.
+For repeat use, start from a recurring user need. Saved work, history or reusable settings can make
+the next visit more useful. A reminder earns its place when it helps with a real event or deadline
+and people can control it. Keep a clear stopping point. For a monthly reconciliation tool, check
+whether eligible teams finish their next close with fewer corrections. Daily visits and repeated
+reminder clicks offer little evidence of that outcome.
 
 ## Conditional capabilities
 
 Select only capabilities the product offers. Keep their requirements alongside the core journey.
 
-- **AI output:** representative inputs and explicit quality criteria, grounded claims/citations where promised, latency/cost budgets, partial streams, provider failures, cancellation and fallback. Evaluate actual output, not an HTTP 200. Keep tool permissions and untrusted-content boundaries intact.
-- **Payments:** sandbox checkout, declined and interrupted payment, duplicate/out-of-order webhook delivery, entitlement changes, cancellation/refund behavior and receipts. Verify backend state before success UI.
-- **Uploads/media:** size/type limits, progress/cancel/retry, malformed files, inaccessible media, playback poster, expiration and object permissions. Inspect a real generated/exported artifact.
-- **Email/notifications:** actual sandbox delivery, sender/domain configuration, expired action links, delivery errors and preferences/unsubscribe where applicable. Request device notification permission at a useful moment.
-- **APIs/agent actions:** maintained contracts, scoped auth, rate limits, pagination, retry semantics and supported-client task completion. Expose only useful authorized operations.
-- **Collaborative edits:** conflict policy, reconnect, permissions changed mid-session, stale views and concurrent updates.
+- **AI output:** representative inputs and explicit quality criteria, grounded claims/citations
+  where promised, latency/cost budgets, partial streams, provider failures, cancellation and
+  fallback. Evaluate actual output, not an HTTP 200. Keep tool permissions and untrusted-content
+  boundaries intact.
+- **Payments:** sandbox checkout, declined and interrupted payment, duplicate/out-of-order webhook
+  delivery, entitlement changes, cancellation/refund behavior and receipts. Verify backend state
+  before success UI.
+- **Uploads/media:** size/type limits, progress/cancel/retry, malformed files, inaccessible media,
+  playback poster, expiration and object permissions. Inspect a real generated/exported artifact.
+- **Email/notifications:** actual sandbox delivery, sender/domain configuration, expired action
+  links, delivery errors and preferences/unsubscribe where applicable. Request device notification
+  permission at a useful moment.
+- **APIs/agent actions:** maintained contracts, scoped auth, rate limits, pagination, retry
+  semantics and supported-client task completion. Expose only useful authorized operations.
+- **Collaborative edits:** conflict policy, reconnect, permissions changed mid-session, stale views
+  and concurrent updates.
 
 ## Starter defaults versus project choices
 
-Reuse a small set of tested primitives and recipes. Metadata defaults must allow route overrides; OG generation must have an available fallback; error pages must work when the failing feature cannot mount. Skeletons use the component's actual geometry. Keep one focus-indicator owner, stable border widths, fixed icon geometry and non-shifting hit targets in shared controls.
+Reuse a small set of tested primitives and recipes. Metadata defaults must allow route overrides; OG
+generation must have an available fallback; error pages must work when the failing feature cannot
+mount. Skeletons use the component's actual geometry. Keep one focus-indicator owner, stable border
+widths, fixed icon geometry and non-shifting hit targets in shared controls.
 
-Keep offline storage, installability, payments and agent interfaces conditional on the task. Reuse accepted compositions from the project's design system and verify behavior and contrast when adapting them.
+Keep offline storage, installability, payments and agent interfaces conditional on the task. Reuse
+accepted compositions from the project's design system and verify behavior and contrast when
+adapting them.

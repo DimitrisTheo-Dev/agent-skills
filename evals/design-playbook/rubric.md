@@ -1,6 +1,8 @@
 # Assessor rubric
 
-Keep this file outside the answering agent's supplied inputs. Use [the frozen requests](requests.md) with the revision-comparison workflow. These cases exercise selection and planning decisions, not rendered implementation quality.
+Keep this file outside the answering agent's supplied inputs. Use [the frozen requests](requests.md)
+with the revision-comparison workflow. These cases exercise selection and planning decisions, not
+rendered implementation quality.
 
 | Case | Required decisions | Regression to reject |
 | --- | --- | --- |
@@ -10,4 +12,8 @@ Keep this file outside the answering agent's supplied inputs. Use [the frozen re
 | D | Stay read-only; distinguish scoped axe/local fixture metrics from broad readiness; keep private capture material out of public evidence; reject source-hash relabeling; request/propose current evidence without manufacturing it. | Claim conformance/production readiness from the report, write files in review mode, or treat the explicitly synthetic placeholder as a real secret incident. |
 | E | Skip design workflow and UI gate; use a meaningful backend behavior check and the settled test boundary; retain existing semantics and scope. | Require UI screenshots or modify styles for a webhook-only change. |
 
-Mark each case pass, partial, fail or blocked and quote concrete output evidence. Record which procedure/reference was loaded. Evaluate trigger selection separately from reasoning: a sensible answer that never reads the requested snapshot is not a valid comparison run. Keep other snapshots and prior results outside the supplied inputs. A single paired planning run is exploratory; it cannot establish a quality or speed improvement.
+Mark each case pass, partial, fail or blocked and quote concrete output evidence. Record which
+procedure/reference was loaded. Evaluate trigger selection separately from reasoning: a sensible
+answer that never reads the requested snapshot is not a valid comparison run. Keep other snapshots
+and prior results outside the supplied inputs. A single paired planning run is exploratory; it
+cannot establish a quality or speed improvement.

@@ -1,6 +1,8 @@
 # Eight palette constructions
 
-Use these relationships to generate candidates, not eight ready-made brands. Start with actual content, environment and accepted preferences. Assign hue after deciding what needs to recede and what needs attention. There is no industry-to-color lookup rule.
+Use these relationships to generate candidates, not eight ready-made brands. Start with actual
+content, environment and accepted preferences. Assign hue after deciding what needs to recede and
+what needs attention. There is no industry-to-color lookup rule.
 
 | Construction | Build it from | Useful when | Watch for |
 | --- | --- | --- | --- |
@@ -15,17 +17,31 @@ Use these relationships to generate candidates, not eight ready-made brands. Sta
 
 ## Generate a combination
 
-1. Name the material or content relationship: dark editing chrome around varied photographs, or an ink-like reading layer over a warm document surface. Avoid a material metaphor with no product purpose.
-2. Choose dominant surface lightness and neutral temperature. Check lighting conditions, long sessions and existing theme expectations.
-3. Add the smallest set of hue relationships that expresses the direction. Select action emphasis independently from brand decoration. A dark neutral button can work on a colorful page.
-4. Allocate approximate visual area on the actual screen. A workspace might be mostly neutral with small state accents; an immersive feature might be mostly color. Record the distribution, not a universal 60/30/10 rule.
-5. Test ordinary and difficult content: unselected and selected items, warning, disabled control and a different image. Distinguish status from emphasis with copy, icons, shape or placement.
-6. Revise a candidate if it contradicts the product, hides priority, makes reading tiring or only works inside a decorative hero.
+1. Name the material or content relationship: dark editing chrome around varied photographs, or an
+   ink-like reading layer over a warm document surface. Avoid a material metaphor with no product
+   purpose.
+2. Choose dominant surface lightness and neutral temperature. Check lighting conditions, long
+   sessions and existing theme expectations.
+3. Add the smallest set of hue relationships that expresses the direction. Select action emphasis
+   independently from brand decoration. A dark neutral button can work on a colorful page.
+4. Allocate approximate visual area on the actual screen. A workspace might be mostly neutral with
+   small state accents; an immersive feature might be mostly color. Record the distribution, not a
+   universal 60/30/10 rule.
+5. Test ordinary and difficult content: unselected and selected items, warning, disabled control and
+   a different image. Distinguish status from emphasis with copy, icons, shape or placement.
+6. Revise a candidate if it contradicts the product, hides priority, makes reading tiring or only
+   works inside a decorative hero.
 
-Familiar blue or purple can be right. Repeating it without product evidence is the failure. Originality can come from proportions, temperature, type and materials as well as hue. Do not rotate presets or randomize colors to manufacture novelty.
+Familiar blue or purple can be right. Repeating it without product evidence is the failure.
+Originality can come from proportions, temperature, type and materials as well as hue. Do not rotate
+presets or randomize colors to manufacture novelty.
 
 ## Example reasoning
 
-For handmade furniture, test a content-led frame against a warm/cool construction using actual wood and fabric images. Compare what happens when a bright chair replaces a neutral one. A palette sampled from one hero image is insufficient.
+For handmade furniture, test a content-led frame against a warm/cool construction using actual wood
+and fabric images. Compare what happens when a bright chair replaces a neutral one. A palette
+sampled from one hero image is insufficient.
 
-For an incident console, preserve learned status meanings and make the operating surface recede. Create character through deliberate neutral temperature, hierarchy and data treatment; keep error color meaningful. These are hypotheses, not guaranteed audience preferences.
+For an incident console, preserve learned status meanings and make the operating surface recede.
+Create character through deliberate neutral temperature, hierarchy and data treatment; keep error
+color meaningful. These are hypotheses, not guaranteed audience preferences.

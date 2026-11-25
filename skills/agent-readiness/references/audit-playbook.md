@@ -2,9 +2,15 @@
 
 ## Establish evidence boundaries
 
-Record the date, target commit, inspected origins/routes, mode, intended tasks, and available tools. Choose representative public pages: homepage, one answer-bearing deep link, pricing if offered, docs quickstart/auth page if relevant, and a unique nonexistent read-only route. Include locale/base-path variants when routing depends on them. A bounded sample cannot prove every route works.
+Record the date, target commit, inspected origins/routes, mode, intended tasks, and available tools.
+Choose representative public pages: homepage, one answer-bearing deep link, pricing if offered, docs
+quickstart/auth page if relevant, and a unique nonexistent read-only route. Include locale/base-path
+variants when routing depends on them. A bounded sample cannot prove every route works.
 
-Inspect manifests, route handlers, rendering boundaries, static exports, reverse-proxy rewrites, robots/sitemap generators, docs sources, API schemas, auth middleware, tests, and hosting configuration. Do not read secret files for an audit. An environment variable's name is enough to identify a dependency.
+Inspect manifests, route handlers, rendering boundaries, static exports, reverse-proxy rewrites,
+robots/sitemap generators, docs sources, API schemas, auth middleware, tests, and hosting
+configuration. Do not read secret files for an audit. An environment variable's name is enough to
+identify a dependency.
 
 For an authorized public URL, a bounded fetch can look like:
 
@@ -16,9 +22,17 @@ curl --proto '=https' --connect-timeout 5 --max-time 15 \
   'https://example.com/docs/quickstart'
 ```
 
-Use unique temporary paths outside the target for response captures. Do not save captures if the user prohibited all filesystem writes. Inspect Location before following a redirect; stay within authorized origins and public resources. Do not use credentials, `--insecure`, or bypass flags. For a local fixture use its explicit loopback URL and HTTP rather than this HTTPS example. A normal first pass should fit about ten requests, with no parallel load or recursive crawl. Stop on 429 or challenges. Explicit broader scope can justify more checks.
+Use unique temporary paths outside the target for response captures. Do not save captures if the
+user prohibited all filesystem writes. Inspect Location before following a redirect; stay within
+authorized origins and public resources. Do not use credentials, `--insecure`, or bypass flags. For
+a local fixture use its explicit loopback URL and HTTP rather than this HTTPS example. A normal
+first pass should fit about ten requests, with no parallel load or recursive crawl. Stop on 429 or
+challenges. Explicit broader scope can justify more checks.
 
-Read the body, status, content type, and redirect chain together. Check the actual answer, not a word-count threshold. Exclude scripts, styles, templates, metadata, and hidden payloads when assessing visible initial content. Compare browser output only if available. A difference between raw HTML and a rendered DOM is useful evidence; absence of a browser is an explicit limit.
+Read the body, status, content type, and redirect chain together. Check the actual answer, not a
+word-count threshold. Exclude scripts, styles, templates, metadata, and hidden payloads when
+assessing visible initial content. Compare browser output only if available. A difference between
+raw HTML and a rendered DOM is useful evidence; absence of a browser is an explicit limit.
 
 ## Target the failure, not a file count
 
@@ -33,15 +47,28 @@ Read the body, status, content type, and redirect chain together. Check the actu
 | Static site without transactions | Act is not applicable. Pricing, code examples, and technical quickstarts may also be inapplicable. Canonical informational pages still matter. |
 | "Fix" would publish internal endpoints or remove auth | Reject that change. Describe a safe public documentation boundary or a scoped authenticated interface. Keep the original controls and add denial tests in implementation mode. |
 
-For rate limits, inspect configuration/tests or existing 429 captures. A single 200 does not verify throttling. If no evidence exists, mark that subcheck unknown. Split a requirement into subchecks when evidence differs; an observed failure takes precedence, and unverified parts remain visible. Blocked prerequisites make downstream checks unknown, not not applicable.
+For rate limits, inspect configuration/tests or existing 429 captures. A single 200 does not verify
+throttling. If no evidence exists, mark that subcheck unknown. Split a requirement into subchecks
+when evidence differs; an observed failure takes precedence, and unverified parts remain visible.
+Blocked prerequisites make downstream checks unknown, not not applicable.
 
-Keep the status itself one of the four values; put qualifications in evidence/scope. Code can support a pass for an inspected design subcheck while deployed behavior remains a separate unknown. An applicable but absent SHOULD remains fail even when reasonably deferred; record the deferral in the action, not as a fifth status or not applicable. If no code snippets exist, READ-05 formatting is not applicable to the current pages; missing examples needed to complete a task belong under READ-04.
+Keep the status itself one of the four values; put qualifications in evidence/scope. Code can
+support a pass for an inspected design subcheck while deployed behavior remains a separate unknown.
+An applicable but absent SHOULD remains fail even when reasonably deferred; record the deferral in
+the action, not as a fifth status or not applicable. If no code snippets exist, READ-05 formatting
+is not applicable to the current pages; missing examples needed to complete a task belong under
+READ-04.
 
-For APIs, trace one intended operation through discovery, authentication, parameters, response/error semantics, pagination, and retry behavior. For MCP, inspect the transport, supported protocol version, tool schemas, per-operation permissions, and client compatibility. Do not call tools in audit mode. Protocol metadata requests requiring POST need explicit authorization or a sandbox evaluation.
+For APIs, trace one intended operation through discovery, authentication, parameters, response/error
+semantics, pagination, and retry behavior. For MCP, inspect the transport, supported protocol
+version, tool schemas, per-operation permissions, and client compatibility. Do not call tools in
+audit mode. Protocol metadata requests requiring POST need explicit authorization or a sandbox
+evaluation.
 
 ## Report contract
 
-Start with the most consequential blocked tasks and the scope limitations. For each evaluated requirement or subcheck use these fields, in a table or short findings:
+Start with the most consequential blocked tasks and the scope limitations. For each evaluated
+requirement or subcheck use these fields, in a table or short findings:
 
 | Field | Required content |
 | --- | --- |
@@ -52,16 +79,36 @@ Start with the most consequential blocked tasks and the scope limitations. For e
 | Action | A concrete fix, a justified deferral, or the evidence needed to resolve uncertainty. |
 | Verification | A reproducible acceptance check and its expected result. Mark it as planned unless executed. |
 
-Use blocker for an impossible core task, high for a broken important journey or security exposure, medium for a reliability/discovery gap, and low for an optional improvement. Keep a compact coverage list for remaining IDs, grouped only when level, applicability, evidence, and disposition are identical. Every ID in the map must be accounted for in a full audit. A requested narrow audit can cover fewer IDs if the report states that scope.
+Use blocker for an impossible core task, high for a broken important journey or security exposure,
+medium for a reliability/discovery gap, and low for an optional improvement. Keep a compact coverage
+list for remaining IDs, grouped only when level, applicability, evidence, and disposition are
+identical. Every ID in the map must be accounted for in a full audit. A requested narrow audit can
+cover fewer IDs if the report states that scope.
 
-Do not assign vendor grades or a percentage of "readiness". Overall AgentReady conformance requires evidence for every applicable MUST; even then qualify the claim by audited scope and date. Successful metadata checks do not establish task completion.
+Do not assign vendor grades or a percentage of "readiness". Overall AgentReady conformance requires
+evidence for every applicable MUST; even then qualify the claim by audited scope and date.
+Successful metadata checks do not establish task completion.
 
 ## Turn findings into a plan
 
-For an existing authorized Is Agentic report or an explicitly requested scan, preserve its URL, date, public scope, observed evidence and methodology version when available. Separate its vendor score from AgentReady levels and practical task severity. Its current public methodology distinguishes essential, applicable recommended and emerging checks; recheck that methodology when interpreting a new report. Do not create empty protocols or expose private routes to increase a score. Carry scanner findings into this report only with their evidence and limitations; private workflows and unavailable observations remain unknown. An ordinary audit does not authorize submitting a URL to a third-party scanner.
+For an existing authorized Is Agentic report or an explicitly requested scan, preserve its URL,
+date, public scope, observed evidence and methodology version when available. Separate its vendor
+score from AgentReady levels and practical task severity. Its current public methodology
+distinguishes essential, applicable recommended and emerging checks; recheck that methodology when
+interpreting a new report. Do not create empty protocols or expose private routes to increase a
+score. Carry scanner findings into this report only with their evidence and limitations; private
+workflows and unavailable observations remain unknown. An ordinary audit does not authorize
+submitting a URL to a third-party scanner.
 
-1. **Essential:** restore the expected public answer and honest routing; resolve security blockers and an intended task's missing action/auth path. Separate practical blockers from formal v2.0 conformance gaps.
-2. **Useful:** improve canonical task docs, operation/error contracts, discovery links, sitemap, llms.txt, and factual structured data according to observed demand.
-3. **Speculative:** AI Catalog, server cards, Markdown mirrors, MCP Apps, NLWeb, payment protocols, or draft browser mechanisms without a demonstrated supported client. WebMCP retains SHOULD even when its implementation is deferred here.
+1. **Essential:** restore the expected public answer and honest routing; resolve security blockers
+   and an intended task's missing action/auth path. Separate practical blockers from formal v2.0
+   conformance gaps.
+2. **Useful:** improve canonical task docs, operation/error contracts, discovery links, sitemap,
+   llms.txt, and factual structured data according to observed demand.
+3. **Speculative:** AI Catalog, server cards, Markdown mirrors, MCP Apps, NLWeb, payment protocols,
+   or draft browser mechanisms without a demonstrated supported client. WebMCP retains SHOULD even
+   when its implementation is deferred here.
 
-For each item state the task benefit, affected component, prerequisite, effort, risk/tradeoff, and acceptance check. Prefer the interface already useful to the user's clients. Avoid a new service, dependency, SDK language, or auth provider when the existing architecture can support the task.
+For each item state the task benefit, affected component, prerequisite, effort, risk/tradeoff, and
+acceptance check. Prefer the interface already useful to the user's clients. Avoid a new service,
+dependency, SDK language, or auth provider when the existing architecture can support the task.
