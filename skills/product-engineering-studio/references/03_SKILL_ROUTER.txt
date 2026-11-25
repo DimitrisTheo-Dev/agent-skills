@@ -9,15 +9,17 @@ Required helper skills remain required. Avoid running a full product, design, ar
 review pipeline on every small change.
 
 OPTIONAL SKILLS
-Skills named below that are not in this pack are optional. This pack ships product-readiness,
-agent-readiness, vibe-ui, ui-quality-gate, design-playbook, the five ui-* specialists,
-product-ux-writing and landing-page-design. If one is missing, do the step directly using this file.
+Skills named below that are not in this pack are optional. This pack ships
+product-engineering-studio, vibe-ui, ui-quality-gate, product-readiness and landing-page-design.
+Vibe UI carries the UX pattern, typography, color, geometry, motion and interface-writing
+references; this Studio carries the design playbook; Product Readiness carries agent readiness. If a
+skill is missing, do the step directly using this file.
 
 CORE CHOICES
 - Delivery baseline, changed product commitments or release readiness: product-readiness when
-  accessible. Reuse the existing acceptance record and UI Quality Gate evidence. Use agent-readiness
-  for detailed agent requirements. If unavailable, record applicable checks and remaining unknowns
-  within Studio.
+  accessible. Reuse the existing acceptance record and UI Quality Gate evidence. Use its agent
+  readiness reference for detailed agent requirements. If unavailable, record applicable checks and
+  remaining unknowns within Studio.
 - Unclear feature inside a repository: grill-with-docs. Resolve scope; cap the initial question
   round. It uses grilling and domain-modeling.
 - Idea clarification outside a repository: use the intake procedure here; grill-me is optional if
@@ -45,18 +47,18 @@ CORE CHOICES
   or review mode to match the current task. During assessment, use review mode with an independent
   worker when permitted; otherwise label self-review. Keep correctness, usability, craft and
   character distinct.
-- Accepted direction across workstreams, or repeated focus/shift/hit-target defects: design-playbook
-  when accessible. Use its contract, bounded packets and measured proof inside the current slice. It
-  does not reopen accepted art direction or replace Studio's integration ownership or the final UI
-  Quality Gate. A single ordinary edit does not need the extra workflow.
-- UI specialists, coordinated by vibe-ui. Use ui-ux-patterns for task representation and flow,
-  ui-typography for reading and type roles, ui-color for palette and contrast, ui-geometry for
-  spacing and component geometry, and ui-motion for feedback and transitions. Choose helpers by the
-  decisions still open.
+- Accepted direction across workstreams, or repeated focus/shift/hit-target defects: the design
+  playbook (references/design-playbook.md). Use its contract, bounded packets and measured proof
+  inside the current slice. It does not reopen accepted art direction or replace Studio's
+  integration ownership or the final UI Quality Gate. A single ordinary edit does not need the extra
+  workflow.
+- Single design concerns: vibe-ui, which carries references for task representation and flow,
+  reading and type roles, palette and contrast, spacing and component geometry, feedback and
+  transitions, and interface copy. Choose by the decisions still open.
 - Advanced color ramps/gamut: better-colors is an optional helper when accessible and a concrete
-  need remains; ui-color keeps the product role decisions.
-- Interface copy, empty states, errors and voice: product-ux-writing when accessible. For persuasion
-  and page narrative, landing-page-design when accessible.
+  need remains; vibe-ui's color reference keeps the product role decisions.
+- Interface copy, empty states, errors and voice: vibe-ui's interface-writing reference. For
+  persuasion and page narrative, landing-page-design when accessible.
 - Implementation craft: use Emil's animate or gestures for motion mechanics, mobile-native for
   mobile browser behavior, and break-ui for content stress tests when installed. Feed their
   observations into the existing review. For recurring corrections, learn-taste can retain the

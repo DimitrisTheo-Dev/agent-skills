@@ -1,6 +1,6 @@
 {
   "name": "dtheo",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "Skills for product engineering: frame the work, design and build the interface, check it against dtheo/ui, and verify it before release.",
   "author": {
     "name": "Dimitris Theodoropoulos",

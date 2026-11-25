@@ -1,10 +1,10 @@
 # Attribution
 
-`agent-readiness` uses original summaries of the [AgentReady
+Product Readiness's agent readiness reference uses original summaries of the [AgentReady
 standard](https://github.com/agentready-org/standard), by the Ora research lab and Vercel, which
 declares MIT licensing in its specification. The [source
-record](skills/agent-readiness/references/sources.md) pins the reviewed revision and distinguishes
-recommendations from protocol standards. No endorsement or affiliation is implied.
+record](skills/product-readiness/references/agent-readiness/sources.md) pins the reviewed revision
+and distinguishes recommendations from protocol standards. No endorsement or affiliation is implied.
 
 The upstream measurement dataset is separately licensed CC BY 4.0. This library links to it and
 describes its scope; it does not bundle dataset rows, source tables, or article text. Other linked
@@ -36,7 +36,7 @@ licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), informed cra
 prompted the right-to-left review case. The repository uses its own workflow and W3C implementation
 guidance. Source and license checked 2026-11-18.
 
-The five design specialists (ui-color, ui-typography, ui-geometry, ui-ux-patterns and ui-motion)
+Vibe UI's color, typography, geometry, UX pattern and motion references
 contain original decision tables, procedures and synthetic examples. Their linked source notes
 identify primary accessibility/platform guidance and the supplied design excerpts that informed the
 work. No fonts, source books, transcript collections, screenshots or third-party implementation code
@@ -56,10 +56,11 @@ and independently authored acceptance guidance are recorded with the sources.
 
 ## Design Playbook provenance
 
-Design Playbook and its related workflow maintenance are original instructions synthesized from the
-owner-supplied draft and the public history of
+Studio's design playbook and its related workflow maintenance are original instructions synthesized
+from the owner-supplied draft and the public history of
 [Hackathon-gen-ai](https://github.com/DimitrisTheo-Dev/Hackathon-gen-ai), inspected on 2026-11-16.
-[Evidence and limits](skills/design-playbook/references/faceful-history.md) identify the exact
-records. The source repository states that it grants no general license; this repository imports no
-Faceful code, fonts, artwork or customer media. Its historical token example does not grant rights
-to external assets. Synthetic evaluation inputs are original.
+[Evidence and
+limits](skills/product-engineering-studio/references/design-playbook/faceful-history.md) identify
+the exact records. The source repository states that it grants no general license; this repository
+imports no Faceful code, fonts, artwork or customer media. Its historical token example does not
+grant rights to external assets. Synthetic evaluation inputs are original.

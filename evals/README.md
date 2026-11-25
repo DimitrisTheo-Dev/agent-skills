@@ -31,6 +31,27 @@ review.
 | --- | --- | --- | --- | --- | --- | --- |
 | Scenario ID | Commit or snapshot ID | Pair and attempt number | Pass, partial, fail, or blocked | From task submission to the first passing check that exercises the requested change, when observed | Number of messages that redirected or corrected the work | Command or observation, result, and output revision |
 
+## Skill routing
+
+`evals/routing` holds 14 requests, each with the skill that should answer it, plus one backend-only
+request that must start no UI skill. Run it with the Claude Code eval runner, which loads only this
+plugin:
+
+```sh
+claude plugin eval . --ablation none --no-publish --runs 3
+```
+
+Results on 2026-11-25 (3 runs per case, Claude Code 2.1.332):
+
+| Plugin | Correct runs | Note |
+| --- | --- | --- |
+| 1.1.0, 13 skills | 42 of 42 | A request about one concern went to its own skill or to vibe-ui |
+| 2.0.0 draft, 5 skills | 41 of 42 | One color request was answered without a skill |
+| 2.0.0, 5 skills | 42 of 42 | vibe-ui's description names single-concern requests; color 6 of 6 alone |
+
+Cases for skills folded into others in 2.0.0 (design specialists, design playbook, agent
+readiness) describe those skills as they were evaluated then.
+
 ## Start with an existing case
 
 Replay the readiness implementation exercise with the same synthetic SPA in both variants. A past

@@ -32,10 +32,14 @@ for dir in "$PWD"/skills/*/; do ln -sn "${dir%/}" "$HOME/.agents/skills/$(basena
 | [vibe-ui](skills/vibe-ui/SKILL.md)                                       | Set the visual direction for an app or website and build it.   |
 | [ui-quality-gate](skills/ui-quality-gate/SKILL.md)                       | Inspect the rendered result, fix what fails and check again.   |
 
-Studio brings in the others when the work needs them: five UI specialists (`ui-ux-patterns`,
-`ui-typography`, `ui-color`, `ui-geometry`, `ui-motion`), `design-playbook`, `landing-page-design`,
-`product-ux-writing`, `product-readiness` and `agent-readiness`.
-[How they fit together](docs/DESIGN_WORKFLOW.md).
+Two more cover other jobs: `landing-page-design` for a marketing page and `product-readiness`
+before a launch. Vibe UI carries the references for UX patterns, type, color, geometry, motion and
+interface copy, so one request about color alone still goes to it. [How they fit
+together](docs/DESIGN_WORKFLOW.md).
+
+Version 2.0.0 folded 13 skills into these 5 ([changelog](CHANGELOG.md)). In Codex, remove the
+links the old skills left behind:
+`for l in "$HOME"/.agents/skills/*; do [ -e "$l" ] || rm "$l"; done`
 
 In a project that uses [dtheo/ui](https://github.com/DimitrisTheo-Dev/dtheo-ui), Vibe UI looks
 components up through its MCP server and runs `dtheo check` before the rendered review:
@@ -56,5 +60,6 @@ claude plugin validate --strict .
 A change to a skill is compared with the previous version on the same cases; see the
 [evaluation workflow](evals/README.md) and [CONTRIBUTING.md](CONTRIBUTING.md).
 
-Credit to [AgentReady](https://www.agentready.org/) for the specification behind `agent-readiness`.
+Credit to [AgentReady](https://www.agentready.org/) for the specification behind the agent readiness
+reference.
 Original material is [MIT licensed](LICENSE); [NOTICE.md](NOTICE.md) records attribution.

@@ -49,10 +49,11 @@ ideal fixtures. Keep first use and repeated use distinct.
 
 For a web page, run `node <this-skill>/scripts/render_check.mjs <url>` from the project directory
 before looking at details. It loads the page at 390 and 1280 px in light and dark and measures
-content wider than the screen, text wider than its box, sideways scroll areas, console errors, focus
-with no ring or a cut-off ring and, when the project has axe-core, accessibility violations. It
-needs Playwright and writes screenshots and `report.json` to `render-check/`. Its results are
-measurements to inspect, not a verdict: it cannot see hierarchy, spacing or character.
+content wider than the screen, text wider than its box, a badge or control cut off by an ellipsis,
+sideways scroll areas, console errors, focus with no ring or a cut-off ring and, when the project
+has axe-core, accessibility violations. It needs Playwright and writes screenshots and `report.json`
+to `render-check/`. Its results are measurements to inspect, not a verdict: it cannot see hierarchy,
+spacing or character.
 
 When focus clipping, pointer instability, duplicate loading or claimed zero shift is in scope, apply
 the [recurring-defect checks](references/recurring-defects.md). A clean detector is supplementary
@@ -75,10 +76,9 @@ composition. Assess restrained, conventional interfaces against their actual tas
 ## 3. Convert findings into fixes
 
 Compare rendered decisions to the shared design contract and actual token/component sources. Route
-structure/task problems to ui-ux-patterns, type problems to ui-typography, palette/contrast to
-ui-color, spacing/boundaries to ui-geometry and feedback/transitions to ui-motion when available.
-Vibe UI reconciles coupled decisions. Challenge a contract that harms the task rather than passing a
-consistently flawed design. This gate owns the loop; specialists return fixes and evidence without
+fixes through Vibe UI, which owns structure, type, color, geometry, motion and interface copy and
+reconciles coupled decisions. Challenge a contract that harms the task rather than passing a
+consistently flawed design. This gate owns the loop; Vibe UI returns fixes and evidence without
 starting another gate.
 
 Cover each affected component family, materially different state and exceptional instance. Reuse

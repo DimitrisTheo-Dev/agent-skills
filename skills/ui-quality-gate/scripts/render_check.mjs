@@ -12,6 +12,7 @@
  * Checks, per width and color scheme:
  *   wider-than-screen  elements that reach past the right edge, so the page scrolls or is cut off
  *   text-spill         text wider than its own box, drawn over its neighbours
+ *   cut-off            a badge, control or icon clipped by a box that truncates with an ellipsis
  *   scroll-region      areas that scroll sideways, and whether a keyboard reaches them (to check)
  *   console-error      console errors and uncaught exceptions
  *   axe                axe-core violations (serious and critical fail; others are to check)
@@ -157,6 +158,30 @@ function installRenderCheck() {
         })
         .filter((s) => s.content > s.width + 1)
         .map(({ el, width, content }) => ({ element: describe(el), width, content }));
+      // A box that truncates with an ellipsis is meant to shorten text. A whole element inside it
+      // (a badge, a button, an icon) that runs past the box is cut instead, often to a lone "…".
+      const cutOff = all
+        .filter(
+          (el) =>
+            style(el).textOverflow === 'ellipsis' &&
+            style(el).overflowX !== 'visible' &&
+            el.clientWidth > 0 &&
+            el.scrollWidth > el.clientWidth + 1,
+        )
+        .flatMap((el) => {
+          const box = el.getBoundingClientRect();
+          const right =
+            box.left + el.clientLeft + el.clientWidth - parseFloat(style(el).paddingRight);
+          return [...el.children]
+            .filter((c) => style(c).display !== 'inline' && style(c).display !== 'none')
+            .map((c) => [c, c.getBoundingClientRect()])
+            .filter(([, r]) => r.width > 0 && r.right > right + 0.5)
+            .map(([c, r]) => ({
+              element: describe(c),
+              width: Math.max(0, Math.round(right - r.left)),
+              content: Math.round(r.width),
+            }));
+        });
       const scroll = all
         .filter(
           (el) => /auto|scroll/.test(style(el).overflowX) && el.scrollWidth > el.clientWidth + 1,
@@ -178,6 +203,7 @@ function installRenderCheck() {
         background: bg,
         wider,
         spill,
+        cutOff,
         scroll,
       };
     }
@@ -304,6 +330,14 @@ try {
           where,
           'text is wider than its box',
           m.spill.map((s) => `${s.element}: ${s.content} px in ${s.width} px`),
+        );
+      if (m.cutOff.length)
+        add(
+          'fail',
+          'cut-off',
+          where,
+          'an element is cut off by an ellipsis',
+          m.cutOff.map((c) => `${c.element}: ${c.content} px in ${c.width} px`),
         );
       for (const s of m.scroll)
         add(

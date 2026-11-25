@@ -1,6 +1,6 @@
 ---
 name: vibe-ui
-description: Set the visual direction for an app or website interface, then build or polish it with the ui-* specialists. Use for UI art direction, visual redesigns, screenshot-inspired interfaces and whole-screen polish. For one concern such as type or color alone, use that specialist; for a single landing page's structure and messaging, landing-page-design. Not for backend-only work.
+description: Design or polish an app or website interface. Use for UI art direction, redesigns, screenshot-inspired interfaces and whole-screen polish, and for one concern on its own - choosing colors or fixing contrast, type and readability, spacing and corners, motion and feedback, flow structure, or interface copy such as errors and empty states. For a landing page's structure and messaging, use landing-page-design. Not for backend-only work.
 license: MIT
 ---
 
@@ -13,9 +13,20 @@ requests for faithful recreation.
 
 ## Coordinate the design
 
-Own one coherent direction. Use [specialist orchestration](references/specialist-orchestration.md)
-for open UX, typography, color, geometry and motion choices. Carry the relevant decisions into one
-design contract and let UI Quality Gate inspect the integrated result.
+Own one coherent direction. Read only the reference for each decision that is still open:
+
+| Decision | Reference |
+| --- | --- |
+| Information order, collections, forms, navigation, first value | [UX patterns](references/ux-patterns.md) |
+| Type roles, readability, numbers in tables | [Typography](references/typography.md) |
+| Palette, semantic roles, contrast | [Color](references/color.md) |
+| Density, spacing, corners, borders, elevation | [Geometry](references/geometry.md) |
+| Feedback, transitions, pending and async states | [Motion](references/motion.md) |
+| Labels, errors, empty states, confirmations | [Interface writing](references/ux-writing.md) |
+
+A request about one of these alone uses its reference and skips the rest of this workflow's
+exploration. [Coordination](references/specialist-orchestration.md) covers how the decisions share
+one design contract. Let UI Quality Gate inspect the integrated result.
 
 ## Build with the project's design system
 
