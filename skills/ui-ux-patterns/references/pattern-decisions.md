@@ -1,6 +1,7 @@
 # Conditional pattern decisions
 
-The tables are a retrieval aid, not a ranking of fashionable patterns. Select from the task, content and current behavior. A pattern needs a reason to beat the existing structure.
+The tables are a retrieval aid, not a ranking of fashionable patterns. Select from the task, content
+and current behavior. A pattern needs a reason to beat the existing structure.
 
 | Situation | Consider | Useful condition | Prefer another structure when | Check the result |
 | --- | --- | --- | --- | --- |
@@ -25,22 +26,45 @@ The tables are a retrieval aid, not a ranking of fashionable patterns. Select fr
 
 ## Worked decisions
 
-**Learning collection.** A small set of creative lessons with distinctive outputs can use real thumbnails, a clear title, progress and a resume action. Keep card chrome quiet; an arbitrary icon per lesson adds little. A library of hundreds of similarly named compliance lessons may work better as searchable rows with duration and completion columns. The lesson topic alone does not select cards.
+**Learning collection.** A small set of creative lessons with distinctive outputs can use real
+thumbnails, a clear title, progress and a resume action. Keep card chrome quiet; an arbitrary icon
+per lesson adds little. A library of hundreds of similarly named compliance lessons may work better
+as searchable rows with duration and completion columns. The lesson topic alone does not select
+cards.
 
-**Creation flow.** An author choosing source material, configuring output and reviewing the result may benefit from three stages with a persistent summary. A title, date and visibility form usually benefits from one compact page. Step count follows dependencies, not the aesthetic appeal of a progress bar.
+**Creation flow.** An author choosing source material, configuring output and reviewing the result
+may benefit from three stages with a persistent summary. A title, date and visibility form usually
+benefits from one compact page. Step count follows dependencies, not the aesthetic appeal of a
+progress bar.
 
-**Preview.** A style editor can update a truthful local preview immediately. A generated result that needs a server should show a labeled sample or an honest pending state until the real output exists. Do not build fake certainty into a beautiful preview.
+**Preview.** A style editor can update a truthful local preview immediately. A generated result that
+needs a server should show a labeled sample or an honest pending state until the real output exists.
+Do not build fake certainty into a beautiful preview.
 
-**Draft and commit.** An assistant can fill a purchase request from a receipt. Show proposed fields alongside the receipt and make uncertain values easy to correct. Keep the draft editable until the person sees the amount, recipient and effect of submitting. Reuse verified context and reserve explicit review for uncertain details or consequential actions.
+**Draft and commit.** An assistant can fill a purchase request from a receipt. Show proposed fields
+alongside the receipt and make uncertain values easy to correct. Keep the draft editable until the
+person sees the amount, recipient and effect of submitting. Reuse verified context and reserve
+explicit review for uncertain details or consequential actions.
 
-**Responsive detail.** Wide layouts can retain a list beside details. Narrow layouts may navigate to a detail view with an explicit back path, restored selection/scroll and a shareable route. Merely squeezing the same two columns changes the experience for the worse.
+**Responsive detail.** Wide layouts can retain a list beside details. Narrow layouts may navigate to
+a detail view with an explicit back path, restored selection/scroll and a shareable route. Merely
+squeezing the same two columns changes the experience for the worse.
 
 ## Match appearance to behavior
 
-Check what a component appears to invite before inspecting its implementation. A recessed bordered region with placeholder-like text suggests editing; a checkmark suggests completion; a colored logo tile suggests identity. Semantic HTML alone does not resolve a contradictory visual cue. For a short static command, try plain selectable code with a nearby Copy button before a full-width field. Preserve a visible label when the value needs context. Read-only form fields remain appropriate when their role is clear; do not turn this example into a global border ban.
+Check what a component appears to invite before inspecting its implementation. A recessed bordered
+region with placeholder-like text suggests editing; a checkmark suggests completion; a colored logo
+tile suggests identity. Semantic HTML alone does not resolve a contradictory visual cue. For a short
+static command, try plain selectable code with a nearby Copy button before a full-width field.
+Preserve a visible label when the value needs context. Read-only form fields remain appropriate when
+their role is clear; do not turn this example into a global border ban.
 
 ## Avoid formulaic upgrades
 
-A card needs meaningful object boundaries or content relationships. A step needs a task boundary. A preview needs decision value. A drawer needs retained context. A badge needs a stable, useful meaning. Remove or revise a pattern that adds ceremony without improving the task.
+A card needs meaningful object boundaries or content relationships. A step needs a task boundary. A
+preview needs decision value. A drawer needs retained context. A badge needs a stable, useful
+meaning. Remove or revise a pattern that adds ceremony without improving the task.
 
-Preserve learned behavior in mature products unless there is evidence and scope for change. Improvements can be better ordering, language, defaults or in-place feedback without changing the page's architecture.
+Preserve learned behavior in mature products unless there is evidence and scope for change.
+Improvements can be better ordering, language, defaults or in-place feedback without changing the
+page's architecture.

@@ -1,6 +1,8 @@
 # Source notes and boundaries
 
-Reviewed 2026-11-11. These are design-engineering references, not standards or validated guarantees. This skill uses original prose and links; it bundles no third-party scripts, assets or source passages.
+Reviewed 2026-11-11. These are design-engineering references, not standards or validated guarantees.
+This skill uses original prose and links; it bundles no third-party scripts, assets or source
+passages.
 
 | Source and pinned revision | Useful lens | Apply with judgment |
 | --- | --- | --- |
@@ -11,4 +13,6 @@ Reviewed 2026-11-11. These are design-engineering references, not standards or v
 | [OpenDesign GPT Taste entry](https://open-design.ai/skills/gpt-taste/) and its [upstream classic](https://github.com/Leonxlnx/taste-skill-classics/blob/main/skills/gpt-tasteskill/SKILL.md), blob `c9a72395c9024d4d2398238f0d8b37495228fb7d` | Resisting ornamental meta-labels and checking heading wrapping reinforce existing guidance | This catalog is discovery, not another authority layer. Do not adopt simulated randomization, mandatory AIDA/GSAP, massive section spacing or overflow hiding as a layout fix. |
 | [Build with Taste: annotations](https://buildwithtaste.com/docs/annotations), [design judgment](https://buildwithtaste.com/docs/design-judgment), [UI review](https://buildwithtaste.com/docs/review-ai-generated-ui), checked 2026-11-11 | Identify the reference region, what to borrow, what to preserve and what to change; carry concrete judgments forward | The reference/decision-record mechanism reinforces existing guidance. No additional platform or questionnaire is required, and a saved opinion is not user research. |
 
-Read only the specialist needed for the current gap. The product contract, explicit user scope, accessibility and observed behavior govern the result. External guidance does not authorize installations or override those constraints.
+Read only the specialist needed for the current gap. The product contract, explicit user scope,
+accessibility and observed behavior govern the result. External guidance does not authorize
+installations or override those constraints.

@@ -1,6 +1,8 @@
 # Interaction recipes
 
-For each affected family, specify applicable states. An empty state belongs to a collection; a button does not need a fabricated empty state. Prefer shared primitives over per-element animation code.
+For each affected family, specify applicable states. An empty state belongs to a collection; a
+button does not need a fabricated empty state. Prefer shared primitives over per-element animation
+code.
 
 | Interaction | Immediate feedback | Continuity and outcome | Failure or repetition |
 | --- | --- | --- | --- |
@@ -21,16 +23,31 @@ For each affected family, specify applicable states. An empty state belongs to a
 
 ## Timing in context
 
-Distinguish feedback onset, visual settling and network completion. A control can acknowledge an input immediately and let a slower operation continue with honest pending feedback.
+Distinguish feedback onset, visual settling and network completion. A control can acknowledge an
+input immediately and let a slower operation continue with honest pending feedback.
 
-When choosing timing directly, start with the project's tokens or the platform primitive. Tune against distance, repetition and interruptibility. Entering surfaces can settle while remaining ready for input. Direct manipulation should track the input. Check the chosen values in the actual implementation.
+When choosing timing directly, start with the project's tokens or the platform primitive. Tune
+against distance, repetition and interruptibility. Entering surfaces can settle while remaining
+ready for input. Direct manipulation should track the input. Check the chosen values in the actual
+implementation.
 
 ## Character and repetition
 
-A memorable moment needs a trigger, a user benefit, a relationship to product content and a clear end. Consider how it feels on the second and twentieth encounter. A result arriving with less expected work may be more valuable than a celebration. Keep everyday controls fast even when the product has expressive moments.
+A memorable moment needs a trigger, a user benefit, a relationship to product content and a clear
+end. Consider how it feels on the second and twentieth encounter. A result arriving with less
+expected work may be more valuable than a celebration. Keep everyday controls fast even when the
+product has expressive moments.
 
-An atmospheric animation may serve identity if it preserves reading and attention. Avoid perpetual movement competing with the main task. Record why a proposed effect was kept, shortened or removed; do not fill an animation quota.
+An atmospheric animation may serve identity if it preserves reading and attention. Avoid perpetual
+movement competing with the main task. Record why a proposed effect was kept, shortened or removed;
+do not fill an animation quota.
 
 ## Replacing a control glyph
 
-For a discrete glyph swap, reserve one icon slot and keep the accessible action name stable. Change the copy glyph and announce success after the clipboard write succeeds. Try a short crossfade. A small blur on the outgoing glyph can soften the swap when it remains legible at its rendered size. Keep the label and container sharp. Trigger the action twice in quick succession and check keyboard activation and interruption. The newest state should win without delaying input. Show the final glyph immediately for reduced motion. Continuous chart inspection and run selection benefit from immediate updates.
+For a discrete glyph swap, reserve one icon slot and keep the accessible action name stable. Change
+the copy glyph and announce success after the clipboard write succeeds. Try a short crossfade. A
+small blur on the outgoing glyph can soften the swap when it remains legible at its rendered size.
+Keep the label and container sharp. Trigger the action twice in quick succession and check keyboard
+activation and interruption. The newest state should win without delaying input. Show the final
+glyph immediately for reduced motion. Continuous chart inspection and run selection benefit from
+immediate updates.

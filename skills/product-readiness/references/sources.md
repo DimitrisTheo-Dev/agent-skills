@@ -1,6 +1,9 @@
 # Sources and limits
 
-Reviewed **2026-11-16**. The workflow and coverage matrix are original engineering guidance responding to repeated delivery omissions, not a claim that each item is required by every source. Check current framework/platform behavior before implementation. Linked material retains its own license; no source code, articles, images or datasets are bundled.
+Reviewed **2026-11-16**. The workflow and coverage matrix are original engineering guidance
+responding to repeated delivery omissions, not a claim that each item is required by every source.
+Check current framework/platform behavior before implementation. Linked material retains its own
+license; no source code, articles, images or datasets are bundled.
 
 | Primary source | Use and limits |
 | --- | --- |
@@ -14,11 +17,16 @@ Reviewed **2026-11-16**. The workflow and coverage matrix are original engineeri
 | [web.dev PWA updates](https://web.dev/learn/pwa/update) | Asset/data/worker updates and platform-dependent background behavior. Recheck target support instead of assuming a universal lifecycle. |
 | [MDN offline/background operation](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides/Offline_and_background_operation) | Service-worker operation and lifecycle guidance. Verify supported browsers and actual offline guarantees independently of installability. |
 
-The starter architecture, delivery stages, state coverage and reuse measurements are recommendations. No scanner was run and no product was certified while authoring this skill. The separate evaluation record states which workflow decisions were exercised.
+The starter architecture, delivery stages, state coverage and reuse measurements are
+recommendations. No scanner was run and no product was certified while authoring this skill. The
+separate evaluation record states which workflow decisions were exercised.
 
 ## Engineering sources
 
-Also checked **2026-11-16**. These references inform conditional engineering review. They do not require Vercel hosting, a database migration, a particular state library or running every scanner on every change. Numeric project targets and the repeated-run protocol are this workflow's recommendations; upstream metric definitions are identified separately.
+Also checked **2026-11-16**. These references inform conditional engineering review. They do not
+require Vercel hosting, a database migration, a particular state library or running every scanner on
+every change. Numeric project targets and the repeated-run protocol are this workflow's
+recommendations; upstream metric definitions are identified separately.
 
 | Primary source | Reviewed scope and limits |
 | --- | --- |
@@ -32,4 +40,7 @@ Also checked **2026-11-16**. These references inform conditional engineering rev
 | [Core Web Vitals thresholds](https://web.dev/articles/defining-core-web-vitals-thresholds) and [Web Vitals](https://web.dev/articles/vitals) | LCP <=2.5s, INP <=200ms, CLS <=0.1, assessed at p75 with mobile/desktop separation. Field thresholds are not a Lighthouse score or evidence that a new app has field data. |
 | [PostgreSQL EXPLAIN](https://www.postgresql.org/docs/current/using-explain.html) | Plan/cardinality analysis; ANALYZE executes the statement and can have side effects. The reviewed current page resolved to PostgreSQL 18; use the target database version's semantics. |
 
-The React Doctor, Vercel and Vibe Security references retain their respective licenses. This repository adds original coordination and acceptance guidance only; it neither vendors nor claims to install their code/skills. Security, load, React, Lighthouse and assistive-technology checks were not run against an application by this documentation change.
+The React Doctor, Vercel and Vibe Security references retain their respective licenses. This
+repository adds original coordination and acceptance guidance only; it neither vendors nor claims to
+install their code/skills. Security, load, React, Lighthouse and assistive-technology checks were
+not run against an application by this documentation change.

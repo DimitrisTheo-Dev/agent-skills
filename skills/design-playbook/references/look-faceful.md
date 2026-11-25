@@ -1,6 +1,10 @@
 # Faceful example, not a universal theme
 
-Use only when the brief requests Faceful's warm editorial direction. Otherwise derive tokens from the current product. These values were inspected on 2026-11-16 in the [design contract](https://github.com/DimitrisTheo-Dev/Hackathon-gen-ai/blob/b0bfb45e9ee61be9d4305d028781cd006886db91/DESIGN.md) and its governing `apps/web/public/design.css`. Treat them as a historical example; recheck source when exact fidelity matters.
+Use only when the brief requests Faceful's warm editorial direction. Otherwise derive tokens from
+the current product. These values were inspected on 2026-11-16 in the [design
+contract](https://github.com/DimitrisTheo-Dev/Hackathon-gen-ai/blob/b0bfb45e9ee61be9d4305d028781cd006886db91/DESIGN.md)
+and its governing `apps/web/public/design.css`. Treat them as a historical example; recheck source
+when exact fidelity matters.
 
 | Role | Observed example |
 | --- | --- |
@@ -14,11 +18,19 @@ Use only when the brief requests Faceful's warm editorial direction. Otherwise d
 | Focus | 2px outer control ring with 2px offset; fields use an inset line; composite wrappers own the indicator |
 | Motion | Press around 120ms, state changes 160–220ms, surfaces 320–440ms; keyboard and reduced-motion exceptions |
 
-The principles are calm hierarchy, actual product media, minimal repeated text, stable targets and truthful status. The source has explicit exceptions, including preference-pill focus and clipped-row treatment. Preserve accessible behavior when translating; values alone do not reproduce the composition. The earlier attached draft's blanket “under 300ms” instruction conflicts with this shipped motion range.
+The principles are calm hierarchy, actual product media, minimal repeated text, stable targets and
+truthful status. The source has explicit exceptions, including preference-pill focus and clipped-row
+treatment. Preserve accessible behavior when translating; values alone do not reproduce the
+composition. The earlier attached draft's blanket “under 300ms” instruction conflicts with this
+shipped motion range.
 
 ## Reuse map
 
-The 2026-11-16 visual review inspected the live landing page and studio, plus the repository's historical desktop proposal and mobile canvas captures. This identified useful compositions, not a measured speed improvement or a verified reusable component library. Source paths below are relative to [the inspected revision](https://github.com/DimitrisTheo-Dev/Hackathon-gen-ai/tree/b0bfb45e9ee61be9d4305d028781cd006886db91).
+The 2026-11-16 visual review inspected the live landing page and studio, plus the repository's
+historical desktop proposal and mobile canvas captures. This identified useful compositions, not a
+measured speed improvement or a verified reusable component library. Source paths below are relative
+to [the inspected
+revision](https://github.com/DimitrisTheo-Dev/Hackathon-gen-ai/tree/b0bfb45e9ee61be9d4305d028781cd006886db91).
 
 | Composition worth retaining | Source to inspect | Boundary when adapting |
 | --- | --- | --- |
@@ -32,6 +44,11 @@ The 2026-11-16 visual review inspected the live landing page and studio, plus th
 | A stable shell while content loads | `apps/web/src/components/ShellSkeleton.tsx`, `apps/web/public/design.css` | Reuse geometry; replace the app-specific session detection and route assumptions. |
 | Desktop inspector and phone navigation/sheets | `apps/web/src/editor.css`, `apps/web/src/mobile.css` | Check the primary action and keyboard access in both layouts; a screenshot alone does not verify interaction. |
 
-`Studio.tsx` and `Editor.tsx` are application coordinators, not drop-in starter components. A future extraction can start with the landing compositions, composer, media card and detail row in one synthetic gallery. Include populated, empty, pending and failed states where applicable. Keep the extraction bounded to the next flow and record actual setup time before claiming it saves time. Retain the current project references until that gallery exists and passes its checks.
+`Studio.tsx` and `Editor.tsx` are application coordinators, not drop-in starter components. A future
+extraction can start with the landing compositions, composer, media card and detail row in one
+synthetic gallery. Include populated, empty, pending and failed states where applicable. Keep the
+extraction bounded to the next flow and record actual setup time before claiming it saves time.
+Retain the current project references until that gallery exists and passes its checks.
 
-Use original assets or assets licensed for the target. This package does not include Faceful source code, fonts, artwork or customer media, and does not grant rights to external assets.
+Use original assets or assets licensed for the target. This package does not include Faceful source
+code, fonts, artwork or customer media, and does not grant rights to external assets.

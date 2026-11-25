@@ -22,10 +22,19 @@
 
 ## Verify language in use
 
-- Put important conditions where the user makes the decision. Check focus, reading order, and whether status updates are announced when they matter.
-- Review text wrapping with longer strings, supported right-to-left layouts, and locale formats for dates, times, currencies, and units. Use the actual component and translated strings where available.
-- Record reusable terminology and copy patterns where the team already works. Evaluate high-frequency problems through observed task completion, errors, or support feedback when data is available.
+- Put important conditions where the user makes the decision. Check focus, reading order, and
+  whether status updates are announced when they matter.
+- Review text wrapping with longer strings, supported right-to-left layouts, and locale formats for
+  dates, times, currencies, and units. Use the actual component and translated strings where
+  available.
+- Record reusable terminology and copy patterns where the team already works. Evaluate
+  high-frequency problems through observed task completion, errors, or support feedback when data is
+  available.
 
 ## Source and scope
 
-Nick DiLallo's August 3, 2026 essay in UX Collective draws on experience writing for products across languages and markets. Use its lessons as practitioner guidance. The component patterns and sample strings here are original applications. Source text and assets remain with their respective rightsholders. Source verified November 9, 2026. [UX Collective article](https://uxdesign.cc/what-ive-learned-writing-for-billions-of-users-f4db0c1aa9cb)
+Nick DiLallo's August 3, 2026 essay in UX Collective draws on experience writing for products across
+languages and markets. Use its lessons as practitioner guidance. The component patterns and sample
+strings here are original applications. Source text and assets remain with their respective
+rightsholders. Source verified November 9, 2026. [UX Collective
+article](https://uxdesign.cc/what-ive-learned-writing-for-billions-of-users-f4db0c1aa9cb)

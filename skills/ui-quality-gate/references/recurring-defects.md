@@ -1,6 +1,7 @@
 # Close returning defects with observed checks
 
-Use only the rows relevant to this change. Geometry and motion specialists own fixes; this gate owns the recheck on the integrated candidate.
+Use only the rows relevant to this change. Geometry and motion specialists own fixes; this gate owns
+the recheck on the integrated candidate.
 
 | Symptom | Reproducing check | Evidence needed to close |
 | --- | --- | --- |
@@ -11,4 +12,8 @@ Use only the rows relevant to this change. Geometry and motion specialists own f
 | Skeleton/error churn | Exercise immediate success, slow success and failure from the real state owner. | One coherent loading-to-result/recovery sequence; compare shell/content metrics and labels. |
 | Old evidence after merge | Match running build and source boundary to capture metadata; rerun affected checks. | Fresh observations for affected states, retaining older reports only as history. |
 
-Automated scans do not establish all visual, keyboard or assistive-technology behavior. State rule/node exclusions and severity filters next to scan totals. Browser support claims require the corresponding executed runtime; CSS viewport emulation does not prove native mobile behavior. Compare first-value comprehension before minor decoration, and keep visual readiness separate from the real service's ability to complete the task.
+Automated scans do not establish all visual, keyboard or assistive-technology behavior. State
+rule/node exclusions and severity filters next to scan totals. Browser support claims require the
+corresponding executed runtime; CSS viewport emulation does not prove native mobile behavior.
+Compare first-value comprehension before minor decoration, and keep visual readiness separate from
+the real service's ability to complete the task.

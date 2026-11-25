@@ -1,10 +1,15 @@
 # Scaling and data access
 
-Define an observed or assumed workload before optimizing: record counts, payload sizes, concurrency, traffic burst, external quotas, latency/error objectives and cost limits. Label assumptions. Use the simplest architecture that meets this envelope and name the measured trigger for a larger change.
+Define an observed or assumed workload before optimizing: record counts, payload sizes, concurrency,
+traffic burst, external quotas, latency/error objectives and cost limits. Label assumptions. Use the
+simplest architecture that meets this envelope and name the measured trigger for a larger change.
 
 ## Trace the full request
 
-Measure representative route/API latency, query count, database time, response bytes, memory and external calls. Inspect a normal and a larger dataset; distinguish cold/warm caches. Capture p95/p99 where the sample supports them, with workload, duration and error/timeout counts. A few successful requests do not establish production capacity.
+Measure representative route/API latency, query count, database time, response bytes, memory and
+external calls. Inspect a normal and a larger dataset; distinguish cold/warm caches. Capture p95/p99
+where the sample supports them, with workload, duration and error/timeout counts. A few successful
+requests do not establish production capacity.
 
 | Risk | Preferred response | Verification |
 | --- | --- | --- |
@@ -16,8 +21,17 @@ Measure representative route/API latency, query count, database time, response b
 | Long work and retries | Use a durable job only when request budgets require it; define state, deduplication, retry/backoff, failure ownership and recovery | Interrupt and repeat work; verify one intended effect and an actionable failure state. |
 | Large renders/transfers | Bound projections, media size and client work; stream or virtualize when measured need warrants it | Measure real content, selection/focus behavior, transfer cost and interaction latency after the change. |
 
-`Promise.all` can remove waiting between independent calls but does not remove N+1 database work. For input-sized work it can also exhaust connections or provider quotas. Count and batch calls first, then choose bounded concurrency. Keep request deduplication distinct from cross-request caching.
+`Promise.all` can remove waiting between independent calls but does not remove N+1 database work.
+For input-sized work it can also exhaust connections or provider quotas. Count and batch calls
+first, then choose bounded concurrency. Keep request deduplication distinct from cross-request
+caching.
 
-Test invariants under contention where correctness depends on them: transactions, uniqueness, idempotency and version conflicts. A fast happy path that oversells inventory or duplicates an effect fails. Retain schema compatibility and a tested recovery path for relevant migrations.
+Test invariants under contention where correctness depends on them: transactions, uniqueness,
+idempotency and version conflicts. A fast happy path that oversells inventory or duplicates an
+effect fails. Retain schema compatibility and a tested recovery path for relevant migrations.
 
-Use existing observability for request IDs, query counts, slow queries, provider latency, queue lag and spend. Make the next capacity action conditional on a measurable threshold. Avoid adding microservices, queues, caches or load-test infrastructure to a small static feature without a demonstrated need. Production load testing requires authorization; unavailable capacity evidence stays unknown.
+Use existing observability for request IDs, query counts, slow queries, provider latency, queue lag
+and spend. Make the next capacity action conditional on a measurable threshold. Avoid adding
+microservices, queues, caches or load-test infrastructure to a small static feature without a
+demonstrated need. Production load testing requires authorization; unavailable capacity evidence
+stays unknown.

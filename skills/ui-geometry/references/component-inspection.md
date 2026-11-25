@@ -1,6 +1,8 @@
 # Inspect component families
 
-Inventory affected families and their variants. Check every materially different state, and representative instances of genuinely shared implementations. A repeated component does not require hundreds of duplicate screenshots; an exceptional layout does need its own check.
+Inventory affected families and their variants. Check every materially different state, and
+representative instances of genuinely shared implementations. A repeated component does not require
+hundreds of duplicate screenshots; an exceptional layout does need its own check.
 
 | Family | Inspect | Evidence to retain |
 | --- | --- | --- |
@@ -16,22 +18,43 @@ Inventory affected families and their variants. Check every materially different
 | Charts and numeric panels | Label alignment, units, legend spacing, hit regions and actual data bounds | Long/localized labels and empty/sparse data |
 | Empty/loading/error views | Stable reserved space, appropriate visual weight, readable recovery and no arbitrary giant illustration | Transition to populated content |
 
-If only a subset is changed, inspect that subset and its affected neighbors. Mark nonapplicable states with a reason. An empty state belongs to a collection; it is not a required state of every individual button.
+If only a subset is changed, inspect that subset and its affected neighbors. Mark nonapplicable
+states with a reason. An empty state belongs to a collection; it is not a required state of every
+individual button.
 
-Inspect full viewport, component crops and full viewport again. Pixel-level adjustments that weaken overall hierarchy are regressions. Measure before changing a shared token; local fixes should not alter unrelated consumers.
+Inspect full viewport, component crops and full viewport again. Pixel-level adjustments that weaken
+overall hierarchy are regressions. Measure before changing a shared token; local fixes should not
+alter unrelated consumers.
 
 ## Recurring focus and hit-region defects
 
-For clipped or doubled focus, inspect computed outline, border and shadow plus cascade-layer precedence. Check every clipping ancestor, both overflow axes, masks/edge fades and breakpoint overrides. Reserve room for the outer indicator or use a visible inset treatment. Scroll padding/margin can improve placement but does not by itself enlarge a clipping box. Keyboard-check the first and last control at both scroll extremes and recheck affected shared consumers.
+For clipped or doubled focus, inspect computed outline, border and shadow plus cascade-layer
+precedence. Check every clipping ancestor, both overflow axes, masks/edge fades and breakpoint
+overrides. Reserve room for the outer indicator or use a visible inset treatment. Scroll
+padding/margin can improve placement but does not by itself enlarge a clipping box. Keyboard-check
+the first and last control at both scroll extremes and recheck affected shared consumers.
 
-For a stretched row target, inspect the positioned containing block before and during hover/press. A transform on the button can move its absolute pseudo-element's reference box from the row to the button. Check center and row-edge activation while pressed, cancellation and keyboard input. Keep the real target stable; apply visual feedback to an inner face when suitable. Do not remove focus or make unrelated density changes to hide the defect.
+For a stretched row target, inspect the positioned containing block before and during hover/press. A
+transform on the button can move its absolute pseudo-element's reference box from the row to the
+button. Check center and row-edge activation while pressed, cancellation and keyboard input. Keep
+the real target stable; apply visual feedback to an inner face when suitable. Do not remove focus or
+make unrelated density changes to hide the defect.
 
 ## Inspect an instrument panel
 
-Match an icon's apparent weight to its label at the actual rendered size. Compare a light glyph such as a plus with a dense one such as a settings wheel. Reserve a fixed icon slot so swapping the glyph leaves the text baseline and control width steady. Inspect concentric corners using the matching border edges and inset described in the geometry rules.
+Match an icon's apparent weight to its label at the actual rendered size. Compare a light glyph such
+as a plus with a dense one such as a settings wheel. Reserve a fixed icon slot so swapping the glyph
+leaves the text baseline and control width steady. Inspect concentric corners using the matching
+border edges and inset described in the geometry rules.
 
-A masked edge can hint that a strip of samples continues offscreen. Show the fade only on a side with hidden content, and keep the focus outline and final value visible. Test the keyboard path at both scroll limits and with forced colors. A plain scrollable strip is a usable fallback.
+A masked edge can hint that a strip of samples continues offscreen. Show the fade only on a side
+with hidden content, and keep the focus outline and final value visible. Test the keyboard path at
+both scroll limits and with forced colors. A plain scrollable strip is a usable fallback.
 
-Use dynamic viewport units for a sheet that should follow mobile browser chrome. For a visual that needs stable bounds while scrolling, compare the small viewport unit. Keep long sheet contents scrollable, honor safe-area insets where relevant, and operate the last field and footer with the software keyboard open. Desktop viewport emulation alone cannot verify that keyboard behavior.
+Use dynamic viewport units for a sheet that should follow mobile browser chrome. For a visual that
+needs stable bounds while scrolling, compare the small viewport unit. Keep long sheet contents
+scrollable, honor safe-area insets where relevant, and operate the last field and footer with the
+software keyboard open. Desktop viewport emulation alone cannot verify that keyboard behavior.
 
-CSS definitions checked 2026-11-18. [CSS Masking](https://www.w3.org/TR/css-masking-1/) · [Viewport-relative lengths](https://www.w3.org/TR/css-values-4/#viewport-relative-lengths)
+CSS definitions checked 2026-11-18. [CSS Masking](https://www.w3.org/TR/css-masking-1/) ·
+[Viewport-relative lengths](https://www.w3.org/TR/css-values-4/#viewport-relative-lengths)

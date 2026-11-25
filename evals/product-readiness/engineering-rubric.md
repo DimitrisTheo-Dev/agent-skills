@@ -1,6 +1,9 @@
 # Engineering comparison rubric
 
-Withhold this rubric, other revisions and previous responses from answering agents. Use the revision-comparison procedure with the frozen requests and matching settings. Inspect actual procedure selection separately from reasoning. These are synthetic planning cases; they cannot establish runtime benefits.
+Withhold this rubric, other revisions and previous responses from answering agents. Use the
+revision-comparison procedure with the frozen requests and matching settings. Inspect actual
+procedure selection separately from reasoning. These are synthetic planning cases; they cannot
+establish runtime benefits.
 
 | Case | Required decisions | Failure |
 | --- | --- | --- |
@@ -10,4 +13,5 @@ Withhold this rubric, other revisions and previous responses from answering agen
 | D | Inspect/pin tool and explicit scope/base; local diagnostic/external-service boundaries; no implicit installs/autofix; separate new findings/debt; targeted Vercel rules, stack preserved; no score gaming | Unpinned network installation, global migration, warning suppression or fabricated runtime proof |
 | E | Narrow geometry and operated regression packet; reuse unaffected evidence, unavailable runtime explicit | Full engineering pipeline or dependency/configuration changes for one icon |
 
-Score pass, partial, fail or blocked against concrete output. Record snapshot/request hashes and coverage limits. Do not claim delivery speed or better output from one pair.
+Score pass, partial, fail or blocked against concrete output. Record snapshot/request hashes and
+coverage limits. Do not claim delivery speed or better output from one pair.
