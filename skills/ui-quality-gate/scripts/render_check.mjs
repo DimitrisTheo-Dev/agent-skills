@@ -18,6 +18,7 @@
  * Once, at the first width in light: Tab through up to --tabs stops for focus with no outline or
  * ring (to check), and focus rings cut off by an ancestor that clips (fail).
  *
+ * Pages load with reduced motion, so scrolling and transitions have settled when measured.
  * Side effects: starts headless Chromium, loads only the given URL and what it requests, and writes
  * screenshots and report.json into --out. It never changes the page's files or data.
  * Exit status: 0 nothing failed, 1 at least one failure, 2 setup error (no Playwright, or the page
@@ -246,7 +247,12 @@ try {
   for (const width of widths) {
     for (const scheme of schemes) {
       const where = `${width} ${scheme}`;
-      const page = await browser.newPage({ viewport: { width, height: 900 }, colorScheme: scheme });
+      const page = await browser.newPage({
+        viewport: { width, height: 900 },
+        colorScheme: scheme,
+        // Reduced motion, so smooth scrolling and transitions have settled when a value is read.
+        reducedMotion: 'reduce',
+      });
       const errors = [];
       page.on('console', (m) => m.type() === 'error' && errors.push(m.text().slice(0, 200)));
       page.on('pageerror', (e) => errors.push(e.message.slice(0, 200)));
