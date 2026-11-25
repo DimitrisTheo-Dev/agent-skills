@@ -131,16 +131,32 @@ function installRenderCheck() {
         element: describe(el),
         right: Math.round(el.getBoundingClientRect().right),
       }));
+      // Measure the text, not scrollWidth: a larger hit area drawn by a pseudo-element
+      // (`after:-inset-x-1`) widens scrollWidth while every letter stays inside the box.
+      const range = document.createRange();
+      const textRight = (el) => {
+        let right = -Infinity;
+        for (const n of el.childNodes) {
+          if (n.nodeType !== 3 || !n.textContent.trim()) continue;
+          range.selectNodeContents(n);
+          for (const r of range.getClientRects()) right = Math.max(right, r.right);
+        }
+        return right;
+      };
       const spill = all
         .filter(
           (el) =>
             [...el.childNodes].some((n) => n.nodeType === 3 && n.textContent.trim()) &&
             style(el).display !== 'inline' &&
             style(el).overflowX === 'visible' &&
-            el.clientWidth > 0 &&
-            el.scrollWidth > el.clientWidth + 1,
+            el.clientWidth > 0,
         )
-        .map((el) => ({ element: describe(el), width: el.clientWidth, content: el.scrollWidth }));
+        .map((el) => {
+          const left = el.getBoundingClientRect().left + el.clientLeft;
+          return { el, width: el.clientWidth, content: Math.round(textRight(el) - left) };
+        })
+        .filter((s) => s.content > s.width + 1)
+        .map(({ el, width, content }) => ({ element: describe(el), width, content }));
       const scroll = all
         .filter(
           (el) => /auto|scroll/.test(style(el).overflowX) && el.scrollWidth > el.clientWidth + 1,

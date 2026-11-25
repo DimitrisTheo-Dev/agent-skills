@@ -27,9 +27,11 @@ button:focus-visible { outline: 3px solid blue; } .bare:focus-visible { outline:
 CLEAN = HEAD + '''<style>body { margin: 0; padding: 16px; font: 16px sans-serif; color: #111;
 background: #fff; }
 @media (prefers-color-scheme: dark) { body { color: #eee; background: #111; } }
-button:focus-visible { outline: 2px solid #0b57d0; outline-offset: 2px; }</style></head>
-<body><main><h1>Synthetic fixture</h1><p>Nothing here overflows.</p><button>Save</button></main>
-</body></html>'''
+button:focus-visible { outline: 2px solid #0b57d0; outline-offset: 2px; }
+a { color: inherit; } .hit { position: relative; display: inline-flex; }
+.hit::after { content: ''; position: absolute; inset: -4px; }</style></head>
+<body><main><h1>Synthetic fixture</h1><p>Nothing here overflows.</p><button>Save</button>
+<a class="hit" href="#top">A link with a larger hit area</a></main></body></html>'''
 
 
 @unittest.skipUnless(NODE, 'needs Node')
