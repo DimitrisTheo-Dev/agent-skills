@@ -1,97 +1,131 @@
-# Landing page material and texture direction
+# Material and light
 
-Use this reference **only when visual identity, hero art, background material or surface treatment
-is an open decision**. These are ten optional visual languages to investigate, not a template, trend
-forecast, approval list or instruction to add ten effects. A landing page may need none of them.
-Product clarity, actual proof, accessibility and a usable next action remain more important.
+Read this when the hero's art, background or surface treatment is still open. A page can ship with
+none of it: a sharp product shot on a plain canvas beats a texture with no reason to be there.
 
-## Start with what the product already owns
+## Start from what the product owns
 
-Before adding abstract art, inventory the actual product screens, avatars, mascots, photography,
-illustrations, logos and distinctive interaction patterns. Identify the visual that makes the
-product recognizable with the brand name hidden.
+List the real screens, avatars, mascots, photos, sounds and signature interactions first. Keep the
+one that identifies the product with the logo hidden, and build the atmosphere around it: an AI
+interviewer keeps its real avatar in an interview moment, and the gradient becomes the room it sits
+in. Label a mockup as a mockup.
 
-**Preserve meaningful brand assets when redesigning the surrounding aesthetic.** For example, if an
-AI interviewer has a recognizable avatar, keep the authentic avatar in a relevant interview or
-demonstration moment; use a gradient or texture as atmosphere around it, rather than substituting a
-decorative sculpture for the product. Do not misrepresent a mockup as a functioning interview.
+The strongest entries in the [21st.dev hero listing](https://21st.dev/community/components/s/hero)
+are made of the product's own world:
 
-Choose the job for any proposed treatment: **explain a mechanism, make the product recognizable,
-establish a specific atmosphere, or clarify depth and interaction**. If the treatment has no job,
-remove it.
+- Cold Email Crowd Hero: a crowd walks past, a buying signal pops over one person, an opening line
+  types itself, the email flies along an arc and a reply comes back. The animation is the pitch.
+- Hardware Hero: a workbench photo of laid-out tools under window light; the tools lift off when the
+  visitor picks a project.
+- Nexa Canvas Hero: a designer's portfolio whose hero is a working canvas with a tool rail and an
+  editable headline.
 
-## Ten material directions to explore
+The same listing holds dozens of four-colour blurred "bloom" gradients. They are pleasant and fit
+any product, which is the problem.
 
-Treat the following as **art-direction prompts**, not CSS recipes or default brand choices. Each
-entry names a useful condition and the failure to watch for.
+## Write the scene
 
-| Treatment | What it can communicate / where it earns space | Common failure / how to constrain it |
+Before picking an effect, write the direction as one sentence: a place, a time of day and a single
+light source. [Refero Styles](https://styles.refero.design) names every site it documents this way,
+and the sentence does most of the art direction. Scenes for invented products:
+
+- Log search: a night-shift control room where only the matching lines are lit.
+- AI code review: a darkroom where each fix develops out of the black under one red safelight.
+- Tax app for freelancers: an accountant's desk at 7 a.m., cold daylight on carbon paper.
+- Voice notes: a recording booth after hours, one warm lamp over the microphone.
+
+The scene answers the build questions: canvas colour, where the light comes from and what it lands
+on, the surface (paper, glass, phosphor, film grain, felt), the type voice, and the one element
+allowed to glow. Rewrite any scene that would fit five unrelated products.
+
+Write two scenes that differ in light and canvas. One can be light: Cursor reads as a parchment
+studio with one ember accent, Vercel as a typeset terminal on white paper. One can have no material
+at all.
+
+## Light on a dark canvas
+
+The cinematic dark direction (AgentQL, Superwhisper, Huly, Valo, Unicorn Studio) is chiaroscuro:
+darkness is the negative space and light is placed, as on a film set.
+
+- One source per viewport. Light has a direction and lands on a subject: the product shot, the
+  headline or one object.
+- Ration colour to one job. Resend keeps its violet for code samples, email addresses and status
+  icons, and leaves buttons white. Modal's lime marks actions, the logo and its 3D icons. Active
+  Theory keeps the interface grey and white so the rendered 3D world carries all the colour. AgentQL
+  spends colour on one pair of aurora glows, a few product cards and one CTA.
+- Canvas from #000 to #121212, neutral or slightly warm. Agents tend to make dark pages too blue and
+  too dim; take saturation from the canvas and give it to the light.
+- Authority from scale and tracking. Display type at weight 400 to 500 with tight negative tracking
+  (Vivid+Co sets 136 px at 400). Resend's hero is a 96 px serif headline beside a dark 3D cube, with
+  no gradient wash.
+- Depth from layers: hairline borders, a darker plate behind the product, one shadow level. Floating
+  cards earn the float by showing real product states.
+
+A loud dark page is a choice too: beehiiv runs deep violet, oversized bold type and pink accents.
+
+## Materials and how to build them
+
+| Material | Build | Keep it honest |
 | --- | --- | --- |
-| **1. Thermal gradients** | A deliberate warm-to-cool field suggests intensity, change or energy. Useful behind a transformation or a visually dramatic brand moment. | Arbitrary heatmap colors can imply nonexistent measurements. Keep it atmospheric unless tied to real data; reserve a calm area for text and verify contrast. |
-| **2. Blueprint grids** | Precise measured lines can support engineering, spatial planning, an architecture diagram, or a building-in-public identity. | A page-wide grid becomes generic developer-tool wallpaper. Use a purposeful scale, crop and hierarchy; keep grids out of dense reading areas. |
-| **3. Water ripples** | Concentric waves can express response, voice, presence, touch or cause-and-effect in one focal interaction. | Endless pulsing suggests fake live activity and distracts from reading. Trigger motion from a real or clearly labeled simulated event; provide a static and reduced-motion state. |
-| **4. Speckled graphite** | Fine neutral grain gives a dark surface physical weight, restraint and editorial character. Useful as a quiet frame for high-fidelity product imagery. | Heavy noise muddies type, banding and gradients, and can inflate media size. Keep grain subtle, behind content, with clean panels for small text. |
-| **5. Fluted glass** | Ribbed/refraction-like material can introduce controlled depth, separation or a distinctive transition between content and backdrop. | Large blurred glass panels reduce legibility and can be expensive to render. Use on a small nonessential region; never refract essential copy or controls. |
-| **6. Contour lines** | Topographic isolines suggest terrain, mapping, systems, layers or a measured journey. They can guide the eye through a process or visualization. | Random topographic decoration looks like a stock tech background. Align contours to a real concept; avoid implying data accuracy if they are illustrative. |
-| **7. Grainy gradient** | A smooth color field with fine film grain or dithering creates material richness without a glossy, oversaturated glow. Strong for a single hero art direction. | Overdone saturation, multi-hue text and repeated gradients make the page anonymous. Keep palette constrained, emphasize one area, and test mobile crops. |
-| **8. Single-hued landscapes** | A monochromatic natural, architectural or imagined environment can give the brand scale, focus and distinctive atmospheric depth. | Generic mountains, deserts or horizons are irrelevant to many products. Choose a scene connected to the customer's world; separate genuine evidence from conceptual art. |
-| **9. Grass texture** | A close, tactile organic surface can connect to land, nature, sport, outdoor work, agriculture or a deliberately earthy brand. | Unmotivated grass behind enterprise software is decoration, not differentiation. Use authentic source material, thoughtful crop and restrained placement; never sacrifice legibility. |
-| **10. Soft shadow** | A consistent, believable light source establishes elevation, touchability and focus around actual controls or a meaningful physical object. | Giant blurry shadows and a floating-card collection feel artificially generated. Use few elevation levels, correct contact/ambient shadow proportions and stable hover/focus behavior. |
+| Aurora bleed | Two offset `radial-gradient`s in `oklch` behind the hero, masked to fade out before the next section. Grain on top stops banding. | One pair per page. Text sits on the dark side. |
+| Film grain | SVG `feTurbulence` (baseFrequency near 0.7, 3 to 4 octaves) or a 256 px noise PNG, tiled on a fixed pseudo-element at 4 to 10 % opacity with `soft-light`. | Static. Clean panels under small text. Check on a cheap display. |
+| Dither | Ordered (Bayer) dither in a shader or a pre-rendered image. Reads as print, early computing, signal. | One scale. Body text sits on clean ground. |
+| Beams | Blurred `conic-gradient` wedges masked to a cone, or a god-ray image aimed at the product. | Beams point at the subject and stay off the headline. |
+| Chromatic split | Offset red, green and blue copies of one object with `mix-blend-mode: screen`, or a refraction shader (Vivid+Co, Unicorn Studio). | One object; the rest of the page stays monochrome. |
+| Glass | `backdrop-filter: blur()` on a small surface over a varied backdrop; fluted glass adds a `repeating-linear-gradient` highlight. Folded or refracting glass needs WebGL (21st.dev Glass Fold). | Copy and controls sit on solid ground. Measure on a mid-range phone. |
+| Phosphor | Monochrome canvas, one hue as a tight `text-shadow` or LED dot, mono type for data. | The glow marks status and action. |
+| Live field | Canvas dot grid or contour lines that answer pointer and tap (21st.dev Sonar Grid: rings where you tap, one already in flight at first paint). | Still frame under reduced motion; pause off-screen. |
+| Lit object | A real photo or 3D render of the product or its world, lit by the scene's source. | The actual product, or labelled concept art. |
+| Paper and ink | Warm off-white, hairline rules, flat surfaces, one ink accent, serif or mono for voice. | The light direction for reading-heavy and trust-heavy pages. |
 
-A material direction is **not** a reason to invent icons, feature cards, metrics, fake testimonials,
-unsupported interaction states, product imagery or fictitious data.
+Use one primary material in the hero and at most one quiet support. Navigation, forms, pricing and
+proof stay calm.
 
-## Selection and execution procedure
+## Motion: one named moment
 
-1. **State the product's world.** In one sentence explain why this material belongs to the product's
-   people, objects, mechanism or identity. If the same explanation works for five unrelated
-   products, the direction is too generic.
-2. **Preserve the hero's job.** The offer, intended visitor, outcome, primary CTA and recognizable
-   product or result must remain understandable in roughly five seconds. The existing avatar,
-   screenshot or product artifact should not vanish simply because a background became more
-   artistic.
-3. **Compare at most two materially different treatments** on identical real content, including
-   desktop and narrow mobile. One candidate may deliberately have no texture. Compare first-view
-   clarity, identity with the logo removed, attention distribution and performance cost.
-4. **Concentrate the craft.** Use one primary treatment in one memorable area, with a possible quiet
-   supporting material. Keep navigation, forms, product panels and factual proof calmer. Do not
-   apply every pattern in the table.
-5. **Specify the build.** Prefer a static optimized image or economical CSS for visual-only texture.
-   Use canvas/WebGL/shaders only when justified by a real interaction and budget, and provide a
-   still fallback. Avoid full-screen animated filters when a still communicates the same point.
-6. **Inspect the artifact.** Verify text/CTA contrast, crop, responsive order, readable text at
-   enlargement, reduced motion, keyboard focus and the actual load experience. Check that important
-   visuals and labels survive with the background disabled or media unavailable. Record assumptions
-   and real test evidence separately.
+[60fps.design](https://60fps.design) catalogues app motion as named moments, each written as app,
+feature and effect: tickets print, cards shuffle, a readiness meter fills. Name the hero's moment
+the same way before building it ("invoice stamps paid", "query lights matching rows"). Play it once
+to show the mechanism, then rest on a designed final frame. Numbers earn motion of their own:
+counters, meters, wheels. Ambient loops run slow (8 s or longer), pause off-screen and hold the
+final frame under `prefers-reduced-motion`.
 
-## Grainient Supply: reference, not a default
+## Procedure
 
-- [Grainient Freebies](https://grainient.supply/freebies) offers visual inspiration and downloadable
-  gradient/background assets.
-- [Grainient Collections](https://grainient.supply/collections) includes examples such as BlueRays,
-  Dither Gradient I/II, Spectral Gradient (Darks/Lights), Radiant Void Gradient and Hero Gradients.
-  Study their **contrast, color distribution, grain scale, subject placement and negative space**;
-  do not copy a collection into every new brand.
-- [Grainient License Agreement](https://grainient.supply/license-agreement) permits
-  personal/commercial use and modification under stated terms, while restricting standalone resale,
-  redistribution and competing asset products. **Check the applicable current license and whether
-  the selected asset is free or paid before downloading/embedding.** Do not bundle third-party
-  assets in this skill or assume rights from a preview.
+1. Inventory the product's world and pick the asset that identifies it.
+2. Write two scenes.
+3. Build both heroes on the same real content at 390 px and 1440 px. Compare them with the logo
+   hidden and with the material switched off.
+4. Keep the winner's material in the hero.
+5. Check text and CTA contrast at the brightest point behind them, LCP (a static poster paints
+   first; the canvas or shader loads after), reduced motion, focus rings over the art and the
+   mobile crop.
 
-These references are artistic inputs, not evidence of conversion performance or brand
-distinctiveness. The product-specific result should look considered even when the borrowed texture
-is removed.
+Done when the scene belongs to this product alone, the hero reads as this product with the logo
+hidden, and every claim and action survives with the material off.
 
-## Review red flags
+## Reject when
 
-Reject a treatment or reconsider the composition when: the product is harder to identify; the
-avatar/real UI has been replaced by anonymous abstract art; text sits over uncontrolled contrast;
-motion loops without user meaning; the same texture fills hero, features and footer; a decorative
-grid competes with the product; a mobile crop hides the subject; or the result could be relabeled as
-an unrelated SaaS startup without changing anything substantial.
+- The hero is an aurora behind centred gradient text and floating cards, and only the logo says
+  which product it is.
+- Abstract art replaced the real avatar, screenshot or output.
+- Two glows compete in one viewport, or one texture fills hero, features and footer.
+- Motion loops without meaning or suggests live activity that isn't happening.
+- Text sits on uncontrolled contrast, or the mobile crop loses the subject.
 
-**Source notes (reviewed 2026-11-13):** [Grainient Freebies](https://grainient.supply/freebies),
-[Collections](https://grainient.supply/collections), and [License
-Agreement](https://grainient.supply/license-agreement). The ten treatment names and selection
-criteria above are original design guidance and hypotheses, not claims of user-testing or measured
-conversion lift. No Grainient assets, screenshots, source code or visual templates are included.
+## Assets and sources
+
+[Grainient](https://grainient.supply/freebies) offers free and paid grainy, dithered, god-ray and
+mesh gradients (4K to 12K images, animated gradient videos, a shader tool). Its [license
+agreement](https://grainient.supply/license-agreement) allows commercial use and modification and
+forbids redistributing the assets on their own, reselling them without significant change, or
+competing with Grainient. Ask Grainient before committing an asset to a public repo or template,
+and keep assets out of this skill. Study grain scale, contrast and where the light sits. The
+product's own version should hold up without the borrowed image.
+
+Checked 2026-11-26: Refero Styles pages for Resend, Modal, Active Theory, AgentQL, Vivid+Co, Cursor
+and Vercel; the 21st.dev hero listing and the component pages named above; the 60fps.design home
+page; Grainient's freebies, collections and license (last updated 20 August 2024). Superwhisper,
+Huly, Valo, Unicorn Studio and beehiiv come from a Refero search the maintainer reviewed. Site
+descriptions are paraphrased. The scenes and build notes are original guidance, not measured
+conversion results.
