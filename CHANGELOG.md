@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.1.0 (2026-11-26)
+
+- `landing-page-design`: the material reference is rewritten as "Material and light". It starts
+  from the product's own world, writes the direction as a scene (a place, an hour, one light
+  source), sets rules for lighting a dark canvas and rationing colour, gives a build note for each
+  material, and names one hero motion moment. Sources: Refero Styles, 21st.dev heroes,
+  60fps.design and Grainient.
+
 ## 2.0.0 (2026-11-25)
 
 - Thirteen skills become five, one per step: `product-engineering-studio` (plan),

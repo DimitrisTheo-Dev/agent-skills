@@ -34,9 +34,8 @@ and do not invent product capabilities to create a memorable image.
 
 When a distinct art direction is requested, compare at least two clearly different compositions on
 the same real content before polishing (Vibe UI's creative rejection protocol helps when it is
-installed). Read [material and texture direction](references/material-and-texture-direction.md) only
-when hero material/imagery is genuinely undecided; those ten effects are inspiration, not completion
-criteria.
+installed). Read [material and light](references/material-and-texture-direction.md) when the hero's
+art, background or surface material is still open.
 
 ## Positioning when the platform serves multiple markets
 
