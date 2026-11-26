@@ -5,7 +5,7 @@ task. You do not need to pick the references yourself.
 
 | Skill | Responsibility | Concrete output |
 | --- | --- | --- |
-| Product Engineering Studio | Product scope, engineering and delivery. Its design playbook carries an agreed direction across workstreams or repairs returning craft defects | One useful, verified flow |
+| Product Engineering Studio | Product scope, engineering and delivery: prove the riskiest dependency, ship one slice end to end, split work across agents only when it pays | One useful, verified flow |
 | Vibe UI | Coherent direction, with references for UX patterns, typography, color, geometry, motion and interface writing | One shared design contract |
 | UI Quality Gate | Inspect the real result and drive corrections | Evidence, findings, repairs and a supported readiness verdict |
 | Landing Page Design | Persuade one visitor on a marketing page | Page structure, hero message, proof and call to action |
@@ -46,9 +46,8 @@ scores remain supporting evidence. Isolated fixes revisit only affected requirem
 - One quality gate checks the completed result. It reopens affected decisions rather than restarting
   the whole process.
 
-Studio's design playbook is conditional: use it for several owned surfaces or a recurring
-interaction defect. Small ordinary edits keep the shorter path. It preserves the accepted brand and
-connects the existing owners rather than adding another art director or review pipeline.
+When several agents build one accepted design, Studio's parallel-work reference keeps one contract
+and one integration owner. Small ordinary edits keep the shorter path.
 
 For provider-dependent builds and timed demos, trace backward from the user's result and prove the
 risky boundary early with the actual output its consumer needs. Confirm relevant
@@ -58,8 +57,7 @@ or passing worker branch does not establish a complete product outcome.
 
 Retain an owner correction as their words, a scoped rule and a reproducing check. Inspect the
 running candidate after integration, keep evidence outputs private until sanitized, and reconcile
-design notes with token/component sources. See the [Faceful
-history](../skills/product-engineering-studio/references/design-playbook/faceful-history.md) for the
+design notes with token/component sources. See the [Faceful history](faceful-history.md) for the
 observed changes and limits behind these additions.
 
 The gate checks every affected component family, materially different state and exceptional

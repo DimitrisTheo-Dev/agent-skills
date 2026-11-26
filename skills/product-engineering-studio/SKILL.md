@@ -6,121 +6,79 @@ license: MIT
 
 # Product Engineering Studio
 
-Turn a raw brief into a small useful outcome with explicit decisions and observable evidence.
-Discuss in the user's language; write concise engineering handoffs in English unless requested
-otherwise.
+Turn a brief into one flow a person can use, with evidence behind every claim. Three habits carry
+the skill: prove the riskiest dependency before building around it, ship one thin end-to-end slice
+before widening, and report each behavior as verified live, verified locally, mocked or blocked.
 
-Start with the intended outcome and consequential assumptions, then do the authorized work. Use a
-compact acceptance table or architecture explanation when it clarifies the task.
+## 1. Write the brief
 
-## 1. Establish the task
+Before code, write five to ten lines:
 
-Read the brief and applicable repository instructions. Separate requirements, observations and
-reversible assumptions. Ask when a missing decision would materially change the work. Continue
-independent inspection while an answer is pending. Respect design-only or no-code scope.
+- **Outcome:** who uses this and what they can do afterwards.
+- **Riskiest part:** the dependency or behavior most likely to break the plan, such as a provider,
+  a migration, a model, a permission rule or a performance limit.
+- **Scope now:** one user journey. **Deferred:** what is explicitly left out.
+- **Acceptance:** AC1 to AC5, each with the observation that proves it. "A question the document
+  can't answer shows an unsupported result" is checkable; "handles edge cases" is not.
+- **Assumptions:** reversible choices you are making.
 
-Identify who will use the result, the useful outcome, what constrains it and how to observe success.
-For UI work, use Fix, Extend or Shape as shorthand for the depth of change. Read [Creative
-Quality](references/08_CREATIVE_QUALITY.txt) when choosing a direction or reviewing substantial UI.
-For ambiguous inputs, see section A of [Workflow](references/02_WORKFLOW.txt).
+Ask only about decisions that would change the solution, and keep inspecting the repository while
+you wait. A bug report skips the brief: reproduce it, fix it, prove it.
 
-When setting a delivery baseline, assessing release readiness or changing a product's supported
-capabilities, use product-readiness if installed. Carry applicable checks and evidence into the
-existing acceptance record. If unavailable, record relevant checks and deferrals here. Scope fixes
-and learning prototypes to their affected requirements and actual risks.
+## 2. Prove the riskiest part first
 
-## 2. Explain the smallest useful design
+Spike the riskiest part with real input before building screens that depend on it. Check the output
+its consumer needs: a playable video rather than a queued job, a grounded answer from the live model
+rather than a 200 from a health endpoint. When it is blocked, shrink the next slice instead of
+stacking more UI on an unproven dependency. Read [delivery proof](references/delivery-proof.md) when
+the work depends on an external provider, several services or a timed demo.
 
-Choose the activity that resolves the consequential uncertainty. Use existing user evidence when the
-problem is unclear. If an unfamiliar capability or interaction is the question, a small prototype
-with realistic inputs can be the first useful result. Section B of
-[Workflow](references/02_WORKFLOW.txt) covers this choice. For an unsettled visual or interaction
-direction, compare alternatives when seeing or operating them could change the decision. Reuse a
-settled direction and proceed with a reasoned choice when the work is reversible.
+## 3. Ship one slice end to end
 
-Work through the UI flow, data and interface contracts, trust boundaries and important failure
-behavior. Explain the parts that affect delivery. Use a compact Mermaid diagram when relationships
-help. Reuse the actual repository stack. State a scaling trigger before adding infrastructure.
+Build the thinnest version of the whole journey across every layer it touches, in the repository's
+existing stack, then widen it. The first UI slice already has its real composition, its states
+(empty, loading, error, denied) and its feedback; vibe-ui owns the direction. Test meaningful
+behavior first, with a TDD skill if one is installed. Reproduce a failure before fixing it, and
+after two fixes that leave the same symptom, change the diagnosis.
 
-Start from the result the user must reach and work backward to the smallest complete flow. For
-provider-dependent work or a timed demo, read [Delivery Proof](references/11_DELIVERY_PROOF.txt)
-before expanding dependent screens. Confirm what the deployed path can produce and consume,
-including required configuration and migrations. A working shell or healthy endpoint does not
-establish the promised artifact.
+Explain the design where it decides something: the source of truth, the server contract, who may do
+what and where that is enforced, and how external failures reach the user. Use a Mermaid diagram
+for branching or event order. Name the trigger before adding infrastructure: "move ingestion to a
+background job when a document takes longer than the request budget".
 
-For UI, security, data, scaling or AI behavior, read only the relevant section of [Quality and
-Design](references/04_QUALITY_AND_DESIGN.txt). Use vibe-ui for visual direction. Use Mobbin only for
-a concrete screen/flow question with an available connection.
+For a feature that calls a model, decide what plain code enforces regardless of the model:
+permissions, data scope and output shape. Retrieved text is data and never authorizes an action.
+Keep 5 to 10 smoke examples (success, missing evidence, conflicting evidence, injected
+instructions, provider failure, unauthorized data) and record the actual result of each. They give
+diagnostic coverage, not a quality score.
 
-## 3. Select a procedure
+## 4. One agent or several
 
-Use [Skill Router](references/03_SKILL_ROUTER.txt) for specialist decisions and [Tool
-Selection](references/TOOLS_SELECTION.txt) for external tools. Vibe UI owns the shared design
-direction and brings in relevant helpers. UI Quality Gate owns the final rendered review.
+One agent is the default. Split work across subagents only when the gate in [parallel
+work](references/parallel-work.md) passes: independent tasks, settled contracts, disjoint files and
+time left to integrate. The lead owns shared types, tokens, manifests and lockfiles, and runs the
+integrated flow at every checkpoint.
 
-In a short sprint, constrain planning to questions that affect the chosen outcome. The user's scope
-and timing override broader default exploration. Write tests first for meaningful behavior, using a
-TDD skill if one is installed. Reproduce a defect before fixing it.
+## 5. Hand off
 
-## 4. Choose execution mode
+- Visual direction, type, color, motion and interface copy: vibe-ui.
+- Rendered review of finished UI: ui-quality-gate, once, before delivery. Backend-only work skips
+  it.
+- Launch, public discovery, offline behavior and operational readiness: product-readiness, which
+  reuses the gate's evidence.
+- A marketing page: landing-page-design.
 
-After inspection, assess workload, dependencies, shared files, interface stability, remaining budget
-and actual agent support. Default to one executor for small or tightly coupled work. For multi-part
-builds or a request to parallelize, read [Execution Modes](references/10_EXECUTION_MODES.txt) before
-assigning work. Delegate bounded independent tasks when its gates pass; follow the environment's
-delegation rules.
+When one of these skills is missing, do the step directly and name the checks that did not run.
 
-State the selected mode, a short reason, owners and next integration checkpoint. Reassess after each
-slice. Keep observable checkpoints even when implementation within a slice is parallel.
+## 6. Report
 
-## 5. Deliver one observable slice
+End each checkpoint with:
 
-If implementation is authorized and a real repository is accessible, implement the slice using the
-selected execution mode. Otherwise prepare a bounded packet from [Work
-Packets](references/05_WORK_PACKETS.txt).
+- What the user can do now, and on which revision.
+- Evidence: the command or observation and its result, with each behavior labelled verified live,
+  verified locally, mocked or blocked.
+- What is left, and the next slice.
 
-Include goal, acceptance IDs, relevant context, observed scope, essential contracts, checks and
-checkpoint. Use checkpoints sized to the actual work; do not impose a short demo deadline on a
-production-quality request. Preserve essential requirements over arbitrary brevity.
-
-When an accepted design spans owned workstreams or recurring craft defects, use the [design
-playbook](references/design-playbook.md) for contract-to-build handoffs and scoped measurements.
-Keep this Studio as product/integration owner, Vibe UI as design owner and UI Quality Gate as the
-single final gate.
-
-For a comprehensive starting prompt, provide the brief, execution rules and bounded first
-assignment. Keep later assignments adaptive; use the orchestration template in Work Packets rather
-than specifying the entire implementation upfront.
-
-Include composition, readable type, relevant states and clear feedback in the first complete UI
-slice. At first render, check whether the task, current object and next action are apparent before
-expanding. Carry owner corrections forward as scoped acceptance checks. Inspect the running behavior
-and relevant check output. Reuse the repository's documented verification command when it covers the
-change. For a failure, record the input or command that reproduces it. If repeated fixes leave the
-same symptom, change the diagnosis. Publish or deploy only under the user's authorization.
-
-## 6. Apply the UI quality gate
-
-For implemented user-facing work, invoke ui-quality-gate before delivery. It owns the twelve-area
-inspection, evidence record and repair/recheck loop. Vibe UI owns design decisions; Studio keeps the
-user task, scope and engineering requirements intact. A focused fix gets a focused gate;
-backend-only work skips it. If the gate is unavailable, apply Quality and Design plus Creative
-Quality and explicitly retain unverified areas.
-
-## 7. Review and continue
-
-Review the actual candidate, including new files. Confirm the review method sees the chosen base and
-range. Recheck material fixes and use Creative Quality for the limits of substantial UI evidence.
-
-Report changed behavior, actual evidence and material limits. Retain consequential decisions in the
-project's existing notes when useful. Use [Session State](references/06_SESSION_STATE.txt) when
-interrupted work or a handoff needs context.
-
-For a launch or changed readiness boundary, reconcile the product-readiness record with this
-candidate. Reuse the UI gate's evidence; do not create a competing visual gate. Separate locally
-verified and verified-live behavior, and carry required unknowns as release blockers rather than
-claiming overall readiness from a successful build or scanner score.
-
-For a synthetic example consult [Worked Example](references/09_WORKED_EXAMPLE.txt). For source
-provenance and unavailable capabilities consult [Sources](references/07_SOURCES.txt). Consult
-references on demand rather than loading every file.
+Continue authorized work after a checkpoint unless the user asked for a pause or a decision blocks
+you. Publish, deploy or send messages only with the user's authorization. A deadline can end with a
+partial result; a mock stays a mock until the live path runs.

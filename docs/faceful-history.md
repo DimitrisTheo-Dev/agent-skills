@@ -1,9 +1,9 @@
 # Faceful lessons and evidence boundaries
 
-Reviewed 2026-11-16. This is an original synthesis of the supplied playbook and public
+Reviewed 2026-11-16. This is an original synthesis of the supplied design playbook and public
 Hackathon-gen-ai repository history. Commits establish changes; repository reports establish what
 their authors recorded. A follow-up inspected the current interface and historical captures; the
-reusable composition map is in [the Faceful example](look-faceful.md). Performance and accessibility
+reusable composition map is in [the Faceful example](faceful-look.md). Performance and accessibility
 scans were not rerun. This public reference does not include private session evidence. The submitted
 hackathon recording was unavailable. Neither current production nor the last main-branch commit
 establishes what judges saw or why the project did or did not place.

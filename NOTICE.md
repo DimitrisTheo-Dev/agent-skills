@@ -22,9 +22,7 @@ package. Original instructions, tests, synthetic fixtures, and documentation in 
 the root MIT license.
 
 `product-engineering-studio` is the maintainer's original product workflow, published here from the
-personal skill. The 2026-11-11 design update uses original prose informed by the maintainer's brief
-and reviewed design-engineering references. [Studio
-sources](skills/product-engineering-studio/references/07_SOURCES.txt) and [Vibe UI source
+personal skill and cut to its delivery rules on 2026-11-26. [Vibe UI source
 notes](skills/vibe-ui/references/source-notes.md) pin reviewed revisions and explain contextual
 limits. No upstream scripts, artwork, templates or substantial source passages are redistributed.
 Linked resources retain their own licenses; no endorsement is implied.
@@ -54,13 +52,12 @@ Security (Chris Raroque and contributors), OWASP, Chrome Developers and PostgreS
 Their tools, rule catalogs and source examples are linked, not redistributed. Version/scope notes
 and independently authored acceptance guidance are recorded with the sources.
 
-## Design Playbook provenance
+## Faceful provenance
 
-Studio's design playbook and its related workflow maintenance are original instructions synthesized
-from the owner-supplied draft and the public history of
+Studio's delivery-proof and parallel-work rules and UI Quality Gate's craft recipes are original
+instructions synthesized from the owner-supplied draft and the public history of
 [Hackathon-gen-ai](https://github.com/DimitrisTheo-Dev/Hackathon-gen-ai), inspected on 2026-11-16.
-[Evidence and
-limits](skills/product-engineering-studio/references/design-playbook/faceful-history.md) identify
-the exact records. The source repository states that it grants no general license; this repository
-imports no Faceful code, fonts, artwork or customer media. Its historical token example does not
-grant rights to external assets. Synthetic evaluation inputs are original.
+[Evidence and limits](docs/faceful-history.md) identify the exact records. The source repository
+states that it grants no general license; this repository imports no Faceful code, fonts, artwork or
+customer media. Its historical token example does not grant rights to external assets. Synthetic
+evaluation inputs are original.
