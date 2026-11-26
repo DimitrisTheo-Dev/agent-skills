@@ -1,5 +1,18 @@
 # Changelog
 
+## 2.2.0 (2026-11-26)
+
+- `product-engineering-studio` is cut from about 1,600 lines in 19 files to about 220 in 3. The
+  skill keeps its three habits: prove the riskiest dependency first, ship one end-to-end slice, and
+  label each behavior verified live, verified locally, mocked or blocked. Two references remain:
+  delivery proof and parallel work.
+- Removed: the skill router (it named about 19 skills outside this pack), tool selection, sources,
+  session state, creative quality, the worked example and the design playbook, whose rules now live
+  in parallel work, Vibe UI and UI Quality Gate.
+- The craft recipes for focus, hit targets and layout shift move to `ui-quality-gate`. The Faceful
+  history and look move to `docs/`.
+- Add `evals/studio/brief-first`, which runs one brief with and without the plugin.
+
 ## 2.1.0 (2026-11-26)
 
 - `landing-page-design`: the material reference is rewritten as "Material and light". It starts

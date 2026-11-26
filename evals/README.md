@@ -52,6 +52,27 @@ Results on 2026-11-25 (3 runs per case, Claude Code 2.1.332):
 Cases for skills folded into others in 2.0.0 (design specialists, design playbook, agent
 readiness) describe those skills as they were evaluated then.
 
+## Studio brief
+
+`evals/studio/brief-first` asks for a plan and first work packet for an AI reply drafter grounded in
+help-center articles. Five LLM graders check risk-first order, observable acceptance, one
+end-to-end first slice, untrusted email input and mock-versus-live labelling.
+
+```sh
+claude plugin eval . --case "*brief-first*" --runs 3 --no-publish
+```
+
+Results on 2026-11-26 (3 runs per arm, Claude Code 2.1.332, the Skill grader left out of the score):
+
+| Arm | Score | Grader passes | Turns per run |
+| --- | --- | --- | --- |
+| No plugin | 0.13 | 2 of 15 | 2 to 4 |
+| Studio 2.1.0, 1,613 lines | 0.73 | 11 of 15 | 6 to 7 |
+| Studio 2.2.0, 244 lines | 0.80 | 12 of 15 | 5 |
+
+Both Studio versions sometimes open with repository inspection instead of the model spike, which
+fails `risk-first` and `thin-slice`. Three runs per arm is exploratory.
+
 ## Start with an existing case
 
 Replay the readiness implementation exercise with the same synthetic SPA in both variants. A past

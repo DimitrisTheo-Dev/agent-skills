@@ -1,7 +1,8 @@
 # Close returning defects with observed checks
 
-Use only the rows relevant to this change. Geometry and motion specialists own fixes; this gate owns
-the recheck on the integrated candidate.
+Use only the rows relevant to this change. Geometry and motion specialists own fixes, with the
+diagnostic paths in [craft recipes](craft-recipes.md); this gate owns the recheck on the integrated
+candidate.
 
 | Symptom | Reproducing check | Evidence needed to close |
 | --- | --- | --- |

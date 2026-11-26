@@ -75,10 +75,10 @@ integration owner; using several references does not imply parallel workers.
 
 ## Carry an accepted direction through delivery
 
-For several owned surfaces or a returning focus/shift/hit-target defect, use Product Engineering
-Studio's design playbook. It supplies execution packets and scoped proof inside this workflow; it
-does not start another exploration or final gate. Without it, retain the shared contract and local
-QA process.
+For several owned surfaces, Product Engineering Studio's parallel-work reference splits the build
+and keeps one integration owner; a returning focus, shift or hit-target defect goes through UI
+Quality Gate's recurring-defect checks. Neither starts another exploration or final gate. Without
+them, retain the shared contract and local QA process.
 
 Translate owner corrections into their words, a product-scoped rule and a reproducing check. Keep
 the accepted palette, density and interaction intent. Resolve literal values in tokens/components
